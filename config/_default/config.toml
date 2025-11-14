@@ -1,5 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://navicarenow.de"
+# baseURL = "https://navicarenow.de"
+baseUrl = "https://justinguese.github.io/website-hugo-navicarenow"
 title = "NavicareNow"
 theme = "wallet-hugo"
 # post pagination
