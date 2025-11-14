@@ -12,7 +12,7 @@ address = "Infomation technologies building, Victoria Island, Lagos, Colombia."
 mobile = "+49 156 79719965"
 email = "info@navicarenow.de"
 # contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
+contact_form_action = "https://formspree.io/f/mwpalndo" # contact form works with https://formspree.io
 # top hedaer
 top_hedaer = false
 # custom script on header
@@ -43,7 +43,7 @@ section = "services"
 enable = true
 description = "Tragen sie sich jetzt ein um immer die neuesten News in Sachen Pflegeförderungen und Unterstützung informiert zu sein"
 # mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_action = "https://formspree.io/f/xblqgzro" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
 
 # cookies
