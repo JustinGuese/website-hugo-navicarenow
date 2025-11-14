@@ -1,8 +1,36 @@
 {{ define "main" }}
+<!-- ...existing code... -->
+
+<!-- add: global button color override and accessible hover/focus -->
+<style>
+/* primary buttons use brand color */
+.btn-primary {
+  background-color: #7CA272 !important;
+  border-color: #7CA272 !important;
+  color: #fff !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #6f945f !important; /* slightly darker for hover */
+  border-color: #6f945f !important;
+  box-shadow: 0 6px 18px rgba(124,162,114,0.2) !important;
+  color: #fff !important;
+}
+/* keep existing challenge hover and overall AOS-friendly transitions */
+.challenge-card { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
+.icon-wrapper { transition: transform 0.4s cubic-bezier(0.4,0,0.2,1); }
+
+/* new brand background utility for icon circles */
+.bg-brand {
+  background-color: #7CA272 !important;
+  color: #fff !important;
+}
+</style>
 
 {{ if .Params.banner.enable }}
 {{ with .Params.banner }}
-<section class="banner bg-tertiary position-relative overflow-hidden">
+<section class="banner bg-tertiary position-relative overflow-hidden" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-6 mb-5 mb-lg-0">
@@ -53,9 +81,113 @@
 {{ end }}
 {{ end }}
 
+{{ if .Params.challenge.enable }}
+{{ with .Params.challenge }}
+<section class="section challenge-section bg-white position-relative overflow-hidden" data-aos="fade-up" data-aos-duration="800">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <div class="section-title" data-aos="fade-up" data-aos-duration="800">
+          <h2 class="mb-3">{{ .title | markdownify }}</h2>
+          <p class="h4 text-dark fw-normal">{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      {{ range $i, $problem := .problems }}
+      <div class="col-lg-6" data-aos="fade-{{ if eq $i 0 }}right{{ else }}left{{ end }}" data-aos-duration="1000" data-aos-delay="{{ mul $i 200 }}">
+        <div class="challenge-card h-100 p-4 p-lg-5 rounded-3 shadow-lg border-0 bg-light position-relative overflow-hidden">
+          <div class="challenge-icon mb-4">
+            <div class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-brand text-white" style="width: 70px; height: 70px;">
+              <i class="{{ $problem.icon }} fa-2x"></i>
+            </div>
+          </div>
+          <h3 class="h4 mb-3">{{ $problem.title | markdownify }}</h3>
+          {{ if $problem.subtitle }}
+          <p class="h6 text-dark mb-3">{{ $problem.subtitle | markdownify }}</p>
+          {{ end }}
+          <div class="content text-muted">{{ $problem.description | markdownify }}</div>
+          
+          <div class="challenge-decoration position-absolute" style="bottom: -30px; right: -30px; opacity: 0.05;">
+            <i class="{{ $problem.icon }}" style="font-size: 150px;"></i>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  
+  <div class="has-shapes">
+    <svg class="shape shape-left text-light" style="opacity: 0.3;" viewBox="0 0 192 752" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-30.883 0C-41.3436 36.4248 -22.7145 75.8085 4.29154 102.398C31.2976 128.987 65.8677 146.199 97.6457 166.87C129.424 187.542 160.139 213.902 172.162 249.847C193.542 313.799 149.886 378.897 129.069 443.036C97.5623 540.079 122.109 653.229 191 728.495" stroke="currentColor" stroke-miterlimit="10"/>
+    </svg>
+    <svg class="shape shape-right text-light" style="opacity: 0.3;" viewBox="0 0 731 746" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.1794 745.14C1.80036 707.275 -5.75764 666.015 8.73984 629.537C27.748 581.745 80.4729 554.968 131.538 548.843C182.604 542.703 234.032 552.841 285.323 556.748C336.615 560.64 391.543 557.276 433.828 527.964C492.452 487.323 511.701 408.123 564.607 360.255C608.718 320.353 675.307 307.183 731.29 327.323" stroke="currentColor" stroke-miterlimit="10"/>
+    </svg>
+  </div>
+</section>
+
+<style>
+.challenge-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.challenge-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+.challenge-card:hover .icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.icon-wrapper {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.challenge-section .has-shapes svg {
+  position: absolute;
+  max-width: 30%;
+}
+
+.challenge-section .shape-left {
+  left: -5%;
+  top: 20%;
+}
+
+.challenge-section .shape-right {
+  right: -5%;
+  bottom: 20%;
+}
+
+@media (max-width: 991px) {
+  .challenge-section .has-shapes svg {
+    max-width: 20%;
+  }
+}
+</style>
+
+<script>
+// Initialize AOS (Animate On Scroll) if not already loaded
+if (typeof AOS !== 'undefined') {
+  AOS.init({
+    once: true,
+    duration: 800,
+    easing: 'ease-out-cubic'
+  });
+}
+</script>
+{{ end }}
+{{ end }}
+
+
+
+
 {{ if .Params.services.enable }}
 {{ with site.GetPage "section" (string site.Params.service_section.section) }}
-<section class="section">
+<section class="section" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6">
@@ -99,9 +231,11 @@
 {{ end }}
 
 
+
+
 {{ if .Params.about_ourselves.enable }}
 {{ with .Params.about_ourselves }}
-<section class="about-section section bg-tertiary position-relative overflow-hidden">
+<section class="about-section section bg-tertiary position-relative overflow-hidden" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5">
@@ -145,7 +279,7 @@
 
 {{ if .Params.difference_of_us.enable }}
 {{ with .Params.difference_of_us }}
-<section class="section">
+<section class="section" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row align-items-center justify-content-between">
       <div class="col-lg-5">
@@ -181,7 +315,7 @@
 
 {{ if .Params.homepage_tab.enable }}
 {{ with .Params.homepage_tab }}
-<section class="homepage_tab position-relative">
+<section class="homepage_tab position-relative" data-aos="fade-up" data-aos-duration="800">
   <div class="section container">
     <div class="row justify-content-center">
       <div class="col-lg-8 mb-4">
@@ -251,7 +385,7 @@
 
 {{ if .Params.testimonials.enable }}
 {{ with .Params.testimonials }}
-<section class="section testimonials overflow-hidden bg-tertiary">
+<section class="section testimonials overflow-hidden bg-tertiary" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
@@ -289,9 +423,6 @@
   <div class="has-shapes">
     <svg class="shape shape-left text-light" width="290" height="709" viewBox="0 0 290 709" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M-119.511 58.4275C-120.188 96.3185 -92.0001 129.539 -59.0325 148.232C-26.0649 166.926 11.7821 174.604 47.8274 186.346C83.8726 198.088 120.364 215.601 141.281 247.209C178.484 303.449 153.165 377.627 149.657 444.969C144.34 546.859 197.336 649.801 283.36 704.673" stroke="currentColor" stroke-miterlimit="10"/>
-      <path d="M-141.434 72.0899C-142.111 109.981 -113.923 143.201 -80.9554 161.895C-47.9878 180.588 -10.1407 188.267 25.9045 200.009C61.9497 211.751 98.4408 229.263 119.358 260.872C156.561 317.111 131.242 391.29 127.734 458.631C122.417 560.522 175.414 663.463 261.437 718.335" stroke="currentColor" stroke-miterlimit="10"/>
-      <path d="M-163.379 85.7578C-164.056 123.649 -135.868 156.869 -102.901 175.563C-69.9331 194.256 -32.086 201.934 3.9592 213.677C40.0044 225.419 76.4955 242.931 97.4127 274.54C134.616 330.779 109.296 404.957 105.789 472.299C100.472 574.19 153.468 677.131 239.492 732.003" stroke="currentColor" stroke-miterlimit="10"/>
-      <path d="M-185.305 99.4208C-185.982 137.312 -157.794 170.532 -124.826 189.226C-91.8589 207.919 -54.0118 215.597 -17.9666 227.34C18.0787 239.082 54.5697 256.594 75.4869 288.203C112.69 344.442 87.3706 418.62 83.8633 485.962C78.5463 587.852 131.542 690.794 217.566 745.666" stroke="currentColor" stroke-miterlimit="10"/>
     </svg>
     
     <svg class="shape shape-right text-light" width="731" height="429" viewBox="0 0 731 429" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,7 +439,7 @@
 
 
 {{ if .Params.faq.enable }}
-<section class="section">
+<section class="section" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">

@@ -12,6 +12,28 @@ banner:
     button_modal_target: '/kontakt'
   image: 'images/banner/hands-4344711_1280.jpg'
 
+############################ Challenge ##################################
+challenge:
+  enable: true
+  title: "Die Herausforderung: Pflege überfordert Millionen"
+  subtitle: "Doch niemand sollte das allein meistern müssen!"
+  
+  problems:
+    - title: "Über 5 Millionen Pflegebedürftige in Deutschland"
+      icon: "fas fa-users"
+      description: "Mehr als 80% aller Pflegebedürftigen werden zu Hause von ihren Familien versorgt. Bis zu 10 Millionen Menschen sind direkt oder indirekt in die häusliche Pflege eingebunden – häufig ohne ausreichende Unterstützung und überfordert vom komplexen Pflegesystem und der täglichen Verantwortung.
+      
+      
+      Pflegende Angehörige kämpfen mit bürokratischen Hürden, unklaren Ansprüchen und chronischem Stress. Wichtige Hilfsleistungen bleiben oft ungenutzt, weil Betroffene schlicht nicht wissen, wo sie anfangen sollen."
+      
+    - title: "Bis 2030: Über 6 Millionen Pflegebedürftige"
+      subtitle: "Das System steht unter Druck"
+      icon: "fas fa-chart-line"
+      description: "Der demografische Wandel verschärft die Krise dramatisch: Immer mehr ältere Menschen treffen auf immer weniger Pflegekräfte. Pflegeeinrichtungen kämpfen mit Fachkräftemangel und Zeitdruck und internationale Pflegekräfte stoßen auf Sprach- und Integrationsbarrieren.
+      
+      
+      Es besteht dringender Handlungsbedarf für neue Lösungen, die Angehörige entlasten, Einrichtungen effizienter machen, Pflegekräfte integrieren und den Pflegealltag wieder menschlicher machen."
+
 ############################ Homepage Service ##################################
 services:
   enable: true
@@ -19,6 +41,7 @@ services:
 ############################ Difference Of Us ##################################
 difference_of_us:
   enable: true
+  image: "about/computer-767776_1280.jpg"
   subtitle: 'Wir machen Pflege zugänglich'
   title: 'Navicare Now vereint Menschlichkeit, Struktur und digitale Intelligenz'
   description: 'Pflege überfordert Millionen in Deutschland – doch niemand muss das alleine stemmen. Wir schließen die Lücke zwischen Familien, Einrichtungen und internationalen Fachkräften und bringen mit smarten Tools und empathischer Beratung echte Entlastung.'
@@ -39,7 +62,7 @@ about_ourselves:
   subtitle: 'Pflege ist komplex – wir machen sie überschaubar'
   title: 'Navicare Now verbindet Technologie mit echter Zuwendung'
   description: 'Wir navigieren Familien und Fachkräfte sicher durch das Pflegesystem, schaffen digitale Pflegeakten, digitales Matching und einen interaktiven Alltagshelfer. Unsere Plattform arbeitet DSGVO-konform, nachhaltig und stets mit menschlichem Fokus.'
-  image: 'images/about-us.webp'
+  image: 'images/computer-767776_1280.jpg'
 
 ############################ Homepage Tab ##################################
 homepage_tab:
