@@ -7,6 +7,7 @@ pagination.pagerSize = "6"
 # post excerpt
 summaryLength = "10"
 # disable language
+defaultContentLanguage="de"
 disableLanguages = [] # desable language from here
 # Image Processing Config
 [imaging]
