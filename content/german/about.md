@@ -1,148 +1,114 @@
 ---
-title : "About Us"
-description : "this is meta description"
+title : "Über uns"
+description : "Das Team hinter Navicare Now"
 layout : "about"
 draft : false
 
 about_us_:
-  title: "Business Loans <br> For Daily Expenses"
-  subtitle: "About NavicareNow"
+  title: "Digitale Pflegeunterstützung <br> für den Alltag zu Hause"
+  subtitle: "Über Navicare Now"
   image: "images/about/about-11.jpg"
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  
+  content: "Navicare Now verbindet Pflegeerfahrung, technische Expertise und persönliche Betroffenheit zu einer gemeinsamen Mission: Pflege verständlich, zugänglich und nachhaltig zu gestalten.
 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  Wir sind Pflegende, Entwickler und Betroffene – gemeinsam bringen wir Praxis und Technik zusammen, um Millionen von pflegenden Angehörigen, Einrichtungen und internationalen Fachkräften echte Entlastung zu bieten."
 
   
 who_we_are:
-  title: "Who We Are?"
-  lead: "Insight loan advisors is completely independent loan advising service and our directory of lenders gives you all the information lorem ipsums sitamets."
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consv peent esque urna. Ac eu fringilla intea dger egadv estas ut. Sed vulutate aenean nunc quis a urna morbi id vitae. Vulpuate nisl"
+  title: "Wer wir sind"
+  lead: "Das Team hinter Navicare Now: Julia Camara (Gründerin & CEO) und Justin Güse (Co-Gründer & CTO) vereinen Pflegefachwissen und digitale Sicherheit zu einer praxisnahen Lösung."
+  content: "Navicare Now ist mehr als ein neuer Ansatz – es ist ein Herzensprojekt. Mit über 10 Jahren Pflegeerfahrung und Expertise in skalierbaren, sicheren Plattformen gestalten wir die Zukunft der häuslichen Pflege."
   
 what_we_offer:
-  title: "What We Offer?"
-  lead: "Our loan sanction is one of the quicke with eas documentation and doorstep lorem ipsum serviceullam dolor sitisi."
+  title: "Was wir bieten"
+  lead: "Eine ganzheitliche digitale Plattform, die Angehörige, Pflegeinstitutionen und internationale Fachkräfte verbindet."
   content: "  
-  
-  * Habit building in essential steps choose habit
+  * Digitale Pflegeakte mit KI-gestütztem Matching und Empfehlungen
 
-  * Get an overview of Habit Calendars Latest Posts
+  * Persönliche Pflegeplanung durch examinierte Pflegefachkräfte
 
-  * Start building habit with Habitify on platform
+  * Erinnerungen, Aufgabenlisten und Alltagstipps für tägliche Entlastung
   
+  * Schulungen und Sprachmodule für internationale Pflegekräfte
+  
+  * Community-Austausch für pflegende Angehörige
+  
+  * DSGVO-konformes Hosting mit höchsten Datenschutzstandards
   "
 
 
 ############# Feature ####################
 feature:
-- name: "Quick Decision"
-  icon: "fas fa-mouse-pointer"
-  content: "Begin the process when it is convenient for you"
+- name: "Orientierung"
+  icon: "fas fa-compass"
+  content: "Kompass durch das komplexe Pflegesystem – klare Informationen und praktische Anleitung"
   
-- name: "Submit Your Info"
-  icon: "fas fa-file-alt"
-  content: "Begin the process when it is convenient for you"
+- name: "Entlastung"
+  icon: "fas fa-lightbulb"
+  content: "Digitale Lösungen, die Alltag vereinfachen und Zeit für das Wesentliche schaffen"
   
-- name: "Funds To You"
-  icon: "fas fa-briefcase"
-  content: "Begin the process when it is convenient for you"
+- name: "Integration"
+  icon: "fas fa-globe"
+  content: "Sprachmodule und kulturelle Begleitung für internationale Fachkräfte"
   
 
 ############# Core Value ####################
 core_value:
-  title: "Our Core Values"
-  subtitle: "Values Wr Provide"
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consv allis quam aliquet integer eget magna ullam corper intesager peent esque urna. Sed vulutate aenean nunc quis a urna morbi id vitae. Vulpuate nisl 
-
-
-  sed morbi sit ut placerat eges aeftas et. Pellen tesque tristisque magnis augue gravida pulvinar placerat. Tellus massa pretra scelerisque leo. In volutpat arcu nunc nisl et, viverra faucisfbus egestas. In habitasse sagittis, convallis ut commodo amet."
+  title: "Unser Anspruch"
+  subtitle: "Werte, die wir leben"
+  content: "Navicare Now vereint eine starke soziale Mission mit wirtschaftlicher Nachhaltigkeit. Unsere Vision ist, dass kein pflegender Mensch mehr alleine vor dem Berg an Informationen und Aufgaben stehen soll. In fünf Jahren möchten wir ein etablierter Partner der größten Krankenkassen sein – und vor allem unzählige positive Geschichten von entlasteten Angehörigen, besser versorgten Pflegebedürftigen und integrierten, internationalen Pflegekräften vorweisen können."
   core_value_item:
-  - name: "Authentic"
-    content: "Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus"
+  - name: "Praxisnah"
+    content: "Jede Lösung entsteht aus echten Herausforderungen und dem Wissen erfahrener Pflegekräfte"
     
-  - name: "Empathetic"
-    content: "Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus"
+  - name: "Empathisch"
+    content: "Wir verstehen Pflege als Beziehung – Technologie ersetzt niemals den Menschen, sie verstärkt seine Wirkung"
     
-  - name: "All Improving"
-    content: "Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus"
+  - name: "Sicher"
+    content: "DSGVO-konform, transparent und mit höchsten Datenschutzstandards"
     
-  - name: "User-Focused"
-    content: "Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus"
+  - name: "Nachhaltig"
+    content: "Zugänglich für alle – wir arbeiten daran, Krankenkassen-Erstattung zu ermöglichen"
 
 
 
 ################# Team ###################
 team:
-  title: "People Behind Us"
-  subtitle: "Questions You Have"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing . egestas <br> cursus pellentesque dignissim dui, congue. Vel etiam ut"
+  title: "Das Team hinter Navicare Now"
+  subtitle: "Gründer:innen"
+  description: "Pflegeerfahrung trifft digitale Expertise. Gemeinsam gestalten wir die Zukunft der häuslichen Pflege."
 
   team_member:
-  - name: "Scarlet Pena"
-    designation: "Instructor"
-    image: "images/about/team-1.jpg"
+  - name: "Julia Camara"
+    designation: "Gründerin & CEO"
+    image: "images/team/julia-camara.jpg"
     social:
-    - name: "facebook"
-      icon: "fab fa-facebook"
-      link: "#"
+      - name: "linkedin"
+        icon: "fab fa-linkedin"
+        link: "#"
+        
+      - name: "twitter"
+        icon: "fab fa-twitter"
+        link: "#"
+        
+      - name: "mail"
+        icon: "fas fa-envelope"
+        link: "mailto:julia@navicarenow.de"
       
-    - name: "twitter"
-      icon: "fab fa-twitter"
-      link: "#"
-      
-    - name: "instagram"
-      icon: "fab fa-instagram"
-      link: "#"
-      
-  - name: "Claire Simmmons"
-    designation: "Founder"
-    image: "images/about/team-2.jpg"
+  - name: "Justin Güse"
+    designation: "Co-Gründer & CTO"
+    image: "images/team/justin-guese.jpg"
     social:
-    - name: "facebook"
-      icon: "fab fa-facebook"
-      link: "#"
-      
-    - name: "twitter"
-      icon: "fab fa-twitter"
-      link: "#"
-      
-    - name: "instagram"
-      icon: "fab fa-instagram"
-      link: "#"
-
-
-  - name: "Leslie Pena"
-    designation: "Director"
-    image: "images/about/team-3.jpg"
-    social:
-    - name: "facebook"
-      icon: "fab fa-facebook"
-      link: "#"
-      
-    - name: "twitter"
-      icon: "fab fa-twitter"
-      link: "#"
-      
-    - name: "instagram"
-      icon: "fab fa-instagram"
-      link: "#"
-
-
-  - name: "Scarlet Pena"
-    designation: "Instructor"
-    image: "images/about/team-1.jpg"
-    social:
-    - name: "facebook"
-      icon: "fab fa-facebook"
-      link: "#"
-      
-    - name: "twitter"
-      icon: "fab fa-twitter"
-      link: "#"
-      
-    - name: "instagram"
-      icon: "fab fa-instagram"
-      link: "#"
+      - name: "linkedin"
+        icon: "fab fa-linkedin"
+        link: "#"
+        
+      - name: "twitter"
+        icon: "fab fa-twitter"
+        link: "#"
+        
+      - name: "mail"
+        icon: "fas fa-envelope"
+        link: "mailto:justin@navicarenow.de"
 
 
 ---

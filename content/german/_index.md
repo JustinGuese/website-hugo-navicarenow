@@ -9,7 +9,7 @@ banner:
     enable: true
     label: 'Gratis Erstgespräch'
     icon: 'fas fa-arrow-right'
-    button_modal_target: '/kontakt'
+    button_modal_target: '/kontakt/'
   image: 'images/banner/hands-4344711_1280.jpg'
 
 ############################ Challenge ##################################

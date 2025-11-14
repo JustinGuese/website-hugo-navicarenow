@@ -194,7 +194,7 @@ html {
           <p class="mb-4">{{ .subtitle | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="{{.button_modal_target}}">{{ .label }} <span style="font-size: 14px;" class="ms-2 {{ .icon }}"></span></a>
+          <a type="button" class="btn btn-primary" href="{{ .button_modal_target }}">{{ .label }} <span style="font-size: 14px;" class="ms-2 {{ .icon }}"></span></a>
           {{ end }}
           {{ end }}
         </div>

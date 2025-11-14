@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://navicarenow.de"
 title = "NavicareNow"
 theme = "wallet-hugo"
 # post pagination

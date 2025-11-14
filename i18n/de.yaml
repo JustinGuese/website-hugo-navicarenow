@@ -1,101 +1,104 @@
 - id: read_more
-  translation: Read More
-  
+  translation: Weiterlesen
+
 - id: address
-  translation: Our Address
+  translation: Unsere Adresse
 
 - id: phone
-  translation: Phone Number
+  translation: Telefonnummer
 
 - id: email
-  translation: Message Us
+  translation: Nachricht senden
 
 - id: contact_form
-  translation: Contact Form
+  translation: Kontaktformular
 
 - id: send
-  translation: Send Message
+  translation: Nachricht senden
 
 - id: follow
-  translation: FOLLOW US ON
+  translation: FOLGEN SIE UNS AUF
 
 - id: services
-  translation: Services
+  translation: Leistungen
 
 - id: contact_info
-  translation: Contact Info
+  translation: Kontaktinformationen
 
 - id: subscribe_newsletter
-  translation: Subscribe Newsletter
+  translation: Newsletter abonnieren
 
 - id: subscribe
-  translation: Subscribe
+  translation: Abonnieren
 
 - id: connect_with_us
-  translation: Connect With Us
+  translation: Kontakt aufnehmen
 
 - id: call_now
-  translation: Call Now
+  translation: Jetzt anrufen
 
 - id: search_placeholder
-  translation: Type & Hit Enter...
+  translation: Tippen & Enter drücken...
 
 - id: latest_article
-  translation: Latest Article
+  translation: Neuester Artikel
 
 - id: category
-  translation: Category
+  translation: Kategorie
 
 - id: tags
-  translation: Tags
+  translation: Schlagwörter
 
 - id: view_details
-  translation: View Details
+  translation: Details anzeigen
 
 - id: know_about_us
-  translation: Know About Us
+  translation: Mehr über uns erfahren
 
 - id: all_services
-  translation: All Services
+  translation: Alle Leistungen
 
 - id: social
-  translation: Social Links
+  translation: Soziale Netzwerke
 
 - id: leave_message
-  translation: Leave Us A Message
+  translation: Eine Nachricht schreiben
+
+- id: book_meeting
+  translation: Einen Termin buchen
 
 - id: full_name
-  translation: Full Name
+  translation: Vollständiger Name
 
 - id: email_address
-  translation: Email address
+  translation: E-Mail-Adresse
 
 - id: write_message
-  translation: Write Message
+  translation: Nachricht schreiben
 
 - id: how_much_need
-  translation: How much do you need?
+  translation: Wie viel benötigen Sie?
 
 - id: amount
-  translation: Amount
+  translation: Betrag
 
 - id: how_long_for
-  translation: How long for?
+  translation: Für welchen Zeitraum?
 
 - id: repayment
-  translation: Repayment
+  translation: Rückzahlung
 
 - id: get_your_loan_now
-  translation: Get Your Loan Now
+  translation: Jetzt Unterstützung erhalten
 
 - id: service
-  translation: Service
+  translation: Leistung
 
 - id: about
-  translation: About
+  translation: Über uns
 
 - id: help
-  translation: Help
+  translation: Hilfe
 
 - id: subscribe
-  translation: Subscribe
+  translation: Abonnieren

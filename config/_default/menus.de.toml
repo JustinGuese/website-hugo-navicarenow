@@ -1,13 +1,8 @@
 # main menu
 [[main]]
-name = "About"
+name = "Über uns"
 url = "about/"
 weight = 2
-
-[[main]]
-name = "How It Works"
-url = "how-it-works/"
-weight = 3
 
 [[main]]
 name = "Services"
@@ -15,83 +10,97 @@ url = "services/"
 weight = 3
 
 [[main]]
-name = "Contact"
-url = "contact/"
-weight = 6
-
-[[main]]
-name = "Pages"
-weight = 7
-hasChildren = true
-
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "blog/"
+parent = "Services"
+name = "Zentraler Informations-Hub"
+url = "services/zentraler-informations-hub/"
 weight = 1
 
+
 [[main]]
-parent = "Pages"
-name = "Service Details"
-url = "services/service-1/"
+parent = "Services"
+name = "Community-Schulungen"
+url = "services/community-schulungen/"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "Digitale Pflegeakte"
+url = "services/digitale-pflegeakte/"
 weight = 3
 
 [[main]]
-parent = "Pages"
-name = "FAQ's"
-url = "faq/"
+parent = "Services"
+name = "Interaktiver Alltagshelfer"
+url = "services/interaktiver-alltagshelfer/"
 weight = 4
 
 [[main]]
-parent = "Pages"
-name = "Elements"
-url = "blog/elements/"
+parent = "Services"
+name = "Personalisierte Beratung"
+url = "services/personalisierte-beratung/"
 weight = 5
 
 [[main]]
-parent = "Pages"
-name = "Legal"
-url = "legal/"
-weight = 6
+name = "FAQ"
+url = "faq/"
+weight = 4
+
 
 [[main]]
-parent = "Pages"
-name = "Terms & Condition"
-url = "terms/"
+name = "Kontakt"
+url = "kontakt/"
+weight = 5
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 5
+
+[[main]]
+name = "Legal"
+url = "#"
 weight = 7
 
 [[main]]
-parent = "Pages"
-name = "Privacy & Policy"
-url = "privacy-policy/"
-weight = 8
+parent = "Legal"
+name = "AGB"
+url = "legal/terms-conditions/"
+weight = 1
+
+[[main]]
+parent = "Legal"
+name = "Datenschutzerklärung"
+url = "legal/privacy-policy/"
+weight = 2
+
+[[main]]
+parent = "Legal"
+name = "Impressum"
+url = "legal/imprint/"
+weight = 3
 
 
 ################################### Footer Menu #####################################
 [[footer]]
 name = "Terms & Conditions"
-url = "terms/"
+url = "legal/terms-conditions/"
 
 [[footer]]
 name = "Privacy Policy"
-url = "privacy-policy/"
+url = "legal/privacy-policy/"
 
 
 [[about]]
-name = "Our Story"
-url = "our-story/"
-
-[[about]]
-name = "Benefits"
-url = "benefits/"
+name = "Unsere Geschichte"
+url = "about/"
 
 [[about]]
 name = "Team"
-url = "team/"
+url = "about/"
 
 [[about]]
 name = "Careers"
-url = "careers/"
+url = "/kontakt"
 
 
 [[help]]
@@ -99,5 +108,5 @@ name = "FAQs"
 url = "faq/"
 
 [[help]]
-name = "Contact Us"
-url = "contact/"
+name = "Kontakt"
+url = "/kontakt"

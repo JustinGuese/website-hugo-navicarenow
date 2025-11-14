@@ -1,16 +1,16 @@
 ---
-title: "Cheerful Loving Couple Bakers Drinking Coffee"
-date: 2020-03-14T15:40:24+06:00
+title: 'Cheerful Loving Couple Bakers Drinking Coffee'
+date: 2025-03-14T15:40:24+06:00
 # post thumb
 images:
-  - "images/blog/post-4.jpg"
+  - 'images/blog/post-4.jpg'
 #author
-author: "John Doe"
+author: 'Julia Camara'
 # description
-description: "This is meta description"
+description: 'This is meta description'
 # Taxonomies
-categories: ["four seasone"]
-tags: ["seasone","new"]
+categories: ['four seasone']
+tags: ['seasone', 'new']
 draft: false
 ---
 

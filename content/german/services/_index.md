@@ -1,8 +1,7 @@
 ---
-title: "Our Services"
-section_title: "Our online and offline services"
-description : "Lorem ipsum dolor sit amet, consectetur adipreiscing elit. Lacus penatibus tincidunt"
+title: 'Unsere Services'
+section_title: 'Unsere Lösung im Detail – digital, menschlich und praxisnah'
+description: 'Navicare Now verbindet digitale Intelligenz mit menschlicher Expertise, um eine ganzheitliche und praxisnahe Unterstützung in allen Pflegefragen zu bieten. Wir navigieren Sie sicher durch das komplexe Pflegesystem und entlasten Sie im Alltag.'
 draft: false
-date: 2020-03-11T15:40:24+06:00
-
+date: 2025-03-11T15:40:24+06:00
 ---
