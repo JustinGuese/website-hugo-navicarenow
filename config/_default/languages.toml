@@ -1,0 +1,11 @@
+################################### German language #####################################
+[de]
+languageName = "De"
+languageCode = "de-de"
+contentDir = "content/german"
+weight = 1
+
+[de.params]
+# copyright
+copyright = "NavicareNow 2025"
+
