@@ -86,53 +86,29 @@ homepage_tab:
 ############################ testimonials ##################################
 testimonials:
   enable: true
-  subtitle: 'Stories aus der Praxis'
-  title: 'Vertrauen aus Erfahrung'
-  description: 'Pflegende Familien, Pflegefachkräfte und Einrichtungen berichten, wie Navicare Now sie entlastet.'
+  subtitle: 'Das Team hinter Navicare Now'
+  title: 'Gründer:innen'
+  description: 'Wir sind Pflegende, Entwickler und Betroffene — gemeinsam bringen wir Praxis und Technik zusammen.'
 
   item:
-    - image: 'images/testimonials/01.jpg'
+    - image: 'images/team/julia-camara.jpg'
       name: 'Julia Camara'
-      designation: 'Gründerin & Pflegefachkraft'
-      review_text: 'Navicare Now entsteht aus dem täglichen Erleben der Pflege – meine Mission ist es, Familien echte Orientierung und Tools mitzugeben.'
+      designation: 'Gründerin & CEO'
+      review_text: |-
+        Examinierte Pflegefachkraft mit über 10 Jahren Erfahrung in der Alten- und Krankenpflege und zertifizierte Pharmareferentin.
+        Julia hat Navicare Now aus eigener Betroffenheit gegründet: Als pflegende Mutter einer Tochter mit geistiger Beeinträchtigung kennt sie die täglichen Herausforderungen und Lücken des Systems.
+        Mit Leidenschaft, fachlicher Expertise und Pragmatismus sorgt sie dafür, dass unsere Angebote praxisnah, empathisch und fachlich fundiert sind.
 
-    - image: 'images/testimonials/02.jpg'
+    - image: 'images/team/justin-guese.jpg'
       name: 'Justin Güse'
-      designation: 'Co-Gründer & CTO'
-      review_text: 'Software darf niemanden ersetzen, sondern unterstützen. Unsere Architektur verbindet KI, Sicherheit und menschliche Expertise.'
-
-    - image: 'images/testimonials/03.jpg'
-      name: 'Pflegende Angehörige'
-      designation: 'Beta-Nutzer:innen'
-      review_text: 'Die Plattform gibt uns Übersicht, erinnert und vernetzt uns mit anderen, die den gleichen Weg gehen.'
-
-    - image: 'images/testimonials/04.jpg'
-      name: 'Pflegeeinrichtungen'
-      designation: 'Pilotpartner'
-      review_text: 'Digitale Prozesse erleichtern Kommunikation und Qualitätsmanagement – Zeit, die wieder den Menschen gehört.'
-
-    - image: 'images/testimonials/05.jpg'
-      name: 'Internationale Fachkräfte'
-      designation: 'Schulungsteilnehmende'
-      review_text: 'Sprachmodule und kulturelle Begleitung geben mir Sicherheit und helfen bei der Integration in deutsche Teams.'
-
-    - image: 'images/testimonials/06.jpg'
-      name: 'Community'
-      designation: 'Angehörigen-Hub'
-      review_text: 'Der Austausch tut gut, wir lernen voneinander und fühlen uns nicht mehr allein.'
+      designation: 'Co‑Gründer & CTO'
+      review_text: |-
+        Erfahrener Softwareentwickler und Unternehmer mit Schwerpunkt auf Cloud‑ und DevOps‑Technologien. Als Gründer von DataFortress.cloud baute Justin skalierbare, sichere Plattformen (u. a. für Volkswagen, BMW).
+        Er verantwortet die technische Architektur von Navicare Now und gestaltet KI‑gestützte, datenschutzkonforme Lösungen, die Pflege digital vereinfachen.
 
 ############################ faq ##################################
 faq:
   enable: true
   subtitle: 'Antworten auf Ihre wichtigsten Fragen'
   title: 'Häufig gestellte Fragen'
-  item:
-    - title: 'Für wen ist Navicare Now gedacht?'
-      description: 'Für pflegende Angehörige, Einrichtungen und internationale Pflegekräfte, die Orientierung, Entlastung und strukturiertes Zusammenarbeiten suchen.'
-    - title: 'Welche Inhalte bietet die Plattform?'
-      description: 'Digitale Pflegeakte, Beratung, KI-gestütztes Matching, Erinnerungen, Schulungen, Sprachmodule, Community und Vermittlung von Hilfsangeboten.'
-    - title: 'Ist Navicare Now sicher?'
-      description: 'DSGVO-konformes Hosting, geprüfte Pflegeexpert:innen und transparente Prozesse sorgen für Schutz Ihrer Daten und Vertrauen.'
-    - title: 'Wie kann ich teilnehmen?'
-      description: 'Werden Sie Teil der Beta-Community, Pilotpartner oder Investor: Wir gestalten die Zukunft der Pflege gemeinsam.'
 ---

@@ -12,7 +12,7 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #6f945f !important; /* slightly darker for hover */
+  background-color: #6f945f !important;
   border-color: #6f945f !important;
   box-shadow: 0 6px 18px rgba(124,162,114,0.2) !important;
   color: #fff !important;
@@ -25,6 +25,161 @@
 .bg-brand {
   background-color: #7CA272 !important;
   color: #fff !important;
+}
+
+/* Enhanced animations for service items */
+.service-item {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-item:hover {
+  transform: translateY(-8px);
+}
+.service-item .block {
+  transition: all 0.3s ease;
+}
+.service-item:hover .block {
+  box-shadow: 0 15px 35px rgba(124,162,114,0.15);
+}
+.service-item .colored-box {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-item:hover .colored-box {
+  transform: scale(1.1);
+  background-color: #7CA272 !important;
+  color: #fff !important;
+}
+
+/* Difference of us items animations */
+.difference-of-us-item {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+}
+.difference-of-us-item:hover {
+  transform: translateX(10px);
+  background: linear-gradient(135deg, rgba(124,162,114,0.05) 0%, rgba(255,255,255,0.8) 100%);
+  border-color: rgba(124,162,114,0.2);
+  box-shadow: 0 8px 20px rgba(124,162,114,0.1);
+}
+.difference-of-us-item .icon i {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #7CA272;
+}
+.difference-of-us-item:hover .icon i {
+  transform: scale(1.15) rotate(5deg);
+  color: #6f945f;
+}
+
+/* Testimonial cards animations */
+.testimonials .shadow {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+}
+.testimonials .shadow:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(124,162,114,0.15) !important;
+  border-color: rgba(124,162,114,0.3);
+}
+.testimonials .shadow img {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.testimonials .shadow:hover img {
+  transform: scale(1.08);
+}
+
+/* Tab pills animations */
+.payment_info_tab .nav-link {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.payment_info_tab .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(124,162,114,0.1), transparent);
+  transition: left 0.5s ease;
+}
+.payment_info_tab .nav-link:hover::before {
+  left: 100%;
+}
+.payment_info_tab .nav-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124,162,114,0.2);
+}
+.payment_info_tab .nav-link.active {
+  background-color: #7CA272 !important;
+  border-color: #7CA272 !important;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+/* Tab content fade animations */
+.tab-content .tab-pane {
+  animation: fadeInUp 0.6s ease-out;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FAQ accordion animations */
+.accordion-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 3px solid transparent !important;
+}
+.accordion-item:hover {
+  border-left-color: #7CA272 !important;
+  background-color: rgba(124,162,114,0.02);
+  transform: translateX(5px);
+}
+.accordion-button {
+  transition: all 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(124,162,114,0.1) !important;
+  color: #6f945f !important;
+}
+.accordion-button:hover {
+  background-color: rgba(124,162,114,0.05) !important;
+}
+
+/* Image hover effects in tabs */
+.image-block img {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-block:hover img {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* Section title animations on scroll */
+.section-title {
+  transition: all 0.3s ease;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 </style>
 
@@ -190,7 +345,7 @@ if (typeof AOS !== 'undefined') {
 <section class="section" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="800">
         <div class="section-title pt-4">
           <p class="text-primary text-uppercase fw-bold mb-3">{{ .Title | markdownify }}</p>
           <h1>{{ .Params.section_title | markdownify}}</h1>
@@ -200,7 +355,7 @@ if (typeof AOS !== 'undefined') {
       {{ $.Scratch.Set "counter" 0 }}
       {{ range first 5 .Data.Pages }}
       {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-      <div class="col-lg-4 col-md-6 service-item">
+      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="{{ mul ($.Scratch.Get "counter") 100 }}">
         <a class="text-black" href="{{.Permalink}}">
           <div class="block">
             <span class="colored-box text-center h3 mb-4">
@@ -282,25 +437,24 @@ if (typeof AOS !== 'undefined') {
 <section class="section" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row align-items-center justify-content-between">
-      <div class="col-lg-5">
+      <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
         <div class="section-title">
           <p class="text-primary text-uppercase fw-bold mb-3">{{ .subtitle | markdownify }}</p>
           <h1>{{ .title | markdownify}}</h1>
-
           <div class="content mb-0 mt-4">{{ .description | markdownify}}</div>
         </div>
       </div>
 
       <div class="col-lg-6">
-        {{ range .item }}
-        <div class="difference-of-us-item p-3 rounded mr-0 me-lg-4">
+        {{ range $i, $item := .item }}
+        <div class="difference-of-us-item p-3 rounded mr-0 me-lg-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="{{ mul $i 150 }}">
           <div class="d-block d-sm-flex align-items-center m-2">
             <div class="icon me-4 mb-4 mb-sm-0">
-              <i class="{{ .icon }} mt-4" style="font-size:36px"></i>
+              <i class="{{ $item.icon }} mt-4" style="font-size:36px"></i>
             </div>
             <div class="block">
-              <h3 class="mb-3">{{ .title | markdownify }}</h3>
-              <p class="mb-0">{{ .description | markdownify }}</p>
+              <h3 class="mb-3">{{ $item.title | markdownify }}</h3>
+              <p class="mb-0">{{ $item.description | markdownify }}</p>
             </div>
           </div>
         </div>
@@ -388,7 +542,7 @@ if (typeof AOS !== 'undefined') {
 <section class="section testimonials overflow-hidden bg-tertiary" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
         <div class="section-title text-center">
           <p class="text-primary text-uppercase fw-bold mb-3">{{ .subtitle | markdownify }}</p>
           <h1 class="mb-4">{{ .title | markdownify}}</h1>
@@ -397,23 +551,23 @@ if (typeof AOS !== 'undefined') {
       </div>
     </div>
     <div class="row position-relative">
-      {{ range .item }}
-      <div class="col-lg-4 col-md-6 pt-1">
+      {{ range $i, $testimonial := .item }}
+      <div class="col-lg-4 col-md-6 pt-1" data-aos="fade-up" data-aos-duration="800" data-aos-delay="{{ mul $i 100 }}">
         <div class="shadow rounded bg-white p-4 mt-4">
           <div class="d-block d-sm-flex align-items-center mb-3">
-            {{ if .image }}
-            {{ if fileExists (add `assets/` .image) }}
-            {{$img:= resources.Get (.image) }}
+            {{ if $testimonial.image }}
+            {{ if fileExists (add `assets/` $testimonial.image) }}
+            {{$img:= resources.Get ($testimonial.image) }}
             {{$img:= $img.Resize "65x webp"}}
-            <img loading="lazy" decoding="async" src="{{$img.RelPermalink}}" alt="{{.name | markdownify}}" class="img-fluid" width="{{$img.Width}}" height="{{$img.Height}}">
+            <img loading="lazy" decoding="async" src="{{$img.RelPermalink}}" alt="{{$testimonial.name | markdownify}}" class="img-fluid" width="{{$img.Width}}" height="{{$img.Height}}">
             {{ end }}
             {{ end }}
             <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
-              <h4 class="h5 mb-1">{{ .name | markdownify }}</h4>
-              <p class="mb-0">{{ .designation | markdownify }}</p>
+              <h4 class="h5 mb-1">{{ $testimonial.name | markdownify }}</h4>
+              <p class="mb-0">{{ $testimonial.designation | markdownify }}</p>
             </div>
           </div>
-          <div class="content">{{ .review_text | markdownify }}</div>
+          <div class="content">{{ $testimonial.review_text | markdownify }}</div>
         </div>
       </div>
       {{ end }}
@@ -442,17 +596,17 @@ if (typeof AOS !== 'undefined') {
 <section class="section" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12">
+      <div class="col-12" data-aos="fade-up" data-aos-duration="800">
         <div class="section-title text-center mb-5 pb-2">
           <p class="text-primary text-uppercase fw-bold mb-3">{{ .Params.faq.subtitle | markdownify }}</p>
           <h1>{{ .Params.faq.title | markdownify}}</h1>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
         <div class="accordion shadow rounded py-5 px-0 px-lg-4 bg-white position-relative" id="accordionFAQ">
           {{ with site.GetPage "faq" }}
           {{ range $i, $e := .Params.faq_item }}
-          <div class="accordion-item p-1 mb-2">
+          <div class="accordion-item p-1 mb-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="{{ mul $i 80 }}">
             <h2 class="accordion-header accordion-button h5 border-0 {{if eq $i 0 }}active{{end}}" id="heading-{{ sha1 .title | urlize }}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ sha1 .title | urlize }}" aria-expanded="{{if eq $i 0 }}true{{else}}false{{end}}" aria-controls="collapse-{{ sha1 .title | urlize }}">{{ .title | markdownify }}
             </h2>
             <div id="collapse-{{ sha1 .title | urlize }}" class="accordion-collapse collapse border-0 {{if eq $i 0 }}show{{end}}" aria-labelledby="heading-{{ sha1 .title | urlize }}" data-bs-parent="#accordionFAQ">
