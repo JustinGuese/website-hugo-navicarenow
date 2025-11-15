@@ -282,4 +282,47 @@
 {{ end }}
 <!-- /team -->
 
+<!-- Founder Details -->
+{{ with .Params.founder_details }}
+{{ if .enable }}
+<section class="section bg-tertiary">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <p class="text-primary text-uppercase fw-bold mb-3">{{ .subtitle | markdownify }}</p>
+        <h2 class="h1">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+    
+    {{ range $i, $founder := .founders }}
+    <div class="row align-items-center mb-5 {{ if eq (mod $i 2) 1 }}flex-row-reverse{{ end }}">
+      <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+        {{ if $founder.image }}
+        {{ if fileExists (add `assets/` $founder.image) }}
+        {{$img:= resources.Get ($founder.image) }}
+        {{$img:= $img.Resize "400x webp"}}
+        <img loading="lazy" decoding="async" src="{{$img.RelPermalink}}" alt="{{$founder.name}}" class="rounded shadow-lg w-100" width="{{$img.Width}}" height="{{$img.Height}}">
+        {{ end }}
+        {{ end }}
+        <h3 class="mt-4 mb-2">{{ $founder.name }}</h3>
+        <p class="text-primary fw-bold">{{ $founder.role }}</p>
+      </div>
+      <div class="col-lg-8">
+        <div class="ps-0 {{ if eq (mod $i 2) 0 }}ps-lg-5{{ else }}pe-lg-5{{ end }}">
+          {{ range $founder.expertise }}
+          <div class="mb-4 p-4 bg-white rounded shadow-sm">
+            <h4 class="h5 text-primary mb-3"><i class="fas fa-check-circle me-2"></i>{{ .title }}</h4>
+            <p class="mb-0">{{ .description }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /Founder Details -->
+
 {{ end }}
