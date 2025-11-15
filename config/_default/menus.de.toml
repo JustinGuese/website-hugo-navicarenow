@@ -1,4 +1,10 @@
 # main menu
+
+[[main]]
+name = "Für Pflegeheime"
+url = "fuer-pflegeheime/"
+weight = 1
+
 [[main]]
 name = "Über uns"
 url = "about/"

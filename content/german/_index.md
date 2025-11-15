@@ -2,37 +2,41 @@
 ############################ Banner ##################################
 banner:
   enable: true
-  title: 'Wenn Orientierung fehlt, sind wir der Kompass, der zählt'
-  subtitle: 'Digitale Pflegeunterstützung, die den Alltag zu Hause wirklich leichter macht.
-  Navicare Now ist Ihre ganzheitliche digitale Plattform für häusliche Pflege. Wir verbinden pflegebedürftige Menschen, Angehörige, Pflegeinstitutionen und internationale Pflegekräfte – durch smarte Technologie, verständliche Informationen und persönliche Beratung. Alles an einem Ort.'
+  title: 'Plötzlich Pflegefall? Sie sind nicht allein.'
+  subtitle: 'Job, Familie, Behörden – und jetzt auch Pflege? Wir helfen Ihnen sofort mit den wichtigsten Antworten, einem kostenlosen Fragebogen für Ihre Situation und persönlicher Erstberatung. Verschaffen Sie sich in 5 Minuten Klarheit über Ihre Möglichkeiten.'
   button:
     enable: true
-    label: 'Gratis Erstgespräch'
-    icon: 'fas fa-arrow-right'
+    label: 'Jetzt Fragebogen starten'
+    icon: 'fas fa-clipboard-check'
+    button_modal_target: '/fragebogen/'
+  button_secondary:
+    enable: true
+    label: 'Gratis Erstberatung'
+    icon: 'fas fa-phone'
     button_modal_target: '/kontakt/'
   image: 'images/banner/hands-4344711_1280.jpg'
 
 ############################ Challenge ##################################
 challenge:
   enable: true
-  title: "Die Herausforderung: Pflege überfordert Millionen"
-  subtitle: "Doch niemand sollte das allein meistern müssen!"
+  title: "Diese Fragen stellen sich jetzt"
+  subtitle: "Wir geben Ihnen die Antworten – sofort und konkret"
   
   problems:
-    - title: "Über 5 Millionen Pflegebedürftige in Deutschland"
-      icon: "fas fa-users"
-      description: "Mehr als 80% aller Pflegebedürftigen werden zu Hause von ihren Familien versorgt. Bis zu 10 Millionen Menschen sind direkt oder indirekt in die häusliche Pflege eingebunden – häufig ohne ausreichende Unterstützung und überfordert vom komplexen Pflegesystem und der täglichen Verantwortung.
+    - title: "Wie vereinbare ich Pflege mit meinem Job?"
+      icon: "fas fa-briefcase"
+      description: "Teilzeit, Pflegezeit, Familienpflegezeit – welche Optionen habe ich? Was bedeutet das finanziell? Wie spreche ich mit meinem Arbeitgeber? Kann ich gekündigt werden?
       
       
-      Pflegende Angehörige kämpfen mit bürokratischen Hürden, unklaren Ansprüchen und chronischem Stress. Wichtige Hilfsleistungen bleiben oft ungenutzt, weil Betroffene schlicht nicht wissen, wo sie anfangen sollen."
+      Unser kostenloser Fragebogen ermittelt Ihre rechtlichen Ansprüche auf Pflegeunterstützungsgeld, Freistellung und finanzielle Hilfen. In der Erstberatung klären wir mit Ihnen, wie Sie Beruf und Pflege realistisch organisieren können."
       
-    - title: "Bis 2030: Über 6 Millionen Pflegebedürftige"
-      subtitle: "Das System steht unter Druck"
-      icon: "fas fa-chart-line"
-      description: "Der demografische Wandel verschärft die Krise dramatisch: Immer mehr ältere Menschen treffen auf immer weniger Pflegekräfte. Pflegeeinrichtungen kämpfen mit Fachkräftemangel und Zeitdruck und internationale Pflegekräfte stoßen auf Sprach- und Integrationsbarrieren.
+    - title: "Was kostet Pflege – und wer zahlt das?"
+      subtitle: "Finanzielle Klarheit in 5 Minuten"
+      icon: "fas fa-euro-sign"
+      description: "Pflegegrad, Pflegegeld, Sachleistungen, Kombinationsleistungen – das System ist kompliziert. Welche Kosten kommen auf mich zu? Reicht die Pflegeversicherung? Muss ich mein Erspartes einsetzen?
       
       
-      Es besteht dringender Handlungsbedarf für neue Lösungen, die Angehörige entlasten, Einrichtungen effizienter machen, Pflegekräfte integrieren und den Pflegealltag wieder menschlicher machen."
+      Unser interaktiver Fragebogen berechnet individuell, welche Förderungen und Zuschüsse Ihnen zustehen. Wir zeigen Ihnen konkrete Summen und nächste Schritte – damit Sie sofort Planungssicherheit haben."
 
 ############################ Homepage Service ##################################
 services:
@@ -42,19 +46,19 @@ services:
 difference_of_us:
   enable: true
   image: "about/computer-767776_1280.jpg"
-  subtitle: 'Wir machen Pflege zugänglich'
-  title: 'Navicare Now vereint Menschlichkeit, Struktur und digitale Intelligenz'
-  description: 'Pflege überfordert Millionen in Deutschland – doch niemand muss das alleine stemmen. Wir schließen die Lücke zwischen Familien, Einrichtungen und internationalen Fachkräften und bringen mit smarten Tools und empathischer Beratung echte Entlastung.'
+  subtitle: 'Warum Navicare Now anders ist'
+  title: 'Wir kombinieren Expertise, Technik und echtes Verständnis'
+  description: 'Sie sind berufstätig, haben wenig Zeit und plötzlich einen Pflegefall in der Familie. Wir wissen, wie überfordernd das ist – und haben die Antworten, die Sie jetzt brauchen.'
   item:
-    - title: 'Kompass durch das Pflegesystem'
-      icon: 'fas fa-compass'
-      description: 'Ein zentraler Informations-Hub mit Checklisten, Formularen und sofort verfügbaren Antworten auf die drängendsten Fragen.'
-    - title: 'Digital & menschlich'
-      icon: 'fas fa-heart'
-      description: 'Personalisierte Pflegeplanung, persönliche Gespräche und eine KI, die dauerhaft dazulernt und Empfehlungen gibt.'
-    - title: 'Integration, die verbindet'
-      icon: 'fas fa-users'
-      description: 'Sprachmodule, Trainings und kulturelle Begleitung für internationale Pflegekräfte und die Einrichtungen, die sie brauchen.'
+    - title: 'Sofort nutzbar – ohne Vorkenntnisse'
+      icon: 'fas fa-rocket'
+      description: 'Fragebogen ausfüllen, Erstberatung buchen – fertig. Keine komplizierten Registrierungen, keine Wartezeiten. Sie bekommen sofort konkrete Ergebnisse und nächste Schritte.'
+    - title: 'Aus der Praxis – für die Praxis'
+      icon: 'fas fa-hands-helping'
+      description: 'Unsere Gründerin ist examinierte Pflegefachkraft und selbst pflegende Mutter. Wir kennen die echten Probleme – und liefern Lösungen, die wirklich funktionieren.'
+    - title: 'Kostenlos starten – flexibel weitermachen'
+      icon: 'fas fa-gift'
+      description: 'Fragebogen und Erstberatung sind komplett gratis. Danach entscheiden Sie selbst, welche Unterstützung Sie weiter nutzen möchten. Keine versteckten Kosten.'
 
 ############################ About Ourselves ##################################
 about_ourselves:
@@ -67,20 +71,20 @@ about_ourselves:
 ############################ Homepage Tab ##################################
 homepage_tab:
   enable: true
-  subtitle: 'Unsere Antwort auf die Krise der häuslichen Pflege'
-  title: 'Was Navicare Now für Sie tut'
+  subtitle: 'Sofort handlungsfähig werden'
+  title: 'So helfen wir Ihnen jetzt – in 3 Schritten'
 
   tablist:
-    - title: 'Digitale Pflegeakte & KI-Matching'
-      description: 'Alle Informationen, Risiken und Handlungsschritte sicher an einem Ort. Die smarte Akte empfiehlt Maßnahmen und unterstützt bei Entscheidungen.'
+    - title: '1. Kostenloser Fragebogen (5 Min.)'
+      description: 'Beantworten Sie kurze Fragen zu Ihrer Situation. Unser System ermittelt automatisch: Welcher Pflegegrad kommt infrage? Welche Förderungen stehen Ihnen zu? Welche Pflegeheime oder Dienste passen? Sie erhalten sofort eine individuelle Ersteinschätzung.'
       image: 'images/payment-info.webp'
 
-    - title: 'Interaktiver Alltagshelfer'
-      description: 'Aufgabenlisten, Erinnerungen und Alltagstipps werden automatisch erstellt und begleiten Angehörige und Pflegekräfte im Tagesablauf.'
+    - title: '2. Gratis Erstberatung (30 Min.)'
+      description: 'Buchen Sie einen Termin mit unseren Pflegeexpert:innen. Wir besprechen Ihre Situation, klären offene Fragen zu Finanzen, Recht und Organisation – und erstellen gemeinsam einen ersten Fahrplan. Unverbindlich und kostenfrei.'
       image: 'images/illustration-2.png'
 
-    - title: 'Schulungen & Community'
-      description: 'Videos, Sprachmodule, Schulungen und geschützte Räume für Austausch bringen Wissen in die Familien, Einrichtungen und international Teams.'
+    - title: '3. Digitale Begleitung & Unterstützung'
+      description: 'Nach Bedarf begleiten wir Sie weiter: mit digitaler Pflegeakte, Alltagsorganisation, Schulungen und persönlichem Matching zu Pflegediensten oder -heimen. Sie entscheiden, was Sie brauchen.'
       image: 'images/illustration-1.png'
 
 ############################ testimonials ##################################
