@@ -505,13 +505,13 @@ if (typeof AOS !== 'undefined') {
         <ul class="payment_info_tab nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
           {{ range $i, $t := .tablist }}
           <li class="nav-item m-2" role="presentation">
-            <a class="nav-link btn btn-outline-primary effect-none text-dark {{if eq $i 0}}active{{end}}" id="pills-{{.title | lower | urlize}}-tab" data-bs-toggle="pill" href="#pills-{{.title | lower | urlize}}" role="tab" aria-controls="pills-{{.title | lower | urlize}}" aria-selected="true">{{.title}}</a>
+            <a class="nav-link btn btn-outline-primary effect-none text-dark {{if eq $i 0}}active{{end}}" id="pills-tab-{{ $i }}-tab" data-bs-toggle="tab" data-bs-target="#pills-tab-{{ $i }}" href="#pills-tab-{{ $i }}" role="tab" aria-controls="pills-tab-{{ $i }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}">{{ .title }}</a>
           </li>
           {{end}}
         </ul>
         <div class="rounded shadow bg-white p-5 tab-content" id="pills-tabContent">
           {{range $i, $t := .tablist}}
-          <div class="tab-pane fade {{if eq $i 0}}show active{{end}}" id="pills-{{.title | lower | urlize}}" role="tabpanel" aria-labelledby="pills-{{.title | lower | urlize}}-tab">
+          <div class="tab-pane fade {{if eq $i 0}}show active{{end}}" id="pills-tab-{{ $i }}" role="tabpanel" aria-labelledby="pills-tab-{{ $i }}-tab">
             <div class="row align-items-center">
               <div class="col-md-6 order-1 order-md-0">
                 <div class="content-block">
