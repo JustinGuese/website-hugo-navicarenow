@@ -6,9 +6,9 @@ banner:
   subtitle: 'Job, Familie, Behörden – und jetzt auch Pflege? Wir helfen Ihnen sofort mit den wichtigsten Antworten, einem kostenlosen Fragebogen für Ihre Situation und persönlicher Erstberatung. Verschaffen Sie sich in 5 Minuten Klarheit über Ihre Möglichkeiten.'
   button:
     enable: true
-    label: 'Jetzt Fragebogen starten'
+    label: 'Förderungscheck-Fragebogen (5min)'
     icon: 'fas fa-clipboard-check'
-    button_modal_target: '/fragebogen/'
+    button_modal_target: 'https://form.jotform.com/Julia_Camara/pflegebeduerftige-menschen'
   button_secondary:
     enable: true
     label: 'Gratis Erstberatung'

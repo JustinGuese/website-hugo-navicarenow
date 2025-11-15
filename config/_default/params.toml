@@ -26,8 +26,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation buttons
 [navigation_button_solid]
 enable = true
-label = "Kostenloses Erstgespräch"
-link = "/kontakt"
+label = "Förderungscheck"
+link = "https://form.jotform.com/Julia_Camara/pflegebeduerftige-menschen"
 
 [navigation_button_bordered]
 enable = true
