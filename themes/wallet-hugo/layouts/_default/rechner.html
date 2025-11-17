@@ -19,10 +19,92 @@
             #pflegeForm .form-select option {
               color: #0f172a;
             }
+            .tooltip-icon {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 18px;
+              height: 18px;
+              background: #6366f1;
+              color: white;
+              border-radius: 50%;
+              font-size: 12px;
+              cursor: help;
+              margin-left: 4px;
+              position: relative;
+              outline: none;
+            }
+            .tooltip-icon::after {
+              content: attr(data-tooltip);
+              position: absolute;
+              left: 50%;
+              top: 120%;
+              transform: translate(-50%, 8px) scale(0.95);
+              transform-origin: top center;
+              background: rgba(17, 24, 39, 0.95);
+              color: #fff;
+              padding: 6px 10px;
+              border-radius: 6px;
+              font-size: 12px;
+              white-space: normal;
+              text-align: left;
+              max-width: 240px;
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.2s ease, transform 0.2s ease;
+              z-index: 20;
+            }
+            .tooltip-icon::before {
+              content: '';
+              position: absolute;
+              left: 50%;
+              top: 100%;
+              width: 0;
+              height: 0;
+              transform: translateX(-50%) translateY(6px);
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid rgba(17, 24, 39, 0.95);
+              opacity: 0;
+              transition: opacity 0.2s ease, transform 0.2s ease;
+              z-index: 20;
+            }
+            .tooltip-icon:focus-visible::after,
+            .tooltip-icon:hover::after {
+              opacity: 1;
+              transform: translate(-50%, 18px) scale(1);
+            }
+            .tooltip-icon:focus-visible::before,
+            .tooltip-icon:hover::before {
+              opacity: 1;
+              transform: translate(-50%, 0);
+            }
+            .foerderung-card {
+              border: 2px solid #e2e8f0;
+              border-radius: 8px;
+              padding: 12px;
+              transition: all 0.3s ease;
+              opacity: 0.4;
+              background: #f8fafc;
+            }
+            .foerderung-card.active {
+              opacity: 1;
+              border-color: #10b981;
+              background: #ecfdf5;
+            }
+            .foerderung-card.active .badge {
+              background: #10b981;
+            }
+            .foerderung-card .badge {
+              background: #94a3b8;
+            }
           </style>
           <form id="pflegeForm" class="row g-3">
             <div class="col-sm-4">
-              <label class="form-label" for="pflegegrad">Pflegegrad</label>
+              <label class="form-label" for="pflegegrad">
+                Pflegegrad
+                <span class="tooltip-icon" data-tooltip="Pflegegrad 1-5: Bestimmt die Höhe der Leistungen. Grad 1 = geringe, Grad 5 = schwerste Beeinträchtigung" aria-label="Pflegegrad 1-5: Bestimmt die Höhe der Leistungen. Grad 1 = geringe, Grad 5 = schwerste Beeinträchtigung">?</span>
+              </label>
               <select id="pflegegrad" class="form-select" data-trigger="input">
                 <option value="1">Pflegegrad 1</option>
                 <option value="2">Pflegegrad 2</option>
@@ -33,7 +115,10 @@
               <div class="form-text" id="pflegegradLabel">Aktuell: Pflegegrad 1</div>
             </div>
             <div class="col-sm-4">
-              <label class="form-label" for="pflegeform">Pflegeform</label>
+              <label class="form-label" for="pflegeform">
+                Pflegeform
+                <span class="tooltip-icon" data-tooltip="Selbst = durch Angehörige, Ambulant = Pflegedienst kommt nach Hause, Teilstationär = Tages-/Nachtpflege, Stationär = Pflegeheim" aria-label="Selbst = durch Angehörige, Ambulant = Pflegedienst kommt nach Hause, Teilstationär = Tages-/Nachtpflege, Stationär = Pflegeheim">?</span>
+              </label>
               <select id="pflegeform" class="form-select" data-trigger="input">
                 <option value="selbst">Selbst gepflegt</option>
                 <option value="ambulant">Ambulant</option>
@@ -43,45 +128,72 @@
               <div class="form-text" id="pflegeformLabel">Aktuell: Selbst gepflegt</div>
             </div>
             <div class="col-sm-4">
-              <label class="form-label" for="arbeitszeit">Arbeitszeit-Reduktion (%)</label>
+              <label class="form-label" for="arbeitszeit">
+                Arbeitszeit-Reduktion (%)
+                <span class="tooltip-icon" data-tooltip="Wie viel Prozent Ihrer Arbeitszeit würden Sie für die Pflege reduzieren? 0% = Vollzeit weiterarbeiten, 100% = komplett aufhören" aria-label="Wie viel Prozent Ihrer Arbeitszeit würden Sie für die Pflege reduzieren? 0% = Vollzeit weiterarbeiten, 100% = komplett aufhören">?</span>
+              </label>
               <input id="arbeitszeit" type="number" min="0" max="100" value="20" class="form-control" data-trigger="input">
             </div>
 
             <div class="col-sm-6">
-              <label class="form-label" for="einkommen">Jahresbrutto (€)</label>
-              <input id="einkommen" type="number" min="0" step="100" value="48000" class="form-control" data-trigger="input">
+              <label class="form-label" for="einkommen">
+                Jahresbrutto (€)
+                <span class="tooltip-icon" data-tooltip="Ihr jährliches Bruttoeinkommen - wichtig für Steuerberechnung und Familienpflegezeit-Darlehen" aria-label="Ihr jährliches Bruttoeinkommen - wichtig für Steuerberechnung und Familienpflegezeit-Darlehen">?</span>
+              </label>
+              <input id="einkommen" type="number" min="0" step="100" value="29000" class="form-control" data-trigger="input">
             </div>
             <div class="col-sm-6">
-              <label class="form-label" for="netto">Nettostundenlohn (€)</label>
-              <input id="netto" type="number" min="0" step="0.1" value="25" class="form-control" data-trigger="input">
+              <label class="form-label" for="netto">
+                Nettostundenlohn (€)
+                <span class="tooltip-icon" data-tooltip="Ihr Nettoverdienst pro Stunde nach Steuern und Sozialabgaben - für Berechnung des Einkommensverlusts" aria-label="Ihr Nettoverdienst pro Stunde nach Steuern und Sozialabgaben - für Berechnung des Einkommensverlusts">?</span>
+              </label>
+              <input id="netto" type="number" min="0" step="0.1" value="13" class="form-control" data-trigger="input">
             </div>
             <div class="col-sm-6">
-              <label class="form-label" for="stunden">Arbeitszeit pro Woche</label>
+              <label class="form-label" for="stunden">
+                Arbeitszeit pro Woche
+                <span class="tooltip-icon" data-tooltip="Ihre reguläre Wochenarbeitszeit in Stunden (z.B. 38h Vollzeit)" aria-label="Ihre reguläre Wochenarbeitszeit in Stunden (z.B. 38h Vollzeit)">?</span>
+              </label>
               <input id="stunden" type="number" min="0" max="60" value="38" class="form-control" data-trigger="input">
             </div>
             <div class="col-sm-6">
-              <label class="form-label" for="monate">Pflege-Dauer (Monate)</label>
+              <label class="form-label" for="monate">
+                Pflege-Dauer (Monate)
+                <span class="tooltip-icon" data-tooltip="Geplante Dauer der Pflege - relevant für Umbauzuschüsse und Darlehensberechnung" aria-label="Geplante Dauer der Pflege - relevant für Umbauzuschüsse und Darlehensberechnung">?</span>
+              </label>
               <input id="monate" type="number" min="1" value="12" class="form-control" data-trigger="input">
             </div>
 
             <div class="col-sm-6">
-              <label class="form-label" for="kvTyp">Krankenversicherung</label>
+              <label class="form-label" for="kvTyp">
+                Krankenversicherung
+                <span class="tooltip-icon" data-tooltip="Gesetzlich Versicherte haben Anspruch auf Pflegeunterstützungsgeld (90% Netto für 10 Tage)" aria-label="Gesetzlich Versicherte haben Anspruch auf Pflegeunterstützungsgeld (90% Netto für 10 Tage)">?</span>
+              </label>
               <select id="kvTyp" class="form-select" data-trigger="input">
                 <option value="gesetzlich">Gesetzlich</option>
                 <option value="privat">Privat</option>
               </select>
             </div>
             <div class="col-sm-6">
-              <label class="form-label" for="bundesland">Bundesland (optional)</label>
-              <input id="bundesland" type="text" class="form-control" placeholder="z. B. Berlin" data-trigger="input">
+              <label class="form-label" for="bundesland">
+                Bundesland (optional)
+                <span class="tooltip-icon" data-tooltip="Manche Bundesländer bieten zusätzliche Programme (z.B. Berlin: Startbonus Pflegekind 924€/Monat)" aria-label="Manche Bundesländer bieten zusätzliche Programme (z.B. Berlin: Startbonus Pflegekind 924€/Monat)">?</span>
+              </label>
+              <input id="bundesland" type="text" class="form-control" placeholder="z. B. Berlin" data-trigger="input">
             </div>
 
             <div class="col-sm-6">
-              <label class="form-label" for="gdb">GdB (0–100)</label>
+              <label class="form-label" for="gdb">
+                GdB (0–100)
+                <span class="tooltip-icon" data-tooltip="Grad der Behinderung: Ab GdB 20 erhalten Sie Behinderten-Pauschbetrag (384€-2.840€ jährlich)" aria-label="Grad der Behinderung: Ab GdB 20 erhalten Sie Behinderten-Pauschbetrag (384€-2.840€ jährlich)">?</span>
+              </label>
               <input id="gdb" type="number" min="0" max="100" value="0" class="form-control" data-trigger="input">
             </div>
             <div class="col-sm-6">
-              <label class="form-label" for="steuerpflicht">Steuerpflichtig?</label>
+              <label class="form-label" for="steuerpflicht">
+                Steuerpflichtig?
+                <span class="tooltip-icon" data-tooltip="Wenn ja, können Sie Pflege-Pauschbetrag und andere steuerliche Vorteile nutzen" aria-label="Wenn ja, können Sie Pflege-Pauschbetrag und andere steuerliche Vorteile nutzen">?</span>
+              </label>
               <select id="steuerpflicht" class="form-select" data-trigger="input">
                 <option value="true">Ja</option>
                 <option value="false">Nein</option>
@@ -108,17 +220,9 @@
         </div>
 
         <div class="card shadow-sm border-0 p-4 mt-4">
-          <h2 class="h5 mb-3">Highlights aus der Entscheidungstabelle</h2>
-          <div class="list-group list-group-flush">
-            <div class="list-group-item p-3">
-              <strong>Pflegeversicherung R1‑R7:</strong> Pflegegeld, Pflegesachleistungen, Entlastungsbetrag (131 €) sowie Kurzzeit-/Verhinderungspflege sichern die häusliche Versorgung.
-            </div>
-            <div class="list-group-item p-3">
-              <strong>R10‑R11:</strong> Pflegeunterstützungsgeld (90 % Netto), Familienpflegezeit-Darlehen und Steuerentlastungen gleichen Einkommensverluste aus.
-            </div>
-            <div class="list-group-item p-3">
-              <strong>Umbau & Region:</strong> Wohnumfeld-Zuschuss 4.180 €, KfW-Programme, Landesmittel (Startbonus Berlin, Bayern/BW/NRW) sowie Hilfe zur Pflege.</div>
-          </div>
+          <h2 class="h5 mb-3">Ihre aktiven Förderungen</h2>
+          <p class="small text-muted">Basierend auf Ihren Eingaben werden relevante Förderungen automatisch aktiviert</p>
+          <div id="foerderungCards" class="row g-3 mt-2"></div>
         </div>
       </div>
 
@@ -190,6 +294,29 @@
       stationär: 'Stationär'
     };
 
+    // Förderung definitions with decision rules
+    const foerderungen = [
+      { id: 'R1', category: 'Pflegeversicherung', title: 'Pflegegeld', description: 'Monatliche Zahlung bei häuslicher Pflege durch Angehörige', amount: 'PG2-5: 347€-990€', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 2 && d.pflegeform === 'selbst' && d.selbstpflege },
+      { id: 'R5', category: 'Pflegeversicherung', title: 'Entlastungsbetrag', description: 'Monatlicher Zuschuss für Betreuungs- und Entlastungsangebote', amount: '131€/Monat', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 1 },
+      { id: 'R2', category: 'Pflegeversicherung', title: 'Pflegesachleistungen', description: 'Kostenübernahme für ambulante Pflegedienste', amount: 'PG2-5: 796€-2.299€', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 2 && d.pflegeform === 'ambulant' },
+      { id: 'R3', category: 'Pflegeversicherung', title: 'Kombinationsleistung', description: 'Anteilige Kombination von Pflegegeld und Pflegesachleistungen', amount: 'Anteilig', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 2 && d.pflegeform === 'ambulant' && d.selbstpflege },
+      { id: 'R6', category: 'Pflegeversicherung', title: 'Verhinderungspflege', description: 'Ersatzpflege wenn Hauptpflegeperson verhindert ist', amount: 'Bis 1.685€/Jahr', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 2 && d.selbstpflege && d.ersatzpflege },
+      { id: 'R7', category: 'Pflegeversicherung', title: 'Kurzzeitpflege', description: 'Stationäre Ersatzpflege für begrenzte Zeit', amount: 'Bis 1.854€/Jahr', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 2 && d.selbstpflege },
+      { id: 'R1b', category: 'Pflegeversicherung', title: 'Pflegehilfsmittel', description: 'Zuschuss für Verbrauchsmaterialien (Handschuhe, Desinfektionsmittel)', amount: '42€/Monat', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.pflegegrad >= 1 },
+      { id: 'R10', category: 'Einkommen', title: 'Pflegeunterstützungsgeld', description: 'Lohnersatz für 10 Tage bei akuter Pflegesituation', amount: '90% Netto (max. 128,63€/Tag)', link: 'https://www.bundesgesundheitsministerium.de/pflegeunterstuetzungsgeld', rule: (d) => d.kvTyp === 'gesetzlich' },
+      { id: 'R11', category: 'Einkommen', title: 'Familienpflegezeit', description: 'Zinsgünstiges Darlehen für Lohnausfall bei Arbeitszeitreduktion', amount: 'Darlehen', link: 'https://www.wege-zur-pflege.de/familienpflegezeit', rule: (d) => d.arbeitszeit > 0 },
+      { id: 'R20', category: 'Umbau', title: 'Wohnumfeld-Zuschuss', description: 'Pflegekasse bezuschusst barrierefreie Umbauten', amount: 'Bis 4.180€', link: 'https://www.bundesgesundheitsministerium.de/pflegeversicherung', rule: (d) => d.wohnumfeld && d.pflegegrad >= 1 },
+      { id: 'R21', category: 'Umbau', title: 'KfW 455-B Zuschuss', description: 'Investitionszuschuss für altersgerechten Umbau', amount: 'Bis 6.250€', link: 'https://www.kfw.de/455', rule: (d) => d.wohnumfeld },
+      { id: 'R22', category: 'Umbau', title: 'KfW 159 Kredit', description: 'Günstiger Kredit für Barrierereduzierung', amount: 'Bis 50.000€', link: 'https://www.kfw.de/159', rule: (d) => d.wohnumfeld },
+      { id: 'R30', category: 'Landesprogramme', title: 'Startbonus Pflegekind (Berlin)', description: 'Monatlicher Bonus für Pflegeeltern bei Arbeitszeitreduktion', amount: '924€/Monat', link: 'https://www.berlin.de/sen/jugend/familie-und-kinder/pflegefamilien/', rule: (d) => d.bundesland.toLowerCase().includes('berlin') },
+      { id: 'R31', category: 'Landesprogramme', title: 'Landesbudgets (BY/BW/NRW)', description: 'Regionale Zuschüsse für Betreuung und Entlastung', amount: 'Je nach Land', link: '', rule: (d) => ['bayern', 'baden', 'nordrhein'].some(l => d.bundesland.toLowerCase().includes(l)) },
+      { id: 'R32', category: 'Landesprogramme', title: 'Hilfe zur Pflege', description: 'Sozialamt übernimmt Restkosten bei geringem Einkommen', amount: 'Bedarfsdeckend', link: 'https://www.sozialamt.org/hilfe-zur-pflege', rule: (d) => true }, // Always show as option
+      { id: 'R40', category: 'Steuer', title: 'Pflege-Pauschbetrag', description: 'Jährlicher Steuerfreibetrag für pflegende Angehörige', amount: '600€-1.800€/Jahr', link: 'https://www.finanztip.de/pflege-pauschbetrag/', rule: (d) => d.selbstpflege && d.pflegegrad >= 2 && d.steuerpflicht },
+      { id: 'R42', category: 'Steuer', title: 'Behinderten-Pauschbetrag', description: 'Steuerfreibetrag bei Behinderung', amount: '384€-2.840€/Jahr', link: 'https://www.finanztip.de/behinderten-pauschbetrag/', rule: (d) => d.gdb >= 20 && d.steuerpflicht },
+      { id: 'R43', category: 'Steuer', title: 'Haushaltsnahe Dienstleistungen', description: 'Steuerermäßigung für Pflege- und Betreuungsdienste', amount: '20% (max. 4.000€)', link: 'https://www.finanztip.de/haushaltsnahe-dienstleistungen/', rule: (d) => d.pflegeDurchAndere && d.steuerpflicht },
+      { id: 'R41', category: 'Steuer', title: 'Außergewöhnliche Belastungen', description: 'Absetzbare Pflegekosten über zumutbare Belastung hinaus', amount: 'Tatsächliche Kosten', link: 'https://www.finanztip.de/aussergewoehnliche-belastungen/', rule: (d) => d.steuerpflicht }
+    ];
+
     const formatEuro = value => value.toLocaleString('de-DE', {minimumFractionDigits: 0, maximumFractionDigits: 0});
     const fillList = (elementId, entries) => {
       const element = document.getElementById(elementId);
@@ -199,6 +326,39 @@
       document.getElementById(elementId).textContent = formatEuro(value);
     };
 
+    function renderFoerderungCards(data) {
+      const container = document.getElementById('foerderungCards');
+      const categories = ['Pflegeversicherung', 'Einkommen', 'Umbau', 'Landesprogramme', 'Steuer'];
+      
+      let html = '';
+      categories.forEach(cat => {
+        const items = foerderungen.filter(f => f.category === cat);
+        items.forEach(item => {
+          const isActive = item.rule(data);
+          const activeClass = isActive ? 'active' : '';
+          const statusBadge = isActive ? 'Aktiv' : 'Inaktiv';
+          const linkHtml = item.link ? `<a href="${item.link}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Mehr Info</a>` : '';
+          
+          html += `
+            <div class="col-md-6 col-lg-4">
+              <div class="foerderung-card ${activeClass}">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <span class="badge">${item.id}</span>
+                  <span class="badge">${statusBadge}</span>
+                </div>
+                <h6 class="mb-1">${item.title}</h6>
+                <p class="small text-muted mb-1">${item.description}</p>
+                <p class="small fw-bold mb-0">${item.amount}</p>
+                ${linkHtml}
+              </div>
+            </div>
+          `;
+        });
+      });
+      
+      container.innerHTML = html;
+    }
+
     function updateResults () {
       const pflegegrad = Number(document.getElementById('pflegegrad').value);
       const pflegeform = document.getElementById('pflegeform').value;
@@ -207,15 +367,24 @@
       const stunden = Number(document.getElementById('stunden').value);
       const monate = Number(document.getElementById('monate').value) || 1;
       const kvTyp = document.getElementById('kvTyp').value;
-      const bundesland = document.getElementById('bundesland').value.toLowerCase();
+      const bundesland = document.getElementById('bundesland').value;
       const gdb = Number(document.getElementById('gdb').value);
       const selbstpflege = document.getElementById('selbstpflege').checked;
       const ersatzpflege = document.getElementById('ersatzpflege').checked;
       const wohnumfeld = document.getElementById('wohnumfeld').checked;
       const pflegeDurchAndere = document.getElementById('pflegeDurchAndere').checked;
+      const steuerpflicht = document.getElementById('steuerpflicht').value === 'true';
+
+      const data = {
+        pflegegrad, pflegeform, arbeitszeit, netto, stunden, monate,
+        kvTyp, bundesland, gdb, selbstpflege, ersatzpflege,
+        wohnumfeld, pflegeDurchAndere, steuerpflicht
+      };
 
       document.getElementById('pflegegradLabel').textContent = `Aktuell: Pflegegrad ${pflegegrad}`;
       document.getElementById('pflegeformLabel').textContent = `Aktuell: ${pflegeformLabels[pflegeform] || pflegeform}`;
+
+      renderFoerderungCards(data);
 
       const monatsnetto = netto * stunden * 4.33;
       const entgangenesNetto = Math.round(monatsnetto * arbeitszeit);
@@ -226,14 +395,13 @@
       const hilfsmittel = pflegegrad >= 1 ? 42 : 0;
       const kombiGain = selbstpflege && pflegeform === 'ambulant' ? Math.round((pflegegeldBetrag + sachleistung) * 0.15) : 0;
 
-      const steuerpflicht = document.getElementById('steuerpflicht').value === 'true';
       const pauschale = selbstpflege && pflegegrad >= 2 && steuerpflicht ? (pauschbetrag[pflegegrad] || 0) : 0;
       const behindertenBonus = gdb >= 20 ? Math.min(2840, gdb * 28) : 0;
       const haushaltsnahe = pflegeDurchAndere ? Math.min(4000, pflegeKosten * 0.2) : 0;
       const pflegeUnterstuetzung = kvTyp === 'gesetzlich' && pflegeDurchAndere ? Math.round(entgangenesNetto * 0.9) : 0;
       const familienpflege = arbeitszeit > 0 ? Math.round(entgangenesNetto * 0.25) : 0;
       const wohnumfeldBonus = wohnumfeld ? Math.round(4180 / Math.max(monate, 6)) : 0;
-      const berlinBonus = bundesland.includes('berlin') ? Math.round(924 / 12) : 0;
+      const berlinBonus = bundesland.toLowerCase().includes('berlin') ? Math.round(924 / 12) : 0;
 
       const sumSelbst = Math.round(
         pflegegeldBetrag +

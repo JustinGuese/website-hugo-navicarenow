@@ -1,0 +1,1222 @@
+{{ define "main" }}
+
+<style>
+/* Compact section padding for formular page */
+.section {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+</style>
+
+<section class="section">
+  <div class="container">
+    <!-- Progress Bar -->
+    <div class="row justify-content-center mb-3">
+      <div class="col-lg-10">
+        <div class="form-progress-wrapper mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="text-muted small">Fortschritt</span>
+            <span class="text-muted small"><span id="progressPercent">0</span>% abgeschlossen</span>
+          </div>
+          <div class="progress" style="height: 8px; border-radius: 10px;">
+            <div class="progress-bar bg-primary" role="progressbar" id="progressBar" style="width: 0%; transition: width 0.3s ease;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Header -->
+    <div class="row justify-content-center mb-3">
+      <div class="col-lg-10">
+        <div class="text-center">
+          <h1 class="display-5 mb-3" style="font-size: 2rem;">Fragebogen pflegebedürftige Menschen</h1>
+          <div class="lead text-muted mb-3" style="max-width: 800px; margin: 0 auto; font-size: 1rem;">
+            <p>Pflege bedeutet oft viele Fragen, Unsicherheiten und organisatorische Hürden – gerade, wenn man selbst betroffen ist. Mit Navicare Now möchten wir Ihnen das Leben leichter machen: Wir schaffen Orientierung, geben Sicherheit und helfen dabei, passende Unterstützung zu finden.</p>
+            <p class="mb-0">Damit wir unser Angebot genau auf Ihre Bedürfnisse abstimmen können, bitten wir Sie um ein paar Minuten Zeit für diesen Fragebogen. Die Fragen sind leicht zu beantworten und helfen uns, besser zu verstehen: Was Ihnen im Alltag am meisten fehlt. Wobei Sie sich Entlastung wünschen. Und welche Unterstützung für Sie besonders wichtig ist.</p>
+            <p class="mt-3 mb-0"><strong>🎯 Unser Ziel: Sicherheit. Entlastung. Lebensqualität.</strong></p>
+            <p class="mt-2 mb-0"><small>Ihre Antworten sind selbstverständlich anonym und werden ausschließlich dafür genutzt, unsere Angebote zu verbessern. Vielen Dank, dass Sie uns mit Ihren Erfahrungen helfen!</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stepper Navigation -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10">
+        <ul class="stepper" id="formStepper">
+          <li class="stepper-step stepper-active" data-step="1">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">1</span></span>
+              <span class="stepper-head-text">Lebenssituation</span>
+            </div>
+          </li>
+          <li class="stepper-step" data-step="2">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">2</span></span>
+              <span class="stepper-head-text">Pflegebedarf</span>
+            </div>
+          </li>
+          <li class="stepper-step" data-step="3">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">3</span></span>
+              <span class="stepper-head-text">Medikamente</span>
+            </div>
+          </li>
+          <li class="stepper-step" data-step="4">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">4</span></span>
+              <span class="stepper-head-text">Belastung</span>
+            </div>
+          </li>
+          <li class="stepper-step" data-step="5">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">5</span></span>
+              <span class="stepper-head-text">Informationen</span>
+            </div>
+          </li>
+          <li class="stepper-step" data-step="6">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">6</span></span>
+              <span class="stepper-head-text">Zukunft</span>
+            </div>
+          </li>
+          <li class="stepper-step" data-step="7">
+            <div class="stepper-head">
+              <span class="stepper-head-icon"><span class="stepper-head-icon-text">7</span></span>
+              <span class="stepper-head-text">Finanzierung</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <form class="jotform-form" action="https://eu-submit.jotform.com/submit/252282128598061" method="post" name="form_252282128598061" id="252282128598061" accept-charset="utf-8" autocomplete="on" novalidate="true">
+          
+          <!-- Hidden Fields -->
+          <input type="hidden" name="formID" value="252282128598061">
+          <input type="hidden" id="JWTContainer" value="">
+          <input type="hidden" id="cardinalOrderNumber" value="">
+          <input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="">
+          <input type="hidden" id="submitSource" name="submitSource" value="mounted">
+          <input type="hidden" id="submitDate" name="submitDate" value="">
+          <input type="hidden" id="buildDate" name="buildDate" value="">
+          <input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload">
+          <input type="hidden" name="eventObserver" value="1">
+          <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="252282128598061-252282128598061">
+          <input type="hidden" name="event_id" value="">
+          <input type="hidden" name="timeToSubmit" value="0">
+
+          <!-- Section 1: Lebenssituation -->
+          <div class="form-section-card mb-4 stepper-content active" id="section-1" data-section="1">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">1. Lebenssituation</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Wie wohnen Sie aktuell?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_7_0" name="q7_wieWohnen[]" value="Allein">
+                      <label class="form-check-label" for="input_7_0">Allein</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_7_1" name="q7_wieWohnen[]" value="Mit Partner/in">
+                      <label class="form-check-label" for="input_7_1">Mit Partner/in</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_7_2" name="q7_wieWohnen[]" value="Mit Familie">
+                      <label class="form-check-label" for="input_7_2">Mit Familie</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_7_3" name="q7_wieWohnen[]" value="Betreutes Wohnen / Pflegeeinrichtung">
+                      <label class="form-check-label" for="input_7_3">Betreutes Wohnen / Pflegeeinrichtung</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_7_4" name="q7_wieWohnen[]" value="Sonstiges">
+                      <label class="form-check-label" for="input_7_4">Sonstiges</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Haben Sie einen anerkannten Pflegegrad?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_9_0" name="q9_habenSie[]" value="Pflegegrad 1">
+                      <label class="form-check-label" for="input_9_0">Pflegegrad 1</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_9_1" name="q9_habenSie[]" value="Pflegegrad 2">
+                      <label class="form-check-label" for="input_9_1">Pflegegrad 2</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_9_2" name="q9_habenSie[]" value="Pflegegrad 3">
+                      <label class="form-check-label" for="input_9_2">Pflegegrad 3</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_9_3" name="q9_habenSie[]" value="Pflegegrad 4 oder 5">
+                      <label class="form-check-label" for="input_9_3">Pflegegrad 4 oder 5</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_9_4" name="q9_habenSie[]" value="Nein">
+                      <label class="form-check-label" for="input_9_4">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Wer unterstützt Sie aktuell im Alltag? (Mehrfachauswahl möglich)</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_11_0" name="q11_werUnterstutzt[]" value="Angehörige">
+                      <label class="form-check-label" for="input_11_0">Angehörige</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_11_1" name="q11_werUnterstutzt[]" value="Freunde / Nachbarn">
+                      <label class="form-check-label" for="input_11_1">Freunde / Nachbarn</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_11_2" name="q11_werUnterstutzt[]" value="Ein Pflegedienst">
+                      <label class="form-check-label" for="input_11_2">Ein Pflegedienst</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_11_3" name="q11_werUnterstutzt[]" value="Einrichtungen (z. B. Tagespflege, Kurzzeitpflege)">
+                      <label class="form-check-label" for="input_11_3">Einrichtungen (z. B. Tagespflege, Kurzzeitpflege)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_11_4" name="q11_werUnterstutzt[]" value="Niemand">
+                      <label class="form-check-label" for="input_11_4">Niemand</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_11_5" name="q11_werUnterstutzt[]" value="Sonstige">
+                      <label class="form-check-label" for="input_11_5">Sonstige</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Pflege- und Unterstützungsbedarf -->
+          <div class="form-section-card mb-4 stepper-content" id="section-2" data-section="2">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">2. Pflege- und Unterstützungsbedarf</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Wobei benötigen Sie am meisten Unterstützung? (Mehrfachauswahl möglich)</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_0" name="q15_wobeiBenotigen[]" value="Körperpflege (Waschen, Anziehen …)">
+                      <label class="form-check-label" for="input_15_0">Körperpflege (Waschen, Anziehen …)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_1" name="q15_wobeiBenotigen[]" value="Ernährung / Mahlzeiten">
+                      <label class="form-check-label" for="input_15_1">Ernährung / Mahlzeiten</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_2" name="q15_wobeiBenotigen[]" value="Haushalt (Einkaufen, Kochen, Putzen …)">
+                      <label class="form-check-label" for="input_15_2">Haushalt (Einkaufen, Kochen, Putzen …)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_3" name="q15_wobeiBenotigen[]" value="Medikamente organisieren / einnehmen">
+                      <label class="form-check-label" for="input_15_3">Medikamente organisieren / einnehmen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_4" name="q15_wobeiBenotigen[]" value="Arztbesuche / Wege außer Haus">
+                      <label class="form-check-label" for="input_15_4">Arztbesuche / Wege außer Haus</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_5" name="q15_wobeiBenotigen[]" value="Organisatorisches (Behörden, Termine, Absprachen …)">
+                      <label class="form-check-label" for="input_15_5">Organisatorisches (Behörden, Termine, Absprachen …)</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Haben Sie regelmäßig Schmerzen oder körperliche Beschwerden?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_17_0" name="q17_habenSie17[]" value="Ja, stark">
+                      <label class="form-check-label" for="input_17_0">Ja, stark</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_17_1" name="q17_habenSie17[]" value="Ja, mäßig">
+                      <label class="form-check-label" for="input_17_1">Ja, mäßig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_17_2" name="q17_habenSie17[]" value="Eher selten">
+                      <label class="form-check-label" for="input_17_2">Eher selten</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_17_3" name="q17_habenSie17[]" value="Nein">
+                      <label class="form-check-label" for="input_17_3">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Wie selbstständig fühlen Sie sich im Alltag?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_0" name="q19_wieSelbststandig[]" value="Sehr selbstständig">
+                      <label class="form-check-label" for="input_19_0">Sehr selbstständig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_1" name="q19_wieSelbststandig[]" value="Teilweise selbstständig">
+                      <label class="form-check-label" for="input_19_1">Teilweise selbstständig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_2" name="q19_wieSelbststandig[]" value="Weniger selbstständig">
+                      <label class="form-check-label" for="input_19_2">Weniger selbstständig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_3" name="q19_wieSelbststandig[]" value="Gar nicht selbstständig">
+                      <label class="form-check-label" for="input_19_3">Gar nicht selbstständig</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Medikamente und Gesundheit -->
+          <div class="form-section-card mb-4 stepper-content" id="section-3" data-section="3">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">3. Medikamente und Gesundheit</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Nehmen Sie regelmäßig Medikamente?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_23_0" name="q23_nehmenSie[]" value="Ja, mehr als 5 Medikamente">
+                      <label class="form-check-label" for="input_23_0">Ja, mehr als 5 Medikamente</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_23_1" name="q23_nehmenSie[]" value="Ja, weniger als 5 Medikamente">
+                      <label class="form-check-label" for="input_23_1">Ja, weniger als 5 Medikamente</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_23_2" name="q23_nehmenSie[]" value="Nein">
+                      <label class="form-check-label" for="input_23_2">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Hatten Sie schon einmal Probleme mit Medikamenten (z. B. Nebenwirkungen, Wechselwirkungen, Unsicherheit bei Einnahme)?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_0" name="q25_hattenSie[]" value="Ja">
+                      <label class="form-check-label" for="input_25_0">Ja</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_1" name="q25_hattenSie[]" value="Nein">
+                      <label class="form-check-label" for="input_25_1">Nein</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_2" name="q25_hattenSie[]" value="Ich bin unsicher">
+                      <label class="form-check-label" for="input_25_2">Ich bin unsicher</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Wer kümmert sich um Ihre Medikamente?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_0" name="q27_werKummert[]" value="Ich selbst">
+                      <label class="form-check-label" for="input_27_0">Ich selbst</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_1" name="q27_werKummert[]" value="Angehörige">
+                      <label class="form-check-label" for="input_27_1">Angehörige</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_2" name="q27_werKummert[]" value="Hausarzt / Fachärzte">
+                      <label class="form-check-label" for="input_27_2">Hausarzt / Fachärzte</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_3" name="q27_werKummert[]" value="Pflegedienst">
+                      <label class="form-check-label" for="input_27_3">Pflegedienst</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_4" name="q27_werKummert[]" value="Apotheke">
+                      <label class="form-check-label" for="input_27_4">Apotheke</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_5" name="q27_werKummert[]" value="Sonstige">
+                      <label class="form-check-label" for="input_27_5">Sonstige</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Belastung und Wohlbefinden -->
+          <div class="form-section-card mb-4 stepper-content" id="section-4" data-section="4">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">4. Belastung und Wohlbefinden</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Fühlen Sie sich durch Ihre Pflegesituation belastet?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_31_0" name="q31_fuhlenSie[]" value="Sehr stark">
+                      <label class="form-check-label" for="input_31_0">Sehr stark</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_31_1" name="q31_fuhlenSie[]" value="Stark">
+                      <label class="form-check-label" for="input_31_1">Stark</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_31_2" name="q31_fuhlenSie[]" value="Mittel">
+                      <label class="form-check-label" for="input_31_2">Mittel</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_31_3" name="q31_fuhlenSie[]" value="Wenig">
+                      <label class="form-check-label" for="input_31_3">Wenig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_31_4" name="q31_fuhlenSie[]" value="Gar nicht">
+                      <label class="form-check-label" for="input_31_4">Gar nicht</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Haben Sie manchmal das Gefühl, mit der Situation allein zu sein?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_33_0" name="q33_habenSie33[]" value="Ja">
+                      <label class="form-check-label" for="input_33_0">Ja</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_33_1" name="q33_habenSie33[]" value="Nein">
+                      <label class="form-check-label" for="input_33_1">Nein</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_33_2" name="q33_habenSie33[]" value="Teilweise">
+                      <label class="form-check-label" for="input_33_2">Teilweise</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Was macht Ihnen im Alltag am meisten Sorgen?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_0" name="q35_wasMacht[]" value="Meine Gesundheit">
+                      <label class="form-check-label" for="input_35_0">Meine Gesundheit</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_1" name="q35_wasMacht[]" value="Medikamente / Nebenwirkungen">
+                      <label class="form-check-label" for="input_35_1">Medikamente / Nebenwirkungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_2" name="q35_wasMacht[]" value="Einsamkeit / fehlende Ansprache">
+                      <label class="form-check-label" for="input_35_2">Einsamkeit / fehlende Ansprache</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_3" name="q35_wasMacht[]" value="Überforderung">
+                      <label class="form-check-label" for="input_35_3">Überforderung</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_4" name="q35_wasMacht[]" value="Finanzen / Kosten">
+                      <label class="form-check-label" for="input_35_4">Finanzen / Kosten</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_5" name="q35_wasMacht[]" value="Organisatorisches (z. B. Pflegeanträge, Bürokratie)">
+                      <label class="form-check-label" for="input_35_5">Organisatorisches (z. B. Pflegeanträge, Bürokratie)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_35_6" name="q35_wasMacht[]" value="Sonstiges">
+                      <label class="form-check-label" for="input_35_6">Sonstiges</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Informationen und Unterstützung -->
+          <div class="form-section-card mb-4 stepper-content" id="section-5" data-section="5">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">5. Informationen und Unterstützung</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Fühlen Sie sich ausreichend informiert über Ihre Möglichkeiten (z. B. Pflegegrad, Hilfen, Leistungen)?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_40_0" name="q40_fuhlenSie40" value="Ja">
+                      <label class="form-check-label" for="input_40_0">Ja</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_40_1" name="q40_fuhlenSie40" value="Nein">
+                      <label class="form-check-label" for="input_40_1">Nein</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_40_2" name="q40_fuhlenSie40" value="Teilweise">
+                      <label class="form-check-label" for="input_40_2">Teilweise</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Woher erhalten Sie bisher Unterstützung oder Informationen? (Mehrfachauswahl möglich)</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_42_0" name="q42_woherErhalten[]" value="Hausarzt">
+                      <label class="form-check-label" for="input_42_0">Hausarzt</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_42_1" name="q42_woherErhalten[]" value="Pflegedienst">
+                      <label class="form-check-label" for="input_42_1">Pflegedienst</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_42_2" name="q42_woherErhalten[]" value="Pflegestützpunkt">
+                      <label class="form-check-label" for="input_42_2">Pflegestützpunkt</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_42_3" name="q42_woherErhalten[]" value="Internet / Medien">
+                      <label class="form-check-label" for="input_42_3">Internet / Medien</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_42_4" name="q42_woherErhalten[]" value="Angehörige">
+                      <label class="form-check-label" for="input_42_4">Angehörige</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_42_5" name="q42_woherErhalten[]" value="Sonstiges">
+                      <label class="form-check-label" for="input_42_5">Sonstiges</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Welche Art von Unterstützung wäre für Sie die größte Hilfe im Alltag?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_44_0" name="q44_welcheArt[]" value="Mehr Entlastung durch Pflegekräfte / Hilfe von Außen">
+                      <label class="form-check-label" for="input_44_0">Mehr Entlastung durch Pflegekräfte / Hilfe von Außen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_44_1" name="q44_welcheArt[]" value="Hilfe bei Medikamentenmanagement">
+                      <label class="form-check-label" for="input_44_1">Hilfe bei Medikamentenmanagement</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_44_2" name="q44_welcheArt[]" value="Hilfe mit Anträgen / Behörden">
+                      <label class="form-check-label" for="input_44_2">Hilfe mit Anträgen / Behörden</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_44_3" name="q44_welcheArt[]" value="Mehr soziale Kontakte / Gespräche">
+                      <label class="form-check-label" for="input_44_3">Mehr soziale Kontakte / Gespräche</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_44_4" name="q44_welcheArt[]" value="Klarheit über Pflegeangebote in meiner Nähe">
+                      <label class="form-check-label" for="input_44_4">Klarheit über Pflegeangebote in meiner Nähe</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_44_5" name="q44_welcheArt[]" value="Sonstiges">
+                      <label class="form-check-label" for="input_44_5">Sonstiges</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Zukunft & Wünsche -->
+          <div class="form-section-card mb-4 stepper-content" id="section-6" data-section="6">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">6. Zukunft & Wünsche</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Was wünschen Sie sich in Zukunft für Ihre Versorgung?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_48_0" name="q48_wasWunschen[]" value="Möglichst lange zu Hause bleiben können">
+                      <label class="form-check-label" for="input_48_0">Möglichst lange zu Hause bleiben können</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_48_1" name="q48_wasWunschen[]" value="Mehr Unterstützung durch Angehörige">
+                      <label class="form-check-label" for="input_48_1">Mehr Unterstützung durch Angehörige</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_48_2" name="q48_wasWunschen[]" value="Mehr Unterstützung durch Fachkräfte">
+                      <label class="form-check-label" for="input_48_2">Mehr Unterstützung durch Fachkräfte</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_48_3" name="q48_wasWunschen[]" value="Ein Platz in einer Einrichtung in Wohnortnähe">
+                      <label class="form-check-label" for="input_48_3">Ein Platz in einer Einrichtung in Wohnortnähe</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_48_4" name="q48_wasWunschen[]" value="Digitale Unterstützung (z. B. digitale Akte, Apps)">
+                      <label class="form-check-label" for="input_48_4">Digitale Unterstützung (z. B. digitale Akte, Apps)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_48_5" name="q48_wasWunschen[]" value="Sonstiges">
+                      <label class="form-check-label" for="input_48_5">Sonstiges</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 7: Zahlungsbereitschaft & Finanzierung -->
+          <div class="form-section-card mb-4 stepper-content" id="section-7" data-section="7">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">7. Zahlungsbereitschaft & Finanzierung</h2>
+              </div>
+              <div class="card-body p-4">
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Wären Sie für persönliche Unterstützung (z. B. Begleitung bei Anträgen, Medikamentencheck, Organisation von Hilfen) bereit, einen monatlichen Beitrag zu zahlen?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_52_0" name="q52_warenSie[]" value="Bis 25€ pro Monat">
+                      <label class="form-check-label" for="input_52_0">Bis 25€ pro Monat</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_52_1" name="q52_warenSie[]" value="25 - 50€ pro Monat">
+                      <label class="form-check-label" for="input_52_1">25 - 50€ pro Monat</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_52_2" name="q52_warenSie[]" value="50 - 100€ pro Monat">
+                      <label class="form-check-label" for="input_52_2">50 - 100€ pro Monat</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_52_3" name="q52_warenSie[]" value="Mehr als 100€ pro Monat">
+                      <label class="form-check-label" for="input_52_3">Mehr als 100€ pro Monat</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_52_4" name="q52_warenSie[]" value="Nein">
+                      <label class="form-check-label" for="input_52_4">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Wären Sie eher bereit zu zahlen, wenn ein Teil der Kosten von der Krankenkasse / Pflegekasse übernommen würde?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_54_0" name="q54_warenSie54" value="Ja">
+                      <label class="form-check-label" for="input_54_0">Ja</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_54_1" name="q54_warenSie54" value="Vielleicht">
+                      <label class="form-check-label" for="input_54_1">Vielleicht</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_54_2" name="q54_warenSie54" value="Nein">
+                      <label class="form-check-label" for="input_54_2">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Welche Bezahlform wäre für Sie am angenehmsten?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_56_0" name="q56_welcheBezahlform[]" value="Monatliches Abo mit festen Leistungen">
+                      <label class="form-check-label" for="input_56_0">Monatliches Abo mit festen Leistungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_56_1" name="q56_welcheBezahlform[]" value="Bezahlung pro Einzelleistung (z. B. Beratungsgespräch, Medikamentencheck)">
+                      <label class="form-check-label" for="input_56_1">Bezahlung pro Einzelleistung (z. B. Beratungsgespräch, Medikamentencheck)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_56_2" name="q56_welcheBezahlform[]" value="Kombination aus Basis-Abo + Zusatzleistungen bei Bedarf">
+                      <label class="form-check-label" for="input_56_2">Kombination aus Basis-Abo + Zusatzleistungen bei Bedarf</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_56_3" name="q56_welcheBezahlform[]" value="Ich weiß es nicht">
+                      <label class="form-check-label" for="input_56_3">Ich weiß es nicht</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-10">
+              <div class="d-flex justify-content-between px-3">
+                <button type="button" id="prevStep" class="btn btn-outline-primary" style="display: none;">
+                  <i class="las la-arrow-left me-2"></i>Zurück
+                </button>
+                <button type="button" id="nextStep" class="btn btn-primary ms-auto">
+                  Weiter<i class="las la-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+              <div class="text-center" id="submitSection" style="display: none;">
+                <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                  <i class="las la-paper-plane me-2"></i>Formular absenden
+                </button>
+                <p class="text-muted small mt-3">Vielen Dank für Ihre Teilnahme!</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Form Styling */
+.form-progress-wrapper {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.progress {
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #51B56D 0%, #7CA272 100%);
+  transition: width 0.5s ease;
+}
+
+/* Stepper Styles */
+.stepper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.stepper::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e9ecef;
+  z-index: 0;
+}
+
+.stepper-step {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  min-width: 120px;
+}
+
+.stepper-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stepper-head-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e9ecef;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  border: 3px solid #e9ecef;
+}
+
+.stepper-head-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.stepper-step.stepper-active .stepper-head-icon {
+  background: #51B56D;
+  color: white;
+  border-color: #51B56D;
+  box-shadow: 0 4px 12px rgba(81, 181, 109, 0.3);
+}
+
+.stepper-step.stepper-active .stepper-head-text {
+  color: #51B56D;
+  font-weight: 600;
+}
+
+.stepper-step.stepper-completed .stepper-head-icon {
+  background: #51B56D;
+  color: white;
+  border-color: #51B56D;
+  position: relative;
+}
+
+.stepper-step.stepper-completed .stepper-head-icon .stepper-head-icon-text {
+  display: none;
+}
+
+.stepper-step.stepper-completed .stepper-head-icon::after {
+  content: '✓';
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.stepper-step.stepper-completed .stepper-head-text {
+  color: #51B56D;
+}
+
+/* Stepper Content */
+.stepper-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.stepper-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-section-card {
+  transition: all 0.3s ease;
+}
+
+.card-header {
+  border-radius: 0 !important;
+  padding: 1.25rem 1.5rem;
+}
+
+.card-header h2 {
+  font-weight: 600;
+}
+
+.form-question {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.form-question:hover {
+  border-color: rgba(81, 181, 109, 0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: #233242;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.form-check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.form-check-card {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  border: 2px solid #e9ecef;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  min-height: 64px;
+}
+
+.form-check-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(to right, rgba(81, 181, 109, 0.1), transparent);
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-check-card:hover {
+  border-color: #51B56D;
+  background: #fafffe;
+  box-shadow: 0 6px 16px rgba(81, 181, 109, 0.12);
+  transform: translateX(4px);
+}
+
+.form-check-card:hover::after {
+  width: 100%;
+}
+
+.form-check-card:active {
+  transform: translateX(2px);
+}
+
+.form-check-input {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 1.25rem;
+  cursor: pointer;
+  border: 2.5px solid #d1d5db;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.form-check-input:hover {
+  border-color: #51B56D;
+  box-shadow: 0 0 0 4px rgba(81, 181, 109, 0.08);
+}
+
+.form-check-input:checked {
+  background-color: #51B56D;
+  border-color: #51B56D;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-size: 90% 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 8px rgba(81, 181, 109, 0.3);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.35rem rgba(81, 181, 109, 0.25);
+  outline: none;
+  border-color: #51B56D;
+}
+
+.form-check-label {
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: #374151;
+  flex: 1;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+.form-check-card:has(.form-check-input:checked) {
+  border-color: #51B56D;
+  background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%);
+  box-shadow: 0 6px 20px rgba(81, 181, 109, 0.18);
+  border-width: 2.5px;
+}
+
+.form-check-card:has(.form-check-input:checked)::after {
+  width: 100%;
+  background: linear-gradient(to right, rgba(81, 181, 109, 0.15), transparent);
+}
+
+.form-check-card:has(.form-check-input:checked) .form-check-label {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.form-check-card:has(.form-check-input:checked)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(to bottom, #51B56D, #45a05d);
+  z-index: 2;
+}
+
+.btn-primary {
+  background-color: #51B56D;
+  border-color: #51B56D;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a05d;
+  border-color: #45a05d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(81, 181, 109, 0.3);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stepper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .stepper-step {
+    min-width: 100px;
+  }
+  
+  .stepper-head-text {
+    font-size: 0.75rem;
+  }
+  
+  .stepper-head-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  
+  .form-question {
+    padding: 1rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  #prevStep, #nextStep {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  #nextStep {
+    margin-left: 0 !important;
+  }
+}
+
+/* Section completion indicator */
+.form-section-card.completed .card-header::after {
+  content: " ✓";
+  color: #51B56D;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+  
+  const form = document.getElementById('252282128598061');
+  const sections = document.querySelectorAll('.stepper-content');
+  const stepperSteps = document.querySelectorAll('.stepper-step');
+  const progressBar = document.getElementById('progressBar');
+  const progressPercent = document.getElementById('progressPercent');
+  const prevBtn = document.getElementById('prevStep');
+  const nextBtn = document.getElementById('nextStep');
+  const submitSection = document.getElementById('submitSection');
+  
+  let currentStep = 1;
+  const totalSteps = sections.length;
+  
+  // Initialize form tracking
+  let startTime = Date.now();
+  
+  // Show specific step
+  function showStep(step) {
+    // Hide all sections
+    sections.forEach((section, index) => {
+      if (index + 1 === step) {
+        section.classList.add('active');
+      } else {
+        section.classList.remove('active');
+      }
+    });
+    
+    // Update stepper indicators
+    stepperSteps.forEach((stepperStep, index) => {
+      const stepNum = index + 1;
+      stepperStep.classList.remove('stepper-active');
+      
+      if (stepNum === step) {
+        stepperStep.classList.add('stepper-active');
+      } else if (stepNum < step) {
+        stepperStep.classList.add('stepper-completed');
+        stepperStep.classList.remove('stepper-active');
+      } else {
+        stepperStep.classList.remove('stepper-completed');
+      }
+    });
+    
+    // Update navigation buttons
+    if (step === 1) {
+      prevBtn.style.display = 'none';
+    } else {
+      prevBtn.style.display = 'block';
+    }
+    
+    if (step === totalSteps) {
+      nextBtn.style.display = 'none';
+      submitSection.style.display = 'block';
+    } else {
+      nextBtn.style.display = 'block';
+      submitSection.style.display = 'none';
+    }
+    
+    // Scroll to top of form
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    currentStep = step;
+    updateProgress();
+  }
+  
+  // Update progress bar
+  function updateProgress() {
+    let completed = 0;
+    sections.forEach((section, index) => {
+      const inputs = section.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+      const checked = Array.from(inputs).filter(input => input.checked);
+      if (checked.length > 0) {
+        completed++;
+      }
+    });
+    
+    const percent = Math.round((completed / totalSteps) * 100);
+    progressBar.style.width = percent + '%';
+    progressPercent.textContent = percent;
+  }
+  
+  // Next step
+  nextBtn.addEventListener('click', function() {
+    if (currentStep < totalSteps) {
+      showStep(currentStep + 1);
+    }
+  });
+  
+  // Previous step
+  prevBtn.addEventListener('click', function() {
+    if (currentStep > 1) {
+      showStep(currentStep - 1);
+    }
+  });
+  
+  // Stepper head click navigation
+  stepperSteps.forEach((step, index) => {
+    step.addEventListener('click', function() {
+      const stepNum = index + 1;
+      // Allow navigation to completed steps or next step
+      const clickedStep = document.querySelector(`#section-${stepNum}`);
+      const hasInputs = clickedStep.querySelectorAll('input[type="checkbox"], input[type="radio"]').length > 0;
+      const hasChecked = Array.from(clickedStep.querySelectorAll('input[type="checkbox"], input[type="radio"]')).some(input => input.checked);
+      
+      // Allow clicking on completed steps or current step
+      if (stepNum <= currentStep || hasChecked) {
+        showStep(stepNum);
+      }
+    });
+  });
+  
+  // Track form inputs
+  form.addEventListener('change', function() {
+    updateProgress();
+  });
+  
+  // Update time to submit
+  form.addEventListener('submit', function() {
+    const timeToSubmit = Math.round((Date.now() - startTime) / 1000);
+    const timeInput = form.querySelector('input[name="timeToSubmit"]');
+    if (timeInput) {
+      timeInput.value = timeToSubmit;
+    }
+    
+    // Set event_id
+    const eventIdInput = form.querySelector('input[name="event_id"]');
+    if (eventIdInput) {
+      eventIdInput.value = Date.now() + '_252282128598061_' + Math.random().toString(36).substr(2, 9);
+    }
+  });
+  
+  // Make form check cards fully clickable
+  document.querySelectorAll('.form-check-card').forEach(function(card) {
+    const checkbox = card.querySelector('.form-check-input');
+    const label = card.querySelector('.form-check-label');
+    
+    if (checkbox) {
+      // Make entire card clickable - but exclude checkbox and label clicks
+      card.addEventListener('click', function(e) {
+        const clickedElement = e.target;
+        const isCheckbox = clickedElement === checkbox || clickedElement.closest('.form-check-input');
+        const isLabel = clickedElement === label || clickedElement.closest('.form-check-label');
+        
+        // Only toggle if clicking on card area, not on checkbox or label
+        if (!isCheckbox && !isLabel) {
+          e.preventDefault();
+          e.stopPropagation();
+          checkbox.checked = !checkbox.checked;
+          // Trigger change event to ensure form tracking works
+          checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      });
+    }
+  });
+  
+  // Initialize
+  showStep(1);
+  updateProgress();
+  
+  // Set build date
+  const buildDateInput = form.querySelector('input[name="buildDate"]');
+  if (buildDateInput) {
+    buildDateInput.value = Date.now();
+  }
+  
+  // Set jsExecutionTracker
+  const jsTrackerInput = form.querySelector('input[name="jsExecutionTracker"]');
+  if (jsTrackerInput) {
+    jsTrackerInput.value = 'build-date-' + Date.now() + '=>init-started:' + Date.now();
+  }
+})();
+</script>
+
+{{ end }}
