@@ -27,7 +27,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button_solid]
 enable = true
 label = "Förderungscheck"
-link = "https://form.jotform.com/Julia_Camara/pflegebeduerftige-menschen"
+link = "https://form.jotform.com/Julia_Camara/PflegendeAngehoerige"
 
 [navigation_button_bordered]
 enable = true

@@ -8,7 +8,7 @@ banner:
     enable: true
     label: 'Förderungscheck-Fragebogen (5min)'
     icon: 'fas fa-clipboard-check'
-    button_modal_target: 'https://form.jotform.com/Julia_Camara/pflegebeduerftige-menschen'
+    button_modal_target: 'https://form.jotform.com/Julia_Camara/PflegendeAngehoerige'
   button_secondary:
     enable: true
     label: 'Gratis Erstberatung'
