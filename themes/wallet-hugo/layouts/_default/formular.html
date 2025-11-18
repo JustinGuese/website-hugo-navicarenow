@@ -825,12 +825,19 @@
 }
 
 .card-header {
-  border-radius: 0 !important;
+  border-radius: 14px 14px 0 0 !important;
   padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #51B56D 0%, #45a05d 100%) !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(81, 181, 109, 0.15);
 }
 
 .card-header h2 {
   font-weight: 600;
+  color: white !important;
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
 }
 
 .form-question {
@@ -1104,8 +1111,22 @@ html {
       submitSection.style.display = 'none';
     }
     
-    // Scroll to top of form
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Scroll to the active section heading
+    const activeSection = document.querySelector(`#section-${step}`);
+    if (activeSection) {
+      const sectionHeading = activeSection.querySelector('.card-header h2');
+      if (sectionHeading) {
+        // Use setTimeout to ensure the section is visible before scrolling
+        setTimeout(() => {
+          sectionHeading.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        }, 100);
+      } else {
+        // Fallback: scroll to section if heading not found
+        setTimeout(() => {
+          activeSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        }, 100);
+      }
+    }
     
     currentStep = step;
     updateProgress();
