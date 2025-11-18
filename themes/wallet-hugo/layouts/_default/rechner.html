@@ -236,6 +236,66 @@
             .foerderung-card.active .foerderung-card-inactive-overlay {
               opacity: 0;
             }
+            .empfehlung-card {
+              background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+              border: 2px solid #10b981;
+              border-radius: 16px;
+              padding: 24px;
+              box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+              position: relative;
+              overflow: hidden;
+            }
+            .empfehlung-card::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              width: 6px;
+              background: linear-gradient(to bottom, #10b981, #059669);
+            }
+            .empfehlung-card h3 {
+              color: #059669;
+              font-weight: 700;
+              font-size: 1.25rem;
+              margin-bottom: 12px;
+            }
+            .empfehlung-card #empfehlung {
+              color: #1e293b;
+              font-size: 1rem;
+              line-height: 1.6;
+              margin-bottom: 20px;
+              font-weight: 500;
+            }
+            .empfehlung-cta-btn {
+              background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+              color: white;
+              border: none;
+              padding: 14px 28px;
+              border-radius: 12px;
+              font-weight: 600;
+              font-size: 1rem;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+              width: 100%;
+            }
+            .empfehlung-cta-btn:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+              color: white;
+              text-decoration: none;
+            }
+            .empfehlung-cta-btn:active {
+              transform: translateY(0);
+            }
+            .empfehlung-cta-btn i {
+              font-size: 1.1rem;
+            }
           </style>
           <form id="pflegeForm" class="row g-3">
             <div class="col-sm-4">
@@ -356,15 +416,17 @@
             </div>
           </form>
         </div>
-
-        <div class="card shadow-sm border-0 p-4 mt-4">
-          <h2 class="h5 mb-3">Ihre aktiven Förderungen</h2>
-          <p class="small text-muted">Basierend auf Ihren Eingaben werden relevante Förderungen automatisch aktiviert</p>
-          <div id="foerderungCards" class="row g-3 mt-2"></div>
-        </div>
       </div>
 
       <div class="col-lg-5">
+        <div class="empfehlung-card mb-4">
+          <h3 class="h6 mb-3">Empfehlung</h3>
+          <p id="empfehlung" class="mb-0">Treffen Sie eine Kalkulation, um die beste Option zu wählen.</p>
+          <a href="/kontakt" class="empfehlung-cta-btn">
+            <i class="las la-comments"></i>
+            Kostenlose, individuelle Beratung erhalten
+          </a>
+        </div>
         <div class="card shadow-sm border-0 p-4 mb-3">
           <h3 class="h6 mb-3">Selbst pflegen</h3>
           <ul class="list-group list-group-flush mb-3" id="selbstDetails"></ul>
@@ -375,9 +437,13 @@
           <ul class="list-group list-group-flush mb-3" id="arbeitenDetails"></ul>
           <p class="h4 mb-0">Monatlicher Vorteil: <span id="arbeitenSumme">0</span> €</p>
         </div>
+      </div>
+
+      <div class="col-12 mt-4">
         <div class="card shadow-sm border-0 p-4">
-          <h3 class="h6 mb-3">Empfehlung</h3>
-          <p id="empfehlung" class="mb-0 text-muted">Treffen Sie eine Kalkulation, um die beste Option zu wählen.</p>
+          <h2 class="h5 mb-3">Ihre aktiven Förderungen</h2>
+          <p class="small text-muted">Basierend auf Ihren Eingaben werden relevante Förderungen automatisch aktiviert</p>
+          <div id="foerderungCards" class="row g-3 mt-2"></div>
         </div>
       </div>
     </div>
