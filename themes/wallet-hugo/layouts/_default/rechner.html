@@ -81,22 +81,160 @@
             }
             .foerderung-card {
               border: 2px solid #e2e8f0;
-              border-radius: 8px;
-              padding: 12px;
-              transition: all 0.3s ease;
-              opacity: 0.4;
+              border-radius: 16px;
+              padding: 20px;
+              transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+              opacity: 0.5;
               background: #f8fafc;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              overflow: hidden;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            }
+            .foerderung-card::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              width: 4px;
+              background: #94a3b8;
+              transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             }
             .foerderung-card.active {
               opacity: 1;
               border-color: #10b981;
-              background: #ecfdf5;
+              background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+              box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+              transform: translateY(-4px);
             }
-            .foerderung-card.active .badge {
-              background: #10b981;
+            .foerderung-card.active::before {
+              width: 6px;
+              background: linear-gradient(to bottom, #10b981, #059669);
+            }
+            .foerderung-card:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            }
+            .foerderung-card.active:hover {
+              transform: translateY(-6px);
+              box-shadow: 0 10px 24px rgba(16, 185, 129, 0.2);
+            }
+            .foerderung-card .card-header-badges {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 16px;
+              gap: 8px;
             }
             .foerderung-card .badge {
               background: #94a3b8;
+              color: white;
+              padding: 6px 12px;
+              border-radius: 8px;
+              font-size: 0.75rem;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              transition: all 0.3s ease;
+            }
+            .foerderung-card.active .badge {
+              background: #10b981;
+              box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+            }
+            .foerderung-card .badge-status {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+            }
+            .foerderung-card .badge-status::before {
+              content: '';
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: currentColor;
+              animation: pulse 2s ease-in-out infinite;
+            }
+            .foerderung-card.active .badge-status::before {
+              animation: pulse-active 2s ease-in-out infinite;
+            }
+            @keyframes pulse {
+              0%, 100% { opacity: 0.5; }
+              50% { opacity: 1; }
+            }
+            @keyframes pulse-active {
+              0%, 100% { opacity: 0.8; transform: scale(1); }
+              50% { opacity: 1; transform: scale(1.2); }
+            }
+            .foerderung-card-title {
+              font-size: 1.125rem;
+              font-weight: 700;
+              color: #1e293b;
+              margin-bottom: 10px;
+              line-height: 1.4;
+            }
+            .foerderung-card.active .foerderung-card-title {
+              color: #059669;
+            }
+            .foerderung-card-description {
+              font-size: 0.9rem;
+              color: #64748b;
+              margin-bottom: 12px;
+              line-height: 1.5;
+              flex-grow: 1;
+            }
+            .foerderung-card-amount {
+              font-size: 1.25rem;
+              font-weight: 800;
+              color: #0f172a;
+              margin-bottom: 16px;
+              padding-top: 12px;
+              border-top: 1px solid #e2e8f0;
+            }
+            .foerderung-card.active .foerderung-card-amount {
+              color: #059669;
+            }
+            .foerderung-card .btn-outline-primary {
+              border-color: #94a3b8;
+              color: #64748b;
+              transition: all 0.3s ease;
+              border-radius: 8px;
+              padding: 8px 16px;
+              font-weight: 600;
+              font-size: 0.875rem;
+              width: 100%;
+              text-align: center;
+            }
+            .foerderung-card .btn-outline-primary:hover {
+              background: #94a3b8;
+              color: white;
+              border-color: #94a3b8;
+            }
+            .foerderung-card.active .btn-outline-primary {
+              border-color: #10b981;
+              color: #10b981;
+            }
+            .foerderung-card.active .btn-outline-primary:hover {
+              background: #10b981;
+              color: white;
+              border-color: #10b981;
+            }
+            .foerderung-card-inactive-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: rgba(255, 255, 255, 0.3);
+              backdrop-filter: blur(2px);
+              pointer-events: none;
+              opacity: 1;
+              transition: opacity 0.35s ease;
+            }
+            .foerderung-card.active .foerderung-card-inactive-overlay {
+              opacity: 0;
             }
           </style>
           <form id="pflegeForm" class="row g-3">
@@ -337,18 +475,19 @@
           const isActive = item.rule(data);
           const activeClass = isActive ? 'active' : '';
           const statusBadge = isActive ? 'Aktiv' : 'Inaktiv';
-          const linkHtml = item.link ? `<a href="${item.link}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Mehr Info</a>` : '';
+          const linkHtml = item.link ? `<a href="${item.link}" target="_blank" class="btn btn-outline-primary">Mehr Info</a>` : '';
           
           html += `
-            <div class="col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="foerderung-card ${activeClass}">
-                <div class="d-flex justify-content-between align-items-start mb-2">
+                <div class="foerderung-card-inactive-overlay"></div>
+                <div class="card-header-badges">
                   <span class="badge">${item.id}</span>
-                  <span class="badge">${statusBadge}</span>
+                  <span class="badge badge-status">${statusBadge}</span>
                 </div>
-                <h6 class="mb-1">${item.title}</h6>
-                <p class="small text-muted mb-1">${item.description}</p>
-                <p class="small fw-bold mb-0">${item.amount}</p>
+                <h6 class="foerderung-card-title">${item.title}</h6>
+                <p class="foerderung-card-description">${item.description}</p>
+                <div class="foerderung-card-amount">${item.amount}</div>
                 ${linkHtml}
               </div>
             </div>
