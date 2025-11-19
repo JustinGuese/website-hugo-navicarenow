@@ -29,11 +29,11 @@
     <div class="row justify-content-center mb-3">
       <div class="col-lg-10">
         <div class="text-center">
-          <h1 class="display-5 mb-3" style="font-size: 2rem;">Fragebogen für pflegebedürftige Menschen und ihre Angehörigen</h1>
+          <h1 class="display-5 mb-3" style="font-size: 2rem;">Fragebogen für pflegende Angehörige</h1>
           <div class="lead text-muted mb-3" style="max-width: 800px; margin: 0 auto; font-size: 1rem;">
-            <p>Pflege bedeutet oft viele Fragen, Unsicherheiten und organisatorische Hürden – egal, ob Sie selbst betroffen sind oder eine nahestehende Person pflegen. Mit Navicare Now möchten wir Ihnen das Leben leichter machen: Wir schaffen Orientierung, geben Sicherheit und helfen dabei, passende Unterstützung zu finden.</p>
-            <p class="mb-0">Damit wir ein <strong>individualisiertes Förderprogramm</strong> genau auf Ihre Bedürfnisse abstimmen können, bitten wir Sie um ein paar Minuten Zeit für diesen Fragebogen. Die Fragen sind leicht zu beantworten und helfen uns, besser zu verstehen: Was Ihnen bzw. der zu pflegenden Person im Alltag am meisten fehlt. Wobei Sie sich Entlastung wünschen. Und welche Unterstützung besonders wichtig ist.</p>
-            <p class="mt-3 mb-0"><strong>🎯 Unser Ziel: Ein maßgeschneidertes Förderprogramm für Sie – Sicherheit. Entlastung. Lebensqualität.</strong></p>
+            <p><strong>Warum wir diesen Fragebogen machen.</strong> Pflege beginnt oft plötzlich – und Angehörige stehen dann vor einem unübersichtlichen System voller Bürokratie, Aufgaben und Sorgen. Viele fühlen sich überfordert und allein gelassen. Mit Navicare Now entwickeln wir eine digitale Plattform, die Angehörigen und Pflegebedürftigen Struktur, Sicherheit und Orientierung gibt – und Einrichtungen sowie Fachkräften echte Entlastung bietet.</p>
+            <p class="mb-0">Unser Ziel: Pflege darf nicht mit Überforderung beginnen, sondern mit Menschlichkeit, Klarheit und dem Gefühl: Ich bin nicht allein. Damit wir unser Angebot so gestalten können, dass es eure Bedürfnisse bestmöglich trifft, bitten wir euch um 10 Minuten Zeit für diesen Fragebogen. Eure Antworten helfen uns, echte Bedarfe sichtbar zu machen und Lösungen zu entwickeln, die spürbar entlasten – im Alltag, bei Entscheidungen und in der Zusammenarbeit mit Einrichtungen.</p>
+            <p class="mt-3 mb-0"><strong>🎯 Vielen Dank für eure Unterstützung!</strong></p>
           </div>
         </div>
       </div>
@@ -46,49 +46,37 @@
           <li class="stepper-step stepper-active" data-step="1">
             <div class="stepper-head">
               <span class="stepper-head-icon"><span class="stepper-head-icon-text">1</span></span>
-              <span class="stepper-head-text">Lebenssituation</span>
+              <span class="stepper-head-text">Allgemeine Angaben</span>
             </div>
           </li>
           <li class="stepper-step" data-step="2">
             <div class="stepper-head">
               <span class="stepper-head-icon"><span class="stepper-head-icon-text">2</span></span>
-              <span class="stepper-head-text">Pflegebedarf</span>
+              <span class="stepper-head-text">Belastung und Alltag</span>
             </div>
           </li>
           <li class="stepper-step" data-step="3">
             <div class="stepper-head">
               <span class="stepper-head-icon"><span class="stepper-head-icon-text">3</span></span>
-              <span class="stepper-head-text">Medikamente</span>
+              <span class="stepper-head-text">Unterstützungsbedarf</span>
             </div>
           </li>
           <li class="stepper-step" data-step="4">
             <div class="stepper-head">
               <span class="stepper-head-icon"><span class="stepper-head-icon-text">4</span></span>
-              <span class="stepper-head-text">Belastung</span>
+              <span class="stepper-head-text">Erfahrungen</span>
             </div>
           </li>
           <li class="stepper-step" data-step="5">
             <div class="stepper-head">
               <span class="stepper-head-icon"><span class="stepper-head-icon-text">5</span></span>
-              <span class="stepper-head-text">Informationen</span>
+              <span class="stepper-head-text">Emotionale Perspektive</span>
             </div>
           </li>
           <li class="stepper-step" data-step="6">
             <div class="stepper-head">
               <span class="stepper-head-icon"><span class="stepper-head-icon-text">6</span></span>
-              <span class="stepper-head-text">Zukunft</span>
-            </div>
-          </li>
-          <li class="stepper-step" data-step="7">
-            <div class="stepper-head">
-              <span class="stepper-head-icon"><span class="stepper-head-icon-text">7</span></span>
-              <span class="stepper-head-text">Finanzierung</span>
-            </div>
-          </li>
-          <li class="stepper-step" data-step="8">
-            <div class="stepper-head">
-              <span class="stepper-head-icon"><span class="stepper-head-icon-text">8</span></span>
-              <span class="stepper-head-text">Kontakt</span>
+              <span class="stepper-head-text">Zukunft & Zahlung</span>
             </div>
           </li>
         </ul>
@@ -98,17 +86,14 @@
     <!-- Form Container -->
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <form class="jotform-form" action="https://formspree.io/f/mwpalndo" method="post" accept-charset="utf-8" autocomplete="on" novalidate="true">
+        <form class="angehoerige-form" action="https://navicarenow-backend.api.datafortress.cloud/questionnaire/submit" method="post" name="" id="" accept-charset="utf-8" autocomplete="on" novalidate="true">
           
-          <!-- Hidden Fields -->
-           
-          <input type="hidden" name="timeToSubmit" value="0">
 
-          <!-- Section 1: Lebenssituation -->
+          <!-- Section 1: Allgemeine Angaben -->
           <div class="form-section-card mb-4 stepper-content active" id="section-1" data-section="1">
             <div class="card shadow-sm border-0">
               <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">1. Lebenssituation</h2>
+                <h2 class="h4 mb-0">1. Allgemeine Angaben</h2>
               </div>
               <div class="card-body p-4">
                 <!-- Info Section 1 -->
@@ -122,20 +107,20 @@
                         <div class="flex-grow-1">
                           <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
                           <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Ihre Lebenssituation und Ihr Pflegegrad bestimmen, welche Leistungen Ihnen zustehen. Mit diesen Informationen können wir Ihnen gezielt zeigen, welche Unterstützung Sie erhalten können.
+                            Um euch die bestmögliche Unterstützung anbieten zu können, benötigen wir zunächst ein paar grundlegende Informationen über eure Pflegesituation. Diese helfen uns zu verstehen, welche Herausforderungen ihr meistert und welche Unterstützung euch wirklich weiterhilft.
                           </p>
                           <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Unterstützung, die Ihnen zusteht:</p>
+                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Unterstützung, die euch zusteht:</p>
                             <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Pflegegeld:</strong> Bei Pflegegrad 2-5 erhalten Sie monatlich 347€ bis 990€, wenn Sie zu Hause gepflegt werden</li>
+                              <li><strong>Pflegegeld:</strong> Bei Pflegegrad 2-5 erhaltet ihr monatlich 347€ bis 990€, wenn zu Hause gepflegt wird</li>
                               <li><strong>Pflegesachleistungen:</strong> Bis zu 2.299€ monatlich für ambulante Pflegedienste (je nach Pflegegrad)</li>
                               <li><strong>Entlastungsbetrag:</strong> 131€ monatlich für alle Pflegegrade für Betreuungs- und Entlastungsangebote</li>
-                              <li><strong>Verhinderungspflege:</strong> Bis zu 1.685€ jährlich, wenn Ihre Hauptpflegeperson verhindert ist</li>
+                              <li><strong>Verhinderungspflege:</strong> Bis zu 1.685€ jährlich, wenn die Hauptpflegeperson verhindert ist</li>
                               <li><strong>Kurzzeitpflege:</strong> Bis zu 1.854€ jährlich für stationäre Ersatzpflege</li>
                               <li><strong>Pflegehilfsmittel:</strong> 42€ monatlich für Verbrauchsmaterialien (Handschuhe, Desinfektion)</li>
                             </ul>
                             <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Wir sind für Sie da – gemeinsam finden wir die beste Lösung für Ihre Situation!
+                              ✨ Wir sind für euch da – gemeinsam finden wir die beste Lösung für eure Situation!
                             </p>
                           </div>
                         </div>
@@ -145,83 +130,75 @@
                 </div>
                 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Wie wohnen Sie bzw. die zu pflegende Person aktuell?</label>
+                  <label class="form-label fw-bold mb-3">Wen pflegen Sie aktuell?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_7_0" name="q7_wieWohnen[]" value="Allein">
-                      <label class="form-check-label" for="input_7_0">Allein</label>
+                      <input class="form-check-input" type="radio" id="input_6_0" name="wer_pflegen" value="eltern" required>
+                      <label class="form-check-label" for="input_6_0">Eltern</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_7_1" name="q7_wieWohnen[]" value="Mit Partner/in">
-                      <label class="form-check-label" for="input_7_1">Mit Partner/in</label>
+                      <input class="form-check-input" type="radio" id="input_6_1" name="wer_pflegen" value="ehepartner">
+                      <label class="form-check-label" for="input_6_1">Ehepartner/in</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_7_2" name="q7_wieWohnen[]" value="Mit Familie">
-                      <label class="form-check-label" for="input_7_2">Mit Familie</label>
+                      <input class="form-check-input" type="radio" id="input_6_2" name="wer_pflegen" value="anderer_angehoeriger">
+                      <label class="form-check-label" for="input_6_2">Anderer Angehöriger</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_7_3" name="q7_wieWohnen[]" value="Betreutes Wohnen / Pflegeeinrichtung">
-                      <label class="form-check-label" for="input_7_3">Betreutes Wohnen / Pflegeeinrichtung</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_7_4" name="q7_wieWohnen[]" value="Sonstiges">
-                      <label class="form-check-label" for="input_7_4">Sonstiges</label>
+                      <input class="form-check-input" type="radio" id="input_6_3" name="wer_pflegen" value="nicht_verwandt">
+                      <label class="form-check-label" for="input_6_3">Nicht Verwandte Person (Freunde,Nachbarn)</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Haben Sie bzw. die zu pflegende Person einen anerkannten Pflegegrad?</label>
+                  <label class="form-label fw-bold mb-3">Wie lange besteht bereits ein Pflegebedarf?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_9_0" name="q9_habenSie[]" value="Pflegegrad 1">
-                      <label class="form-check-label" for="input_9_0">Pflegegrad 1</label>
+                      <input class="form-check-input" type="radio" id="input_7_0" name="pflegebedarf_dauer" value="weniger_6_monate" required>
+                      <label class="form-check-label" for="input_7_0">Weniger als 6 Monate</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_9_1" name="q9_habenSie[]" value="Pflegegrad 2">
-                      <label class="form-check-label" for="input_9_1">Pflegegrad 2</label>
+                      <input class="form-check-input" type="radio" id="input_7_1" name="pflegebedarf_dauer" value="6_12_monate">
+                      <label class="form-check-label" for="input_7_1">6 - 12 Monate</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_9_2" name="q9_habenSie[]" value="Pflegegrad 3">
-                      <label class="form-check-label" for="input_9_2">Pflegegrad 3</label>
+                      <input class="form-check-input" type="radio" id="input_7_2" name="pflegebedarf_dauer" value="1_3_jahre">
+                      <label class="form-check-label" for="input_7_2">1 - 3 Jahre</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_9_3" name="q9_habenSie[]" value="Pflegegrad 4 oder 5">
-                      <label class="form-check-label" for="input_9_3">Pflegegrad 4 oder 5</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_9_4" name="q9_habenSie[]" value="Nein">
-                      <label class="form-check-label" for="input_9_4">Nein</label>
+                      <input class="form-check-input" type="radio" id="input_7_3" name="pflegebedarf_dauer" value="laenger_3_jahre">
+                      <label class="form-check-label" for="input_7_3">Länger als 3 Jahre</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Wer unterstützt Sie bzw. die zu pflegende Person aktuell im Alltag? (Mehrfachauswahl möglich)</label>
+                  <label class="form-label fw-bold mb-3">Welchen Pflegegrad hat die zu pflegende Person?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_11_0" name="q11_werUnterstutzt[]" value="Angehörige">
-                      <label class="form-check-label" for="input_11_0">Angehörige</label>
+                      <input class="form-check-input" type="radio" id="input_9_0" name="pflegegrad" value="kein" required>
+                      <label class="form-check-label" for="input_9_0">Noch keinen</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_11_1" name="q11_werUnterstutzt[]" value="Freunde / Nachbarn">
-                      <label class="form-check-label" for="input_11_1">Freunde / Nachbarn</label>
+                      <input class="form-check-input" type="radio" id="input_9_1" name="pflegegrad" value="1">
+                      <label class="form-check-label" for="input_9_1">1</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_11_2" name="q11_werUnterstutzt[]" value="Ein Pflegedienst">
-                      <label class="form-check-label" for="input_11_2">Ein Pflegedienst</label>
+                      <input class="form-check-input" type="radio" id="input_9_2" name="pflegegrad" value="2">
+                      <label class="form-check-label" for="input_9_2">2</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_11_3" name="q11_werUnterstutzt[]" value="Einrichtungen (z. B. Tagespflege, Kurzzeitpflege)">
-                      <label class="form-check-label" for="input_11_3">Einrichtungen (z. B. Tagespflege, Kurzzeitpflege)</label>
+                      <input class="form-check-input" type="radio" id="input_9_3" name="pflegegrad" value="3">
+                      <label class="form-check-label" for="input_9_3">3</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_11_4" name="q11_werUnterstutzt[]" value="Niemand">
-                      <label class="form-check-label" for="input_11_4">Niemand</label>
+                      <input class="form-check-input" type="radio" id="input_9_4" name="pflegegrad" value="4">
+                      <label class="form-check-label" for="input_9_4">4</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_11_5" name="q11_werUnterstutzt[]" value="Sonstige">
-                      <label class="form-check-label" for="input_11_5">Sonstige</label>
+                      <input class="form-check-input" type="radio" id="input_9_5" name="pflegegrad" value="5">
+                      <label class="form-check-label" for="input_9_5">5</label>
                     </div>
                   </div>
                 </div>
@@ -229,238 +206,14 @@
             </div>
           </div>
 
-          <!-- Section 2: Pflege- und Unterstützungsbedarf -->
+          <!-- Section 2: Belastung und Alltag -->
           <div class="form-section-card mb-4 stepper-content" id="section-2" data-section="2">
             <div class="card shadow-sm border-0">
               <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">2. Pflege- und Unterstützungsbedarf</h2>
+                <h2 class="h4 mb-0">2. Belastung und Alltag</h2>
               </div>
               <div class="card-body p-4">
                 <!-- Info Section 2 -->
-                <div class="info-section-card mb-4">
-                  <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
-                    <div class="card-body p-4">
-                      <div class="d-flex align-items-start mb-3">
-                        <div class="info-icon me-3" style="width: 48px; height: 48px; background: #51B56D; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                          <i class="fas fa-hands-helping text-white" style="font-size: 1.5rem;"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
-                          <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Ihr konkreter Unterstützungsbedarf hilft uns zu verstehen, welche Pflegeleistungen für Sie am besten geeignet sind. So können wir Ihnen passgenaue Lösungen vorschlagen.
-                          </p>
-                          <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Passende Unterstützung für Ihre Bedürfnisse:</p>
-                            <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Kombinationsleistung:</strong> Sie können Pflegegeld und Pflegesachleistungen flexibel kombinieren</li>
-                              <li><strong>Tages- und Nachtpflege:</strong> Teilstationäre Betreuung von 721€ bis 2.085€ monatlich (je nach Pflegegrad)</li>
-                              <li><strong>Technische Pflegehilfsmittel:</strong> Kostenübernahme für Rollstühle, Pflegebetten und andere Hilfsmittel</li>
-                              <li><strong>Pflegeberatung:</strong> Kostenlose Beratung zur optimalen Nutzung Ihrer Leistungen</li>
-                              <li><strong>Schulungen:</strong> Für Sie und Ihre Angehörigen zur richtigen Pflege</li>
-                            </ul>
-                            <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Ihre Bedürfnisse stehen im Mittelpunkt – wir helfen Ihnen, die richtige Unterstützung zu finden!
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Wobei benötigen Sie bzw. die zu pflegende Person am meisten Unterstützung? (Mehrfachauswahl möglich)</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_15_0" name="q15_wobeiBenotigen[]" value="Körperpflege (Waschen, Anziehen …)">
-                      <label class="form-check-label" for="input_15_0">Körperpflege (Waschen, Anziehen …)</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_15_1" name="q15_wobeiBenotigen[]" value="Ernährung / Mahlzeiten">
-                      <label class="form-check-label" for="input_15_1">Ernährung / Mahlzeiten</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_15_2" name="q15_wobeiBenotigen[]" value="Haushalt (Einkaufen, Kochen, Putzen …)">
-                      <label class="form-check-label" for="input_15_2">Haushalt (Einkaufen, Kochen, Putzen …)</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_15_3" name="q15_wobeiBenotigen[]" value="Medikamente organisieren / einnehmen">
-                      <label class="form-check-label" for="input_15_3">Medikamente organisieren / einnehmen</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_15_4" name="q15_wobeiBenotigen[]" value="Arztbesuche / Wege außer Haus">
-                      <label class="form-check-label" for="input_15_4">Arztbesuche / Wege außer Haus</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_15_5" name="q15_wobeiBenotigen[]" value="Organisatorisches (Behörden, Termine, Absprachen …)">
-                      <label class="form-check-label" for="input_15_5">Organisatorisches (Behörden, Termine, Absprachen …)</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Haben Sie bzw. die zu pflegende Person regelmäßig Schmerzen oder körperliche Beschwerden?</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_17_0" name="q17_habenSie17[]" value="Ja, stark">
-                      <label class="form-check-label" for="input_17_0">Ja, stark</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_17_1" name="q17_habenSie17[]" value="Ja, mäßig">
-                      <label class="form-check-label" for="input_17_1">Ja, mäßig</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_17_2" name="q17_habenSie17[]" value="Eher selten">
-                      <label class="form-check-label" for="input_17_2">Eher selten</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_17_3" name="q17_habenSie17[]" value="Nein">
-                      <label class="form-check-label" for="input_17_3">Nein</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Wie selbstständig fühlt sich die zu pflegende Person im Alltag? (Falls Sie selbst betroffen sind: Wie selbstständig fühlen Sie sich?)</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_19_0" name="q19_wieSelbststandig[]" value="Sehr selbstständig">
-                      <label class="form-check-label" for="input_19_0">Sehr selbstständig</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_19_1" name="q19_wieSelbststandig[]" value="Teilweise selbstständig">
-                      <label class="form-check-label" for="input_19_1">Teilweise selbstständig</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_19_2" name="q19_wieSelbststandig[]" value="Weniger selbstständig">
-                      <label class="form-check-label" for="input_19_2">Weniger selbstständig</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_19_3" name="q19_wieSelbststandig[]" value="Gar nicht selbstständig">
-                      <label class="form-check-label" for="input_19_3">Gar nicht selbstständig</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 3: Medikamente und Gesundheit -->
-          <div class="form-section-card mb-4 stepper-content" id="section-3" data-section="3">
-            <div class="card shadow-sm border-0">
-              <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">3. Medikamente und Gesundheit</h2>
-              </div>
-              <div class="card-body p-4">
-                <!-- Info Section 3 -->
-                <div class="info-section-card mb-4">
-                  <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
-                    <div class="card-body p-4">
-                      <div class="d-flex align-items-start mb-3">
-                        <div class="info-icon me-3" style="width: 48px; height: 48px; background: #51B56D; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                          <i class="fas fa-pills text-white" style="font-size: 1.5rem;"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
-                          <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Die richtige Medikamenteneinnahme ist entscheidend für Ihre Gesundheit. Wir möchten verstehen, wie Sie dabei unterstützt werden können.
-                          </p>
-                          <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Unterstützung beim Medikamentenmanagement:</p>
-                            <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Pflegeberatung:</strong> Kostenlose Beratung zur richtigen Medikamenteneinnahme und Wechselwirkungen</li>
-                              <li><strong>Schulungen:</strong> Für Sie und Ihre Angehörigen zum sicheren Umgang mit Medikamenten</li>
-                              <li><strong>Pflegedienst:</strong> Kann bei der Medikamentengabe unterstützen (Teil der Pflegesachleistungen)</li>
-                              <li><strong>Apothekenberatung:</strong> Viele Apotheken bieten Medikationschecks und Beratung an</li>
-                              <li><strong>Technische Hilfsmittel:</strong> Medikamentendispenser können über die Pflegeversicherung finanziert werden</li>
-                            </ul>
-                            <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Sicherheit bei der Medikamenteneinnahme – wir unterstützen Sie dabei!
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Nehmen Sie bzw. die zu pflegende Person regelmäßig Medikamente?</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_23_0" name="q23_nehmenSie[]" value="Ja, mehr als 5 Medikamente">
-                      <label class="form-check-label" for="input_23_0">Ja, mehr als 5 Medikamente</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_23_1" name="q23_nehmenSie[]" value="Ja, weniger als 5 Medikamente">
-                      <label class="form-check-label" for="input_23_1">Ja, weniger als 5 Medikamente</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_23_2" name="q23_nehmenSie[]" value="Nein">
-                      <label class="form-check-label" for="input_23_2">Nein</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Gab es schon einmal Probleme mit Medikamenten (z. B. Nebenwirkungen, Wechselwirkungen, Unsicherheit bei Einnahme)?</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_25_0" name="q25_hattenSie[]" value="Ja">
-                      <label class="form-check-label" for="input_25_0">Ja</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_25_1" name="q25_hattenSie[]" value="Nein">
-                      <label class="form-check-label" for="input_25_1">Nein</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_25_2" name="q25_hattenSie[]" value="Ich bin unsicher">
-                      <label class="form-check-label" for="input_25_2">Ich bin unsicher</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Wer kümmert sich um die Medikamente? (Falls Sie selbst betroffen sind: Wer kümmert sich um Ihre Medikamente?)</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_27_0" name="q27_werKummert[]" value="Ich selbst / Die zu pflegende Person selbst">
-                      <label class="form-check-label" for="input_27_0">Ich selbst / Die zu pflegende Person selbst</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_27_1" name="q27_werKummert[]" value="Angehörige">
-                      <label class="form-check-label" for="input_27_1">Angehörige</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_27_2" name="q27_werKummert[]" value="Hausarzt / Fachärzte">
-                      <label class="form-check-label" for="input_27_2">Hausarzt / Fachärzte</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_27_3" name="q27_werKummert[]" value="Pflegedienst">
-                      <label class="form-check-label" for="input_27_3">Pflegedienst</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_27_4" name="q27_werKummert[]" value="Apotheke">
-                      <label class="form-check-label" for="input_27_4">Apotheke</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_27_5" name="q27_werKummert[]" value="Sonstige">
-                      <label class="form-check-label" for="input_27_5">Sonstige</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 4: Belastung und Wohlbefinden -->
-          <div class="form-section-card mb-4 stepper-content" id="section-4" data-section="4">
-            <div class="card shadow-sm border-0">
-              <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">4. Belastung und Wohlbefinden</h2>
-              </div>
-              <div class="card-body p-4">
-                <!-- Info Section 4 -->
                 <div class="info-section-card mb-4">
                   <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
                     <div class="card-body p-4">
@@ -471,20 +224,20 @@
                         <div class="flex-grow-1">
                           <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
                           <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Pflege kann belastend sein – das ist völlig normal. Wir möchten verstehen, wie es Ihnen geht, um Ihnen die richtige Entlastung zu zeigen.
+                            Pflege kann belastend sein – das ist völlig normal. Wir möchten verstehen, wie es euch geht und wo die größten Herausforderungen liegen, um euch gezielt Entlastung zu zeigen.
                           </p>
                           <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Entlastung und Unterstützung für Sie:</p>
+                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Entlastung und Unterstützung für euch:</p>
                             <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Entlastungsbetrag:</strong> 131€ monatlich für Betreuungsangebote, die Ihnen Zeit für sich geben</li>
-                              <li><strong>Verhinderungspflege:</strong> Bis zu 1.685€ jährlich, wenn Sie eine Auszeit brauchen</li>
+                              <li><strong>Entlastungsbetrag:</strong> 131€ monatlich für Betreuungsangebote, die euch Zeit für euch selbst geben</li>
+                              <li><strong>Verhinderungspflege:</strong> Bis zu 1.685€ jährlich, wenn ihr eine Auszeit braucht</li>
                               <li><strong>Kurzzeitpflege:</strong> Bis zu 1.854€ jährlich für stationäre Erholung</li>
-                              <li><strong>Tagespflege:</strong> Regelmäßige Betreuung tagsüber gibt Ihnen Freiraum</li>
-                              <li><strong>Hilfe zur Pflege:</strong> Das Sozialamt übernimmt offene Kosten, wenn Ihre Mittel nicht ausreichen</li>
+                              <li><strong>Tagespflege:</strong> Regelmäßige Betreuung tagsüber gibt euch Freiraum</li>
+                              <li><strong>Hilfe zur Pflege:</strong> Das Sozialamt übernimmt offene Kosten, wenn eure Mittel nicht ausreichen</li>
                               <li><strong>Betreuungsangebote:</strong> Viele Gemeinden bieten kostenlose oder günstige Betreuungsgruppen an</li>
                             </ul>
                             <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Sie sind nicht allein – es gibt viele Wege zur Entlastung, und wir helfen Ihnen dabei!
+                              ✨ Ihr seid nicht allein – es gibt viele Wege zur Entlastung, und wir helfen euch dabei!
                             </p>
                           </div>
                         </div>
@@ -494,79 +247,135 @@
                 </div>
                 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Fühlen Sie sich durch die Pflegesituation belastet? (Falls Sie selbst betroffen sind: Fühlen Sie sich durch Ihre Pflegesituation belastet?)</label>
+                  <label class="form-label fw-bold mb-3">Wie viele Stunden pro Woche wenden Sie durchschnittlich für pflegerische Aufgaben auf?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_31_0" name="q31_fuhlenSie[]" value="Sehr stark">
-                      <label class="form-check-label" for="input_31_0">Sehr stark</label>
+                      <input class="form-check-input" type="radio" id="input_12_0" name="pflege_stunden_pro_woche" value="weniger_5" required>
+                      <label class="form-check-label" for="input_12_0">Weniger als 5</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_31_1" name="q31_fuhlenSie[]" value="Stark">
-                      <label class="form-check-label" for="input_31_1">Stark</label>
+                      <input class="form-check-input" type="radio" id="input_12_1" name="pflege_stunden_pro_woche" value="5_10">
+                      <label class="form-check-label" for="input_12_1">5 - 10</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_31_2" name="q31_fuhlenSie[]" value="Mittel">
-                      <label class="form-check-label" for="input_31_2">Mittel</label>
+                      <input class="form-check-input" type="radio" id="input_12_2" name="pflege_stunden_pro_woche" value="10_20">
+                      <label class="form-check-label" for="input_12_2">10 - 20</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_31_3" name="q31_fuhlenSie[]" value="Wenig">
-                      <label class="form-check-label" for="input_31_3">Wenig</label>
+                      <input class="form-check-input" type="radio" id="input_12_3" name="pflege_stunden_pro_woche" value="mehr_20">
+                      <label class="form-check-label" for="input_12_3">Mehr als 20</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_31_4" name="q31_fuhlenSie[]" value="Gar nicht">
-                      <label class="form-check-label" for="input_31_4">Gar nicht</label>
+                      <input class="form-check-input" type="radio" id="input_12_4" name="pflege_stunden_pro_woche" value="24_stunden">
+                      <label class="form-check-label" for="input_12_4">Eigentlich ist eine 24 Stunden Beaufsichtigung notwendig</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Haben Sie manchmal das Gefühl, mit der Pflegesituation allein zu sein?</label>
+                  <label class="form-label fw-bold mb-3">Wie stark fühlen Sie sich durch die Pflegesituation belastet?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_33_0" name="q33_habenSie33[]" value="Ja">
-                      <label class="form-check-label" for="input_33_0">Ja</label>
+                      <input class="form-check-input" type="radio" id="input_13_0" name="belastung_staerke" value="gar_nicht" required>
+                      <label class="form-check-label" for="input_13_0">Gar nicht</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_33_1" name="q33_habenSie33[]" value="Nein">
-                      <label class="form-check-label" for="input_33_1">Nein</label>
+                      <input class="form-check-input" type="radio" id="input_13_1" name="belastung_staerke" value="ein_wenig">
+                      <label class="form-check-label" for="input_13_1">Ein wenig</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_33_2" name="q33_habenSie33[]" value="Teilweise">
-                      <label class="form-check-label" for="input_33_2">Teilweise</label>
+                      <input class="form-check-input" type="radio" id="input_13_2" name="belastung_staerke" value="mittel">
+                      <label class="form-check-label" for="input_13_2">Mittel</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_13_3" name="belastung_staerke" value="stark">
+                      <label class="form-check-label" for="input_13_3">Stark</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_13_4" name="belastung_staerke" value="sehr_stark">
+                      <label class="form-check-label" for="input_13_4">Sehr stark</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Was kostet Sie aktuell am meisten Zeit im Pflegealltag? (Mehrfachauswahl möglich)</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_14_0" name="zeitfresser" value="behoerdengaenge">
+                      <label class="form-check-label" for="input_14_0">Behördengänge / Anträge</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_14_1" name="zeitfresser" value="medikamenten_management">
+                      <label class="form-check-label" for="input_14_1">Medikamenten-Management</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_14_2" name="zeitfresser" value="hilfe_suche">
+                      <label class="form-check-label" for="input_14_2">Suche nach Hilfe / Informationen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_14_3" name="zeitfresser" value="organisatorisches">
+                      <label class="form-check-label" for="input_14_3">Organisatorisches (z. B. Termine, Familie + Pflege unter einen Hut zu bekommen)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_14_4" name="zeitfresser" value="pflege_selbst">
+                      <label class="form-check-label" for="input_14_4">Die Pflege selbst</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">In welchen Bereichen fühlen Sie sich am wenigsten unterstützt?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_0" name="fehlende_unterstuetzung" value="information_orientierung">
+                      <label class="form-check-label" for="input_15_0">Information / Orientierung im Pflegesystem</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_1" name="fehlende_unterstuetzung" value="pflege_organisation_wissen">
+                      <label class="form-check-label" for="input_15_1">Wissen, wie die Pflege zu Hause am besten organisiert und gestaltet werden kann</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_2" name="fehlende_unterstuetzung" value="entlastungsangebote">
+                      <label class="form-check-label" for="input_15_2">Entlastungsangebote (Tagespflege, Kurzzeitpflege, Pflegedienst etc.)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_3" name="fehlende_unterstuetzung" value="finanzielle_unterstuetzung">
+                      <label class="form-check-label" for="input_15_3">Finanzielle Unterstützung / Kostenübersicht</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_4" name="fehlende_unterstuetzung" value="psychologische_unterstuetzung">
+                      <label class="form-check-label" for="input_15_4">Psychologische & emotionale Unterstützung</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_15_5" name="fehlende_unterstuetzung" value="zeit_fuer_mich">
+                      <label class="form-check-label" for="input_15_5">Zeit für mich selbst</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Was macht Ihnen im Alltag am meisten Sorgen? (Bezogen auf die Pflegesituation)</label>
+                  <label class="form-label fw-bold mb-3">Welche Situationen sind für Sie am herausforderndsten? (Mehrfachauswahl)</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_0" name="q35_wasMacht[]" value="Die Gesundheit (meine / der zu pflegenden Person)">
-                      <label class="form-check-label" for="input_35_0">Die Gesundheit (meine / der zu pflegenden Person)</label>
+                      <input class="form-check-input" type="checkbox" id="input_16_0" name="herausfordernde_situationen" value="akute_verschlechterung">
+                      <label class="form-check-label" for="input_16_0">Akute Verschlechterung des Gesundheitszustands</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_1" name="q35_wasMacht[]" value="Medikamente / Nebenwirkungen">
-                      <label class="form-check-label" for="input_35_1">Medikamente / Nebenwirkungen</label>
+                      <input class="form-check-input" type="checkbox" id="input_16_1" name="herausfordernde_situationen" value="organisation_arzt_pflege">
+                      <label class="form-check-label" for="input_16_1">Organisation von Arzt- oder Therapieterminen und der Pflege selbst</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_2" name="q35_wasMacht[]" value="Einsamkeit / fehlende Ansprache">
-                      <label class="form-check-label" for="input_35_2">Einsamkeit / fehlende Ansprache</label>
+                      <input class="form-check-input" type="checkbox" id="input_16_2" name="herausfordernde_situationen" value="medikamentenmanagement">
+                      <label class="form-check-label" for="input_16_2">Medikamentenmanagement</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_3" name="q35_wasMacht[]" value="Überforderung">
-                      <label class="form-check-label" for="input_35_3">Überforderung</label>
+                      <input class="form-check-input" type="checkbox" id="input_16_3" name="herausfordernde_situationen" value="konflikte_kommunikation">
+                      <label class="form-check-label" for="input_16_3">Konflikte innerhalb der Familie / unklare Kommunikation mit Ärzten / Einrichtungen</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_4" name="q35_wasMacht[]" value="Finanzen / Kosten">
-                      <label class="form-check-label" for="input_35_4">Finanzen / Kosten</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_5" name="q35_wasMacht[]" value="Organisatorisches (z. B. Pflegeanträge, Bürokratie)">
-                      <label class="form-check-label" for="input_35_5">Organisatorisches (z. B. Pflegeanträge, Bürokratie)</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_35_6" name="q35_wasMacht[]" value="Sonstiges">
-                      <label class="form-check-label" for="input_35_6">Sonstiges</label>
+                      <input class="form-check-input" type="checkbox" id="input_16_4" name="herausfordernde_situationen" value="unklare_zustaendigkeiten">
+                      <label class="form-check-label" for="input_16_4">Unklare Zuständigkeiten im Pflegesystem/Wissen, welche Leistungen mir überhaupt zustehen und wo ich diese beantragen kann</label>
                     </div>
                   </div>
                 </div>
@@ -574,11 +383,313 @@
             </div>
           </div>
 
-          <!-- Section 5: Informationen und Unterstützung -->
+          <!-- Section 3: Unterstützungsbedarf -->
+          <div class="form-section-card mb-4 stepper-content" id="section-3" data-section="3">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">3. Unterstützungsbedarf</h2>
+              </div>
+              <div class="card-body p-4">
+                <!-- Info Section 3 -->
+                <div class="info-section-card mb-4">
+                  <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
+                    <div class="card-body p-4">
+                      <div class="d-flex align-items-start mb-3">
+                        <div class="info-icon me-3" style="width: 48px; height: 48px; background: #51B56D; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                          <i class="fas fa-hands-helping text-white" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
+                          <p class="mb-3" style="color: #374151; line-height: 1.6;">
+                            Eure Wünsche und Bedürfnisse helfen uns zu verstehen, welche Art von Unterstützung euch wirklich weiterhilft. So können wir passgenaue Lösungen entwickeln, die euch im Alltag wirklich entlasten.
+                          </p>
+                          <div class="support-info">
+                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Passende Unterstützung für eure Bedürfnisse:</p>
+                            <ul class="mb-0" style="color: #374151; line-height: 1.8;">
+                              <li><strong>Persönliche Beratung:</strong> Individuelle Begleitung bei Anträgen, Organisation und Entscheidungen</li>
+                              <li><strong>Digitale Tools:</strong> Übersichtliche Plattformen für Pflegeakte, Medikamentenmanagement und Termine</li>
+                              <li><strong>Entlastungsangebote:</strong> Hilfe bei der Suche und Organisation von Tagespflege, Kurzzeitpflege und Pflegediensten</li>
+                              <li><strong>Medikamentenmanagement:</strong> Unterstützung bei der Organisation und Überprüfung von Medikamenten</li>
+                              <li><strong>Finanzielle Beratung:</strong> Klarheit über Kosten und Förderungen</li>
+                            </ul>
+                            <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
+                              ✨ Eure Bedürfnisse stehen im Mittelpunkt – wir helfen euch, die richtige Unterstützung zu finden!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Welche Unterstützung würden Sie sich am meisten wünschen?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_18_0" name="gewuenschte_unterstuetzung" value="klare_informationen">
+                      <label class="form-check-label" for="input_18_0">Klare Informationen & Struktur</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_18_1" name="gewuenschte_unterstuetzung" value="persoenliche_ansprechpartner">
+                      <label class="form-check-label" for="input_18_1">Persönliche Ansprechpartner (telefonisch/digital)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_18_2" name="gewuenschte_unterstuetzung" value="hilfe_antraege">
+                      <label class="form-check-label" for="input_18_2">Persönliche Hilfe bei Antragstellung & Bürokratie</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_18_3" name="gewuenschte_unterstuetzung" value="medikamentenmanagement">
+                      <label class="form-check-label" for="input_18_3">Unterstützung bei Medikamentenmanagement</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_18_4" name="gewuenschte_unterstuetzung" value="organisation_entlastung">
+                      <label class="form-check-label" for="input_18_4">Hilfe bei Organisation & Entlastungsangeboten</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_18_5" name="gewuenschte_unterstuetzung" value="beratung_einrichtungen">
+                      <label class="form-check-label" for="input_18_5">Beratung bei der Suche nach passenden Einrichtungen</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Welche Form der Unterstützung bevorzugen Sie?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_0" name="unterstuetzungsform" value="persoenliche_gespraeche">
+                      <label class="form-check-label" for="input_19_0">Persönliche Gespräche (vor Ort)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_1" name="unterstuetzungsform" value="telefonische_beratung">
+                      <label class="form-check-label" for="input_19_1">Telefonische Beratung</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_2" name="unterstuetzungsform" value="digitale_beratung">
+                      <label class="form-check-label" for="input_19_2">Digitale Beratung (Video-Chat)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_3" name="unterstuetzungsform" value="schriftliche_infos">
+                      <label class="form-check-label" for="input_19_3">Schriftliche Infos / Leitfäden</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_19_4" name="unterstuetzungsform" value="digitale_tools">
+                      <label class="form-check-label" for="input_19_4">Digitale Tools (Apps, Plattformen, Lernvideos)</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Wie wichtig wäre Ihnen ein fester persönlicher Ansprechpartner, der Sie kontinuierlich begleitet?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_20_0" name="ansprechpartner_wichtig" value="sehr_wichtig" required>
+                      <label class="form-check-label" for="input_20_0">Sehr wichtig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_20_1" name="ansprechpartner_wichtig" value="eher_wichtig">
+                      <label class="form-check-label" for="input_20_1">Eher wichtig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_20_2" name="ansprechpartner_wichtig" value="neutral">
+                      <label class="form-check-label" for="input_20_2">Neutral</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_20_3" name="ansprechpartner_wichtig" value="weniger_wichtig">
+                      <label class="form-check-label" for="input_20_3">Weniger wichtig</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_20_4" name="ansprechpartner_wichtig" value="ueberhaupt_nicht_wichtig">
+                      <label class="form-check-label" for="input_20_4">Überhaupt nicht wichtig</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Für welche Themen würden Sie am ehesten digitale Unterstützung nutzen? (Mehrfachauswahl)</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_21_0" name="digitale_unterstuetzung_themen" value="pflegerische_einschaetzung">
+                      <label class="form-check-label" for="input_21_0">Erste pflegerische Einschätzung und Pflegeplanung für zu Hause</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_21_1" name="digitale_unterstuetzung_themen" value="digitale_pflegeakte">
+                      <label class="form-check-label" for="input_21_1">Digitale Pflegeakte (Überblick über alle Daten wie Diagnosen, Medikamente, wann Rezepte nachbestellt werden müssen, etc.)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_21_2" name="digitale_unterstuetzung_themen" value="medikamenten_check">
+                      <label class="form-check-label" for="input_21_2">Medikamenten-Check / Risikoanalyse</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_21_3" name="digitale_unterstuetzung_themen" value="beratung_coaching">
+                      <label class="form-check-label" for="input_21_3">Beratung, Coaching + Tipps für pflegende Angehörige</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_21_4" name="digitale_unterstuetzung_themen" value="matching_angebote">
+                      <label class="form-check-label" for="input_21_4">Matching mit passenden Angeboten (Tagespflege, Kurzzeitpflege, etc.)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_21_5" name="digitale_unterstuetzung_themen" value="finanzielle_rechtliche_fragen">
+                      <label class="form-check-label" for="input_21_5">Finanzielle & rechtliche Fragen</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Erfahrungen und Probleme -->
+          <div class="form-section-card mb-4 stepper-content" id="section-4" data-section="4">
+            <div class="card shadow-sm border-0">
+              <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0">4. Erfahrungen und Probleme</h2>
+              </div>
+              <div class="card-body p-4">
+                <!-- Info Section 4 -->
+                <div class="info-section-card mb-4">
+                  <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
+                    <div class="card-body p-4">
+                      <div class="d-flex align-items-start mb-3">
+                        <div class="info-icon me-3" style="width: 48px; height: 48px; background: #51B56D; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                          <i class="fas fa-exclamation-circle text-white" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
+                          <p class="mb-3" style="color: #374151; line-height: 1.6;">
+                            Eure bisherigen Erfahrungen helfen uns zu verstehen, wo das System versagt und wo wir ansetzen müssen, um euch wirklich zu helfen. Jede Erfahrung ist wertvoll für die Entwicklung besserer Lösungen.
+                          </p>
+                          <div class="support-info">
+                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Unterstützung bei Problemen:</p>
+                            <ul class="mb-0" style="color: #374151; line-height: 1.8;">
+                              <li><strong>Pflegeberatung:</strong> Kostenlose Beratung bei Problemen und Fragen</li>
+                              <li><strong>Medikamentenmanagement:</strong> Unterstützung bei der Organisation und Überprüfung von Medikamenten</li>
+                              <li><strong>Beschwerdestellen:</strong> Bei Problemen mit Pflegediensten oder Einrichtungen</li>
+                              <li><strong>Rechtliche Beratung:</strong> Hilfe bei Unklarheiten zu Rechten und Leistungen</li>
+                              <li><strong>Psychologische Unterstützung:</strong> Beratung bei Überforderung und Belastung</li>
+                            </ul>
+                            <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
+                              ✨ Eure Erfahrungen helfen uns, bessere Lösungen zu entwickeln!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Haben Sie schon einmal Unterstützung durch eine Pflegeberatung in Anspruch genommen?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_24_0" name="pflegeberatung_genutzt" value="ja" required>
+                      <label class="form-check-label" for="input_24_0">Ja</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_24_1" name="pflegeberatung_genutzt" value="nein">
+                      <label class="form-check-label" for="input_24_1">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Falls ja: Was hat Ihnen dabei gefehlt?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_0" name="pflegeberatung_fehlte" value="verstaendliche_informationen">
+                      <label class="form-check-label" for="input_25_0">Verständliche Informationen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_1" name="pflegeberatung_fehlte" value="konkrete_hilfe">
+                      <label class="form-check-label" for="input_25_1">Konkrete Hilfe im Alltag</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_2" name="pflegeberatung_fehlte" value="individuelle_begleitung">
+                      <label class="form-check-label" for="input_25_2">Individuelle Begleitung und langfristige Unterstützung</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_3" name="pflegeberatung_fehlte" value="praxisnahe_tipps">
+                      <label class="form-check-label" for="input_25_3">Praxisnahe Tipps</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_25_4" name="pflegeberatung_fehlte" value="digitale_unterstuetzung">
+                      <label class="form-check-label" for="input_25_4">Digitale Unterstützung</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Haben Sie schon einmal Probleme mit Medikamentenverordnungen erlebt?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_26_0" name="medikamentenprobleme" value="ja" required>
+                      <label class="form-check-label" for="input_26_0">Ja</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_26_1" name="medikamentenprobleme" value="nein">
+                      <label class="form-check-label" for="input_26_1">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Falls ja:</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_0" name="medikamentenprobleme_art" value="doppelverordnungen">
+                      <label class="form-check-label" for="input_27_0">Doppelverordnungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_1" name="medikamentenprobleme_art" value="wechsel_nebenwirkungen">
+                      <label class="form-check-label" for="input_27_1">Wechsel- oder Nebenwirkungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_2" name="medikamentenprobleme_art" value="unklare_dosierungen">
+                      <label class="form-check-label" for="input_27_2">Unklare Dosierungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_27_3" name="medikamentenprobleme_art" value="sonstige">
+                      <label class="form-check-label" for="input_27_3">Sonstige</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question">
+                  <label class="form-label fw-bold mb-3">Welche negativen Folgen hat Ihre Belastung bisher für Sie persönlich gehabt?</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_28_0" name="negative_folgen" value="koerperliche_gesundheit">
+                      <label class="form-check-label" for="input_28_0">Körperliche Gesundheit (z. B. Schlafmangel, Rückenschmerzen)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_28_1" name="negative_folgen" value="psychische_gesundheit">
+                      <label class="form-check-label" for="input_28_1">Psychische Gesundheit (Stress, Ängste, Depression)</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_28_2" name="negative_folgen" value="belastung_familie">
+                      <label class="form-check-label" for="input_28_2">Belastung in der Familie / Partnerschaft</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_28_3" name="negative_folgen" value="berufliche_einschraenkungen">
+                      <label class="form-check-label" for="input_28_3">Berufliche Einschränkungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_28_4" name="negative_folgen" value="finanzielle_einschraenkungen">
+                      <label class="form-check-label" for="input_28_4">Finanzielle Einschränkungen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_28_5" name="negative_folgen" value="bisher_keine">
+                      <label class="form-check-label" for="input_28_5">Bisher keine</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Emotionale Perspektive -->
           <div class="form-section-card mb-4 stepper-content" id="section-5" data-section="5">
             <div class="card shadow-sm border-0">
               <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">5. Informationen und Unterstützung</h2>
+                <h2 class="h4 mb-0">5. Emotionale Perspektive</h2>
               </div>
               <div class="card-body p-4">
                 <!-- Info Section 5 -->
@@ -587,25 +698,24 @@
                     <div class="card-body p-4">
                       <div class="d-flex align-items-start mb-3">
                         <div class="info-icon me-3" style="width: 48px; height: 48px; background: #51B56D; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                          <i class="fas fa-book text-white" style="font-size: 1.5rem;"></i>
+                          <i class="fas fa-heart text-white" style="font-size: 1.5rem;"></i>
                         </div>
                         <div class="flex-grow-1">
                           <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
                           <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Viele Menschen wissen nicht, welche Unterstützung ihnen zusteht. Wir möchten Ihnen zeigen, wo Sie Informationen finden und welche Beratungsangebote es gibt.
+                            Pflege ist nicht nur praktische Arbeit – sie ist auch emotional herausfordernd. Wir möchten verstehen, wie es euch geht, um euch die richtige Unterstützung anzubieten.
                           </p>
                           <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Kostenlose Beratung und Information:</p>
+                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Emotionale Unterstützung für euch:</p>
                             <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Pflegestützpunkt:</strong> Kostenlose, unabhängige Beratung in Ihrer Nähe</li>
-                              <li><strong>Pflegeberatung:</strong> Kostenlose Beratung durch Ihre Pflegekasse</li>
-                              <li><strong>Schulungen:</strong> Kostenlose Schulungen für Sie und Ihre Angehörigen</li>
-                              <li><strong>Pflegeberatung vor Ort:</strong> Hausbesuche durch geschulte Berater</li>
-                              <li><strong>Online-Informationen:</strong> Umfassende Infos auf den Seiten der Pflegekassen</li>
-                              <li><strong>Navicare Now:</strong> Wir helfen Ihnen, den Überblick zu behalten und die richtigen Anträge zu stellen</li>
+                              <li><strong>Pflegeberatung:</strong> Kostenlose Beratung auch zu emotionalen Themen</li>
+                              <li><strong>Selbsthilfegruppen:</strong> Austausch mit anderen pflegenden Angehörigen</li>
+                              <li><strong>Psychologische Beratung:</strong> Unterstützung bei Überforderung und Belastung</li>
+                              <li><strong>Entlastungsangebote:</strong> Zeit für euch selbst durch Tagespflege und Kurzzeitpflege</li>
+                              <li><strong>Betreuungsangebote:</strong> Soziale Kontakte und Aktivitäten für die gepflegte Person</li>
                             </ul>
                             <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Wissen ist Macht – wir sorgen dafür, dass Sie alle Informationen haben, die Sie brauchen!
+                              ✨ Eure Gefühle sind wichtig – ihr seid nicht allein!
                             </p>
                           </div>
                         </div>
@@ -615,79 +725,97 @@
                 </div>
                 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Fühlen Sie sich ausreichend informiert über die Möglichkeiten (z. B. Pflegegrad, Hilfen, Leistungen)?</label>
+                  <label class="form-label fw-bold mb-3">Fühlen Sie sich mit der aktuellen Pflegesituation allein gelassen / überfordert?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="radio" id="input_40_0" name="q40_fuhlenSie40" value="Ja">
-                      <label class="form-check-label" for="input_40_0">Ja</label>
+                      <input class="form-check-input" type="radio" id="input_30_0" name="allein_gelassen" value="ja" required>
+                      <label class="form-check-label" for="input_30_0">Ja</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="radio" id="input_40_1" name="q40_fuhlenSie40" value="Nein">
-                      <label class="form-check-label" for="input_40_1">Nein</label>
+                      <input class="form-check-input" type="radio" id="input_30_1" name="allein_gelassen" value="nein">
+                      <label class="form-check-label" for="input_30_1">Nein</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="radio" id="input_40_2" name="q40_fuhlenSie40" value="Teilweise">
-                      <label class="form-check-label" for="input_40_2">Teilweise</label>
+                      <input class="form-check-input" type="radio" id="input_30_2" name="allein_gelassen" value="teilweise">
+                      <label class="form-check-label" for="input_30_2">Teilweise</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Woher erhalten Sie bisher Unterstützung oder Informationen zur Pflegesituation? (Mehrfachauswahl möglich)</label>
+                  <label class="form-label fw-bold mb-3">Fühlen Sie sich ausreichend über Ihre Rechte & Möglichkeiten informiert?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_42_0" name="q42_woherErhalten[]" value="Hausarzt">
-                      <label class="form-check-label" for="input_42_0">Hausarzt</label>
+                      <input class="form-check-input" type="radio" id="input_31_0" name="rechte_informiert" value="ja" required>
+                      <label class="form-check-label" for="input_31_0">Ja</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_42_1" name="q42_woherErhalten[]" value="Pflegedienst">
-                      <label class="form-check-label" for="input_42_1">Pflegedienst</label>
+                      <input class="form-check-input" type="radio" id="input_31_1" name="rechte_informiert" value="nein">
+                      <label class="form-check-label" for="input_31_1">Nein</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_42_2" name="q42_woherErhalten[]" value="Pflegestützpunkt">
-                      <label class="form-check-label" for="input_42_2">Pflegestützpunkt</label>
+                      <input class="form-check-input" type="radio" id="input_31_2" name="rechte_informiert" value="teilweise">
+                      <label class="form-check-label" for="input_31_2">Teilweise</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Welche Gefühle dominieren bei Ihnen im Pflegealltag? (Mehrfachauswahl möglich)</label>
+                  <div class="form-check-group">
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_32_0" name="dominante_gefuehle" value="dankbarkeit_naehe">
+                      <label class="form-check-label" for="input_32_0">Dankbarkeit / Nähe zur gepflegten Person</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_42_3" name="q42_woherErhalten[]" value="Internet / Medien">
-                      <label class="form-check-label" for="input_42_3">Internet / Medien</label>
+                      <input class="form-check-input" type="checkbox" id="input_32_1" name="dominante_gefuehle" value="freude_sinnvolles">
+                      <label class="form-check-label" for="input_32_1">Freude, etwas Sinnvolles zu tun</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_42_4" name="q42_woherErhalten[]" value="Angehörige">
-                      <label class="form-check-label" for="input_42_4">Angehörige</label>
+                      <input class="form-check-input" type="checkbox" id="input_32_2" name="dominante_gefuehle" value="stress_ueberforderung">
+                      <label class="form-check-label" for="input_32_2">Stress / Überforderung / Hilflosigkeit</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_42_5" name="q42_woherErhalten[]" value="Sonstiges">
-                      <label class="form-check-label" for="input_42_5">Sonstiges</label>
+                      <input class="form-check-input" type="checkbox" id="input_32_3" name="dominante_gefuehle" value="angst_fehler">
+                      <label class="form-check-label" for="input_32_3">Angst, Fehler zu machen</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_32_4" name="dominante_gefuehle" value="schuldgefuehle">
+                      <label class="form-check-label" for="input_32_4">Schuldgefühle</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="checkbox" id="input_32_5" name="dominante_gefuehle" value="hoffnung_zuversicht">
+                      <label class="form-check-label" for="input_32_5">Hoffnung, Zuversicht</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Welche Art von Unterstützung wäre für Sie bzw. die zu pflegende Person die größte Hilfe im Alltag?</label>
+                  <label class="form-label fw-bold mb-3">Was würde Ihnen das Leben am meisten erleichtern? (Mehrfachauswahl möglich)</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_44_0" name="q44_welcheArt[]" value="Mehr Entlastung durch Pflegekräfte / Hilfe von Außen">
-                      <label class="form-check-label" for="input_44_0">Mehr Entlastung durch Pflegekräfte / Hilfe von Außen</label>
+                      <input class="form-check-input" type="checkbox" id="input_33_0" name="lebenserleichterungen" value="mehr_zeit">
+                      <label class="form-check-label" for="input_33_0">Mehr Zeit für mich selbst</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_44_1" name="q44_welcheArt[]" value="Hilfe bei Medikamentenmanagement">
-                      <label class="form-check-label" for="input_44_1">Hilfe bei Medikamentenmanagement</label>
+                      <input class="form-check-input" type="checkbox" id="input_33_1" name="lebenserleichterungen" value="weniger_buerokratie">
+                      <label class="form-check-label" for="input_33_1">Weniger Bürokratie</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_44_2" name="q44_welcheArt[]" value="Hilfe mit Anträgen / Behörden">
-                      <label class="form-check-label" for="input_44_2">Hilfe mit Anträgen / Behörden</label>
+                      <input class="form-check-input" type="checkbox" id="input_33_2" name="lebenserleichterungen" value="mehr_finanzielle_unterstuetzung">
+                      <label class="form-check-label" for="input_33_2">Mehr finanzielle Unterstützung</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_44_3" name="q44_welcheArt[]" value="Mehr soziale Kontakte / Gespräche">
-                      <label class="form-check-label" for="input_44_3">Mehr soziale Kontakte / Gespräche</label>
+                      <input class="form-check-input" type="checkbox" id="input_33_3" name="lebenserleichterungen" value="einfacher_zugang_hilfe">
+                      <label class="form-check-label" for="input_33_3">Einfacher Zugang zu Hilfe & Angeboten</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_44_4" name="q44_welcheArt[]" value="Klarheit über Pflegeangebote in meiner Nähe">
-                      <label class="form-check-label" for="input_44_4">Klarheit über Pflegeangebote in meiner Nähe</label>
+                      <input class="form-check-input" type="checkbox" id="input_33_4" name="lebenserleichterungen" value="verlaessliche_ansprechpartner">
+                      <label class="form-check-label" for="input_33_4">Verlässliche Ansprechpartner</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_44_5" name="q44_welcheArt[]" value="Sonstiges">
-                      <label class="form-check-label" for="input_44_5">Sonstiges</label>
+                      <input class="form-check-input" type="checkbox" id="input_33_5" name="lebenserleichterungen" value="bessere_zusammenarbeit">
+                      <label class="form-check-label" for="input_33_5">Bessere Zusammenarbeit zwischen Ärzten, Pflegediensten & Einrichtungen</label>
                     </div>
                   </div>
                 </div>
@@ -695,87 +823,14 @@
             </div>
           </div>
 
-          <!-- Section 6: Zukunft & Wünsche -->
+          <!-- Section 6: Zukunft & Zahlungsbereitschaft -->
           <div class="form-section-card mb-4 stepper-content" id="section-6" data-section="6">
             <div class="card shadow-sm border-0">
               <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">6. Zukunft & Wünsche</h2>
+                <h2 class="h4 mb-0">Zukunft & Zahlungsbereitschaft</h2>
               </div>
               <div class="card-body p-4">
                 <!-- Info Section 6 -->
-                <div class="info-section-card mb-4">
-                  <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
-                    <div class="card-body p-4">
-                      <div class="d-flex align-items-start mb-3">
-                        <div class="info-icon me-3" style="width: 48px; height: 48px; background: #51B56D; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                          <i class="fas fa-lightbulb text-white" style="font-size: 1.5rem;"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
-                          <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Ihre Wünsche für die Zukunft helfen uns zu verstehen, welche Unterstützung Sie brauchen – ob zu Hause oder in einer Einrichtung.
-                          </p>
-                          <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Unterstützung für Ihre Zukunft:</p>
-                            <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Wohnumfeld-Zuschuss:</strong> Bis zu 4.180€ für barrierefreie Umbauten (Bad, Rampen, Treppenlift)</li>
-                              <li><strong>KfW-Förderung:</strong> Bis zu 6.250€ Zuschuss oder 50.000€ Kredit für altersgerechtes Umbauen</li>
-                              <li><strong>Digitale Unterstützung:</strong> Pflegeberatung hilft bei der Nutzung digitaler Tools</li>
-                              <li><strong>Langzeitplanung:</strong> Beratung zur optimalen Nutzung aller Leistungen über Jahre</li>
-                              <li><strong>Einrichtungsplatz:</strong> Beratung bei der Suche nach passenden Pflegeeinrichtungen</li>
-                              <li><strong>Kombination verschiedener Leistungen:</strong> Flexibel kombinierbar für Ihre individuelle Situation</li>
-                            </ul>
-                            <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Ihre Zukunft liegt uns am Herzen – wir planen gemeinsam mit Ihnen!
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Was wünschen Sie sich in Zukunft für die Versorgung? (Falls Sie selbst betroffen sind: Was wünschen Sie sich für Ihre Versorgung?)</label>
-                  <div class="form-check-group">
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_48_0" name="q48_wasWunschen[]" value="Möglichst lange zu Hause bleiben können">
-                      <label class="form-check-label" for="input_48_0">Möglichst lange zu Hause bleiben können</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_48_1" name="q48_wasWunschen[]" value="Mehr Unterstützung durch Angehörige">
-                      <label class="form-check-label" for="input_48_1">Mehr Unterstützung durch Angehörige</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_48_2" name="q48_wasWunschen[]" value="Mehr Unterstützung durch Fachkräfte">
-                      <label class="form-check-label" for="input_48_2">Mehr Unterstützung durch Fachkräfte</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_48_3" name="q48_wasWunschen[]" value="Ein Platz in einer Einrichtung in Wohnortnähe">
-                      <label class="form-check-label" for="input_48_3">Ein Platz in einer Einrichtung in Wohnortnähe</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_48_4" name="q48_wasWunschen[]" value="Digitale Unterstützung (z. B. digitale Akte, Apps)">
-                      <label class="form-check-label" for="input_48_4">Digitale Unterstützung (z. B. digitale Akte, Apps)</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_48_5" name="q48_wasWunschen[]" value="Sonstiges">
-                      <label class="form-check-label" for="input_48_5">Sonstiges</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 7: Zahlungsbereitschaft & Finanzierung -->
-          <div class="form-section-card mb-4 stepper-content" id="section-7" data-section="7">
-            <div class="card shadow-sm border-0">
-              <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">7. Zahlungsbereitschaft & Finanzierung</h2>
-              </div>
-              <div class="card-body p-4">
-                <!-- Info Section 7 -->
                 <div class="info-section-card mb-4">
                   <div class="card shadow-sm border-0" style="background: linear-gradient(135deg, #f0f9f4 0%, #ffffff 100%); border-left: 4px solid #51B56D !important;">
                     <div class="card-body p-4">
@@ -786,21 +841,19 @@
                         <div class="flex-grow-1">
                           <h4 class="mb-2" style="color: #233242; font-weight: 600;">Warum fragen wir das?</h4>
                           <p class="mb-3" style="color: #374151; line-height: 1.6;">
-                            Viele Leistungen werden von der Pflegeversicherung übernommen. Wir möchten verstehen, welche zusätzliche Unterstützung für Sie sinnvoll ist.
+                            Um unser Angebot so zu gestalten, dass es euch wirklich hilft, möchten wir verstehen, welche Unterstützung ihr euch wünscht und wie ihr euch eine nachhaltige Lösung vorstellt.
                           </p>
                           <div class="support-info">
-                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Finanzielle Unterstützung, die Ihnen zusteht:</p>
+                            <p class="mb-2 fw-bold" style="color: #51B56D; font-size: 1.05rem;">💚 Finanzielle Unterstützung, die euch zusteht:</p>
                             <ul class="mb-0" style="color: #374151; line-height: 1.8;">
-                              <li><strong>Pflegeunterstützungsgeld:</strong> Bis zu 10 Tage pro Jahr, 90% Ihres Nettoeinkommens (max. 128,63€/Tag)</li>
+                              <li><strong>Pflegeunterstützungsgeld:</strong> Bis zu 10 Tage pro Jahr, 90% eures Nettoeinkommens (max. 128,63€/Tag)</li>
                               <li><strong>Familienpflegezeit:</strong> Zinsgünstiges Darlehen für Lohnausfall bei Arbeitszeitreduktion</li>
                               <li><strong>Pflege-Pauschbetrag:</strong> 600€ bis 1.800€ jährlich steuerlich absetzbar (je nach Pflegegrad)</li>
                               <li><strong>Haushaltsnahe Dienstleistungen:</strong> 20% Steuerermäßigung (max. 4.000€) für Pflegedienste</li>
-                              <li><strong>Behinderten-Pauschbetrag:</strong> 384€ bis 2.840€ jährlich bei GdB ≥ 20</li>
-                              <li><strong>Hilfe zur Pflege:</strong> Sozialamt übernimmt offene Kosten, wenn Ihre Mittel nicht ausreichen</li>
-                              <li><strong>Startbonus (Berlin):</strong> 924€ monatlich für Pflegeeltern bei Arbeitszeitreduktion</li>
+                              <li><strong>Hilfe zur Pflege:</strong> Sozialamt übernimmt offene Kosten, wenn eure Mittel nicht ausreichen</li>
                             </ul>
                             <p class="mt-3 mb-0" style="color: #51B56D; font-weight: 600;">
-                              ✨ Finanzielle Entlastung ist möglich – wir zeigen Ihnen alle Wege!
+                              ✨ Finanzielle Entlastung ist möglich – wir zeigen euch alle Wege!
                             </p>
                           </div>
                         </div>
@@ -810,122 +863,90 @@
                 </div>
                 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Wären Sie für persönliche Unterstützung (z. B. Begleitung bei Anträgen, Medikamentencheck, Organisation von Hilfen) bereit, einen monatlichen Beitrag zu zahlen?</label>
+                  <label class="form-label fw-bold mb-3">Wären Sie bereit, für eine digitale Plattform mit persönlicher Begleitung einen monatlichen Beitrag zu zahlen, wenn Sie dadurch nachweislich Zeit, Stress und Fehler vermeiden?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_52_0" name="q52_warenSie[]" value="Bis 25€ pro Monat">
-                      <label class="form-check-label" for="input_52_0">Bis 25€ pro Monat</label>
+                      <input class="form-check-input" type="radio" id="input_35_0" name="zahlungsbereitschaft_monatlich" value="bis_20_eur" required>
+                      <label class="form-check-label" for="input_35_0">Ja, bis 20 €</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_52_1" name="q52_warenSie[]" value="25 - 50€ pro Monat">
-                      <label class="form-check-label" for="input_52_1">25 - 50€ pro Monat</label>
+                      <input class="form-check-input" type="radio" id="input_35_1" name="zahlungsbereitschaft_monatlich" value="bis_50_eur">
+                      <label class="form-check-label" for="input_35_1">Ja, bis 50 €</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_52_2" name="q52_warenSie[]" value="50 - 100€ pro Monat">
-                      <label class="form-check-label" for="input_52_2">50 - 100€ pro Monat</label>
+                      <input class="form-check-input" type="radio" id="input_35_2" name="zahlungsbereitschaft_monatlich" value="bis_100_eur">
+                      <label class="form-check-label" for="input_35_2">Ja, bis 100 €</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_52_3" name="q52_warenSie[]" value="Mehr als 100€ pro Monat">
-                      <label class="form-check-label" for="input_52_3">Mehr als 100€ pro Monat</label>
+                      <input class="form-check-input" type="radio" id="input_35_3" name="zahlungsbereitschaft_monatlich" value="ueber_100_eur">
+                      <label class="form-check-label" for="input_35_3">Ja, über 100 €</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_52_4" name="q52_warenSie[]" value="Nein">
-                      <label class="form-check-label" for="input_52_4">Nein</label>
+                      <input class="form-check-input" type="radio" id="input_35_4" name="zahlungsbereitschaft_monatlich" value="nein">
+                      <label class="form-check-label" for="input_35_4">Nein</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-question mb-4">
-                  <label class="form-label fw-bold mb-3">Wären Sie eher bereit zu zahlen, wenn ein Teil der Kosten von der Krankenkasse / Pflegekasse übernommen würde?</label>
+                  <label class="form-label fw-bold mb-3">Wenn die Kosten von der Krankenkasse / Pflegekasse übernommen würden, würden Sie das Angebot nutzen?</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="radio" id="input_54_0" name="q54_warenSie54" value="Ja">
-                      <label class="form-check-label" for="input_54_0">Ja</label>
+                      <input class="form-check-input" type="radio" id="input_36_0" name="nutzung_bei_kostenuebernahme" value="ja_auf_jeden_fall" required>
+                      <label class="form-check-label" for="input_36_0">Ja, auf jeden Fall</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="radio" id="input_54_1" name="q54_warenSie54" value="Vielleicht">
-                      <label class="form-check-label" for="input_54_1">Vielleicht</label>
+                      <input class="form-check-input" type="radio" id="input_36_1" name="nutzung_bei_kostenuebernahme" value="wahrscheinlich">
+                      <label class="form-check-label" for="input_36_1">Wahrscheinlich</label>
                     </div>
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="radio" id="input_54_2" name="q54_warenSie54" value="Nein">
-                      <label class="form-check-label" for="input_54_2">Nein</label>
+                      <input class="form-check-input" type="radio" id="input_36_2" name="nutzung_bei_kostenuebernahme" value="unsicher">
+                      <label class="form-check-label" for="input_36_2">Unsicher</label>
                     </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_36_3" name="nutzung_bei_kostenuebernahme" value="eher_nicht">
+                      <label class="form-check-label" for="input_36_3">Eher nicht</label>
+                    </div>
+                    <div class="form-check form-check-card">
+                      <input class="form-check-input" type="radio" id="input_36_4" name="nutzung_bei_kostenuebernahme" value="nein">
+                      <label class="form-check-label" for="input_36_4">Nein</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Wenn Sie sich eine ideale Unterstützung in Ihrer Pflegesituation wünschen könnten – wie sähe diese aus?</label>
+                  <div class="form-check-group">
+                    <textarea id="input_37" class="form-control" name="ideale_unterstuetzung" rows="5" style="min-height: 120px;" placeholder="Beschreiben Sie Ihre Wünsche und Vorstellungen..."></textarea>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">E-Mail-Adresse <span class="text-muted">(optional)</span></label>
+                  <div class="form-check-group">
+                    <input type="email" id="input_email" class="form-control" name="email" placeholder="ihre.email@beispiel.de">
+                    <small class="form-text text-muted">Wir verwenden Ihre E-Mail-Adresse nur, um Ihnen relevante Informationen zu senden.</small>
+                  </div>
+                </div>
+
+                <div class="form-question mb-4">
+                  <label class="form-label fw-bold mb-3">Telefonnummer <span class="text-muted">(optional)</span></label>
+                  <div class="form-check-group">
+                    <input type="tel" id="input_phone" class="form-control" name="telefon" placeholder="+49 123 456789">
+                    <small class="form-text text-muted">Falls Sie eine Rückmeldung wünschen, können wir Sie telefonisch kontaktieren.</small>
                   </div>
                 </div>
 
                 <div class="form-question">
-                  <label class="form-label fw-bold mb-3">Welche Bezahlform wäre für Sie am angenehmsten?</label>
+                  <label class="form-label fw-bold mb-3">Newsletter</label>
                   <div class="form-check-group">
                     <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_56_0" name="q56_welcheBezahlform[]" value="Monatliches Abo mit festen Leistungen">
-                      <label class="form-check-label" for="input_56_0">Monatliches Abo mit festen Leistungen</label>
+                      <input class="form-check-input" type="checkbox" id="input_newsletter" name="newsletter" value="ja">
+                      <label class="form-check-label" for="input_newsletter">
+                        Ja, ich möchte den Newsletter erhalten und über Neuigkeiten, Tipps und Unterstützungsangebote informiert werden.
+                      </label>
                     </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_56_1" name="q56_welcheBezahlform[]" value="Bezahlung pro Einzelleistung (z. B. Beratungsgespräch, Medikamentencheck)">
-                      <label class="form-check-label" for="input_56_1">Bezahlung pro Einzelleistung (z. B. Beratungsgespräch, Medikamentencheck)</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_56_2" name="q56_welcheBezahlform[]" value="Kombination aus Basis-Abo + Zusatzleistungen bei Bedarf">
-                      <label class="form-check-label" for="input_56_2">Kombination aus Basis-Abo + Zusatzleistungen bei Bedarf</label>
-                    </div>
-                    <div class="form-check form-check-card">
-                      <input class="form-check-input" type="checkbox" id="input_56_3" name="q56_welcheBezahlform[]" value="Ich weiß es nicht">
-                      <label class="form-check-label" for="input_56_3">Ich weiß es nicht</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 8: Kontakt & Datenschutz -->
-          <div class="form-section-card mb-4 stepper-content" id="section-8" data-section="8">
-            <div class="card shadow-sm border-0">
-              <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0">8. Kontakt & Datenschutz</h2>
-              </div>
-              <div class="card-body p-4">
-                <div class="form-question mb-4">
-                  <p class="mb-4" style="color: #374151; line-height: 1.6;">
-                    Um Ihnen ein <strong>individualisiertes Förderprogramm</strong> erstellen zu können, benötigen wir Ihre Kontaktdaten. Ihre Daten werden ausschließlich für die Erstellung und Bereitstellung Ihres persönlichen Förderprogramms verwendet.
-                  </p>
-                  
-                  <div class="row g-3 mb-4">
-                    <div class="col-md-6">
-                      <label for="contact_email" class="form-label fw-bold mb-2">E-Mail-Adresse <span class="text-danger">*</span></label>
-                      <input type="email" class="form-control" id="contact_email" name="contact_email" required placeholder="ihre.email@beispiel.de">
-                      <div class="form-text">Wir benötigen Ihre E-Mail, um Ihnen Ihr Förderprogramm zuzusenden.</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="contact_phone" class="form-label fw-bold mb-2">Telefonnummer</label>
-                      <input type="tel" class="form-control" id="contact_phone" name="contact_phone" placeholder="+49 123 456789">
-                      <div class="form-text">Optional – für Rückfragen zu Ihrem Förderprogramm.</div>
-                    </div>
-                  </div>
-
-                  <div class="form-check form-check-card mb-4" style="background: #f8f9fa; padding: 1.25rem 1.5rem; border-radius: 12px;">
-                    <input class="form-check-input" type="checkbox" id="newsletter_consent" name="newsletter_consent" value="yes">
-                    <label class="form-check-label" for="newsletter_consent">
-                      <strong>Newsletter abonnieren</strong>
-                      <div class="form-text mt-1 mb-0" style="font-size: 0.875rem;">Ich möchte per E-Mail über neue Pflegeprogramme, Förderungen und wichtige Updates informiert werden. (Optional)</div>
-                    </label>
-                  </div>
-
-                  <div class="alert alert-light border-start border-primary border-4 p-4" style="background: #f0f9f4;">
-                    <h5 class="alert-heading mb-3" style="color: #233242;">
-                      <span style="font-size: 1.25rem; margin-right: 0.5rem;">🛡️</span>Datenschutz & Verwendung Ihrer Daten
-                    </h5>
-                    <p class="mb-2" style="color: #374151; line-height: 1.6;">
-                      <strong>Ihre Daten werden ausschließlich verwendet für:</strong>
-                    </p>
-                    <ul class="mb-3" style="color: #374151; line-height: 1.8;">
-                      <li>Die Erstellung Ihres <strong>individualisierten Förderprogramms</strong></li>
-                      <li>Die Bereitstellung und Übermittlung Ihres persönlichen Förderprogramms</li>
-                      <li>Bei Newsletter-Anmeldung: Versand von Informationen über neue Pflegeprogramme und Förderungen</li>
-                    </ul>
-                    <p class="mb-0" style="color: #374151; line-height: 1.6;">
-                      <strong>Ihre Daten werden nicht:</strong> an Dritte weitergegeben, für Marketingzwecke ohne Ihre Einwilligung verwendet oder länger als notwendig gespeichert. Sie haben jederzeit das Recht, Auskunft über Ihre Daten zu erhalten oder diese löschen zu lassen.
-                    </p>
+                    <small class="form-text text-muted">Sie können den Newsletter jederzeit abbestellen.</small>
                   </div>
                 </div>
               </div>
@@ -1364,8 +1385,8 @@ html {
   transform: scale(1.1);
 }
 
-/* Contact Form Fields */
-#section-8 .form-control {
+/* Textarea styling */
+textarea.form-control {
   padding: 0.875rem 1.25rem;
   border: 2px solid #e9ecef;
   border-radius: 10px;
@@ -1373,29 +1394,10 @@ html {
   transition: all 0.3s ease;
 }
 
-#section-8 .form-control:focus {
+textarea.form-control:focus {
   border-color: #51B56D;
   box-shadow: 0 0 0 0.25rem rgba(81, 181, 109, 0.15);
   outline: none;
-}
-
-#section-8 .form-label {
-  font-size: 1rem;
-  color: #233242;
-}
-
-#section-8 .form-text {
-  font-size: 0.875rem;
-  color: #6c757d;
-  margin-top: 0.5rem;
-}
-
-#section-8 .alert {
-  border-radius: 12px;
-}
-
-#section-8 .form-check-card {
-  cursor: pointer;
 }
 </style>
 
@@ -1403,7 +1405,7 @@ html {
 (function() {
   'use strict';
   
-  const form = document.getElementById('252282128598061');
+  const form = document.getElementById('form_252275829701057');
   const sections = document.querySelectorAll('.stepper-content');
   const stepperSteps = document.querySelectorAll('.stepper-step');
   const progressBar = document.getElementById('progressBar');
@@ -1589,3 +1591,5 @@ html {
 </script>
 
 {{ end }}
+
+
