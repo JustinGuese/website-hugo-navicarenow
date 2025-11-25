@@ -227,7 +227,7 @@ html {
           {{ if fileExists (add `assets/` .image) }}
           {{$img:= resources.Get (.image) }}
           {{$img:= $img.Resize "555x webp"}}
-          <img loading="lazy" decoding="async" src="{{$img.RelPermalink}}" alt="banner image" class="w-100" width="{{$img.Width}}" height="{{$img.Height}}">
+          <img fetchpriority="high" decoding="async" src="{{$img.RelPermalink}}" alt="banner image" class="w-100" width="{{$img.Width}}" height="{{$img.Height}}">
           {{ end }}
           {{ end }}
         </div>
@@ -347,14 +347,28 @@ html {
 </style>
 
 <script>
-// Initialize AOS (Animate On Scroll) if not already loaded
-if (typeof AOS !== 'undefined') {
-  AOS.init({
-    once: true,
-    duration: 800,
-    easing: 'ease-out-cubic'
-  });
-}
+(function () {
+  function initAOS() {
+    if (typeof AOS === 'undefined') {
+      return;
+    }
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic'
+    });
+  }
+
+  if (typeof AOS !== 'undefined') {
+    initAOS();
+  } else {
+    var onAOSLoaded = function () {
+      document.removeEventListener('aos:loaded', onAOSLoaded);
+      initAOS();
+    };
+    document.addEventListener('aos:loaded', onAOSLoaded);
+  }
+})();
 </script>
 {{ end }}
 {{ end }}

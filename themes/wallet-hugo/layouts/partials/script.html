@@ -1,3 +1,25 @@
+<!-- AOS JS loaded asynchronously to prevent render blocking -->
+<script>
+  (function() {
+    var script = document.createElement('script');
+    script.src = 'https://unpkg.com/aos@next/dist/aos.js';
+    script.async = true;
+    script.onload = function () {
+      if (typeof document !== 'undefined') {
+        var eventName = 'aos:loaded';
+        if (typeof window.CustomEvent === 'function') {
+          document.dispatchEvent(new CustomEvent(eventName));
+        } else if (typeof document.createEvent === 'function') {
+          var event = document.createEvent('Event');
+          event.initEvent(eventName, true, true);
+          document.dispatchEvent(event);
+        }
+      }
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+
 <!-- font family -->
 <script src="https://cdn.jsdelivr.net/gh/theprojectsomething/webfontloader@feature/google-fonts-v2/webfontloader.js"></script>
 {{$pf:= site.Params.variables.primary_font}}

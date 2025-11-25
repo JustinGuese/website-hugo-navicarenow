@@ -20,8 +20,13 @@
 <link rel="dns-prefetch" href="//connect.facebook.net">
 <link rel="dns-prefetch" href="//platform.linkedin.com">
 <link rel="dns-prefetch" href="//platform.twitter.com">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<!-- AOS CSS loaded asynchronously to prevent render blocking -->
+<link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /></noscript>
 <!-- plugins + stylesheet -->
 {{ $styles := slice }}
 {{ range site.Params.plugins.css }}
