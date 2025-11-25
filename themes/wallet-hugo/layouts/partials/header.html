@@ -29,13 +29,32 @@
   <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
     <div class="container">
       <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-        {{ $logo:= site.Params.logo }}
-        {{ if fileExists (add `assets/` $logo) }}
-        {{ $logo:= resources.Get $logo }}
-        {{ $option := add (string site.Params.logo_width) " webp" }}
-        {{ $logo:= $logo.Resize site.Params.logo_width }}
-        {{ $logo_webp:= $logo.Resize $option }}
-        <img loading="prelaod" decoding="async" class="img-fluid" width="{{$logo.Width}}" height="{{$logo.Height}}" src="{{$logo_webp.RelPermalink}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{$logo.RelPermalink}}'">
+        {{ $logoPath := site.Params.logo }}
+        {{ if fileExists (add `assets/` $logoPath) }}
+        {{ $logoResource := resources.Get $logoPath }}
+        {{ $breakpoints := slice 120 160 200 240 }}
+        {{ $sizesAttr := "160px" }}
+        {{ $logoWidthSetting := site.Params.logo_width | default "160x" }}
+        {{ $avifSet := slice }}
+        {{ $webpSet := slice }}
+        {{ range $breakpoints }}
+          {{ if ge $logoResource.Width . }}
+            {{ $avifVariant := $logoResource.Resize (printf "%dx q80 avif" .) }}
+            {{ $webpVariant := $logoResource.Resize (printf "%dx q85 webp" .) }}
+            {{ $avifSet = $avifSet | append (printf "%s %dw" $avifVariant.RelPermalink .) }}
+            {{ $webpSet = $webpSet | append (printf "%s %dw" $webpVariant.RelPermalink .) }}
+          {{ end }}
+        {{ end }}
+        {{ $logoFallback := $logoResource.Resize (printf "%s q85 png" $logoWidthSetting) }}
+        <picture>
+          {{ if gt (len $avifSet) 0 }}
+          <source type="image/avif" srcset="{{ delimit $avifSet ", " }}" sizes="{{ $sizesAttr }}">
+          {{ end }}
+          {{ if gt (len $webpSet) 0 }}
+          <source type="image/webp" srcset="{{ delimit $webpSet ", " }}" sizes="{{ $sizesAttr }}">
+          {{ end }}
+          <img fetchpriority="high" loading="eager" decoding="async" class="img-fluid" sizes="{{ $sizesAttr }}" width="{{ $logoFallback.Width }}" height="{{ $logoFallback.Height }}" src="{{ $logoFallback.RelPermalink }}" alt="{{ site.Title }}">
+        </picture>
         {{ else }}
         {{site.Params.logo_text | markdownify}}
         {{ end }}

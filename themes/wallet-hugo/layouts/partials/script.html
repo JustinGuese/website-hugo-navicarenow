@@ -22,19 +22,38 @@
 
 <!-- font family -->
 <script src="https://cdn.jsdelivr.net/gh/theprojectsomething/webfontloader@feature/google-fonts-v2/webfontloader.js"></script>
-{{$pf:= site.Params.variables.primary_font}}
+{{$pf:= site.Params.variables.primary_font | default `Rubik:wght@400;500;700`}}
 {{$sf:= site.Params.variables.secondary_font}}
-<script type="application/javascript">
-  WebFont.load({
-    google: {
-      api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lato:wght@400`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Lato:wght@400`}}&display=swap'{{end}}],
-      version: 2
-    },
-    active: () => {
-      sessionStorage.fontsLoaded = true
+{{$fontFamilies := slice (printf "%s&display=swap" $pf) }}
+{{ with $sf }}
+  {{$fontFamilies = $fontFamilies | append (printf "%s&display=swap" (. | default `Rubik:wght@400;500;700`)) }}
+{{ end }}
+{{$fontFamiliesJSON := $fontFamilies | jsonify }}
+<script type="application/javascript" data-font-families='{{ $fontFamiliesJSON | htmlEscape }}'>
+  (function() {
+    if (typeof window === 'undefined') return;
+    if (sessionStorage.fontsLoaded === 'true') return;
+    if (typeof WebFont === 'undefined') return;
+    var scriptNode = document.currentScript;
+    var fontFamilies = [];
+    if (scriptNode && scriptNode.dataset.fontFamilies) {
+      try {
+        fontFamilies = JSON.parse(scriptNode.dataset.fontFamilies);
+      } catch (error) {
+        console.warn('Unable to parse font families', error);
+      }
     }
-  });
+    WebFont.load({
+      google: {
+        api: 'https://fonts.googleapis.com/css2',
+        families: fontFamilies,
+        version: 2
+      },
+      active: () => {
+        sessionStorage.fontsLoaded = 'true';
+      }
+    });
+  })();
 </script>
 
 <!-- JS Plugins + Main script -->
@@ -43,7 +62,8 @@
 {{ range site.Params.plugins.js }}
   {{ if findRE "^http" .link }}
     <script
-      src="{{ .link | relURL }}"
+      defer
+      src="{{ .link }}"
       type="application/javascript"
       {{ .attributes | safeHTMLAttr }}></script>
   {{ else }}
@@ -60,6 +80,7 @@
 
 {{/* scripts */}}
 <script
+  defer
   crossorigin="anonymous"
   integrity="{{ $scripts.Data.Integrity }}"
   src="{{ $scripts.RelPermalink }}"></script>
@@ -71,15 +92,17 @@
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
 	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">{{.button}}</span>
 </div>
-<script type="application/javascript">
+<script type="application/javascript" data-expire-days="{{ .expire_days }}">
 	(function ($) {
+    const scriptNode = document.currentScript;
+    const expireDays = scriptNode ? parseInt(scriptNode.dataset.expireDays || '0', 10) || 0 : 0;
 		const cookieBox = document.getElementById('js-cookie-box');
 		const cookieButton = document.getElementById('js-cookie-button');
 		if (!Cookies.get('cookie-box')) {
 			cookieBox.classList.remove('cookie-box-hide');
 			cookieButton.onclick = function () {
 				Cookies.set('cookie-box', true, {
-					expires: {{ .expire_days }}
+					expires: expireDays
 				});
 				cookieBox.classList.add('cookie-box-hide');
 			};
