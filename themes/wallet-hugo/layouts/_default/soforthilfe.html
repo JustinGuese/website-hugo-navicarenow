@@ -1,0 +1,1627 @@
+{{ define "main" }}
+
+<section class="section py-5" id="soforthilfe-hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <p class="text-uppercase text-primary small fw-bold mb-2">Soforthilfe für Angehörige</p>
+        <h1 class="display-5 mb-3">Plötzlich Pflegefall in der Familie? Wir fangen Sie auf.</h1>
+        <p class="lead text-muted">Wenn ein geliebter Mensch von heute auf morgen pflegebedürftig wird, fehlt oft der Überblick. Wir zeigen Ihnen die nächsten Schritte, geben Orientierung und helfen Ihnen sofort, den Pflegegrad zu bestimmen.</p>
+        <div class="card shadow-sm border-0 mt-4">
+          <div class="card-body">
+            <p class="fw-semibold text-primary mb-2">Was jetzt wichtig ist:</p>
+            <ul class="list-unstyled mb-0 hero-checklist">
+              <li><i class="las la-check-circle text-success me-2"></i>Ruhe bewahren und Informationen sammeln</li>
+              <li><i class="las la-check-circle text-success me-2"></i>Pflegegrad prüfen – Grundlage für finanzielle Unterstützung</li>
+              <li><i class="las la-check-circle text-success me-2"></i>Passende Leistungen und Ansprechpartner finden</li>
+              <li><i class="las la-check-circle text-success me-2"></i>Alle Informationen zu Pflegethemen finden Sie auf unserer Website</li>
+            </ul>
+          </div>
+        </div>
+        <div class="alert alert-info mt-4 border-0 shadow-sm">
+          <p class="mb-0"><strong>Der wichtigste nächste Schritt:</strong> Ermitteln Sie jetzt den Pflegegrad mit unserem Rechner weiter unten auf dieser Seite, um den Antrag auf Pflegeunterstützung bereits jetzt auszusenden.</p>
+        </div>
+        <div class="mt-4">
+          <a href="#pflegegradrechner" class="btn btn-primary btn-lg"><i class="las la-calculator me-2"></i>Pflegegradrechner starten</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card shadow-sm border-0 h-100 support-card">
+          <div class="card-body p-4">
+            <p class="text-uppercase small text-muted fw-semibold mb-2">Ihre Begleitung</p>
+            <h3 class="h4">Was Sie auf dieser Seite finden</h3>
+            <div class="divider my-4"></div>
+            <ol class="timeline-list">
+              <li>
+                <span class="timeline-title">Soforthilfe & Orientierung</span>
+                <small class="text-muted">Kurz erklärt, welche Schritte jetzt sinnvoll sind.</small>
+              </li>
+              <li>
+                <span class="timeline-title">Pflegegradrechner</span>
+                <small class="text-muted">In sechs Modulen zur verlässlichen Ersteinschätzung.</small>
+              </li>
+              <li>
+                <span class="timeline-title">Nächste Schritte sichern</span>
+                <small class="text-muted">Vorausgefüllte PDF oder Done-for-you-Service wählen.</small>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section py-5 bg-light" id="pflegegradrechner">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="text-uppercase text-muted small">Pflegegrad bestimmen</p>
+      <h2 class="display-6">Pflegegradrechner für Angehörige</h2>
+      <p class="lead text-muted">Das Neue Begutachtungsassessment (NBA) bewertet sechs Lebensbereiche. Unser Rechner führt Sie Schritt für Schritt hindurch und zeigt sofort, welcher Pflegegrad wahrscheinlich ist.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm sticky-lg-top info-card">
+          <div class="card-body p-4">
+            <p class="text-uppercase text-primary small fw-bold mb-2">So funktioniert es</p>
+            <ol class="process-list">
+              <li>Wählen Sie pro Frage die Antwort, die am besten zur Situation passt.</li>
+              <li>Der Rechner addiert Punkte und gewichtet die Module automatisch.</li>
+              <li>Am Ende sehen Sie Pflegegrad, Punktestand und konkrete nächste Schritte.</li>
+            </ol>
+            <div class="bg-soft-primary rounded p-3 mt-4">
+              <p class="fw-semibold mb-2">Wichtige Hinweise</p>
+              <ul class="list-unstyled mb-0 small">
+                <li><i class="las la-info-circle text-primary me-2"></i>Die Einschätzung ersetzt kein offizielles Gutachten, hilft aber bei der Vorbereitung.</li>
+                <li><i class="las la-info-circle text-primary me-2"></i>Für Kinder gelten Sonderregeln – bitte wenden Sie sich an eine Pflegeberatung.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <div class="progress-info d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
+              <div>
+                <p class="text-muted small mb-1">Fortschritt</p>
+                <h6 class="mb-0"><span id="navicare-progress-label">Modul 1 von 6</span></h6>
+              </div>
+              <div class="flex-grow-1 w-100">
+                <div class="progress" style="height:8px;">
+                  <div class="progress-bar" id="navicare-progress" role="progressbar" style="width:0%"></div>
+                </div>
+              </div>
+            </div>
+            <ul class="calculator-tabs" id="navicare-tabs"></ul>
+            <div id="navicare-modules"></div>
+            <div class="d-flex justify-content-between gap-3 mt-4">
+              <button class="btn btn-outline-primary w-50" id="navicare-prev" disabled><i class="las la-arrow-left me-1"></i>Zurück</button>
+              <button class="btn btn-primary w-50" id="navicare-next">Weiter<i class="las la-arrow-right ms-1"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-sm border-0 mt-4" id="navicare-result-card" style="display:none;">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column flex-lg-row justify-content-between gap-4">
+              <div class="flex-grow-1">
+                <p class="text-uppercase text-muted small mb-2">Ergebnis</p>
+                <h3 class="mb-2" id="navicare-result-headline">Noch keine Berechnung</h3>
+                <p class="text-muted" id="navicare-result-description">Füllen Sie bitte alle Module aus, um das Ergebnis zu sehen.</p>
+                <div class="result-grid" id="navicare-module-breakdown"></div>
+              </div>
+              <div class="border-start ps-lg-4">
+                <p class="text-uppercase text-muted small mb-2">Gesamtpunkte</p>
+                <h1 class="display-4 mb-0" id="navicare-total-points">0</h1>
+                <p class="text-muted">von 100 möglichen Punkten</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-1" id="navicare-next-steps" style="display:none;">
+          <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="las la-envelope text-primary fs-3 me-2"></i>
+                  <div>
+                    <p class="text-uppercase small text-muted mb-0">Option 1</p>
+                    <h4 class="mb-0">PDF per E-Mail erhalten</h4>
+                  </div>
+                </div>
+                <p class="text-muted">Wir senden Ihnen das Ergebnis inkl. Modulübersicht und vorbereiteten Textbausteinen für den Antrag. Kostenlos.</p>
+                <form class="next-step-form" id="navicare-pdf-form">
+                  <div class="mb-3">
+                    <label class="form-label">E-Mail-Adresse <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="navicare-pdf-email" required>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="navicare-newsletter">
+                    <label class="form-check-label" for="navicare-newsletter">Ich möchte den Newsletter erhalten (optional, nicht vorausgewählt)</label>
+                  </div>
+                  <button type="button" class="btn btn-primary w-100" id="navicare-pdf-submit">PDF per E-Mail sichern</button>
+                  <p class="placeholder-hint text-muted small mt-2">Placeholder: Versand erfolgt in Kürze automatisch.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="las la-headset text-primary fs-3 me-2"></i>
+                  <div>
+                    <p class="text-uppercase small text-muted mb-0">Option 2</p>
+                    <h4 class="mb-0">Done for you Service</h4>
+                  </div>
+                </div>
+                <p class="text-muted">Für 4,99 € prüfen wir Ihren Antrag, ergänzen fehlende Angaben, drucken, versenden und melden uns auf Wunsch telefonisch.</p>
+                <form class="next-step-form" id="navicare-service-form">
+                  <div class="mb-3">
+                    <label class="form-label">E-Mail-Adresse <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="navicare-service-email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Telefonnummer <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="navicare-service-phone" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Zahlungsart</label>
+                    <div class="payment-placeholder p-3 border rounded bg-light">
+                      <span class="badge bg-secondary me-2">Stripe Placeholder</span>
+                      <span class="text-muted small">Die echte Zahlungsabwicklung wird gerade vorbereitet.</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-dark w-100" id="navicare-service-submit">Done for you sichern – 4,99 €</button>
+                  <p class="placeholder-hint text-muted small mt-2">Placeholder: Wir bestätigen den Auftrag manuell.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Hero Section Styling */
+  #soforthilfe-hero {
+    background: linear-gradient(135deg, #f8fbff 0%, #fff 100%);
+  }
+  
+  #soforthilfe-hero .hero-checklist li {
+    display:flex;
+    align-items:center;
+    margin-bottom:.65rem;
+    font-weight:500;
+    font-size:.95rem;
+  }
+  
+  #soforthilfe-hero .hero-checklist li i {
+    font-size:1.3rem;
+    flex-shrink:0;
+  }
+  
+  /* Support Card Timeline */
+  .support-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+    border:1px solid #e3f2fd !important;
+  }
+  
+  .support-card .divider {
+    height:2px;
+    background: linear-gradient(90deg, #1b7b5f 0%, transparent 100%);
+  }
+  
+  .support-card .timeline-list {
+    list-style:none;
+    margin:0;
+    padding:0;
+    counter-reset:timeline;
+  }
+  
+  .support-card .timeline-list li {
+    padding-left:2.8rem;
+    position:relative;
+    margin-bottom:1.75rem;
+  }
+  
+  .support-card .timeline-list li:last-child { margin-bottom:0; }
+  
+  .support-card .timeline-list li::before {
+    counter-increment:timeline;
+    content:counter(timeline);
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background: linear-gradient(135deg, #1b7b5f 0%, #2d9c7a 100%);
+    color:#fff;
+    position:absolute;
+    left:0;
+    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:1rem;
+    box-shadow:0 4px 12px rgba(27,123,95,.25);
+  }
+  
+  .support-card .timeline-list li::after {
+    content:'';
+    position:absolute;
+    left:18px;
+    top:45px;
+    width:2px;
+    height:calc(100% - 38px);
+    background: linear-gradient(180deg, #1b7b5f 0%, transparent 100%);
+  }
+  
+  .support-card .timeline-list li:last-child::after {
+    display:none;
+  }
+  
+  .support-card .timeline-title { 
+    font-weight:700; 
+    display:block;
+    font-size:1.05rem;
+    color:#1b7b5f;
+    margin-bottom:.25rem;
+  }
+  
+  /* Info Card Styling */
+  .info-card {
+    position:sticky;
+    top:20px;
+  }
+  
+  .bg-soft-primary {
+    background: linear-gradient(135deg, #e8f5f1 0%, #f0f9f6 100%);
+    border:1px solid #d4ede5;
+  }
+  
+  .bg-soft-primary > p {
+    margin-bottom:.75rem;
+    margin-left:0 !important;
+    margin-right:0;
+    padding-left:0 !important;
+    padding-right:0;
+    text-align:left;
+  }
+  
+  .bg-soft-primary .list-unstyled {
+    padding-left:0 !important;
+    margin-left:0 !important;
+    margin-right:0;
+    list-style:none;
+  }
+  
+  .bg-soft-primary .list-unstyled li {
+    padding-left:0 !important;
+    margin-left:0 !important;
+    margin-right:0;
+    margin-bottom:.5rem;
+    text-align:left;
+    display:flex;
+    align-items:flex-start;
+  }
+  
+  .bg-soft-primary .list-unstyled li:last-child {
+    margin-bottom:0;
+  }
+  
+  .bg-soft-primary .list-unstyled li i {
+    margin-right:.5rem;
+    flex-shrink:0;
+    margin-top:.15rem;
+  }
+  
+  .process-list { 
+    margin:0; 
+    padding-left:0;
+    list-style-position:inside;
+  }
+  
+  .process-list li { 
+    margin-bottom:1rem;
+    font-size:.95rem;
+    line-height:1.6;
+    padding-left:0;
+  }
+  
+  /* Calculator Tabs */
+  .calculator-tabs {
+    list-style:none;
+    padding:0;
+    margin:1.5rem 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.75rem;
+  }
+  
+  .calculator-tabs li {
+    padding:.75rem 1.25rem;
+    border-radius:999px;
+    border:2px solid #e3f2fd;
+    cursor:pointer;
+    font-weight:600;
+    font-size:.875rem;
+    transition:all .3s ease;
+    background:#fff;
+    position:relative;
+  }
+  
+  .calculator-tabs li:hover {
+    border-color:#1b7b5f;
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px rgba(27,123,95,.15);
+  }
+  
+  .calculator-tabs li.active {
+    background: linear-gradient(135deg, #1b7b5f 0%, #2d9c7a 100%);
+    color:#fff;
+    border-color:#1b7b5f;
+    box-shadow:0 8px 20px rgba(27,123,95,.3);
+    transform:translateY(-2px);
+  }
+  
+  .calculator-tabs li.completed {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-color:#28a745;
+    color:#155724;
+  }
+  
+  .calculator-tabs li.completed::after {
+    content:'✓';
+    margin-left:.5rem;
+    font-weight:700;
+  }
+  
+  /* Module Card */
+  .module-card {
+    border:1px solid #e6eaef;
+    border-radius:20px;
+    padding:2rem;
+    margin-bottom:1.5rem;
+    background:#fff;
+    box-shadow:0 4px 20px rgba(15,23,42,.08);
+  }
+  
+  .module-card h4 { 
+    font-size:1.3rem;
+    color:#1b7b5f;
+    font-weight:700;
+  }
+  
+  .module-card .badge {
+    padding:.5rem 1rem;
+    font-size:.875rem;
+    background: linear-gradient(135deg, #e8f5f1 0%, #f0f9f6 100%);
+    border:1px solid #1b7b5f;
+  }
+  
+  /* Question Blocks */
+  .question-block { 
+    margin-top:2rem;
+    padding-top:2rem;
+    border-top:1px solid #f0f4f8;
+  }
+  
+  .question-block:first-child { 
+    margin-top:1.5rem; 
+    padding-top:0;
+    border-top:none;
+  }
+  
+  .question-label {
+    font-weight:700;
+    margin-bottom:1.25rem;
+    color:#1b7b5f;
+    font-size:1.05rem;
+    display:flex;
+    align-items:center;
+  }
+  
+  .question-label::before {
+    content:'';
+    display:inline-block;
+    width:4px;
+    height:24px;
+    background: linear-gradient(180deg, #1b7b5f 0%, #2d9c7a 100%);
+    border-radius:2px;
+    margin-right:12px;
+  }
+  
+  .question-block.required {
+    border:2px solid #dc3545;
+    border-radius:8px;
+    padding:1.5rem;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+    animation:shake 0.5s ease-in-out;
+  }
+  
+  .question-block.required .question-label {
+    color:#dc3545;
+  }
+  
+  .question-block.required .question-label::before {
+    background: linear-gradient(180deg, #dc3545 0%, #c82333 100%);
+  }
+  
+  .answer-pill.required {
+    border-color:#dc3545;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+  }
+  
+  .numeric-field.required {
+    border-color:#dc3545;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+  }
+  
+  .numeric-field.required label {
+    color:#dc3545;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform:translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform:translateX(-5px); }
+    20%, 40%, 60%, 80% { transform:translateX(5px); }
+  }
+  
+  .question-info-box {
+    background: linear-gradient(135deg, #e8f5f1 0%, #f0f9f6 100%);
+    border:1px solid #d4ede5;
+    border-left:3px solid #1b7b5f;
+    border-radius:8px;
+    padding:.75rem 1rem;
+    margin-bottom:1.25rem;
+    margin-top:.5rem;
+    display:flex;
+    align-items:flex-start;
+    gap:.5rem;
+    font-size:.9rem;
+    line-height:1.5;
+    color:#2c3e50;
+  }
+  
+  .question-info-box i {
+    font-size:1.1rem;
+    flex-shrink:0;
+    margin-top:.1rem;
+  }
+  
+  .question-info-box span {
+    flex:1;
+  }
+  
+  /* Answer Pills */
+  .answer-pill {
+    border:2px solid #e3f2fd;
+    border-radius:12px;
+    padding:1.1rem 1.25rem;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-bottom:.75rem;
+    cursor:pointer;
+    transition:all .3s ease;
+    background:#fff;
+  }
+  
+  .answer-pill:hover {
+    border-color:#1b7b5f;
+    background: linear-gradient(135deg, #f8fbff 0%, #fff 100%);
+    transform:translateX(4px);
+    box-shadow:0 4px 16px rgba(27,123,95,.12);
+  }
+  
+  .answer-pill input { 
+    width:1.3rem; 
+    height:1.3rem; 
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  
+  .answer-pill label {
+    cursor:pointer;
+    font-weight:500;
+    font-size:.95rem;
+  }
+  
+  .answer-pill.active { 
+    border-color:#1b7b5f; 
+    background: linear-gradient(135deg, #e8f5f1 0%, #f0f9f6 100%);
+    box-shadow:0 8px 24px rgba(27,123,95,.2);
+    transform:translateX(8px);
+  }
+  
+  /* Numeric Fields */
+  .numeric-grid { 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
+    gap:1.25rem; 
+    margin-top:1.25rem;
+  }
+  
+  .numeric-field {
+    border:2px solid #e3f2fd;
+    border-radius:12px;
+    padding:1.25rem;
+    background: linear-gradient(135deg, #f8fbff 0%, #fff 100%);
+    transition:all .3s ease;
+  }
+  
+  .numeric-field:hover {
+    border-color:#1b7b5f;
+    box-shadow:0 4px 16px rgba(27,123,95,.1);
+  }
+  
+  .numeric-field label {
+    font-size:.9rem;
+    font-weight:700;
+    color:#1b7b5f;
+    margin-bottom:.75rem;
+    display:flex;
+    align-items:center;
+  }
+  
+  .field-tooltip-icon {
+    transition:all .3s ease;
+    flex-shrink:0;
+  }
+  
+  .field-tooltip-icon:hover {
+    color:#2d9c7a !important;
+    transform:scale(1.1);
+  }
+  
+  .field-tooltip {
+    position:absolute;
+    background:#2c3e50;
+    color:#fff;
+    padding:.75rem 1rem;
+    border-radius:8px;
+    font-size:.85rem;
+    line-height:1.5;
+    max-width:300px;
+    z-index:1000;
+    box-shadow:0 8px 24px rgba(0,0,0,.2);
+    pointer-events:none;
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+  
+  .field-tooltip.show {
+    opacity:1;
+  }
+  
+  .field-tooltip::after {
+    content:'';
+    position:absolute;
+    bottom:-6px;
+    left:20px;
+    width:0;
+    height:0;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    border-top:6px solid #2c3e50;
+  }
+  
+  .input-group-sm {
+    margin-bottom:.65rem;
+  }
+  
+  .input-group-sm .input-group-text {
+    background: linear-gradient(135deg, #e8f5f1 0%, #f0f9f6 100%);
+    border-color:#d4ede5;
+    color:#1b7b5f;
+    font-weight:600;
+    font-size:.8rem;
+  }
+  
+  .input-group-sm .form-control {
+    border-color:#d4ede5;
+    font-weight:600;
+  }
+  
+  .input-group-sm .form-control:focus {
+    border-color:#1b7b5f;
+    box-shadow:0 0 0 .2rem rgba(27,123,95,.15);
+  }
+  
+  .numeric-btn-plus,
+  .numeric-btn-minus {
+    min-width:36px;
+    padding:.25rem .5rem;
+    font-weight:700;
+    font-size:1.1rem;
+    line-height:1;
+    border-color:#d4ede5;
+    color:#1b7b5f;
+    transition:all .2s ease;
+  }
+  
+  .numeric-btn-plus:hover,
+  .numeric-btn-minus:hover {
+    background:#1b7b5f;
+    border-color:#1b7b5f;
+    color:#fff;
+    transform:scale(1.05);
+  }
+  
+  .numeric-btn-plus:active,
+  .numeric-btn-minus:active {
+    transform:scale(0.95);
+  }
+  
+  /* Progress Bar */
+  .progress {
+    background: linear-gradient(90deg, #e3f2fd 0%, #f0f4f8 100%);
+    border-radius:999px;
+    overflow:hidden;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(90deg, #1b7b5f 0%, #2d9c7a 100%);
+    transition:width .5s ease;
+  }
+  
+  #navicare-progress-label {
+    white-space:nowrap;
+  }
+  
+  /* Result Card */
+  #navicare-result-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+    border:2px solid #1b7b5f !important;
+  }
+  
+  #navicare-result-card .border-start {
+    border-left:3px solid #1b7b5f !important;
+  }
+  
+  .result-grid { 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); 
+    gap:1rem; 
+    margin-top:1.5rem; 
+  }
+  
+  .result-chip { 
+    padding:1.25rem; 
+    background: linear-gradient(135deg, #e8f5f1 0%, #f0f9f6 100%);
+    border-radius:12px; 
+    border:2px solid #d4ede5;
+    transition:all .3s ease;
+  }
+  
+  .result-chip:hover {
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(27,123,95,.15);
+  }
+  
+  .result-chip strong { 
+    display:block; 
+    font-size:.95rem; 
+    color:#1b7b5f;
+    margin-bottom:.5rem;
+    font-weight:700;
+  }
+  
+  .result-chip small {
+    color:#5a7c70;
+    font-size:.85rem;
+    font-weight:600;
+  }
+  
+  /* Next Steps Cards */
+  #navicare-next-steps .card {
+    transition:all .3s ease;
+    border:2px solid #e3f2fd !important;
+  }
+  
+  #navicare-next-steps .card:hover {
+    transform:translateY(-6px);
+    box-shadow:0 12px 32px rgba(27,123,95,.15) !important;
+    border-color:#1b7b5f !important;
+  }
+  
+  #navicare-next-steps .card h4 {
+    color:#1b7b5f;
+    font-weight:700;
+  }
+  
+  #navicare-next-steps .card i {
+    font-size:2.5rem;
+  }
+  
+  /* Form Styling */
+  .next-step-form .form-label {
+    font-weight:600;
+    color:#1b7b5f;
+    margin-bottom:.5rem;
+  }
+  
+  .next-step-form .form-control {
+    border:2px solid #e3f2fd;
+    padding:.75rem 1rem;
+    border-radius:8px;
+    transition:all .3s ease;
+  }
+  
+  .next-step-form .form-control:focus {
+    border-color:#1b7b5f;
+    box-shadow:0 0 0 .2rem rgba(27,123,95,.15);
+  }
+  
+  .next-step-form .form-check-input {
+    width:1.25rem;
+    height:1.25rem;
+    border:2px solid #1b7b5f;
+  }
+  
+  .next-step-form .form-check-input:checked {
+    background-color:#1b7b5f;
+    border-color:#1b7b5f;
+  }
+  
+  .next-step-form .placeholder-hint { 
+    font-style:italic; 
+    font-size:.85rem;
+    opacity:.8;
+  }
+  
+  .payment-placeholder {
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:.75rem;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background: linear-gradient(135deg, #1b7b5f 0%, #2d9c7a 100%);
+    border:none;
+    font-weight:600;
+    padding:.75rem 1.5rem;
+    transition:all .3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(27,123,95,.3);
+  }
+  
+  .btn-outline-primary {
+    border:2px solid #1b7b5f;
+    color:#1b7b5f;
+    font-weight:600;
+    transition:all .3s ease;
+  }
+  
+  .btn-outline-primary:hover {
+    background:#1b7b5f;
+    border-color:#1b7b5f;
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(27,123,95,.2);
+  }
+  
+  .btn-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border:none;
+    font-weight:600;
+    padding:.75rem 1.5rem;
+    transition:all .3s ease;
+  }
+  
+  .btn-dark:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(44,62,80,.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width:991px) {
+    .info-card {
+      position:static;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .support-card .timeline-list li { 
+      padding-left:3rem; 
+    }
+    
+    .support-card .timeline-list li::after {
+      left:18px;
+    }
+    
+    .timeline-title { 
+      font-size:1rem; 
+    }
+    
+    .numeric-grid {
+      grid-template-columns:1fr;
+    }
+    
+    .calculator-tabs {
+      gap:.5rem;
+    }
+    
+    .calculator-tabs li {
+      padding:.6rem 1rem;
+      font-size:.8rem;
+    }
+    
+    .module-card {
+      padding:1.5rem;
+    }
+    
+    .answer-pill {
+      padding:.9rem 1rem;
+    }
+  }
+</style>
+
+<script>
+  (function(){
+    'use strict';
+    
+    // Module definitions with all questions
+    const modules = [
+      { 
+        id:'m1', 
+        title:'1. Mobilität', 
+        weight:10, 
+        questions:[
+          { label:'Positionswechsel im Bett', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit zum Einnehmen verschiedener Positionen im Bett, etwa zum Drehen um die Längsachse oder zum Aufrichten aus dem Liegen.' },
+          { label:'Stabile Sitzposition halten', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, sich auf einem Bett, Stuhl oder Sessel aufrecht zu halten.' },
+          { label:'Umsetzen (z. B. Bett → Stuhl)', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, von einer erhöhten Sitzfläche (Bettkante, Stuhl, Sessel, Bank, Toilette) aufzustehen, und sich auf einen Rollstuhl, Toilettenstuhl, Sessel o.ä. umzusetzen.' },
+          { label:'Fortbewegen innerhalb des Wohnbereichs', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, sich innerhalb einer Wohnung oder im Wohnbereich einer Einrichtung sicher zwischen den Zimmern zu bewegen.' },
+          { label:'Treppensteigen', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit zum Überwinden von Treppen zwischen zwei Etagen.' }
+        ]
+      },
+      { 
+        id:'m2', 
+        title:'2. Kognitive & kommunikative Fähigkeiten', 
+        weight:15, 
+        questions:[
+          { label:'Personen aus dem Umfeld erkennen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, Personen aus dem näheren Umfeld wiederzuerkennen, d. h. Menschen, zu denen im Alltag regelmäßig ein direkter Kontakt besteht.' },
+          { label:'Örtliche Orientierung', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, sich in der räumlichen Umgebung zurechtzufinden, andere Orte gezielt anzusteuern und zu wissen, wo man sich befindet.' },
+          { label:'Zeitliche Orientierung', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, zeitliche Strukturen zu erkennen. Aufschluss darüber geben Antworten auf die Frage nach der Jahreszeit, dem Jahr, dem Monat, dem Wochentag oder der Tageszeit.' },
+          { label:'Erinnern an Ereignisse', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, sich an kurz und auch länger zurückliegende Ereignisse oder Beobachtungen zu erinnern.' },
+          { label:'Mehrschrittige Handlungen planen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, zielgerichtete Handlungen des Lebensalltags, die eine Abfolge von Teilschritten umfassen, zu steuern. Gemeint sind Handlungen, die diese Person täglich oder nahezu täglich im Lebensalltag durchführt oder durchgeführt hat, wie z.B. das komplette Ankleiden, das Kochen von Kaffee oder das Tischdecken.' },
+          { label:'Entscheidungen treffen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, folgerichtige und geeignete Entscheidungen im Alltagsleben zu treffen. Dazu gehört z.B. eine dem Wetter angepasste Auswahl von Kleidung oder die Entscheidung einkaufen zu gehen.' },
+          { label:'Sachverhalte verstehen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, Sachverhalte zu verstehen und Informationen inhaltlich einordnen zu können. Gemeint ist zum einen die Fähigkeit, Informationen aus Gesprächen und Medien aufzunehmen und zu verstehen. Zum anderen meint es das Vermögen, Situationen einzuordnen, z.B. zu erkennen, dass gerade eine Versorgung durch eine Pflegekraft erfolgt.' },
+          { label:'Gefahren erkennen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, Risiken und Gefahren zu erkennen. Dazu gehören Gefahren wie Strom- und Feuerquellen oder Barrieren und Hindernisse auf dem Fußboden bzw. auf Fußwegen.' },
+          { label:'Elementare Bedürfnisse mitteilen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, elementare Bedürfnisse verbal oder nonverbal mitzuteilen, sich also beispielsweise bei Hunger oder Durst, Schmerzen oder Frieren bemerkbar zu machen. Bei Sprachstörungen kann dies ggf. durch Laute, Mimik oder Gestik bzw. unter Nutzung von Hilfsmitteln erfolgen.' },
+          { label:'Aufforderungen verstehen', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, Aufforderungen im Hinblick auf alltägliche Grundbedürfnisse zu verstehen. Zu den alltäglichen Grundbedürfnissen gehören z. B. essen, trinken, sich kleiden oder sich beschäftigen.' },
+          { label:'Gesprächsbeteiligung', options:['vorhanden/unbeeinträchtigt','größtenteils vorhanden','in geringem Maß vorhanden','nicht vorhanden'], tooltip:'Die Fähigkeit, in einem Gespräch Gesprächsinhalte aufzunehmen, sinngerecht zu antworten und Inhalt zur Weiterführung des Gesprächs einzubringen.' }
+        ]
+      },
+      { 
+        id:'m3', 
+        title:'3. Verhaltensweisen & psychische Problemlagen', 
+        weight:15, 
+        questions:[
+          { label:'Motorisch geprägte Auffälligkeiten', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Hierzu zählen vor allem zielloses Umhergehen in der Wohnung und der Versuch desorientierter Personen, ohne Begleitung die Wohnung oder Einrichtung zu verlassen. Auch allgemeine Rastlosigkeit (z.B. ständiges Aufstehen und Hinsetzen) ist zu berücksichtigen.' },
+          { label:'Nächtliche Unruhe', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Gemeint sind nächtliches Umherirren oder nächtliche Unruhephasen bis hin zur Umkehr des Tag-Nacht-Rhythmus im Sinne von aktiv sein in der Nacht und schlafen während des Tages.' },
+          { label:'Selbstschädigendes Verhalten', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Selbstschädigendes Verhalten kann z.B. darin bestehen, sich selbst durch Gegenstände zu verletzen, ungenießbare Substanzen zu essen und zu trinken, sich selbst zu schlagen und sich selbst mit den Fingernägeln oder Zähnen zu verletzen.' },
+          { label:'Beschädigen von Gegenständen', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Gemeint sind hier aggressive Handlungen, die sich auf Gegenstände richten. Dazu gehört auch das Wegschieben, Wegstoßen, Treten und Schlagen von Gegenständen.' },
+          { label:'Physische Aggression', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Physisch aggressives Verhalten gegenüber anderen Personen kann z.B. darin bestehen, nach Personen zu schlagen oder zu treten, andere mit Zähnen oder Fingernägeln zu verletzen, andere zu stoßen oder wegzudrängen. Auch Verletzungsversuche gegenüber anderen Personen mithilfe von Gegenständen sind gemeint.' },
+          { label:'Verbale Aggression', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Dazu zählen Beleidigungen, wütendes Schimpfen, aggressives Schreien und das Bedrohen anderer Personen. Und zwar auch dann, wenn die pflegenden Personen das schon gewohnt sind und überhören.' },
+          { label:'Vokale Auffälligkeiten', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Darunter fallen: lautes Rufen, Schreien, Klagen ohne nachvollziehbaren Grund, vor sich hin Schimpfen, Fluchen, seltsame Laute von sich geben, ständiges Wiederholen von Sätzen und Fragen.' },
+          { label:'Abwehr von Pflegemaßnahmen', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Hier ist die Abwehr von Unterstützung, z.B. bei der Körperpflege, die Verweigerung der Nahrungsaufnahme, der Medikamenteneinnahme oder anderer notwendiger Verrichtungen sowie die Manipulation an Vorrichtungen wie z.B. an Kathetern, Infusionen oder Sondenernährung gemeint. Dazu gehört nicht die willentliche (selbstbestimmte) Ablehnung bestimmter Maßnahmen.' },
+          { label:'Wahnvorstellungen', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Wahnvorstellungen beziehen sich etwa auf die Vorstellung, mit Verstorbenen oder imaginären Personen in Kontakt zu stehen oder auf die Vorstellung, verfolgt, bedroht oder bestohlen zu werden.' },
+          { label:'Ängste', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Die Person hat starke Ängste oder Sorgen, sie erlebt Angstattacken unabhängig von der Ursache.' },
+          { label:'Antriebslosigkeit', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Die Person zeigt kaum Interesse an der Umgebung, bringt kaum Eigeninitiative auf und benötigt Motivierung durch andere, um etwas zu tun. Sie wirkt traurig oder apathisch, möchte das Bett am liebsten nicht verlassen.' },
+          { label:'Sozial inadäquates Verhalten', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Sozial unangemessene Verhaltensweisen sind z.B. distanzloses Verhalten, auffälliges Einfordern von Aufmerksamkeit, sich vor anderen in unpassenden Situationen auskleiden, unangemessenes Greifen nach Personen oder unangemessene körperliche oder verbale sexuelle Annäherungsversuche.' },
+          { label:'Sonstige Problemlagen', options:['nie oder sehr selten','selten','häufig','täglich'], tooltip:'Darunter fallen z.B. Nesteln an der Kleidung, ständiges Wiederholen der gleichen Handlung, planlose Aktivitäten, Verstecken oder Horten von Gegenständen, Kotschmieren, Urinieren in die Wohnung.' }
+        ]
+      },
+      { 
+        id:'m4', 
+        title:'4. Selbstversorgung', 
+        weight:40, 
+        questions:[
+          { label:'Waschen des Oberkörpers', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Darunter fallen das Waschen und Abtrocknen von Händen, Hals, Gesicht, Armen, Achselhöhlen und dem vorderen Brustbereich.' },
+          { label:'Körperpflege Kopf', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Gemeint sind Kämmen, Zahnpflege, Prothesenreinigung und Rasieren.' },
+          { label:'Waschen Intimbereich', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, den Intimbereich zu waschen und abzutrocknen.' },
+          { label:'Duschen oder Baden', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Neben der reinen Fähigkeit, den Körper waschen zu können, sind hier auch das Ein- und Aussteigen sowie eine eventuell notwendige Überwachung während des Bades zu berücksichtigen.' },
+          { label:'An- und Auskleiden Oberkörper', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, bereitliegende Kleidungsstücke, z.B. Unterhemd, T-Shirt, Hemd, Bluse, Pullover, Jacke, BH, Schlafanzugoberteil oder Nachthemd, an- und auszuziehen.' },
+          { label:'An- und Auskleiden Unterkörper', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, bereitliegende Kleidungsstücke an- und ausziehen, z.B. Unterwäsche Hose, Rock, Strümpfe und Schuhe.' },
+          { label:'Nahrung vorbereiten', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Dazu gehört das Zerteilen von belegten Brotscheiben, Obst oder anderen Speisen in mundgerechte Stücke, z.B. das Kleinschneiden von Fleisch, das Zerdrücken von Kartoffeln oder das Pürieren der Nahrung. Auch unter diese Kategorie fällt das Öffnen von Flaschenverschlüssen oder das Eingießen von Getränken aus einer Flasche oder Kanne. Möglich ist dabei die Nutzung von Hilfsmitteln wie einem Anti-Rutschbrett oder speziellem Besteck.' },
+          { label:'Essen', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Dies umfasst das Aufnehmen, zum Mund führen, ggf. Abbeißen, Kauen und Schlucken von mundgerecht zubereiteten Speisen, die üblicherweise mit den Fingern gegessen werden (z.B. Brot, Keksen, Obst). Außerdem umfasst es das Essen mit Gabel oder Löffel, ggf. mit speziellen Hilfsmitteln wie adaptiertem Besteck.' },
+          { label:'Trinken', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, bereitstehende Getränke aufzunehmen, ggf. mit Gegenständen wie einem Strohhalm oder einem Spezialbecher mit Trinkaufsatz. Zu berücksichtigen ist auch, inwieweit die Notwendigkeit der Flüssigkeitsaufnahme auch ohne ausreichendes Durstgefühl erkannt und die empfohlene oder gewohnte Menge tatsächlich getrunken wird.' },
+          { label:'Toilettengang', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, einen Toilettengang durchzuführen. Dies umfasst den Gang zur Toilette, das Hinsetzen und Aufstehen, das Sitzen während der Blasen-oder Darmentleerung, die Intimhygiene und das Richten der Kleidung. Die Beurteilung ist auch dann vorzunehmen, wenn anstelle der Toilettenbenutzung eine Versorgung mit Hilfsmitteln erfolgt.' },
+          { label:'Umgang mit Harninkontinenz', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit Inkontinenzprodukte sachgerecht zu verwenden, nach Bedarf zu wechseln und zu entsorgen. Dazu gehört z. B. das Entleeren eines Urinbeutels bei einem Dauerkatheter oder die Anwendung eines Urinalkondoms.' },
+          { label:'Umgang mit Stuhlinkontinenz', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit Stomasysteme sachgerecht zu verwenden, nach Bedarf zu wechseln und entsorgen.' }
+        ]
+      },
+      { 
+        id:'m5', 
+        title:'5. Krankheits- oder therapiebedingte Anforderungen', 
+        weight:20, 
+        questions:[
+          { 
+            type:'numeric', 
+            label:'Pflegehandlungen pro Zeitraum', 
+            fields:[
+              { id:'medikation', label:'Medikation', tooltip:'Die Verabreichung von Medikamenten, die ärztlich angeordnet und für mindestens sechs Monate erforderlich sind. Dazu gehören auch nichtverschreibungspflichtige Medikamente, wenn sie ärztlich angeordnet sind.' },
+              { id:'injektionen', label:'Injektionen', tooltip:'Die Verabreichung von Injektionen, die ärztlich angeordnet und für mindestens sechs Monate erforderlich sind.' },
+              { id:'zugänge', label:'Versorgung intravenöser Zugänge (zum Beispiel Port)', tooltip:'Die Versorgung und Pflege von intravenösen Zugängen wie Ports, Venenkathetern oder anderen Zugangssystemen.' },
+              { id:'absaugen', label:'Absaugen & Sauerstoffgabe', tooltip:'Das Absaugen von Sekreten aus den Atemwegen sowie die Verabreichung von Sauerstoff.' },
+              { id:'einreibungen', label:'Einreibungen / Kälte & Wärmeanwendungen', tooltip:'Äußerliche Anwendungen wie Einreibungen, Kälte- oder Wärmeanwendungen, die ärztlich angeordnet und für mindestens sechs Monate erforderlich sind.' },
+              { id:'messungen', label:'Messung und Deutung von Körperzuständen', tooltip:'Die regelmäßige Messung und Deutung von Körperzuständen wie Blutdruck, Blutzucker, Temperatur oder anderen medizinisch relevanten Parametern.' },
+              { id:'hilfsmittel', label:'Körpernahe Hilfsmittel', tooltip:'Die Versorgung und Handhabung von körpernahen Hilfsmitteln wie Prothesen, Orthesen, Hörgeräten oder anderen medizinischen Hilfsmitteln.' },
+              { id:'verbände', label:'Verbandswechsel / Wundversorgung', tooltip:'Der regelmäßige Wechsel von Verbänden und die Versorgung von Wunden, die ärztlich angeordnet und für mindestens sechs Monate erforderlich sind.' },
+              { id:'stoma', label:'Versorgung mit Stoma', tooltip:'Die Versorgung und Pflege von Stomasystemen (z.B. Tracheostoma, Enterostoma, Urostoma).' },
+              { id:'katheter', label:'Regelmäßige Einmalkatheterisierung und Nutzung von Abführmethoden', tooltip:'Die regelmäßige Durchführung von Einmalkatheterisierungen oder die Anwendung von Abführmethoden, die ärztlich angeordnet sind.' },
+              { id:'therapien', label:'Therapiemaßnahmen in häuslicher Umgebung', tooltip:'Therapiemaßnahmen wie Physiotherapie, Ergotherapie, Logopädie oder andere therapeutische Behandlungen, die zu Hause durchgeführt werden.' },
+              { id:'technisch', label:'Zeit- und technikintensive Maßnahmen in häuslicher Umgebung', tooltip:'Zeit- und technikintensive medizinische Maßnahmen, die zu Hause durchgeführt werden und besondere Anforderungen an die Pflegeperson stellen.' }
+            ]
+          },
+          { label:'Einhaltung einer Diät und anderer krankheits- oder therapiebedingter Verhaltensvorschriften', options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig'], tooltip:'Die Fähigkeit, ärztlich angeordnete Diäten oder andere krankheits- oder therapiebedingte Verhaltensvorschriften einzuhalten, z.B. bei Diabetes, Nierenerkrankungen oder anderen chronischen Erkrankungen.' }
+        ]
+      },
+      { 
+        id:'m6', 
+        title:'6. Alltagsleben & soziale Kontakte', 
+        weight:15, 
+        questions:[
+          'Tagesablauf gestalten',
+          'Ruhen & Schlafen',
+          'Sich beschäftigen',
+          'Planungen für die Zukunft',
+          'Interaktion mit Personen',
+          'Kontaktpflege außerhalb'
+        ].map(label=>({label,options:['selbständig','überwiegend selbständig','überwiegend unselbständig','unselbständig']})) 
+      }
+    ];
+
+    const optionPoints = [0,1,2,3];
+    const state = { 
+      answers:{}, 
+      current:0,
+      modulePoints: {}
+    };
+    
+    const tabList = document.getElementById('navicare-tabs');
+    const moduleContainer = document.getElementById('navicare-modules');
+    const prevBtn = document.getElementById('navicare-prev');
+    const nextBtn = document.getElementById('navicare-next');
+    const progressBar = document.getElementById('navicare-progress');
+    const progressLabel = document.getElementById('navicare-progress-label');
+    const resultCard = document.getElementById('navicare-result-card');
+    const resultHeadline = document.getElementById('navicare-result-headline');
+    const resultDescription = document.getElementById('navicare-result-description');
+    const breakdown = document.getElementById('navicare-module-breakdown');
+    const totalPointsEl = document.getElementById('navicare-total-points');
+    const nextSteps = document.getElementById('navicare-next-steps');
+
+    function renderTabs(){
+      tabList.innerHTML = modules.map((m,idx)=>{
+        const key = `m${idx+1}`;
+        const hasAnswers = state.answers[key] && Object.keys(state.answers[key]).length > 0;
+        const classes = idx===state.current ? 'active' : (hasAnswers ? 'completed' : '');
+        return `<li data-index="${idx}" class="${classes}">${m.title}</li>`;
+      }).join('');
+      
+      tabList.querySelectorAll('li').forEach(li=>{
+        li.addEventListener('click',()=>{
+          const idx = Number(li.dataset.index);
+          state.current = idx;
+          updateNavigation();
+        });
+      });
+    }
+
+    function renderModules(){
+      moduleContainer.innerHTML = modules.map((module,idx)=>{
+        const hidden = idx===state.current ? '' : 'style="display:none;"';
+        return `<div class="module-card" id="module-${module.id}" ${hidden}>
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+            <div>
+              <p class="text-uppercase text-muted small mb-1">Modul ${idx+1}</p>
+              <h4 class="mb-0">${module.title.replace(/^[0-9]+\. /,'')}</h4>
+            </div>
+            <span class="badge bg-soft-primary text-primary fw-semibold">Gewichtung: ${module.weight}%</span>
+          </div>
+          ${renderQuestions(module, idx)}
+        </div>`;
+      }).join('');
+      
+      // Attach event listeners
+      moduleContainer.querySelectorAll('input[type="radio"]').forEach(input=>{
+        input.addEventListener('change', handleAnswerChange);
+      });
+      
+      moduleContainer.querySelectorAll('input[type="number"]').forEach(input=>{
+        input.addEventListener('input', handleNumericChange);
+      });
+      
+      // Attach event listeners for plus/minus buttons
+      moduleContainer.querySelectorAll('.numeric-btn-plus').forEach(btn=>{
+        btn.addEventListener('click', function(){
+          const targetId = this.dataset.target;
+          const input = document.getElementById(targetId);
+          if(input){
+            const currentValue = parseInt(input.value) || 0;
+            input.value = currentValue + 1;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        });
+      });
+      
+      moduleContainer.querySelectorAll('.numeric-btn-minus').forEach(btn=>{
+        btn.addEventListener('click', function(){
+          const targetId = this.dataset.target;
+          const input = document.getElementById(targetId);
+          if(input){
+            const currentValue = parseInt(input.value) || 0;
+            const min = parseInt(input.min) || 0;
+            input.value = Math.max(min, currentValue - 1);
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        });
+      });
+    }
+
+    function renderQuestions(module, idx){
+      return module.questions.map((question,qIdx)=>{
+        if(question.type==='numeric'){
+          return `<div class="question-block">
+            <p class="question-label">${question.label}</p>
+            ${question.tooltip ? `<div class="question-info-box">
+              <i class="las la-info-circle text-primary me-2"></i>
+              <span>${question.tooltip}</span>
+            </div>` : ''}
+            <p class="numeric-instruction text-muted mb-3" style="cursor: pointer;">
+              <span>Wie häufig ist Hilfe durch andere Personen nötig? Geben Sie die Anzahl (nur ganze Zahlen) der durchschnittlich durchgeführten Maßnahmen, die täglich, wöchentlich, monatlich oder jährlich durchgeführt werden, in die dafür vorgesehenen Felder ein. Dabei ist es egal, ob man eine Maßnahme zum Beispiel als 1x pro Tag oder 7x pro Woche oder 30x pro Monat oder 365x pro Jahr eingibt.</span>
+            </p>
+            <div class="numeric-grid">
+              ${question.fields.map(field=>`
+                <div class="numeric-field">
+                  <label class="d-flex align-items-center gap-2">
+                    <span>${field.label}</span>
+                    ${field.tooltip ? `<i class="las la-info-circle text-primary field-tooltip-icon" data-tooltip="${field.tooltip.replace(/"/g, '&quot;')}" style="cursor: pointer; font-size: 1rem;"></i>` : ''}
+                  </label>
+                  <div class="input-group input-group-sm mb-1">
+                    <span class="input-group-text">pro Tag</span>
+                    <input type="number" min="0" class="form-control" id="input-daily-${field.id}-${idx}-${qIdx}" data-module="${idx}" data-question="${qIdx}" data-field="${field.id}" data-period="daily" value="0">
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-minus" data-target="input-daily-${field.id}-${idx}-${qIdx}">−</button>
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-plus" data-target="input-daily-${field.id}-${idx}-${qIdx}">+</button>
+                  </div>
+                  <div class="input-group input-group-sm mb-1">
+                    <span class="input-group-text">pro Woche</span>
+                    <input type="number" min="0" class="form-control" id="input-weekly-${field.id}-${idx}-${qIdx}" data-module="${idx}" data-question="${qIdx}" data-field="${field.id}" data-period="weekly" value="0">
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-minus" data-target="input-weekly-${field.id}-${idx}-${qIdx}">−</button>
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-plus" data-target="input-weekly-${field.id}-${idx}-${qIdx}">+</button>
+                  </div>
+                  <div class="input-group input-group-sm mb-1">
+                    <span class="input-group-text">pro Monat</span>
+                    <input type="number" min="0" class="form-control" id="input-monthly-${field.id}-${idx}-${qIdx}" data-module="${idx}" data-question="${qIdx}" data-field="${field.id}" data-period="monthly" value="0">
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-minus" data-target="input-monthly-${field.id}-${idx}-${qIdx}">−</button>
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-plus" data-target="input-monthly-${field.id}-${idx}-${qIdx}">+</button>
+                  </div>
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text">pro Jahr</span>
+                    <input type="number" min="0" class="form-control" id="input-yearly-${field.id}-${idx}-${qIdx}" data-module="${idx}" data-question="${qIdx}" data-field="${field.id}" data-period="yearly" value="0">
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-minus" data-target="input-yearly-${field.id}-${idx}-${qIdx}">−</button>
+                    <button type="button" class="btn btn-outline-secondary numeric-btn-plus" data-target="input-yearly-${field.id}-${idx}-${qIdx}">+</button>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>`;
+        } else {
+          const moduleKey = `m${idx+1}`;
+          const questionKey = `q${qIdx}`;
+          const savedAnswer = state.answers[moduleKey] && state.answers[moduleKey][questionKey];
+          const tooltip = question.tooltip || '';
+          
+          return `<div class="question-block">
+            <p class="question-label">${question.label}</p>
+            ${tooltip ? `<div class="question-info-box">
+              <i class="las la-info-circle text-primary me-2"></i>
+              <span>${tooltip}</span>
+            </div>` : ''}
+            ${question.options.map((option,optIdx)=>{
+              const inputId = `m${idx+1}-q${qIdx}-opt${optIdx}`;
+              const checked = savedAnswer === optIdx ? 'checked' : '';
+              return `<div class="answer-pill ${checked ? 'active' : ''}">
+                <input type="radio" name="m${idx+1}-q${qIdx}" id="${inputId}" value="${optIdx}" data-module="${idx}" data-question="${qIdx}" ${checked}>
+                <label for="${inputId}" class="mb-0 flex-grow-1">${option}</label>
+              </div>`;
+            }).join('')}
+          </div>`;
+        }
+      }).join('');
+    }
+
+    function handleAnswerChange(e){
+      const moduleIdx = Number(e.target.dataset.module);
+      const questionIdx = Number(e.target.dataset.question);
+      const optionIdx = Number(e.target.value);
+      const moduleKey = `m${moduleIdx+1}`;
+      const questionKey = `q${questionIdx}`;
+      
+      if(!state.answers[moduleKey]) state.answers[moduleKey] = {};
+      state.answers[moduleKey][questionKey] = optionIdx;
+      
+      // Update visual state
+      const questionBlock = e.target.closest('.question-block');
+      questionBlock.querySelectorAll('.answer-pill').forEach(pill=>{
+        pill.classList.remove('active');
+        pill.classList.remove('required');
+      });
+      e.target.closest('.answer-pill').classList.add('active');
+      
+      // Remove required mark from question block
+      questionBlock.classList.remove('required');
+      
+      calculatePoints();
+      updateProgress();
+      updateNavigation();
+      
+      // Hide result card during questionnaire
+      resultCard.style.display = 'none';
+      nextSteps.style.display = 'none';
+    }
+
+    function handleNumericChange(e){
+      const moduleIdx = Number(e.target.dataset.module);
+      const questionIdx = Number(e.target.dataset.question);
+      const fieldId = e.target.dataset.field;
+      const period = e.target.dataset.period;
+      const value = Number(e.target.value) || 0;
+      
+      const moduleKey = `m${moduleIdx+1}`;
+      const questionKey = `q${questionIdx}`;
+      
+      if(!state.answers[moduleKey]) state.answers[moduleKey] = {};
+      if(!state.answers[moduleKey][questionKey]) state.answers[moduleKey][questionKey] = {};
+      if(!state.answers[moduleKey][questionKey][fieldId]) state.answers[moduleKey][questionKey][fieldId] = {};
+      
+      state.answers[moduleKey][questionKey][fieldId][period] = value;
+      
+      // Check if any field in this question has a value
+      const question = modules[moduleIdx].questions[questionIdx];
+      const questionData = state.answers[moduleKey][questionKey];
+      const hasValue = question.fields.some(field => {
+        const fieldData = questionData[field.id];
+        if(!fieldData) return false;
+        // fieldData is an object like { daily: 0, weekly: 0, monthly: 0, yearly: 0 }
+        return Object.values(fieldData).some(val => val > 0);
+      });
+      
+      // If question has a value, remove required marks
+      if(hasValue){
+        const questionBlock = e.target.closest('.question-block');
+        if(questionBlock){
+          questionBlock.classList.remove('required');
+          questionBlock.querySelectorAll('.numeric-field').forEach(field=>{
+            field.classList.remove('required');
+          });
+        }
+      }
+      
+      calculatePoints();
+      updateProgress();
+      
+      // Hide result card during questionnaire
+      resultCard.style.display = 'none';
+      nextSteps.style.display = 'none';
+    }
+
+    function calculateNumericPoints(moduleIdx, questionIdx){
+      const moduleKey = `m${moduleIdx+1}`;
+      const questionKey = `q${questionIdx}`;
+      const data = state.answers[moduleKey] && state.answers[moduleKey][questionKey];
+      
+      if(!data) return 0;
+      
+      let totalPerYear = 0;
+      const question = modules[moduleIdx].questions[questionIdx];
+      
+      question.fields.forEach(field=>{
+        const fieldData = data[field.id];
+        if(!fieldData) return;
+        
+        const daily = (fieldData.daily || 0) * 365;
+        const weekly = (fieldData.weekly || 0) * 52;
+        const monthly = (fieldData.monthly || 0) * 12;
+        const yearly = fieldData.yearly || 0;
+        
+        totalPerYear += Math.max(daily, weekly, monthly, yearly);
+      });
+      
+      // Convert to points based on NBA calculation
+      // Simplified: more actions = more points (max 3 points per field category)
+      if(totalPerYear === 0) return 0;
+      if(totalPerYear < 50) return 0.5;
+      if(totalPerYear < 200) return 1;
+      if(totalPerYear < 500) return 2;
+      return 3;
+    }
+
+    function calculatePoints(){
+      modules.forEach((module,idx)=>{
+        const moduleKey = `m${idx+1}`;
+        let modulePoints = 0;
+        let maxPoints = 0;
+        
+        module.questions.forEach((question,qIdx)=>{
+          if(question.type === 'numeric'){
+            const points = calculateNumericPoints(idx, qIdx);
+            modulePoints += points;
+            maxPoints += 3; // Max 3 points per numeric question
+          } else {
+            const questionKey = `q${qIdx}`;
+            const answer = state.answers[moduleKey] && state.answers[moduleKey][questionKey];
+            if(answer !== undefined){
+              modulePoints += optionPoints[answer];
+              maxPoints += 3;
+            }
+          }
+        });
+        
+        // Calculate weighted points (module weight as percentage)
+        const weightedPoints = maxPoints > 0 ? (modulePoints / maxPoints) * module.weight : 0;
+        state.modulePoints[moduleKey] = {
+          raw: modulePoints,
+          max: maxPoints,
+          weighted: isNaN(weightedPoints) ? 0 : weightedPoints
+        };
+      });
+      
+      // Calculate total (only higher of module 2 or 3)
+      const m2Points = state.modulePoints.m2 ? state.modulePoints.m2.weighted : 0;
+      const m3Points = state.modulePoints.m3 ? state.modulePoints.m3.weighted : 0;
+      const cognitivePoints = Math.max(m2Points, m3Points);
+      
+      const total = Object.keys(state.modulePoints).reduce((sum,key)=>{
+        if(key === 'm2' || key === 'm3') return sum; // Skip, use max instead
+        const weighted = state.modulePoints[key].weighted || 0;
+        return sum + (isNaN(weighted) ? 0 : weighted);
+      }, 0) + (isNaN(cognitivePoints) ? 0 : cognitivePoints);
+      
+      state.totalPoints = isNaN(total) ? 0 : Math.min(100, Math.round(total * 100) / 100);
+    }
+    
+    function findFirstUnansweredQuestion(){
+      for(let moduleIdx = 0; moduleIdx < modules.length; moduleIdx++){
+        const module = modules[moduleIdx];
+        const moduleKey = `m${moduleIdx+1}`;
+        const answers = state.answers[moduleKey];
+        
+        // Check if module has no answers at all
+        if(!answers || Object.keys(answers).length === 0){
+          return { moduleIdx, questionIdx: 0 };
+        }
+        
+        // Check each question in the module
+        for(let questionIdx = 0; questionIdx < module.questions.length; questionIdx++){
+          const question = module.questions[questionIdx];
+          const questionKey = `q${questionIdx}`;
+          
+          if(question.type === 'numeric'){
+            const questionData = answers[questionKey];
+            if(!questionData){
+              return { moduleIdx, questionIdx };
+            }
+            // Check if any field has a value
+            const hasValue = question.fields.some(field => {
+              const fieldData = questionData[field.id];
+              if(!fieldData) return false;
+              // fieldData is an object like { daily: 0, weekly: 0, monthly: 0, yearly: 0 }
+              return Object.values(fieldData).some(val => val > 0);
+            });
+            if(!hasValue){
+              return { moduleIdx, questionIdx };
+            }
+          } else {
+            if(answers[questionKey] === undefined){
+              return { moduleIdx, questionIdx };
+            }
+          }
+        }
+      }
+      return null; // All questions answered
+    }
+    
+    function areAllModulesCompleted(){
+      return findFirstUnansweredQuestion() === null;
+    }
+    
+    function markQuestionAsRequired(moduleIdx, questionIdx){
+      // Remove all previous required marks
+      document.querySelectorAll('.question-block.required').forEach(el=>{
+        el.classList.remove('required');
+      });
+      document.querySelectorAll('.answer-pill.required').forEach(el=>{
+        el.classList.remove('required');
+      });
+      document.querySelectorAll('.numeric-field.required').forEach(el=>{
+        el.classList.remove('required');
+      });
+      
+      // Find the question block
+      const module = modules[moduleIdx];
+      const moduleEl = document.getElementById(`module-${module.id}`);
+      if(!moduleEl) return;
+      
+      // Get all question blocks in this module
+      const questionBlocks = moduleEl.querySelectorAll('.question-block');
+      if(questionBlocks[questionIdx]){
+        const questionBlock = questionBlocks[questionIdx];
+        questionBlock.classList.add('required');
+        
+        // Also mark answer pills or numeric fields as required
+        if(module.questions[questionIdx].type === 'numeric'){
+          const numericFields = questionBlock.querySelectorAll('.numeric-field');
+          numericFields.forEach(field=>field.classList.add('required'));
+        } else {
+          const answerPills = questionBlock.querySelectorAll('.answer-pill');
+          answerPills.forEach(pill=>pill.classList.add('required'));
+        }
+        
+        // Scroll to the question
+        setTimeout(()=>{
+          questionBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      }
+    }
+
+    function getCareLevel(points){
+      if(points >= 12.5 && points < 27) return { level: 1, text: 'Geringe Beeinträchtigung' };
+      if(points >= 27 && points < 47.5) return { level: 2, text: 'Erhebliche Beeinträchtigung' };
+      if(points >= 47.5 && points < 70) return { level: 3, text: 'Schwere Beeinträchtigung' };
+      if(points >= 70 && points < 90) return { level: 4, text: 'Schwerste Beeinträchtigung' };
+      if(points >= 90 && points <= 100) return { level: 5, text: 'Schwerste Beeinträchtigung mit besonderen Anforderungen' };
+      return { level: 0, text: 'Kein Pflegegrad' };
+    }
+
+    function updateResult(){
+      if(state.totalPoints === undefined) return;
+      
+      const totalPoints = isNaN(state.totalPoints) ? 0 : state.totalPoints;
+      const careLevel = getCareLevel(totalPoints);
+      
+      if(careLevel.level > 0){
+        resultHeadline.textContent = `Pflegegrad ${careLevel.level}`;
+        resultDescription.textContent = `${careLevel.text} der Selbstständigkeit (${totalPoints.toFixed(2)} Punkte)`;
+      } else {
+        resultHeadline.textContent = 'Kein Pflegegrad';
+        resultDescription.textContent = `Die Punktzahl (${totalPoints.toFixed(2)}) reicht nicht für einen Pflegegrad aus.`;
+      }
+      
+      totalPointsEl.textContent = totalPoints.toFixed(2);
+      
+      // Module breakdown
+      breakdown.innerHTML = modules.map((module,idx)=>{
+        const key = `m${idx+1}`;
+        const points = state.modulePoints[key];
+        if(!points) return '';
+        const weightedValue = isNaN(points.weighted) || points.weighted === undefined ? 0 : points.weighted;
+        return `<div class="result-chip">
+          <strong>${module.title}</strong>
+          <small>${weightedValue.toFixed(1)} / ${module.weight} Punkte</small>
+        </div>`;
+      }).filter(html => html).join('');
+    }
+
+    function updateProgress(){
+      let completed = 0;
+      modules.forEach((module,idx)=>{
+        const moduleKey = `m${idx+1}`;
+        const answers = state.answers[moduleKey];
+        if(answers && Object.keys(answers).length > 0){
+          completed++;
+        }
+      });
+      
+      const percent = Math.round((completed / modules.length) * 100);
+      progressBar.style.width = percent + '%';
+      progressLabel.textContent = `Modul ${state.current + 1} von ${modules.length}`;
+      
+      // Don't show result during questionnaire - only at the end
+      resultCard.style.display = 'none';
+      nextSteps.style.display = 'none';
+    }
+
+    function updateNavigation(){
+      // Show/hide modules
+      modules.forEach((module,idx)=>{
+        const moduleEl = document.getElementById(`module-${module.id}`);
+        if(moduleEl){
+          moduleEl.style.display = idx === state.current ? 'block' : 'none';
+        }
+      });
+      
+      // Update tabs
+      renderTabs();
+      
+      // Update buttons
+      prevBtn.disabled = state.current === 0;
+      if(state.current === modules.length - 1){
+        nextBtn.textContent = 'Ergebnis anzeigen';
+        nextBtn.onclick = showResult;
+      } else {
+        nextBtn.textContent = 'Weiter';
+        nextBtn.onclick = nextModule;
+      }
+      
+      updateProgress();
+    }
+
+    function nextModule(){
+      if(state.current < modules.length - 1){
+        state.current++;
+        updateNavigation();
+        // Scroll to top of calculator section without triggering hash navigation
+        setTimeout(() => {
+          const calculatorSection = document.getElementById('pflegegradrechner');
+          if(calculatorSection){
+            const rect = calculatorSection.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const targetTop = scrollTop + rect.top - 20;
+            // Smooth scroll using requestAnimationFrame
+            let startScroll = scrollTop;
+            let startTime = null;
+            const duration = 300; // milliseconds
+            
+            const animateScroll = (currentTime) => {
+              if (startTime === null) startTime = currentTime;
+              const timeElapsed = currentTime - startTime;
+              const progress = Math.min(timeElapsed / duration, 1);
+              
+              // Easing function (ease-out)
+              const easeOut = 1 - Math.pow(1 - progress, 3);
+              const currentScroll = startScroll + (targetTop - startScroll) * easeOut;
+              
+              window.scrollTo(0, currentScroll);
+              
+              if (progress < 1) {
+                requestAnimationFrame(animateScroll);
+              }
+            };
+            requestAnimationFrame(animateScroll);
+          }
+        }, 100);
+      }
+    }
+
+    function prevModule(){
+      if(state.current > 0){
+        state.current--;
+        updateNavigation();
+        // Scroll to top of calculator section without triggering hash navigation
+        setTimeout(() => {
+          const calculatorSection = document.getElementById('pflegegradrechner');
+          if(calculatorSection){
+            const rect = calculatorSection.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const targetTop = scrollTop + rect.top - 20;
+            // Smooth scroll using requestAnimationFrame
+            let startScroll = scrollTop;
+            let startTime = null;
+            const duration = 300; // milliseconds
+            
+            const animateScroll = (currentTime) => {
+              if (startTime === null) startTime = currentTime;
+              const timeElapsed = currentTime - startTime;
+              const progress = Math.min(timeElapsed / duration, 1);
+              
+              // Easing function (ease-out)
+              const easeOut = 1 - Math.pow(1 - progress, 3);
+              const currentScroll = startScroll + (targetTop - startScroll) * easeOut;
+              
+              window.scrollTo(0, currentScroll);
+              
+              if (progress < 1) {
+                requestAnimationFrame(animateScroll);
+              }
+            };
+            requestAnimationFrame(animateScroll);
+          }
+        }, 100);
+      }
+    }
+
+    function showResult(){
+      // Check if all modules are completed
+      const firstUnanswered = findFirstUnansweredQuestion();
+      if(firstUnanswered !== null){
+        // Navigate to the module with the unanswered question
+        state.current = firstUnanswered.moduleIdx;
+        updateNavigation();
+        
+        // Scroll to calculator section first, then mark the question
+        setTimeout(() => {
+          const calculatorSection = document.getElementById('pflegegradrechner');
+          if(calculatorSection){
+            const rect = calculatorSection.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const targetTop = scrollTop + rect.top - 20;
+            let startScroll = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollStep = () => {
+              const diff = targetTop - startScroll;
+              const step = diff / 10;
+              startScroll += step;
+              window.scrollTo(0, startScroll);
+              if (Math.abs(diff) > 1) {
+                requestAnimationFrame(scrollStep);
+              } else {
+                // After scrolling to calculator, mark the question
+                markQuestionAsRequired(firstUnanswered.moduleIdx, firstUnanswered.questionIdx);
+              }
+            };
+            requestAnimationFrame(scrollStep);
+          } else {
+            // Fallback if calculator section not found
+            markQuestionAsRequired(firstUnanswered.moduleIdx, firstUnanswered.questionIdx);
+          }
+        }, 100);
+        
+        return;
+      }
+      
+      // Calculate points and show result
+      calculatePoints();
+      updateResult();
+      
+      // Show result card and next steps
+      resultCard.style.display = 'block';
+      nextSteps.style.display = 'flex';
+      
+      // Scroll to result
+      resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Form handlers
+    document.getElementById('navicare-pdf-submit').addEventListener('click', function(e){
+      e.preventDefault();
+      const email = document.getElementById('navicare-pdf-email').value;
+      const newsletter = document.getElementById('navicare-newsletter').checked;
+      
+      if(!email){
+        alert('Bitte geben Sie eine E-Mail-Adresse ein.');
+        return;
+      }
+      
+      // Placeholder: In production, this would send to backend
+      alert('Placeholder: PDF würde jetzt an ' + email + ' gesendet werden. Newsletter: ' + (newsletter ? 'Ja' : 'Nein'));
+    });
+
+    document.getElementById('navicare-service-submit').addEventListener('click', function(e){
+      e.preventDefault();
+      const email = document.getElementById('navicare-service-email').value;
+      const phone = document.getElementById('navicare-service-phone').value;
+      
+      if(!email || !phone){
+        alert('Bitte füllen Sie alle Pflichtfelder aus.');
+        return;
+      }
+      
+      // Placeholder: In production, this would integrate with Stripe
+      alert('Placeholder: Done-for-you Service würde jetzt für ' + email + ' (Tel: ' + phone + ') bestellt werden. Zahlung: 4,99€ (Stripe Integration folgt)');
+    });
+
+    // Initialize
+    prevBtn.onclick = prevModule;
+    // nextBtn handler is set in updateNavigation() to handle dynamic text/action changes
+    
+    // Hide result card initially
+    resultCard.style.display = 'none';
+    nextSteps.style.display = 'none';
+    
+    renderTabs();
+    renderModules();
+    updateNavigation();
+    calculatePoints();
+  })();
+</script>
+
+{{ end }}

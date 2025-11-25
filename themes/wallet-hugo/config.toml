@@ -53,3 +53,17 @@ link = "plugins/bootstrap/bootstrap.min.js"
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "plugins/scrollmenu/scrollmenu.min.js"
+
+
+
+[[deployment.matchers]]
+pattern = "^.+\\.(css|js)$"
+cacheControl = "public, immutable, max-age=31536000" # 1 year
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg|gif|svg|ttf)$"
+cacheControl = "public, immutable, max-age=31536000" # 1 year
+gzip = false
+
+enableRobotsTXT= true
