@@ -120,7 +120,8 @@
         </div>
         <div class="card shadow-sm border-0 mt-4" id="navicare-next-steps" style="display:none;">
           <div class="card-body p-4">
-            <h3 class="mb-4">Ihre Kontaktdaten</h3>
+            <h3 class="mb-2">Ihre Kontaktdaten</h3>
+            <p class="text-muted mb-4">Wir senden Ihnen den fertigen Report per E-Mail zu – inklusive aller Angaben, die Sie direkt für den Zuschuss einreichen können. Wenn Sie zusätzlich den Done-for-you-Service wählen, benötigen wir optional die Telefonnummer für Rückfragen zum Antrag.</p>
             <form class="next-step-form" id="navicare-contact-form">
               <div class="row g-3 mb-4">
                 <div class="col-md-6">
@@ -181,6 +182,19 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="card shadow-sm border-0 mt-4" id="navicare-cal-section" style="display:none;">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="las la-calendar-check text-primary fs-3 me-2"></i>
+              <div>
+                <p class="text-uppercase small text-muted mb-0">Nächster Schritt</p>
+                <h4 class="mb-0">Onboarding-Termin vereinbaren</h4>
+              </div>
+            </div>
+            <p class="text-muted">Sichern Sie sich direkt einen Termin, damit wir Ihren fertigen Antrag gemeinsam einreichen können. Die Buchung wird erst nach erfolgreicher Zahlung freigeschaltet.</p>
+            <div class="cal-container mt-4" id="my-cal-inline-navicarenow-pflegegrad-onboarding"></div>
           </div>
         </div>
       </div>
@@ -791,6 +805,10 @@
   #payment-status {
     min-height: 20px;
   }
+
+  .cal-container {
+    min-height: 520px;
+  }
   
   .divider {
     height: 1px;
@@ -917,6 +935,7 @@
     const stripe = Stripe(stripePublishableKey);
     let expressCheckoutElement = null;
     let elements = null;
+    let calInitialized = false;
     
     // Module definitions with all questions
     const modules = [
@@ -1700,46 +1719,53 @@
       'm6_q5': 'm6_q5_kontaktpflege_ausserhalb'
     };
 
-    // Enum mapping helpers
-    const mobilityEnumMap = {
-      'selbständig': 'SELBSTAENDIG',
-      'überwiegend selbständig': 'UEBERWIEGEND_SELBSTAENDIG',
-      'überwiegend unselbständig': 'UEBERWIEGEND_UNSELBSTAENDIG',
-      'unselbständig': 'UNSELBSTAENDIG'
-    };
-
-    const cognitiveEnumMap = {
-      'vorhanden/unbeeinträchtigt': 'VORHANDEN',
-      'größtenteils vorhanden': 'GROESSTENTEILS_VORHANDEN',
-      'in geringem Maß vorhanden': 'GERINGEM_MASS',
-      'nicht vorhanden': 'NICHT_VORHANDEN'
-    };
-
-    const behaviorEnumMap = {
-      'nie oder sehr selten': 'NIE_ODER_SEHR_SELTEN',
-      'selten': 'SELTEN',
-      'häufig': 'HAEUFIG',
-      'täglich': 'TAEGLICH'
-    };
-
     // Helper function to get column name for a question
     function getQuestionColumnName(moduleIdx, questionIdx) {
       const key = `m${moduleIdx + 1}_q${questionIdx}`;
       return questionColumnMap[key] || null;
     }
 
-    function mapLabelToEnum(moduleIdx, questionIdx, label) {
-      const moduleId = modules[moduleIdx].id;
-      if (moduleId === 'm2') {
-        return cognitiveEnumMap[label] || null;
-      }
-      if (moduleId === 'm3') {
-        return behaviorEnumMap[label] || null;
-      }
-      if (moduleId === 'm1' || moduleId === 'm4' || moduleId === 'm6' || (moduleId === 'm5' && questionIdx === 1)) {
-        return mobilityEnumMap[label] || null;
-      }
-      return null;
+    function initCalBooking() {
+      if (calInitialized) return;
+      (function (C, A, L) {
+        let p = function (a, ar) { a.q.push(ar); };
+        let d = C.document;
+        C.Cal = C.Cal || function () {
+          let cal = C.Cal;
+          let ar = arguments;
+          if (!cal.loaded) {
+            cal.ns = {};
+            cal.q = cal.q || [];
+            d.head.appendChild(d.createElement("script")).src = A;
+            cal.loaded = true;
+          }
+          if (ar[0] === L) {
+            const api = function () { p(api, arguments); };
+            const namespace = ar[1];
+            api.q = api.q || [];
+            if (typeof namespace === "string") {
+              cal.ns[namespace] = cal.ns[namespace] || api;
+              p(cal.ns[namespace], ar);
+              p(cal, ["initNamespace", namespace]);
+            } else p(cal, ar);
+            return;
+          }
+          p(cal, ar);
+        };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+
+      Cal("init", "navicarenow-pflegegrad-onboarding", { origin: "https://app.cal.com" });
+      Cal.ns["navicarenow-pflegegrad-onboarding"]("inline", {
+        elementOrSelector: "#my-cal-inline-navicarenow-pflegegrad-onboarding",
+        config: { layout: "month_view" },
+        calLink: "datafortress-justin/navicarenow-pflegegrad-onboarding",
+      });
+      Cal.ns["navicarenow-pflegegrad-onboarding"]("ui", {
+        hideEventTypeDetails: false,
+        layout: "month_view"
+      });
+
+      calInitialized = true;
     }
 
     // Helper function to convert answer index to ENUM value
@@ -1754,17 +1780,12 @@
       const option = question.options[answerIndex];
       if (!option) return null;
       
-      return mapLabelToEnum(moduleIdx, questionIdx, option) || option;
+      return option;
     }
 
     // Helper function to get numeric field column name
     function getNumericFieldColumnName(fieldId, period) {
       return `m5_q0_${fieldId}_${period}`;
-    }
-
-    function getCareLevelEnum(level) {
-      if (level === 0) return 'NONE';
-      return `LEVEL_${level}`;
     }
 
     // Function to collect form data for backend in flat column format
@@ -1773,7 +1794,7 @@
         email: '', // Will be set by caller
         phone: '', // Will be set by caller
         total_points: state.totalPoints || 0,
-        care_level: getCareLevelEnum(getCareLevel(state.totalPoints || 0).level),
+        care_level: String(getCareLevel(state.totalPoints || 0).level),
         paid: false, // Will be set by caller
         newsletter: false, // Will be set by caller
         payment_intent_id: null, // Will be set by caller
@@ -1985,6 +2006,15 @@
             document.getElementById('option-1-card').style.opacity = '0.6';
             document.getElementById('option-2-card').style.opacity = '0.6';
             document.getElementById('option-2-card').style.pointerEvents = 'none';
+
+            const calSection = document.getElementById('navicare-cal-section');
+            if (calSection) {
+              calSection.style.display = 'block';
+              initCalBooking();
+              setTimeout(() => {
+                calSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }, 300);
+            }
           } catch (backendError) {
             console.error('Backend post error:', backendError);
             // Payment succeeded but backend failed - still show success for payment
