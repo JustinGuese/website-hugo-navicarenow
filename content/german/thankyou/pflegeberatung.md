@@ -80,3 +80,4 @@ Cal.ns["navicarenow-pflegegrad-onboarding"]("ui", {"theme":"light","hideEventTyp
   https://www.pflege.de/pflegekasse-pflegerecht/pflegegrade/
 
 Wenn Sie Fragen haben, schreiben Sie uns jederzeit an **support@navicare-now.de** – wir helfen Ihnen gerne weiter.
+
