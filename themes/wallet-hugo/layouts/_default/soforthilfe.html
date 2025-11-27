@@ -118,63 +118,67 @@
             </div>
           </div>
         </div>
-        <div class="row g-4 mt-1" id="navicare-next-steps" style="display:none;">
-          <div class="col-lg-6">
-            <div class="card shadow-sm border-0 h-100">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <i class="las la-envelope text-primary fs-3 me-2"></i>
-                  <div>
-                    <p class="text-uppercase small text-muted mb-0">Option 1</p>
-                    <h4 class="mb-0">PDF per E-Mail erhalten</h4>
-                  </div>
+        <div class="card shadow-sm border-0 mt-4" id="navicare-next-steps" style="display:none;">
+          <div class="card-body p-4">
+            <h3 class="mb-4">Ihre Kontaktdaten</h3>
+            <form class="next-step-form" id="navicare-contact-form">
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label class="form-label">E-Mail-Adresse <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="navicare-email" required>
                 </div>
-                <p class="text-muted">Wir senden Ihnen das Ergebnis inkl. Modulübersicht und vorbereiteten Textbausteinen für den Antrag. Kostenlos.</p>
-                <form class="next-step-form" id="navicare-pdf-form">
-                  <div class="mb-3">
-                    <label class="form-label">E-Mail-Adresse <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="navicare-pdf-email" required>
-                  </div>
-                  <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="navicare-newsletter">
-                    <label class="form-check-label" for="navicare-newsletter">Ich möchte den Newsletter erhalten (optional, nicht vorausgewählt)</label>
-                  </div>
-                  <button type="button" class="btn btn-primary w-100" id="navicare-pdf-submit">PDF per E-Mail sichern</button>
-                  <p class="placeholder-hint text-muted small mt-2">Placeholder: Versand erfolgt in Kürze automatisch.</p>
-                </form>
+                <div class="col-md-6">
+                  <label class="form-label">Telefonnummer <span class="text-muted">(optional)</span></label>
+                  <input type="tel" class="form-control" id="navicare-phone">
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card shadow-sm border-0 h-100">
-              <div class="card-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <i class="las la-headset text-primary fs-3 me-2"></i>
-                  <div>
-                    <p class="text-uppercase small text-muted mb-0">Option 2</p>
-                    <h4 class="mb-0">Done for you Service</h4>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="navicare-newsletter">
+                <label class="form-check-label" for="navicare-newsletter">Ich möchte den Newsletter erhalten (optional, nicht vorausgewählt)</label>
+              </div>
+            </form>
+            
+            <div class="divider my-4"></div>
+            
+            <h4 class="mb-3">Wählen Sie eine Option</h4>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="card border-0 shadow-sm h-100 option-card" id="option-1-card">
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <i class="las la-envelope text-primary fs-3 me-2"></i>
+                      <div>
+                        <p class="text-uppercase small text-muted mb-0">Option 1</p>
+                        <h4 class="mb-0">PDF per E-Mail erhalten</h4>
+                      </div>
+                    </div>
+                    <p class="text-muted mb-3">Wir senden Ihnen das Ergebnis inkl. Modulübersicht und vorbereiteten Textbausteinen für den Antrag. Kostenlos.</p>
+                    <button type="button" class="btn btn-primary w-100" id="navicare-pdf-submit">
+                      <i class="las la-file-pdf me-2"></i>PDF per E-Mail sichern
+                    </button>
                   </div>
                 </div>
-                <p class="text-muted">Für 4,99 € prüfen wir Ihren Antrag, ergänzen fehlende Angaben, drucken, versenden und melden uns auf Wunsch telefonisch.</p>
-                <form class="next-step-form" id="navicare-service-form">
-                  <div class="mb-3">
-                    <label class="form-label">E-Mail-Adresse <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="navicare-service-email" required>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Telefonnummer <span class="text-danger">*</span></label>
-                    <input type="tel" class="form-control" id="navicare-service-phone" required>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Zahlungsart</label>
-                    <div class="payment-placeholder p-3 border rounded bg-light">
-                      <span class="badge bg-secondary me-2">Stripe Placeholder</span>
-                      <span class="text-muted small">Die echte Zahlungsabwicklung wird gerade vorbereitet.</span>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border-0 shadow-sm h-100 option-card" id="option-2-card">
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <i class="las la-headset text-primary fs-3 me-2"></i>
+                      <div>
+                        <p class="text-uppercase small text-muted mb-0">Option 2</p>
+                        <h4 class="mb-0">Done for you Service</h4>
+                      </div>
                     </div>
+                    <p class="text-muted mb-3">Für 4,99 € prüfen wir Ihren Antrag, ergänzen fehlende Angaben, drucken, versenden und melden uns auf Wunsch telefonisch.</p>
+                    <div class="mb-3">
+                      <label class="form-label small text-muted mb-2">Zahlungsart</label>
+                      <div id="express-checkout-element" class="p-3 border rounded bg-light" style="min-height: 50px;">
+                        <!-- Stripe Express Checkout Element will be mounted here -->
+                      </div>
+                    </div>
+                    <p class="text-muted small mt-2 mb-0" id="payment-status"></p>
                   </div>
-                  <button type="button" class="btn btn-dark w-100" id="navicare-service-submit">Done for you sichern – 4,99 €</button>
-                  <p class="placeholder-hint text-muted small mt-2">Placeholder: Wir bestätigen den Auftrag manuell.</p>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -780,6 +784,36 @@
     gap:.75rem;
   }
   
+  #express-checkout-element {
+    min-height: 50px;
+  }
+  
+  #payment-status {
+    min-height: 20px;
+  }
+  
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #e3f2fd 20%, #e3f2fd 80%, transparent 100%);
+    margin: 2rem 0;
+  }
+  
+  .option-card {
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(27,123,95,.15) !important;
+    border-color: #1b7b5f !important;
+  }
+  
+  .option-card.selected {
+    border: 2px solid #1b7b5f !important;
+    background: linear-gradient(135deg, #f8fbff 0%, #fff 100%);
+  }
+  
   /* Buttons */
   .btn-primary {
     background: linear-gradient(135deg, #1b7b5f 0%, #2d9c7a 100%);
@@ -864,9 +898,25 @@
   }
 </style>
 
+<script src="https://js.stripe.com/v3/"></script>
 <script>
   (function(){
     'use strict';
+    
+    // Initialize Stripe
+    const stripePublishableKey = '{{ .Site.Params.stripe_publishable_key }}';
+    const stripeProductId = '{{ .Site.Params.stripe_product_id_pflegegraddoneforyou }}';
+    const apiBaseUrl = '{{ .Site.Params.api_base_url }}';
+    
+    // Log Stripe configuration for debugging
+    console.log('Stripe Publishable Key:', stripePublishableKey);
+    console.log('Stripe Product ID:', stripeProductId);
+    console.log('Stripe Publishable Key type:', typeof stripePublishableKey);
+    console.log('Stripe Publishable Key length:', stripePublishableKey?.length);
+    
+    const stripe = Stripe(stripePublishableKey);
+    let expressCheckoutElement = null;
+    let elements = null;
     
     // Module definitions with all questions
     const modules = [
@@ -1166,8 +1216,7 @@
       updateNavigation();
       
       // Hide result card during questionnaire
-      resultCard.style.display = 'none';
-      nextSteps.style.display = 'none';
+      hideResultAndUnmountStripe();
     }
 
     function handleNumericChange(e){
@@ -1211,8 +1260,7 @@
       updateProgress();
       
       // Hide result card during questionnaire
-      resultCard.style.display = 'none';
-      nextSteps.style.display = 'none';
+      hideResultAndUnmountStripe();
     }
 
     function calculateNumericPoints(moduleIdx, questionIdx){
@@ -1412,6 +1460,22 @@
       }).filter(html => html).join('');
     }
 
+    function hideResultAndUnmountStripe() {
+      resultCard.style.display = 'none';
+      nextSteps.style.display = 'none';
+      
+      // Unmount Stripe element if it exists
+      if (expressCheckoutElement) {
+        try {
+          expressCheckoutElement.unmount();
+          expressCheckoutElement = null;
+          elements = null;
+        } catch (e) {
+          // Element might already be unmounted
+        }
+      }
+    }
+
     function updateProgress(){
       let completed = 0;
       modules.forEach((module,idx)=>{
@@ -1427,8 +1491,7 @@
       progressLabel.textContent = `Modul ${state.current + 1} von ${modules.length}`;
       
       // Don't show result during questionnaire - only at the end
-      resultCard.style.display = 'none';
-      nextSteps.style.display = 'none';
+      hideResultAndUnmountStripe();
     }
 
     function updateNavigation(){
@@ -1576,14 +1639,379 @@
       resultCard.style.display = 'block';
       nextSteps.style.display = 'flex';
       
+      // Initialize Stripe checkout when next steps are shown
+      setTimeout(() => {
+        initializeStripeCheckout();
+      }, 100);
+      
       // Scroll to result
       resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
+    // Mapping table for question column names (matches backend schema exactly)
+    const questionColumnMap = {
+      'm1_q0': 'm1_q0_positionswechsel_bett',
+      'm1_q1': 'm1_q1_stabile_sitzposition',
+      'm1_q2': 'm1_q2_umsetzen',
+      'm1_q3': 'm1_q3_fortbewegen_wohnbereich',
+      'm1_q4': 'm1_q4_treppensteigen',
+      'm2_q0': 'm2_q0_personen_erkennen',
+      'm2_q1': 'm2_q1_oertliche_orientierung',
+      'm2_q2': 'm2_q2_zeitliche_orientierung',
+      'm2_q3': 'm2_q3_erinnern_ereignisse',
+      'm2_q4': 'm2_q4_mehrschrittige_handlungen',
+      'm2_q5': 'm2_q5_entscheidungen_treffen',
+      'm2_q6': 'm2_q6_sachverhalte_verstehen',
+      'm2_q7': 'm2_q7_gefahren_erkennen',
+      'm2_q8': 'm2_q8_beduerfnisse_mitteilen',
+      'm2_q9': 'm2_q9_aufforderungen_verstehen',
+      'm2_q10': 'm2_q10_gespraechsbeteiligung',
+      'm3_q0': 'm3_q0_motorisch_auffaelligkeiten',
+      'm3_q1': 'm3_q1_naechtliche_unruhe',
+      'm3_q2': 'm3_q2_selbstschaedigend',
+      'm3_q3': 'm3_q3_beschaedigen_gegenstaende',
+      'm3_q4': 'm3_q4_physische_aggression',
+      'm3_q5': 'm3_q5_verbale_aggression',
+      'm3_q6': 'm3_q6_vokale_auffaelligkeiten',
+      'm3_q7': 'm3_q7_abwehr_pflegemassnahmen',
+      'm3_q8': 'm3_q8_wahnvorstellungen',
+      'm3_q9': 'm3_q9_aengste',
+      'm3_q10': 'm3_q10_antriebslosigkeit',
+      'm3_q11': 'm3_q11_sozial_inadaequat',
+      'm3_q12': 'm3_q12_sonstige_problemlagen',
+      'm4_q0': 'm4_q0_waschen_oberkoerper',
+      'm4_q1': 'm4_q1_koerperpflege_kopf',
+      'm4_q2': 'm4_q2_waschen_intimbereich',
+      'm4_q3': 'm4_q3_duschen_baden',
+      'm4_q4': 'm4_q4_ankleiden_oberkoerper',
+      'm4_q5': 'm4_q5_ankleiden_unterkoerper',
+      'm4_q6': 'm4_q6_nahrung_vorbereiten',
+      'm4_q7': 'm4_q7_essen',
+      'm4_q8': 'm4_q8_trinken',
+      'm4_q9': 'm4_q9_toilettengang',
+      'm4_q10': 'm4_q10_umgang_harninkontinenz',
+      'm4_q11': 'm4_q11_umgang_stuhlinkontinenz',
+      'm5_q1': 'm5_q1_diaet_verhaltensvorschriften',
+      'm6_q0': 'm6_q0_tagesablauf_gestalten',
+      'm6_q1': 'm6_q1_ruhen_schlafen',
+      'm6_q2': 'm6_q2_sich_beschaeftigen',
+      'm6_q3': 'm6_q3_planungen_zukunft',
+      'm6_q4': 'm6_q4_interaktion_personen',
+      'm6_q5': 'm6_q5_kontaktpflege_ausserhalb'
+    };
+
+    // Enum mapping helpers
+    const mobilityEnumMap = {
+      'selbständig': 'SELBSTAENDIG',
+      'überwiegend selbständig': 'UEBERWIEGEND_SELBSTAENDIG',
+      'überwiegend unselbständig': 'UEBERWIEGEND_UNSELBSTAENDIG',
+      'unselbständig': 'UNSELBSTAENDIG'
+    };
+
+    const cognitiveEnumMap = {
+      'vorhanden/unbeeinträchtigt': 'VORHANDEN',
+      'größtenteils vorhanden': 'GROESSTENTEILS_VORHANDEN',
+      'in geringem Maß vorhanden': 'GERINGEM_MASS',
+      'nicht vorhanden': 'NICHT_VORHANDEN'
+    };
+
+    const behaviorEnumMap = {
+      'nie oder sehr selten': 'NIE_ODER_SEHR_SELTEN',
+      'selten': 'SELTEN',
+      'häufig': 'HAEUFIG',
+      'täglich': 'TAEGLICH'
+    };
+
+    // Helper function to get column name for a question
+    function getQuestionColumnName(moduleIdx, questionIdx) {
+      const key = `m${moduleIdx + 1}_q${questionIdx}`;
+      return questionColumnMap[key] || null;
+    }
+
+    function mapLabelToEnum(moduleIdx, questionIdx, label) {
+      const moduleId = modules[moduleIdx].id;
+      if (moduleId === 'm2') {
+        return cognitiveEnumMap[label] || null;
+      }
+      if (moduleId === 'm3') {
+        return behaviorEnumMap[label] || null;
+      }
+      if (moduleId === 'm1' || moduleId === 'm4' || moduleId === 'm6' || (moduleId === 'm5' && questionIdx === 1)) {
+        return mobilityEnumMap[label] || null;
+      }
+      return null;
+    }
+
+    // Helper function to convert answer index to ENUM value
+    function answerIndexToEnum(moduleIdx, questionIdx, answerIndex) {
+      if (answerIndex === undefined || answerIndex === null) return null;
+      
+      const module = modules[moduleIdx];
+      const question = module.questions[questionIdx];
+      
+      if (!question || !question.options) return null;
+      
+      const option = question.options[answerIndex];
+      if (!option) return null;
+      
+      return mapLabelToEnum(moduleIdx, questionIdx, option) || option;
+    }
+
+    // Helper function to get numeric field column name
+    function getNumericFieldColumnName(fieldId, period) {
+      return `m5_q0_${fieldId}_${period}`;
+    }
+
+    function getCareLevelEnum(level) {
+      if (level === 0) return 'NONE';
+      return `LEVEL_${level}`;
+    }
+
+    // Function to collect form data for backend in flat column format
+    function collectFormData() {
+      const formData = {
+        email: '', // Will be set by caller
+        phone: '', // Will be set by caller
+        total_points: state.totalPoints || 0,
+        care_level: getCareLevelEnum(getCareLevel(state.totalPoints || 0).level),
+        paid: false, // Will be set by caller
+        newsletter: false, // Will be set by caller
+        payment_intent_id: null, // Will be set by caller
+        timestamp: new Date().toISOString()
+      };
+
+      // Process all modules and questions
+      modules.forEach((module, moduleIdx) => {
+        const moduleKey = `m${moduleIdx + 1}`;
+        const moduleAnswers = state.answers[moduleKey] || {};
+
+        module.questions.forEach((question, questionIdx) => {
+          if (question.type === 'numeric') {
+            // Handle numeric question (Module 5, q0)
+            const questionData = moduleAnswers[`q${questionIdx}`];
+            if (questionData) {
+              question.fields.forEach(field => {
+                const fieldData = questionData[field.id];
+                if (fieldData) {
+                  ['daily', 'weekly', 'monthly', 'yearly'].forEach(period => {
+                    const columnName = getNumericFieldColumnName(field.id, period);
+                    formData[columnName] = fieldData[period] || 0;
+                  });
+                }
+              });
+            }
+          } else {
+            // Handle regular questions
+            const answerIndex = moduleAnswers[`q${questionIdx}`];
+            if (answerIndex !== undefined) {
+              const columnName = getQuestionColumnName(moduleIdx, questionIdx);
+              if (columnName) {
+                const enumValue = answerIndexToEnum(moduleIdx, questionIdx, answerIndex);
+                formData[columnName] = enumValue;
+              }
+            }
+          }
+        });
+      });
+
+      return formData;
+    }
+
+    // Function to POST data to backend
+    async function postToBackend(data, paid) {
+      try {
+        const response = await fetch(`${apiBaseUrl}/pflegegrad-form`, {
+          method: 'POST',
+          headers: {
+            'accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            ...data,
+            paid: paid
+          })
+        });
+        
+        if (!response.ok) {
+          throw new Error('Backend request failed');
+        }
+        
+        return await response.json();
+      } catch (error) {
+        console.error('Error posting to backend:', error);
+        throw error;
+      }
+    }
+
+    // Initialize Stripe Express Checkout Element
+    function initializeStripeCheckout() {
+      if (expressCheckoutElement) {
+        return; // Already initialized
+      }
+
+      const expressCheckoutContainer = document.getElementById('express-checkout-element');
+      if (!expressCheckoutContainer) {
+        return;
+      }
+
+      // Create Elements instance
+      elements = stripe.elements({
+        mode: 'payment',
+        amount: 499, // 4.99 EUR in cents
+        currency: 'eur',
+        appearance: {
+          theme: 'stripe',
+          variables: {
+            borderRadius: '8px',
+          }
+        },
+        locale: 'de'
+      });
+
+      // Create Express Checkout Element
+      expressCheckoutElement = elements.create('expressCheckout', {
+        buttonType: {
+          applePay: 'buy',
+          googlePay: 'buy',
+          paypal: 'buynow',
+        },
+        buttonTheme: {
+          applePay: 'white-outline',
+          googlePay: 'black',
+        },
+        layout: {
+          maxColumns: 1,
+          maxRows: 4,
+        }
+      });
+
+      // Mount the element
+      expressCheckoutElement.mount('#express-checkout-element');
+
+      // Listen for ready event
+      expressCheckoutElement.on('ready', ({ availablePaymentMethods }) => {
+        const statusEl = document.getElementById('payment-status');
+        if (availablePaymentMethods && Object.keys(availablePaymentMethods).length > 0) {
+          statusEl.textContent = '';
+        } else {
+          statusEl.textContent = 'Express-Zahlungsmethoden sind für Ihr Gerät nicht verfügbar. Bitte verwenden Sie eine alternative Zahlungsmethode.';
+        }
+      });
+
+      // Handle payment confirmation
+      expressCheckoutElement.on('confirm', async (event) => {
+        const email = document.getElementById('navicare-email').value;
+        const phone = document.getElementById('navicare-phone').value;
+        
+        if (!email) {
+          event.complete('fail');
+          alert('Bitte füllen Sie zuerst die E-Mail-Adresse aus.');
+          return;
+        }
+
+        try {
+          // Create Payment Intent on backend
+          const response = await fetch(`${apiBaseUrl}/stripe/create-payment-intent`, {
+            method: 'POST',
+            headers: {
+              'accept': 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              amount: 499,
+              currency: 'eur',
+              productId: stripeProductId,
+              email: email,
+              phone: phone || ''
+            })
+          });
+
+          if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error('Failed to create payment intent: ' + errorText);
+          }
+
+          const { clientSecret } = await response.json();
+
+          if (!clientSecret) {
+            throw new Error('No client secret received from backend');
+          }
+
+          // Confirm payment with the client secret
+          const { error: confirmError, paymentIntent } = await stripe.confirmPayment({
+            elements,
+            clientSecret,
+            confirmParams: {
+              return_url: window.location.href + '?payment=success',
+            },
+            redirect: 'if_required'
+          });
+
+          if (confirmError) {
+            event.complete('fail');
+            alert('Zahlung fehlgeschlagen: ' + confirmError.message);
+            return;
+          }
+
+          // Payment successful
+          event.complete('success');
+          
+          // Collect form data and POST to backend
+          const formData = collectFormData();
+          formData.email = email;
+          formData.phone = phone || '';
+          formData.payment_intent_id = paymentIntent?.id || null;
+          formData.paid = true;
+          
+          try {
+            await postToBackend(formData, true);
+            
+            // Show success message
+            const statusEl = document.getElementById('payment-status');
+            statusEl.textContent = '✓ Zahlung erfolgreich! Ihre Anfrage wurde übermittelt.';
+            statusEl.className = 'text-success small mt-2 fw-semibold';
+            
+            // Disable form
+            document.getElementById('navicare-email').disabled = true;
+            document.getElementById('navicare-phone').disabled = true;
+            document.getElementById('navicare-pdf-submit').disabled = true;
+            
+            // Hide express checkout element
+            if (expressCheckoutElement) {
+              expressCheckoutElement.unmount();
+            }
+            
+            // Disable option cards
+            document.getElementById('option-1-card').style.opacity = '0.6';
+            document.getElementById('option-2-card').style.opacity = '0.6';
+            document.getElementById('option-2-card').style.pointerEvents = 'none';
+          } catch (backendError) {
+            console.error('Backend post error:', backendError);
+            // Payment succeeded but backend failed - still show success for payment
+            const statusEl = document.getElementById('payment-status');
+            statusEl.textContent = '✓ Zahlung erfolgreich! Bitte kontaktieren Sie uns, falls Sie keine Bestätigung erhalten.';
+            statusEl.className = 'text-warning small mt-2 fw-semibold';
+          }
+          
+        } catch (error) {
+          console.error('Payment error:', error);
+          event.complete('fail');
+          
+          // Check if it's a network error (backend not available)
+          if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+            alert('Der Zahlungsserver ist derzeit nicht erreichbar. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.');
+          } else {
+            alert('Ein Fehler ist aufgetreten: ' + error.message);
+          }
+        }
+      });
+    }
+
     // Form handlers
-    document.getElementById('navicare-pdf-submit').addEventListener('click', function(e){
+    document.getElementById('navicare-pdf-submit').addEventListener('click', async function(e){
       e.preventDefault();
-      const email = document.getElementById('navicare-pdf-email').value;
+      const email = document.getElementById('navicare-email').value;
+      const phone = document.getElementById('navicare-phone').value;
       const newsletter = document.getElementById('navicare-newsletter').checked;
       
       if(!email){
@@ -1591,22 +2019,33 @@
         return;
       }
       
-      // Placeholder: In production, this would send to backend
-      alert('Placeholder: PDF würde jetzt an ' + email + ' gesendet werden. Newsletter: ' + (newsletter ? 'Ja' : 'Nein'));
-    });
-
-    document.getElementById('navicare-service-submit').addEventListener('click', function(e){
-      e.preventDefault();
-      const email = document.getElementById('navicare-service-email').value;
-      const phone = document.getElementById('navicare-service-phone').value;
-      
-      if(!email || !phone){
-        alert('Bitte füllen Sie alle Pflichtfelder aus.');
-        return;
+      try {
+        // Collect form data and POST to backend
+        const formData = collectFormData();
+        formData.email = email;
+        formData.phone = phone || '';
+        formData.newsletter = newsletter;
+        formData.paid = false;
+        
+        await postToBackend(formData, false);
+        
+        // Show success message
+        alert('✓ Ihre Anfrage wurde erfolgreich übermittelt. Sie erhalten das PDF per E-Mail.');
+        
+        // Disable form
+        document.getElementById('navicare-email').disabled = true;
+        document.getElementById('navicare-phone').disabled = true;
+        document.getElementById('navicare-newsletter').disabled = true;
+        this.disabled = true;
+        
+        // Disable option cards
+        document.getElementById('option-1-card').style.opacity = '0.6';
+        document.getElementById('option-2-card').style.opacity = '0.6';
+        document.getElementById('option-1-card').style.pointerEvents = 'none';
+        document.getElementById('option-2-card').style.pointerEvents = 'none';
+      } catch (error) {
+        alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
       }
-      
-      // Placeholder: In production, this would integrate with Stripe
-      alert('Placeholder: Done-for-you Service würde jetzt für ' + email + ' (Tel: ' + phone + ') bestellt werden. Zahlung: 4,99€ (Stripe Integration folgt)');
     });
 
     // Initialize
