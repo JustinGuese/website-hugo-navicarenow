@@ -17,8 +17,7 @@ contact_form_action = "https://formspree.io/f/mwpalndo" # contact form works wit
 # Stripe/Pflegegradermittlung configuration
 stripe_product_id_pflegegraddoneforyou = "prod_TUQUKzl32q1S0W"
 stripe_publishable_key = "pk_test_51SXRaQLj1DrqgwLdsaW2IdYteT0bSlWopmVZ7I7rRPmpw7UxOvY1n1c0E0aZTDHL6BQzrhGpyITW76IafOZq5w8z00ZFBIKpri"
-api_base_url = "http://127.0.0.1:8000"
-
+api_base_url = "https://navicarenow-backend.api.datafortress.cloud"
 
 # top hedaer
 top_hedaer = false
@@ -33,8 +32,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation buttons
 [navigation_button_solid]
 enable = true
-label = "Förderungscheck"
-link = "https://form.jotform.com/Julia_Camara/PflegendeAngehoerige"
+label = "Soforthilfe"
+link = "/soforthilfe"
 
 [navigation_button_bordered]
 enable = true

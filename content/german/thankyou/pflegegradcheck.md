@@ -63,4 +63,3 @@ Dort erfahren Sie, wie Sie Fehlbewertungen vermeiden und wie wir Sie persönlich
 
 Bei Fragen erreichen Sie uns jederzeit unter **support@navicare-now.de**.
 
-{{ partial "subscriptionupsell.html" . }}
