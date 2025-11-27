@@ -173,28 +173,18 @@
                     <p class="text-muted mb-3">Für 4,99 € prüfen wir Ihren Antrag, ergänzen fehlende Angaben, drucken, versenden und melden uns auf Wunsch telefonisch.</p>
                     <div class="mb-3">
                       <label class="form-label small text-muted mb-2">Zahlungsart</label>
-                      <div id="express-checkout-element" class="p-3 border rounded bg-light" style="min-height: 50px;">
-                        <!-- Stripe Express Checkout Element will be mounted here -->
+                      <div class="p-3 border rounded bg-light text-center">
+                        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                        <stripe-buy-button
+                          buy-button-id="buy_btn_1SY1e7Lj1DrqgwLd3ooVZsFl"
+                          publishable-key="pk_test_51SXRaQLj1DrqgwLdsaW2IdYteT0bSlWopmVZ7I7rRPmpw7UxOvY1n1c0E0aZTDHL6BQzrhGpyITW76IafOZq5w8z00ZFBIKpri">
+                        </stripe-buy-button>
                       </div>
                     </div>
-                    <p class="text-muted small mt-2 mb-0" id="payment-status"></p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="card shadow-sm border-0 mt-4" id="navicare-cal-section" style="display:none;">
-          <div class="card-body p-4">
-            <div class="d-flex align-items-center mb-3">
-              <i class="las la-calendar-check text-primary fs-3 me-2"></i>
-              <div>
-                <p class="text-uppercase small text-muted mb-0">Nächster Schritt</p>
-                <h4 class="mb-0">Onboarding-Termin vereinbaren</h4>
-              </div>
-            </div>
-            <p class="text-muted">Sichern Sie sich direkt einen Termin, damit wir Ihren fertigen Antrag gemeinsam einreichen können. Die Buchung wird erst nach erfolgreicher Zahlung freigeschaltet.</p>
-            <div class="cal-container mt-4" id="my-cal-inline-navicarenow-pflegegrad-onboarding"></div>
           </div>
         </div>
       </div>
@@ -798,16 +788,8 @@
     gap:.75rem;
   }
   
-  #express-checkout-element {
-    min-height: 50px;
-  }
-  
   #payment-status {
     min-height: 20px;
-  }
-
-  .cal-container {
-    min-height: 520px;
   }
   
   .divider {
@@ -916,26 +898,11 @@
   }
 </style>
 
-<script src="https://js.stripe.com/v3/"></script>
 <script>
   (function(){
     'use strict';
     
-    // Initialize Stripe
-    const stripePublishableKey = '{{ .Site.Params.stripe_publishable_key }}';
-    const stripeProductId = '{{ .Site.Params.stripe_product_id_pflegegraddoneforyou }}';
     const apiBaseUrl = '{{ .Site.Params.api_base_url }}';
-    
-    // Log Stripe configuration for debugging
-    console.log('Stripe Publishable Key:', stripePublishableKey);
-    console.log('Stripe Product ID:', stripeProductId);
-    console.log('Stripe Publishable Key type:', typeof stripePublishableKey);
-    console.log('Stripe Publishable Key length:', stripePublishableKey?.length);
-    
-    const stripe = Stripe(stripePublishableKey);
-    let expressCheckoutElement = null;
-    let elements = null;
-    let calInitialized = false;
     
     // Module definitions with all questions
     const modules = [
@@ -1235,7 +1202,7 @@
       updateNavigation();
       
       // Hide result card during questionnaire
-      hideResultAndUnmountStripe();
+      hideResultSections();
     }
 
     function handleNumericChange(e){
@@ -1279,7 +1246,7 @@
       updateProgress();
       
       // Hide result card during questionnaire
-      hideResultAndUnmountStripe();
+      hideResultSections();
     }
 
     function calculateNumericPoints(moduleIdx, questionIdx){
@@ -1479,20 +1446,9 @@
       }).filter(html => html).join('');
     }
 
-    function hideResultAndUnmountStripe() {
+    function hideResultSections() {
       resultCard.style.display = 'none';
       nextSteps.style.display = 'none';
-      
-      // Unmount Stripe element if it exists
-      if (expressCheckoutElement) {
-        try {
-          expressCheckoutElement.unmount();
-          expressCheckoutElement = null;
-          elements = null;
-        } catch (e) {
-          // Element might already be unmounted
-        }
-      }
     }
 
     function updateProgress(){
@@ -1510,7 +1466,7 @@
       progressLabel.textContent = `Modul ${state.current + 1} von ${modules.length}`;
       
       // Don't show result during questionnaire - only at the end
-      hideResultAndUnmountStripe();
+      hideResultSections();
     }
 
     function updateNavigation(){
@@ -1657,11 +1613,6 @@
       // Show result card and next steps
       resultCard.style.display = 'block';
       nextSteps.style.display = 'flex';
-      
-      // Initialize Stripe checkout when next steps are shown
-      setTimeout(() => {
-        initializeStripeCheckout();
-      }, 100);
       
       // Scroll to result
       resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1864,179 +1815,6 @@
       }
     }
 
-    // Initialize Stripe Express Checkout Element
-    function initializeStripeCheckout() {
-      if (expressCheckoutElement) {
-        return; // Already initialized
-      }
-
-      const expressCheckoutContainer = document.getElementById('express-checkout-element');
-      if (!expressCheckoutContainer) {
-        return;
-      }
-
-      // Create Elements instance
-      elements = stripe.elements({
-        mode: 'payment',
-        amount: 499, // 4.99 EUR in cents
-        currency: 'eur',
-        appearance: {
-          theme: 'stripe',
-          variables: {
-            borderRadius: '8px',
-          }
-        },
-        locale: 'de'
-      });
-
-      // Create Express Checkout Element
-      expressCheckoutElement = elements.create('expressCheckout', {
-        buttonType: {
-          applePay: 'buy',
-          googlePay: 'buy',
-          paypal: 'buynow',
-        },
-        buttonTheme: {
-          applePay: 'white-outline',
-          googlePay: 'black',
-        },
-        layout: {
-          maxColumns: 1,
-          maxRows: 4,
-        }
-      });
-
-      // Mount the element
-      expressCheckoutElement.mount('#express-checkout-element');
-
-      // Listen for ready event
-      expressCheckoutElement.on('ready', ({ availablePaymentMethods }) => {
-        const statusEl = document.getElementById('payment-status');
-        if (availablePaymentMethods && Object.keys(availablePaymentMethods).length > 0) {
-          statusEl.textContent = '';
-        } else {
-          statusEl.textContent = 'Express-Zahlungsmethoden sind für Ihr Gerät nicht verfügbar. Bitte verwenden Sie eine alternative Zahlungsmethode.';
-        }
-      });
-
-      // Handle payment confirmation
-      expressCheckoutElement.on('confirm', async (event) => {
-        const email = document.getElementById('navicare-email').value;
-        const phone = document.getElementById('navicare-phone').value;
-        
-        if (!email) {
-          event.complete('fail');
-          alert('Bitte füllen Sie zuerst die E-Mail-Adresse aus.');
-          return;
-        }
-
-        try {
-          // Create Payment Intent on backend
-          const response = await fetch(`${apiBaseUrl}/stripe/create-payment-intent`, {
-            method: 'POST',
-            headers: {
-              'accept': 'application/json',
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              amount: 499,
-              currency: 'eur',
-              productId: stripeProductId,
-              email: email,
-              phone: phone || ''
-            })
-          });
-
-          if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error('Failed to create payment intent: ' + errorText);
-          }
-
-          const { clientSecret } = await response.json();
-
-          if (!clientSecret) {
-            throw new Error('No client secret received from backend');
-          }
-
-          // Confirm payment with the client secret
-          const { error: confirmError, paymentIntent } = await stripe.confirmPayment({
-            elements,
-            clientSecret,
-            confirmParams: {
-              return_url: window.location.href + '?payment=success',
-            },
-            redirect: 'if_required'
-          });
-
-          if (confirmError) {
-            event.complete('fail');
-            alert('Zahlung fehlgeschlagen: ' + confirmError.message);
-            return;
-          }
-
-          // Payment successful
-          event.complete('success');
-          
-          // Collect form data and POST to backend
-          const formData = collectFormData();
-          formData.email = email;
-          formData.phone = phone || '';
-          formData.payment_intent_id = paymentIntent?.id || null;
-          formData.paid = true;
-          
-          try {
-            await postToBackend(formData, true);
-            
-            // Show success message
-            const statusEl = document.getElementById('payment-status');
-            statusEl.textContent = '✓ Zahlung erfolgreich! Ihre Anfrage wurde übermittelt.';
-            statusEl.className = 'text-success small mt-2 fw-semibold';
-            
-            // Disable form
-            document.getElementById('navicare-email').disabled = true;
-            document.getElementById('navicare-phone').disabled = true;
-            document.getElementById('navicare-pdf-submit').disabled = true;
-            
-            // Hide express checkout element
-            if (expressCheckoutElement) {
-              expressCheckoutElement.unmount();
-            }
-            
-            // Disable option cards
-            document.getElementById('option-1-card').style.opacity = '0.6';
-            document.getElementById('option-2-card').style.opacity = '0.6';
-            document.getElementById('option-2-card').style.pointerEvents = 'none';
-
-            const calSection = document.getElementById('navicare-cal-section');
-            if (calSection) {
-              calSection.style.display = 'block';
-              initCalBooking();
-              setTimeout(() => {
-                calSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }, 300);
-            }
-          } catch (backendError) {
-            console.error('Backend post error:', backendError);
-            // Payment succeeded but backend failed - still show success for payment
-            const statusEl = document.getElementById('payment-status');
-            statusEl.textContent = '✓ Zahlung erfolgreich! Bitte kontaktieren Sie uns, falls Sie keine Bestätigung erhalten.';
-            statusEl.className = 'text-warning small mt-2 fw-semibold';
-          }
-          
-        } catch (error) {
-          console.error('Payment error:', error);
-          event.complete('fail');
-          
-          // Check if it's a network error (backend not available)
-          if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
-            alert('Der Zahlungsserver ist derzeit nicht erreichbar. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.');
-          } else {
-            alert('Ein Fehler ist aufgetreten: ' + error.message);
-          }
-        }
-      });
-    }
-
     // Form handlers
     document.getElementById('navicare-pdf-submit').addEventListener('click', async function(e){
       e.preventDefault();
@@ -2073,6 +1851,8 @@
         document.getElementById('option-2-card').style.opacity = '0.6';
         document.getElementById('option-1-card').style.pointerEvents = 'none';
         document.getElementById('option-2-card').style.pointerEvents = 'none';
+
+        window.location.href = '/thankyou/pflegeberatung';
       } catch (error) {
         alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
       }
