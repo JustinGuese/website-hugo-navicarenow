@@ -15,6 +15,14 @@
           document.dispatchEvent(event);
         }
       }
+      // Safely initialize AOS so elements with data-aos (z. B. Blogkarten) nicht dauerhaft ausgeblendet bleiben
+      if (window.AOS && typeof window.AOS.init === 'function') {
+        window.AOS.init({
+          once: true,
+          duration: 600,
+          offset: 120
+        });
+      }
     };
     document.head.appendChild(script);
   })();

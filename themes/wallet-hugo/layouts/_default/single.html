@@ -86,7 +86,8 @@
   {{ end }}
   <!-- /regular page -->
 
-  {{ partial "subscriptionupsell.html" . }}
+  {{/* Stripe pricing / membership upsell entfernt (B2C-Stripe-Tabelle) */}}
+  {{/* {{ partial "subscriptionupsell.html" . }} */}}
 
 	{{ partial "footer.html" . }}
 	{{ partialCached "script.html" . }}
