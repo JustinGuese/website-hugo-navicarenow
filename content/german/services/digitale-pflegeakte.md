@@ -1,41 +1,34 @@
 ---
-title: 'Digitale Pflegeakte & KI-Matching'
-description: 'Alle Pflegedaten sicher an einem Ort. Smarte Analyse, Risiko-Erkennung und fundierte Handlungsempfehlungen'
-icon: 'fas fa-user-graduate'
+title: 'Externe Aufnahme-Übernahme'
+description: 'Wir übernehmen den gesamten Aufnahmeprozess – von der Datenerhebung bis zur fertigen Pflegedokumentation innerhalb von 24 Stunden.'
+icon: 'fas fa-clipboard-list'
 draft: false
 date: 2025-03-12T15:40:24+06:00
 ---
 
-## Alle Daten sicher an einem Ort
+## Wir übernehmen die komplette Neuaufnahme
 
-Die digitale Pflegeakte von Navicare Now ist das Herzstück unserer Plattform. Sie erfasst alle wichtigen Informationen – von Diagnosen und Medikamenten über Pflegeleistungen bis hin zu Ansprechpartnern und Dokumentation.
+Die Erstaufnahme neuer Bewohner*innen ist einer der anspruchsvollsten Prozesse in Ihrer Einrichtung. Unter hohem Zeitdruck müssen Hunderte Informationen erhoben, bewertet und MD-konform dokumentiert werden – zusätzlich zum laufenden Pflegealltag.
 
-Das Wichtigste: Ihre Daten sind DSGVO-konform, auf EU-Servern gehostet und mit höchsten Sicherheitsstandards geschützt. Sie haben vollständige Kontrolle darüber, wer Zugriff hat.
+NaviCare Now übernimmt diesen Prozess extern: Ein Team erfahrener Pflegefachpersonen führt strukturierte Aufnahmegespräche mit Bewohner*innen, Angehörigen und behandelnden Ärzt*innen – telefonisch oder per Video – und erfasst alle relevanten medizinischen, pflegerischen und sozialen Daten.
 
-### Was die digitale Pflegeakte leistet
+### Was wir für Sie übernehmen
 
-- Sichere Erfassung aller medizinischen und pflegerelevanten Daten
-- Automatische Dokumentation von Pflege und Betreuung
-- Erkennung von Risiken und Veränderungen
-- Intelligente Handlungsempfehlungen basierend auf Ihrer Situation
-- Zugriff für autorisierte Fachkräfte und Angehörige
-
----
-
-## KI, die versteht und unterstützt
-
-Die smarte Pflegeakte nutzt künstliche Intelligenz, um Ihre Daten zu analysieren. Sie erkennt Muster, identifiziert mögliche Risiken und schlägt proaktiv Maßnahmen vor – alles immer fundiert und praxisnah.
-
-Gleichzeitig bleibt die Entscheidung bei Ihnen: Die KI empfiehlt, Sie entscheiden.
-
-<hr>
-
-## Vernetzung, die funktioniert
-
-Die digitale Pflegeakte ermöglicht reibungslosen Informationsaustausch zwischen Angehörigen, Pflegekräften und Einrichtungen. Alle arbeiten auf Basis der gleichen, aktuellen Informationen – was Fehler und Missverständnisse drastisch reduziert.
+- Strukturierte Datenerhebung vor der oder parallel zur Aufnahme
+- Vollständige Erfassung aller medizinischen, pflegerischen und sozialen Informationen
+- Einbindung von Angehörigen und Ärzt*innen in den Aufnahmeprozess
+- Entlastung Ihres Teams in der kritischsten Phase der Versorgung
 
 ---
 
-## Sicherheit, die zählt
+## Fachliche Prüfung & strukturierte Aufbereitung
 
-Sie brauchen sich keine Sorgen um Ihre sensiblen Daten zu machen. Verschlüsselung, regelmäßige Sicherheitsprüfungen und klare Zugriffskontrolle stellen sicher, dass Ihre Informationen geschützt bleiben.
+Nach der Erhebung prüfen unsere Pflegefachpersonen alle Angaben auf Plausibilität und Vollständigkeit. Unterstützt durch KI werden die Informationen strukturiert aufbereitet und mit aktuellen Pflege-Expertenstandards abgeglichen.
+
+So entsteht eine belastbare, einheitliche Dokumentationsbasis, auf der Sie sicher weiterarbeiten können – unabhängig davon, wie erfahren das Personal vor Ort ist.
+
+### Ihr Vorteil
+
+- Konstante Dokumentationsqualität – unabhängig von Auslastung und Personalbesetzung
+- Deutlich weniger Nachdokumentation und Korrekturen
+- Entlastung Ihrer Fachkräfte, die sich auf die direkte Pflege konzentrieren können

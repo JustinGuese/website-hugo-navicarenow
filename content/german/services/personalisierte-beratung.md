@@ -1,43 +1,35 @@
 ---
-title: 'Personalisierte Beratung'
-description: 'Fachkräfte analysieren Ihren individuellen Pflegebedarf in persönlichen Gesprächen – digital oder telefonisch'
-icon: 'fas fa-house-user'
+title: 'MD-konforme Dokumentation'
+description: 'Wir liefern eine vollständige, standardgerechte Pflegedokumentation für Neuaufnahmen – inklusive SIS, Risikoeinschätzungen und Pflegeplanung.'
+icon: 'fas fa-file-medical-alt'
 draft: false
 date: 2025-03-13T15:40:24+06:00
 ---
 
-## Beratung von Mensch zu Mensch
+## Vollständige Pflegedokumentation ab dem ersten Tag
 
-Jede Pflegesituation ist einzigartig. Deshalb bietet Navicare Now personalisierte Beratung durch examinierte Pflegefachkräfte, die Ihre individuelle Situation verstehen und darauf zugeschnittene Lösungen entwickeln.
+Aus den erhobenen und geprüften Daten erstellt NaviCare Now ein umfassendes Aufnahme- und Pflegepaket für Ihre Einrichtung. Alle relevanten Inhalte werden so aufbereitet, dass sie den Anforderungen des Medizinischen Dienstes (MD) und den aktuellen Expertenstandards entsprechen.
 
-In persönlichen Gesprächen (digital oder telefonisch) analysieren unsere Fachkräfte gemeinsam mit Ihnen den Pflegebedarf, die Herausforderungen und die Möglichkeiten. Diese Erkenntnisse fließen direkt in Ihre persönliche Pflegeplanung ein – und verbessern gleichzeitig die KI unserer Plattform, die künftige Planungen automatisiert, aber weiterhin fachlich fundiert gestaltet.
+Sie erhalten eine Pflegedokumentation, die nicht nur formal korrekt ist, sondern den tatsächlichen Bedarf der Bewohner*innen klar und nachvollziehbar abbildet.
 
-### So funktioniert die personalisierte Beratung
+### Inhalt des Aufnahme- und Pflegepakets
 
-- Kostenlose Erstgespräche zur Erfassung Ihrer Situation
-- Tiefgehende Analyse durch Pflegefachkräfte
-- Entwicklung einer individuellen Pflegeplanung
-- Telefonische und digitale Beratungstermine
-- Kontinuierliche Unterstützung bei Fragen
-
----
-
-## Fachkompetenz trifft Verständnis
-
-Unsere Beraterinnen und Berater bringen jahrelange Erfahrung mit. Sie wissen, wo die Probleme liegen, welche Leistungen oft vergessen werden, und wie man Angehörige sinnvoll entlastet.
-
-Gleichzeitig verstehen sie die emotionale Seite: Pflegeerfahrung bedeutet auch persönliche Betroffenheit. Diese Empathie prägt unsere Beratung.
-
-<hr>
-
-## Von der Beratung zur Automatisierung
-
-Das Besondere: Ihre persönliche Beratung verbessert unsere KI. Mit jeder Planung, die ein Fachmensch erstellt, lernt das System dazu. Das bedeutet: Zukünftige Empfehlungen werden immer präziser, immer hilfreicher.
-
-Sie erhalten also nicht nur heute eine gute Planung – Sie tragen auch dazu bei, dass morgen noch bessere Planungen entstehen.
+- Strukturierte Informationssammlung (SIS)
+- Vollständige Risikoeinschätzungen (z. B. Sturz-, Dekubitus-, Ernährungs- und Medikationsrisiken)
+- Individuelle Pflegeplanung mit Maßnahmen und Zielen
+- Tagesstruktur und persönliches Pflegeportrait
+- Nachvollziehbare Begründungen und Hinweise für Ihr Team
 
 ---
 
-## Beratung, die trägt
+## Sicherheit bei Prüfungen und im Alltag
 
-Eine gute Beratung schafft Klarheit, Vertrauen und einen klaren Weg nach vorn. Genau das ist unser Ziel: Sie sollen sich mit Ihrer Pflegesituation nicht allein fühlen, sondern unterstützt und verstanden.
+Eine lückenlose, konsistente Dokumentation ist die Basis für sichere Pflege und erfolgreiche Prüfungen. Mit NaviCare Now reduzieren Sie das Risiko von Beanstandungen, Nachforderungen und haftungsrelevanten Lücken.
+
+Gleichzeitig schaffen Sie Transparenz für Ihr Team: Alle Beteiligten arbeiten mit denselben, klar strukturierten Informationen – das erleichtert Übergaben, Einarbeitung und interdisziplinäre Zusammenarbeit.
+
+### Ihre Vorteile auf einen Blick
+
+- MD-konforme, standardgerechte Unterlagen ab der ersten Aufnahme
+- Weniger Nachdokumentation und geringeres Haftungsrisiko
+- Mehr Orientierung und Sicherheit für Pflegefachpersonen und Leitung

@@ -1,7 +1,7 @@
 ---
-title: 'Unsere Services'
-section_title: 'Unsere Lösung im Detail – digital, menschlich und praxisnah'
-description: 'Navicare Now verbindet digitale Intelligenz mit menschlicher Expertise, um eine ganzheitliche und praxisnahe Unterstützung in allen Pflegefragen zu bieten. Wir navigieren Sie sicher durch das komplexe Pflegesystem und entlasten Sie im Alltag.'
+title: 'Leistungen für Pflegeeinrichtungen'
+section_title: 'Unsere Lösung für stationäre Pflegeeinrichtungen – sicher, strukturiert, entlastend'
+description: 'NaviCare Now übernimmt den kritischsten Prozess Ihrer Einrichtung: die Neuaufnahme von Bewohner*innen. Wir erheben Daten, erstellen Risikoanalysen und liefern eine vollständige, MD-konforme Pflegedokumentation – prüffertig und integrierbar in Ihre bestehenden Systeme.'
 draft: false
 date: 2025-03-11T15:40:24+06:00
 ---

@@ -2,41 +2,35 @@
 ############################ Banner ##################################
 banner:
   enable: true
-  title: 'Plötzlich Pflegefall? Sie sind nicht allein.'
-  subtitle: 'Job, Familie, Behörden – und jetzt auch Pflege? Wir helfen Ihnen sofort mit den wichtigsten Antworten, einem kostenlosen Fragebogen für Ihre Situation und persönlicher Erstberatung. Verschaffen Sie sich in 5 Minuten Klarheit über Ihre Möglichkeiten.'
+  title: 'NaviCare Now: Die Care- und Prozessnavigation für spürbare Qualität in stationären Pflegeeinrichtungen'
+  subtitle: 'Pflegeeinrichtungen bewegen sich heute in einem hochkomplexen System: akuter Fachkräftemangel, wachsender Dokumentationsdruck und strenge Qualitätsanforderungen. NaviCare Now übernimmt den kritischsten Prozess – die Neuaufnahme – extern und liefert innerhalb von 24 Stunden eine lückenlose, MD-konforme Dokumentation.'
   button:
     enable: true
-    label: 'Soforthilfe im Pflegefall'
-    icon: 'fas fa-clipboard-check'
-    button_modal_target: '/soforthilfe'
-  button_secondary:
-    enable: true
-    label: 'Gratis Erstberatung'
-    icon: 'fas fa-phone'
+    label: 'Demo buchen'
+    icon: 'fas fa-calendar-check'
     button_modal_target: '/kontakt/'
+  button_secondary:
+    enable: false
+    label: ''
+    icon: ''
+    button_modal_target: ''
   image: 'images/banner/hands-4344711_1280.jpg'
 
 ############################ Challenge ##################################
 challenge:
   enable: true
-  title: "Diese Fragen stellen sich jetzt"
-  subtitle: "Wir geben Ihnen die Antworten – sofort und konkret"
+  title: "Die Herausforderung: Aufnahme unter Hochdruck"
+  subtitle: "Warum Neuaufnahmen Ihr Team an die Grenzen bringen"
   
   problems:
-    - title: "Wie vereinbare ich Pflege mit meinem Job?"
-      icon: "fas fa-briefcase"
-      description: "Teilzeit, Pflegezeit, Familienpflegezeit – welche Optionen habe ich? Was bedeutet das finanziell? Wie spreche ich mit meinem Arbeitgeber? Kann ich gekündigt werden?
-      
-      
-      Unser kostenloser Fragebogen ermittelt Ihre rechtlichen Ansprüche auf Pflegeunterstützungsgeld, Freistellung und finanzielle Hilfen. In der Erstberatung klären wir mit Ihnen, wie Sie Beruf und Pflege realistisch organisieren können."
-      
-    - title: "Was kostet Pflege – und wer zahlt das?"
-      subtitle: "Finanzielle Klarheit in 5 Minuten"
-      icon: "fas fa-euro-sign"
-      description: "Pflegegrad, Pflegegeld, Sachleistungen, Kombinationsleistungen – das System ist kompliziert. Welche Kosten kommen auf mich zu? Reicht die Pflegeversicherung? Muss ich mein Erspartes einsetzen?
-      
-      
-      Unser interaktiver Fragebogen berechnet individuell, welche Förderungen und Zuschüsse Ihnen zustehen. Wir zeigen Ihnen konkrete Summen und nächste Schritte – damit Sie sofort Planungssicherheit haben."
+    - title: "Fachkräftemangel trifft auf Dokumentationsdruck"
+      icon: "fas fa-user-clock"
+      description: "Pflegeeinrichtungen stehen unter enormem Druck: akuter Fachkräftemangel, wachsende Dokumentationspflichten und strenge Prüfungen durch den Medizinischen Dienst (MD) belasten die Teams bis ans Limit. Besonders die Aufnahme neuer Bewohner*innen ist kritisch: Innerhalb von 24 Stunden müssen Hunderte Informationen erhoben und MD-konform dokumentiert werden – zusätzlich zum laufenden Pflegealltag. Unter diesem Zeitdruck bleiben bei 35–40 % der Neuaufnahmen wichtige Risikoeinschätzungen unvollständig oder verspätet."
+
+    - title: "Vermeidbare Risiken und Haftungsgefahren"
+      subtitle: "Wenn Dokumentation zur Sicherheitsfrage wird"
+      icon: "fas fa-exclamation-triangle"
+      description: "Lücken in der Dokumentation haben handfeste Folgen: Vermeidbare Risiken bleiben unerkannt und führen zu Komplikationen wie Stürzen, Dekubitus oder Medikationsfehlern, die zusätzliche Krankenhausaufenthalte nötig machen. Studien zeigen, dass bis zu 36 % der Klinikeinweisungen aus Pflegeheimen vermeidbar wären – ein enormes Qualitäts- und Einsparpotenzial. Gleichzeitig erschwert fehlende Dokumentation die Nachweisführung im Schadensfall und erhöht Haftungsrisiken für Ihre Einrichtung."
 
 ############################ Homepage Service ##################################
 services:
@@ -46,53 +40,57 @@ services:
 difference_of_us:
   enable: true
   image: "about/computer-767776_1280.jpg"
-  subtitle: 'Warum Navicare Now anders ist'
-  title: 'Wir kombinieren Expertise, Technik und echtes Verständnis'
-  description: 'Sie sind berufstätig, haben wenig Zeit und plötzlich einen Pflegefall in der Familie. Wir wissen, wie überfordernd das ist – und haben die Antworten, die Sie jetzt brauchen.'
+  subtitle: 'Was uns unterscheidet'
+  title: 'Wir sind kein weiteres System, sondern Ihr externer Prozesspartner'
+  description: 'Das Kernproblem ist selten fehlendes Fachwissen, sondern ein struktureller Engpass: Selbst hervorragend ausgebildete Pflegefachpersonen können kritische Qualitätsanforderungen kaum erfüllen, wenn chronischer Zeitmangel und Überlastung herrschen. NaviCare Now setzt genau hier an – als externer Care- und Prozesspartner, der Verantwortung für die Aufnahme übernimmt und ein fertiges, MD-konformes Ergebnis liefert.'
   item:
-    - title: 'Sofort nutzbar – ohne Vorkenntnisse'
-      icon: 'fas fa-rocket'
-      description: 'Fragebogen ausfüllen, Erstberatung buchen – fertig. Keine komplizierten Registrierungen, keine Wartezeiten. Sie bekommen sofort konkrete Ergebnisse und nächste Schritte.'
-    - title: 'Aus der Praxis – für die Praxis'
-      icon: 'fas fa-hands-helping'
-      description: 'Unsere Gründerin ist examinierte Pflegefachkraft und selbst pflegende Mutter. Wir kennen die echten Probleme – und liefern Lösungen, die wirklich funktionieren.'
-    - title: 'Kostenlos starten – flexibel weitermachen'
-      icon: 'fas fa-gift'
-      description: 'Fragebogen und Erstberatung sind komplett gratis. Danach entscheiden Sie selbst, welche Unterstützung Sie weiter nutzen möchten. Keine versteckten Kosten.'
+    - title: 'Ergebnisverantwortung statt Mehraufwand'
+      icon: 'fas fa-clipboard-check'
+      description: 'Wir liefern ein vollständig ausgearbeitetes Aufnahme- und Pflegepaket – inklusive SIS, Risikoeinschätzungen und Pflegeplanung. Ihr Team muss keine zusätzliche Software erlernen und keine Rohdaten aufbereiten, sondern arbeitet direkt mit einem prüffähigen Ergebnis.'
+    - title: 'Qualität durch Pflege-Expertise'
+      icon: 'fas fa-user-nurse'
+      description: 'Ein Team qualifizierter Pflegefachpersonen erhebt, prüft und strukturiert alle Informationen. Unterstützt durch KI, aber fachlich geführt von Menschen, die Expertenstandards, MD-Anforderungen und den Alltag in stationären Einrichtungen aus eigener Erfahrung kennen.'
+    - title: 'Kein zusätzliches Doku-Tool'
+      icon: 'fas fa-plug'
+      description: 'NaviCare Now integriert sich in Ihre bestehenden Dokumentationssysteme (z. B. Vivendi, MediFox u. a.). Sie führen keine neue Software ein, sondern übernehmen geprüfte Daten in Ihr System – ohne IT-Projekt, ohne Schulungsaufwand.'
 
 ############################ About Ourselves ##################################
 about_ourselves:
   enable: true
-  subtitle: 'Pflege ist komplex – wir machen sie überschaubar'
-  title: 'Navicare Now verbindet Technologie mit echter Zuwendung'
-  description: 'Wir navigieren Familien und Fachkräfte sicher durch das Pflegesystem, schaffen digitale Pflegeakten, digitales Matching und einen interaktiven Alltagshelfer. Unsere Plattform arbeitet DSGVO-konform, nachhaltig und stets mit menschlichem Fokus.'
+  subtitle: 'Pflegeeinrichtungen im Fokus – sichere Prozesse ab Tag eins'
+  title: 'NaviCare Now begleitet Ihre Einrichtung durch die anspruchsvollsten Momente'
+  description: 'Wir navigieren stationäre Pflegeeinrichtungen sicher durch den komplexen Aufnahmeprozess: von der strukturierten Datenerhebung über Risikoanalysen bis hin zur fertigen, MD-konformen Pflegedokumentation. Unser Ansatz kombiniert Pflegeexpertise mit KI-Unterstützung – DSGVO-konform, prüfsicher und mit spürbarer Entlastung für Ihr Team.'
   image: 'images/computer-767776_1280.jpg'
 
 ############################ Homepage Tab ##################################
 homepage_tab:
   enable: true
-  subtitle: 'Sofort handlungsfähig werden'
-  title: 'So helfen wir Ihnen jetzt – in 3 Schritten'
+  subtitle: 'Unser Navigationsprinzip'
+  title: 'So läuft die Zusammenarbeit mit NaviCare Now'
 
   tablist:
-    - title: '1. Kostenloser Fragebogen (5 Min.)'
-      description: 'Beantworten Sie kurze Fragen zu Ihrer Situation. Unser System ermittelt automatisch: Welcher Pflegegrad kommt infrage? Welche Förderungen stehen Ihnen zu? Welche Pflegeheime oder Dienste passen? Sie erhalten sofort eine individuelle Ersteinschätzung.'
+    - title: '1. Vorab-Erhebung der Daten'
+      description: 'Unsere erfahrenen Pflegefachpersonen sammeln alle erforderlichen Informationen vorab im Gespräch – telefonisch oder per Video – mit der neuen Bewohner*in, Angehörigen und behandelnden Ärzt*innen. So erfassen wir medizinische, pflegerische und soziale Daten gründlich und lückenlos, bevor die Person einzieht.'
       image: 'images/payment-info.webp'
 
-    - title: '2. Gratis Erstberatung (30 Min.)'
-      description: 'Buchen Sie einen Termin mit unseren Pflegeexpert:innen. Wir besprechen Ihre Situation, klären offene Fragen zu Finanzen, Recht und Organisation – und erstellen gemeinsam einen ersten Fahrplan. Unverbindlich und kostenfrei.'
+    - title: '2. Fachliche Prüfung & Strukturierung'
+      description: 'Die erhobenen Angaben werden auf fachliche Plausibilität und Vollständigkeit geprüft. Mit Unterstützung einer KI strukturieren wir die Informationen und gleichen sie mit aktuellen Pflege-Expertenstandards ab. So entsteht eine konstante, lückenlose Dokumentationsbasis für Ihre Einrichtung.'
       image: 'images/illustration-2.png'
 
-    - title: '3. Digitale Begleitung & Unterstützung'
-      description: 'Nach Bedarf begleiten wir Sie weiter: mit digitaler Pflegeakte, Alltagsorganisation, Schulungen und persönlichem Matching zu Pflegediensten oder -heimen. Sie entscheiden, was Sie brauchen.'
+    - title: '3. Erstellung der Pflegedokumentation'
+      description: 'Aus den aufbereiteten Daten erstellen wir die vollständigen Unterlagen für die Erstaufnahme: Strukturierte Informationssammlung (SIS), alle erforderlichen Risikoeinschätzungen (z. B. Sturz-, Dekubitus-, Ernährungs- und Medikationsrisiken) sowie eine individuelle Pflegeplanung inklusive Tagesstruktur und Pflegeportrait.'
       image: 'images/illustration-1.png'
+
+    - title: '4. Übergabe & Integration'
+      description: 'Innerhalb kürzester Zeit übergeben wir Ihrer Einrichtung ein abnahmefertiges, prüfsicheres Ergebnis. Sie übernehmen die Daten in Ihr bestehendes Dokumentationssystem und schließen die Aufnahme nahtlos ab – Ihr Team ist entlastet und kann sich auf die direkte Pflege konzentrieren.'
+      image: 'images/banner/hands-4344711_1280.jpg'
 
 ############################ testimonials ##################################
 testimonials:
   enable: true
   subtitle: 'Das Team hinter Navicare Now'
   title: 'Gründer:innen'
-  description: 'Wir sind Pflegende, Entwickler und Betroffene — gemeinsam bringen wir Praxis und Technik zusammen.'
+  description: 'Wir sind Pflegeexpert:innen und Tech-Unternehmer – und verstehen sowohl den Alltag auf Station als auch die Anforderungen an skalierbare, datenschutzkonforme Lösungen für Einrichtungen.'
 
   item:
     - image: 'images/team/julia-camara.jpg'
@@ -100,19 +98,34 @@ testimonials:
       designation: 'Gründerin & CEO'
       review_text: |-
         Examinierte Pflegefachkraft mit über 10 Jahren Erfahrung in der Alten- und Krankenpflege und zertifizierte Pharmareferentin.
-        Julia hat Navicare Now aus eigener Betroffenheit gegründet: Als pflegende Mutter einer Tochter mit geistiger Beeinträchtigung kennt sie die täglichen Herausforderungen und Lücken des Systems.
-        Mit Leidenschaft, fachlicher Expertise und Pragmatismus sorgt sie dafür, dass unsere Angebote praxisnah, empathisch und fachlich fundiert sind.
+        Julia kennt die Anforderungen stationärer Einrichtungen aus der Praxis – von Expertenstandards über MD-Prüfungen bis hin zu Personalengpässen.
+        Mit Pragmatismus und Empathie sorgt sie dafür, dass NaviCare Now Ihre Teams spürbar entlastet und Qualität messbar absichert.
 
     - image: 'images/team/justin-guese.jpg'
       name: 'Justin Güse'
       designation: 'Co‑Gründer & CTO'
       review_text: |-
         Erfahrener Softwareentwickler und Unternehmer mit Schwerpunkt auf Cloud‑ und DevOps‑Technologien. Als Gründer von DataFortress.cloud baute Justin skalierbare, sichere Plattformen (u. a. für Volkswagen, BMW).
-        Er verantwortet die technische Architektur von Navicare Now und gestaltet KI‑gestützte, datenschutzkonforme Lösungen, die Pflege digital vereinfachen.
+        Er verantwortet die technische Architektur von NaviCare Now und entwickelt KI‑gestützte, DSGVO‑konforme Lösungen, die sich nahtlos in bestehende Pflegedokumentationssysteme integrieren lassen.
 
 ############################ faq ##################################
 faq:
   enable: true
-  subtitle: 'Antworten auf Ihre wichtigsten Fragen'
-  title: 'Häufig gestellte Fragen'
+  subtitle: 'Antworten für Pflegeeinrichtungen'
+  title: 'FAQ – NaviCare Now für stationäre Pflege'
+
+############################ CTA ##################################
+cta:
+  enable: true
+  title: 'Bereit für mehr Effizienz in Ihrer Einrichtung?'
+  subtitle: 'Vereinbaren Sie eine Demo von NaviCare Now – wir zeigen Ihnen live, wie wir Ihren Aufnahmeprozess entlasten. Oder treten Sie direkt mit uns in Kontakt.'
+  primary_button:
+    label: 'Demo buchen'
+    icon: 'fas fa-calendar-check'
+    href: '/kontakt/'
+  secondary_button:
+    enable: true
+    label: 'Kontakt'
+    icon: 'fas fa-envelope'
+    href: '/kontakt/'
 ---

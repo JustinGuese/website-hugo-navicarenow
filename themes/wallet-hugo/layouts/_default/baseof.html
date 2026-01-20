@@ -15,6 +15,25 @@
 	{{ partial "page-header.html" . }}
 	{{ end }}
 	{{ block "main" . }}{{ end }}
+  <!-- Global CTA shown on all pages, above the footer (no animation to avoid flicker) -->
+  <section class="section bg-tertiary position-relative overflow-hidden">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2 class="mb-4">Bereit für mehr Effizienz in Ihrer Einrichtung?</h2>
+          <p class="mb-5 fs-5">Vereinbaren Sie eine kostenlose Demo – wir zeigen Ihnen live, wie viel Zeit und Aufwand Sie mit Navicare Now sparen können. Oder fordern Sie unverbindlich Infomaterial an.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+            <a type="button" class="btn btn-primary btn-lg" href="/kontakt/">
+              <i class="fas fa-calendar-check me-2"></i>Demo vereinbaren
+            </a>
+            <a type="button" class="btn btn-outline-primary btn-lg" href="/kontakt/">
+              <i class="fas fa-file-download me-2"></i>Infomaterial anfordern
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 	{{ partial "footer.html" . }}
 	{{ partialCached "script.html" . }}
 </body>

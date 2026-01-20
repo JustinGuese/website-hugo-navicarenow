@@ -5,75 +5,77 @@ layout : "about"
 draft : false
 
 about_us_:
-  title: "Die Pflegekrise ist real – <br> unsere Lösung auch"
-  subtitle: "Über Navicare Now"
+  title: "Die Care-Navigation für Pflegeeinrichtungen"
+  subtitle: "Über NaviCare Now"
   image: "images/about/about-11.jpg"
-  content: "**5+ Millionen Pflegebedürftige in Deutschland. Bis 2030: über 6 Millionen.** Mehr als 80% werden zu Hause versorgt – von bis zu 10 Millionen Angehörigen, die mit Bürokratie, Überforderung und Zeitmangel kämpfen. Gleichzeitig fehlen Pflegekräfte, und internationale Fachkräfte scheitern an Sprachbarrieren.
+  content: "**Stationäre Pflegeeinrichtungen stehen unter massivem Druck:** Fachkräftemangel, steigende Dokumentationspflichten, strenge Qualitätsanforderungen und aufwändige MD-Prüfungen. Besonders die Neuaufnahme neuer Bewohner*innen ist ein Prozess mit hohem Risiko – fachlich, organisatorisch und haftungsrechtlich.
   
   
-  **Navicare Now löst diese Krise:** Wir digitalisieren und humanisieren Pflege gleichzeitig – durch KI-gestützte Tools, persönliche Beratung und Integration internationaler Kräfte. Gegründet von Pflegeexpertin Julia Camara und Tech-Unternehmer Justin Güse, vereinen wir 10+ Jahre Pflegeerfahrung mit bewährter Skalierungsexpertise (Volkswagen, BMW, HPE).
+  **NaviCare Now setzt genau hier an:** Wir übernehmen den kritischsten Teil des Prozesses – die Erstaufnahme – extern und liefern innerhalb kurzer Zeit ein vollständiges, MD-konformes Aufnahme- und Pflegepaket. Gegründet von Pflegeexpertin Julia Camara und Tech-Unternehmer Justin Güse vereinen wir tiefes Pflege-Know-how mit erprobter Technologie- und Skalierungserfahrung.
   
   
-  **Unser Ziel:** Der führende digitale Partner für häusliche Pflege in Deutschland – mit Krankenkassen-Erstattung, messbarem Impact und nachhaltigem Wachstum."
+  **Unser Ziel:** NaviCare Now als verlässlichen Care- und Prozesspartner für stationäre Einrichtungen zu etablieren – mit messbarer Entlastung der Teams, höherer Dokumentationsqualität und geringeren Haftungs- und Folgekosten."
 
   
 who_we_are:
-  title: "Das Problem: Ein System am Limit"
-  lead: "Der demografische Wandel trifft auf strukturelle Überforderung – und schafft einen riesigen, wachsenden Markt."
-  content: "**5+ Millionen Pflegebedürftige** in Deutschland, **10 Millionen Menschen** in häuslicher Pflege involviert – überfordert von Bürokratie, Zeitmangel und fehlendem Wissen. Pflegeheime kämpfen mit Anfragenflut und Fachkräftemangel. Internationale Pflegekräfte scheitern an Sprachbarrieren.
+  title: "Die Ausgangslage: Ein System unter Druck"
+  lead: "Der demografische Wandel trifft auf strukturelle Überlastung – besonders sichtbar in stationären Einrichtungen."
+  content: "**Pflegeeinrichtungen bewegen sich heute in einem hochkomplexen System:** akuter Fachkräftemangel, zunehmender Dokumentationsdruck und dichte Prüfintervalle durch den Medizinischen Dienst (MD). Unter diesem Druck bleibt in der Praxis häufig zu wenig Zeit, um alle Expertenstandards konsequent umzusetzen.
   
   
-  **Bis 2030: 6+ Millionen Pflegebedürftige.** Das System kollabiert ohne digitale, skalierbare Lösungen. Navicare Now adressiert diesen Milliarden-Markt mit einer ganzheitlichen Plattform, die Angehörige, Einrichtungen und Fachkräfte verbindet – und dabei messbar Zeit spart, Qualität steigert und Integration ermöglicht."
+  Besonders die **Erstaufnahme neuer Bewohner*innen** ist ein neuralgischer Punkt: Innerhalb von 24 Stunden müssen umfangreiche Informationen erhoben, Risiken eingeschätzt und Pflegemaßnahmen geplant werden – parallel zum laufenden Betrieb. Studien zeigen, dass bei einem erheblichen Teil der Neuaufnahmen Risikoeinschätzungen unvollständig oder verspätet vorliegen.
+  
+  
+  Die Folgen sind gravierend: vermeidbare Risiken, Komplikationen, unnötige Krankenhausaufenthalte und erhöhte Haftungsrisiken für Einrichtungen. Gleichzeitig fehlen Zeit, Struktur und Personal, um diesen Prozess intern so abzubilden, wie es die Qualitätsanforderungen verlangen."
   
 what_we_offer:
-  title: "Unsere Lösung: Technologie + Menschlichkeit"
-  lead: "Eine skalierbare Plattform, die drei Zielgruppen gleichzeitig bedient – mit klarem Business Case."
+  title: "Unsere Lösung: Externe Care- und Prozessnavigation"
+  lead: "Wir liefern fertige Ergebnisse statt zusätzlicher Tools – und entlasten Ihre Teams in der kritischsten Phase."
   content: "  
-  **Für Angehörige:** Digitale Pflegeakte, KI-Matching, personalisierte Beratung, Checklisten – sofort nutzbar, mit Erstattungsfähigkeit durch Krankenkassen (in Vorbereitung).
+  **Für Pflegeeinrichtungen:** NaviCare Now übernimmt den Neuaufnahme-Prozess extern – von der strukturierten Datenerhebung über Risikoanalysen bis zur fertigen Pflegedokumentation. Wir liefern ein abnahmefertiges Ergebnis, das sich in Ihre bestehenden Systeme (z. B. Vivendi, MediFox u. a.) integrieren lässt.
   
-  **Für Pflegeheime:** Automatische Anfragenvorfilterung (60–70% Zeitersparnis), KI-gestützte Dokumentationshilfe, Sprachübersetzung – messbare Effizienzsteigerung.
+  **Für Pflegeteams:** Unsere Leistungen reduzieren Dokumentationsaufwand, Nacharbeit und Prüfungsstress. Pflegefachpersonen gewinnen Zeit für direkte Pflege, fühlen sich fachlich gestützt und erhalten eine klare, strukturierte Grundlage für ihre Arbeit.
   
-  **Für internationale Pflegekräfte:** Sprachmodule, Schulungen, kulturelle Integration – größerer Mitarbeiterpool, schnellere Einsatzfähigkeit.
+  **Für Träger & Qualitätsmanagement:** Vollständige, MD-konforme Unterlagen ab dem ersten Tag, geringere Haftungsrisiken und bessere Vorbereitung auf Prüfungen. Kennzahlen zu Qualität und Effizienz verbessern sich messbar.
   
   
-  **Technologie:** DSGVO-konform, EU-Hosting, KI-gestützt, nahtlos integrierbar.
+  **Technologie:** DSGVO-konform, EU-Hosting, KI-gestützt – aber immer im Dienst unserer Pflegefachpersonen. KI hilft beim Strukturieren und Prüfen, die inhaltliche Verantwortung bleibt bei qualifizierten Menschen.
   
-  **Geschäftsmodell:** B2C (Angehörige), B2B (Pflegeheime), B2G (Krankenkassen-Erstattung) – dreifacher Revenue-Stream mit hohem Skalierungspotenzial.
-  "
+  **Zusammenarbeit:** Klar definierte Prozesse, transparente Verantwortlichkeiten und flexible Modelle (Pilotprojekte, Kontingentlösungen, Einrichtungs- oder Trägervereinbarungen)."
 
 
 ############# Feature ####################
 feature:
 - name: "Marktgröße & Wachstum"
   icon: "fas fa-chart-line"
-  content: "5+ Mio. Pflegebedürftige heute, 6+ Mio. bis 2030 – wachsender Milliarden-Markt mit dringendem Handlungsbedarf"
+  content: "Wachsende Zahl pflegebedürftiger Menschen, steigende Qualitätsanforderungen und zunehmender Fachkräftemangel – ein Umfeld, in dem effiziente Prozesse und externe Entlastung immer relevanter werden."
   
 - name: "Skalierbare Technologie"
   icon: "fas fa-rocket"
-  content: "Cloud-native, KI-gestützt, DSGVO-konform – gebaut für schnelles Wachstum und hohe Nutzerzahlen"
+  content: "Cloud-native, KI-gestützt, DSGVO-konform – gebaut, um auch große Trägerstrukturen, viele Einrichtungen und hohe Fallzahlen zuverlässig zu unterstützen."
   
 - name: "Dreifacher Revenue-Stream"
   icon: "fas fa-euro-sign"
-  content: "B2C (Angehörige), B2B (Pflegeheime), B2G (Krankenkassen) – diversifizierte Einnahmequellen"
+  content: "Fokus auf B2B-Partnerschaften mit Einrichtungen und Trägern; perspektivisch ergänzbar um Kassen- und Kostenträger-Modelle – immer mit klarem, nachvollziehbarem Nutzen für die Praxis."
   
 
 ############# Core Value ####################
 core_value:
-  title: "Warum Navicare Now gewinnt"
+  title: "Warum NaviCare Now für Einrichtungen relevant ist"
   subtitle: "Unsere Wettbewerbsvorteile"
-  content: "Wir vereinen soziale Mission mit wirtschaftlicher Nachhaltigkeit. In 5 Jahren wollen wir **etablierter Partner der größten Krankenkassen** sein, **Hunderttausende Angehörige** entlasten und **Tausende internationale Pflegekräfte** integriert haben – mit messbarem Impact und profitablem Wachstum."
+  content: "Wir kombinieren praktische Pflegeexpertise mit belastbarer Technologie und denken Prozesse konsequent aus Sicht der Einrichtungen. Unser Anspruch: **meßbare Entlastung** für Teams, **höhere Qualität** in der Dokumentation und **weniger Risiko** in kritischen Situationen – ohne zusätzliche Systemkomplexität."
   core_value_item:
   - name: "Gründer-Expertise"
-    content: "10+ Jahre Pflegeerfahrung (Julia) + bewährte Tech-Skalierung für VW, BMW, HPE (Justin) – einzigartige Kombination"
+    content: "10+ Jahre Pflegeerfahrung (Julia) in Alten- und Krankenpflege + bewährte Tech-Skalierung für VW, BMW, HPE (Justin) – eine Kombination, die sowohl den Stationsalltag als auch Enterprise-Anforderungen versteht."
     
   - name: "Ganzheitlicher Ansatz"
-    content: "Einzige Lösung, die Angehörige, Heime UND internationale Kräfte gleichzeitig bedient – kein Wettbewerber deckt alle drei ab"
+    content: "Wir betrachten Aufnahme, Risikoerfassung, Dokumentation und Prüfungsanforderungen als zusammenhängenden Prozess – und entlasten genau dort, wo der größte Druck entsteht."
     
   - name: "Messbare Effizienz"
-    content: "60–70% Zeitersparnis bei Pflegeheimen nachweisbar – klarer ROI für B2B-Kunden und Krankenkassen"
+    content: "Mehrere Stunden weniger Aufwand pro Neuaufnahme, weniger Nachdokumentation und weniger vermeidbare Zwischenfälle – ein klarer ROI für Einrichtungen und Träger."
     
   - name: "Sozial + Profitabel"
-    content: "Gesellschaftlich dringend – wirtschaftlich nachhaltig. Impact Investing trifft auf skalierbares SaaS-Modell"
+    content: "Gesellschaftlich dringend – wirtschaftlich sinnvoll: bessere Versorgung, entlastete Teams und stabilere Einrichtungen bei gleichzeitig tragfähigem Geschäftsmodell."
 
 
 

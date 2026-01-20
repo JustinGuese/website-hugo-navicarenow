@@ -1,41 +1,36 @@
 ---
-title: 'Interaktiver Alltagshelfer'
-description: 'Erinnerungen, Aufgabenlisten und Alltagstipps – Ihr digitaler Begleiter für Entlastung'
-icon: 'fas fa-house-damage'
+title: 'Risikoerfassung & Qualität'
+description: 'Systematische Risikoanalysen und kontinuierliche Qualitätssicherung für Neuaufnahmen in Ihrer Einrichtung.'
+icon: 'fas fa-shield-alt'
 draft: false
 date: 2025-03-11T15:40:24+06:00
 ---
 
-## Ein digitaler Begleiter für den Alltag
+## Risiken konsequent im Blick
 
-Der Alltagshelfer von Navicare Now ist wie ein aufmerksamer Assistent, der sich um die Details kümmert, damit Sie sich auf das Wesentliche konzentrieren können.
+Viele kritische Ereignisse in Pflegeheimen – Stürze, Dekubitus, Mangelernährung oder Medikationsfehler – lassen sich auf unvollständige oder verspätete Risikoeinschätzungen zurückführen. Gerade in den ersten 24 Stunden nach einer Aufnahme bleibt unter Zeitdruck oft zu wenig Raum für gründliche Analysen.
 
-Mit Erinnerungen, Aufgabenlisten und praktischen Tipps unterstützt der Alltagshelfer Angehörige und Pflegekräfte bei der täglichen Arbeit. Von der Medikamentengabe bis zur Arzttermin-Vorbereitung – nichts wird übersehen.
+NaviCare Now stellt sicher, dass alle relevanten Risiken systematisch, vollständig und nachvollziehbar erfasst werden – direkt zu Beginn des Aufenthalts.
 
-### Was der Alltagshelfer kann
+### Welche Risiken wir abdecken
 
-- Automatische Erinnerungen für Medikamente und Maßnahmen
-- Intelligente Aufgabenlisten, die sich an Ihre Routine anpassen
-- Praktische Tipps für häufige Pflegesituationen
-- Überwachung von Veränderungen im Gesundheitszustand
-- Integration mit Ihrer digitalen Pflegeakte
-
----
-
-## Weniger Stress, mehr Sicherheit
-
-Wer pflegt, trägt eine große Verantwortung. Dinge können vergessen werden – nicht aus Nachlässigkeit, sondern aus Überlastung. Der Alltagshelfer nimmt diese Last ab, indem er systematisch und zuverlässig an alles erinnert.
-
-Das Ergebnis: Bessere Pflege, weniger Fehler, mehr Ruhe für den Angehörigen.
-
-<hr>
-
-## Strukturierter Alltag
-
-Ein strukturierter Tag ist ein guter Tag – in der Pflege besonders. Der Alltagshelfer bringt Struktur ohne Starre: Er passt sich Ihrer Routine an und unterstützt flexibel.
+- Sturzrisiko
+- Dekubitusrisiko
+- Ernährungs- und Dehydrationsrisiko
+- Schmerz- und Medikationsrisiken
+- Weitere einrichtungs- oder trägerspezifische Schwerpunkte
 
 ---
 
-## Entlastung, die wirkt
+## Qualität, die sich messen lässt
 
-Entlastung bedeutet nicht, weniger zu tun – es bedeutet, sicherer und strukturierter zu arbeiten. Genau das leistet der Alltagshelfer. Mit jeder richtigen Erinnerung, jeder vollständigen Aufgabenliste wächst das Vertrauen in die eigene Fähigkeit zu pflegen.
+Unsere Risikoerfassungen folgen aktuellen Expertenstandards und werden von Pflegefachpersonen verantwortet. Unterstützt durch KI können wir Auffälligkeiten schneller identifizieren und zielgerichtete Maßnahmen vorschlagen.
+
+Damit reduzieren Sie die Wahrscheinlichkeit vermeidbarer Zwischenfälle – und stärken zugleich Ihre Position bei internen Audits und externen Prüfungen.
+
+### Ihr Nutzen
+
+- Lückenlose Risikoerfassung bereits bei der Erstaufnahme
+- Klare Ableitung von Maßnahmen und Interventionen
+- Bessere Vorbereitung auf MD-Prüfungen und Qualitätsaudits
+- Mehr Sicherheit für Bewohner*innen, Mitarbeitende und Träger

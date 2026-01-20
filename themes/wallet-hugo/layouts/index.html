@@ -653,19 +653,27 @@ html {
 {{ end }}
 
 <!-- CTA Section -->
+{{ if .Params.cta.enable }}
+{{ with .Params.cta }}
 <section class="section bg-tertiary position-relative overflow-hidden" data-aos="fade-up" data-aos-duration="800">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8" data-aos="zoom-in" data-aos-duration="1000">
-        <h2 class="mb-4">Verschaffen Sie sich jetzt Klarheit</h2>
-        <p class="mb-5 fs-5">Kostenloser Fragebogen in 5 Minuten – oder direkte Beratung mit unseren Expert:innen. Sie entscheiden, was Ihnen jetzt am meisten hilft.</p>
+        <h2 class="mb-4">{{ .title | markdownify }}</h2>
+        <p class="mb-5 fs-5">{{ .subtitle | markdownify }}</p>
         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-          <a type="button" target="_blank" class="btn btn-primary btn-lg" href="/soforthilfe">
-            <i class="fas fa-clipboard-check me-2"></i>Soforthilfe im Pflegefall
+          {{ with .primary_button }}
+          <a type="button" class="btn btn-primary btn-lg" href="{{ .href }}">
+            {{ if .icon }}<i class="{{ .icon }} me-2"></i>{{ end }}{{ .label }}
           </a>
-          <a type="button" class="btn btn-outline-primary btn-lg" href="/kontakt/">
-            <i class="fas fa-phone me-2"></i>Erstberatung buchen
+          {{ end }}
+          {{ with .secondary_button }}
+          {{ if .enable }}
+          <a type="button" class="btn btn-outline-primary btn-lg" href="{{ .href }}">
+            {{ if .icon }}<i class="{{ .icon }} me-2"></i>{{ end }}{{ .label }}
           </a>
+          {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
@@ -677,6 +685,8 @@ html {
     </svg>
   </div>
 </section>
+{{ end }}
+{{ end }}
 
 
 {{ if .Params.faq.enable }}

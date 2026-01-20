@@ -1,9 +1,5 @@
 # main menu
 
-[[main]]
-name = "Für Pflegeheime"
-url = "fuer-pflegeheime/"
-weight = 1
 
 [[main]]
 name = "Über uns"
@@ -17,32 +13,32 @@ weight = 3
 
 [[main]]
 parent = "Services"
-name = "Zentraler Informations-Hub"
+name = "Integration in Ihre Systeme"
 url = "services/zentraler-informations-hub/"
 weight = 1
 
 
 [[main]]
 parent = "Services"
-name = "Community-Schulungen"
+name = "Zeit- und Kostenersparnis"
 url = "services/community-schulungen/"
 weight = 2
 
 [[main]]
 parent = "Services"
-name = "Digitale Pflegeakte"
+name = "Externe Aufnahme-Übernahme"
 url = "services/digitale-pflegeakte/"
 weight = 3
 
 [[main]]
 parent = "Services"
-name = "Interaktiver Alltagshelfer"
+name = "Risikoerfassung & Qualität"
 url = "services/interaktiver-alltagshelfer/"
 weight = 4
 
 [[main]]
 parent = "Services"
-name = "Personalisierte Beratung"
+name = "MD-konforme Dokumentation"
 url = "services/personalisierte-beratung/"
 weight = 5
 

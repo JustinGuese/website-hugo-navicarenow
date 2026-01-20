@@ -1,43 +1,35 @@
 ---
-title: 'Zentraler Informations-Hub'
-description: 'Alle wichtigen Informationen, Checklisten und Formulare digital aufbereitet und leicht zugänglich – Ihr Wegweiser durch das Pflegesystem'
-icon: 'fas fa-compass'
+title: 'Integration in Ihre Systeme'
+description: 'Wir liefern ein abnahmefertiges Ergebnis, das sich nahtlos in Ihre bestehende Pflegedokumentation (z. B. Vivendi, MediFox u. a.) integrieren lässt.'
+icon: 'fas fa-project-diagram'
 draft: false
 date: 2025-03-14T15:40:24+06:00
 ---
 
-## Der erste Anlaufpunkt für Orientierung
+## Kein weiteres Doku-Tool – sondern fertige Ergebnisse
 
-Der Informations-Hub von Navicare Now ist Ihr zentraler Einstiegspunkt, wenn Fragen zur Pflege entstehen. Alle wichtigen Informationen, Checklisten und Formulare sind digital aufbereitet und leicht verständlich zugänglich – ein klarer Wegweiser durch das komplexe Pflegesystem.
+NaviCare Now versteht sich nicht als zusätzliche Software, die in Ihrem Haus eingeführt und geschult werden muss. Stattdessen liefern wir Ihnen fertige Aufnahme- und Pflegepakete, die Sie in Ihre bestehenden Systeme übernehmen.
 
-Sie finden hier Antworten auf die dringendsten Fragen: Wie beantrage ich einen Pflegegrad? Welche Leistungen stehen mir zu? Wie fülle ich die Antragsformulare korrekt aus? Statt sich verloren in Behördendschreiben zu fühlen, erhalten Sie strukturierte, verständliche Informationen in Ihrer Sprache.
+So bleibt Ihre IT-Landschaft schlank, und Ihr Team arbeitet weiterhin in der gewohnten Umgebung – nur mit deutlich besser vorbereiteten Daten.
 
-### Was Sie im Hub finden
+### So fügt sich NaviCare Now in Ihre Abläufe ein
 
-- Checklisten für jeden Schritt des Pflegeprozesses
-- Vorbereitete Formulare und Vorlagen
-- Häufig gestellte Fragen beantwortet von Fachleuten
-- Links zu wichtigen Behörden und Ansprechpartnern
-- Erklärtexte zu Pflegegraden und Leistungen
-
----
-
-## Einfach. Strukturiert. Verständlich.
-
-Pflegebürokratie ist komplex – aber sie muss nicht verwirrend sein. Unser Informations-Hub bricht große Themen in kleine, verdaubare Schritte auf. Jeder Punkt wird erklärt, jeder nächste Schritt ist klar.
-
-Das Ergebnis: Weniger Stress, weniger Zeit in Warteschleifen, mehr Sicherheit bei wichtigen Entscheidungen.
-
-<hr>
-
-## Wie der Hub Ihnen hilft
-
-Statt stundenlang im Internet zu recherchieren oder bei verschiedenen Ämtern anzurufen, finden Sie im Navicare-Hub alle wichtigen Informationen unter einem Dach – zugeschnitten auf Ihre Situation, verfügbar 24/7.
-
-Ob Sie gerade erfahren haben, dass ein Angehöriger pflegebedürftig wird, oder ob Sie bereits Erfahrung in der Pflege haben: Der Hub begleitet Sie mit verlässlichen Informationen in jeder Phase.
+- Nutzung Ihrer bestehenden Pflegedokumentationssysteme (z. B. Vivendi, MediFox u. a.)
+- Übergabe der Ergebnisse in klar strukturierten Formaten
+- Anpassung an Ihre internen Prozesse und Qualitätsvorgaben
+- Kein zusätzlicher Schulungs- oder Administrationsaufwand
 
 ---
 
-## Mehr als nur Informationen
+## Weniger Komplexität, mehr Kontrolle
 
-Der Hub ist der Anfang. Mit den Informationen können Sie dann gezielt unsere anderen Services nutzen – von der personalisierten Beratung bis zur digitalen Pflegeakte. Alles ist miteinander verbunden und aufeinander abgestimmt.
+Neue Software bedeutet meist: Projektaufwand, Schulungen, Akzeptanzthemen im Team. NaviCare Now umgeht diese Hürden, indem wir dort ansetzen, wo der größte Druck entsteht – im Prozess, nicht im System.
+
+Ihre Einrichtung behält die volle Kontrolle über Datenhaltung, Rechte und Abläufe. Wir liefern lediglich das, was Ihnen Zeit spart und Qualität erhöht: eine perfekte Vorlage für Ihre Dokumentation.
+
+### Vorteile für Leitung und IT
+
+- Keine zusätzliche Lizenz- und Systemlandschaft
+- Klare Verantwortlichkeiten in der Dokumentation
+- Schnelle Einführung ohne komplexes IT-Projekt
+- Bessere Grundlage für Qualitätssicherung und Controlling

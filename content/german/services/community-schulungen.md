@@ -1,41 +1,35 @@
 ---
-title: 'Community & Schulungen'
-description: 'Vernetzung, Austausch und Pflegewissen – in Videos, Checklisten und Sprachmodulen'
-icon: 'fas fa-money-check-alt'
+title: 'Zeit- und Kostenersparnis'
+description: 'Weniger Aufwand pro Neuaufnahme, weniger Folgekosten durch vermeidbare Zwischenfälle – mehr Zeit für direkte Pflege.'
+icon: 'fas fa-euro-sign'
 draft: false
 date: 2025-03-10T15:40:24+06:00
 ---
 
-## Ein geschützter Raum für Austausch
+## Mehr Zeit für das Wesentliche: Pflege
 
-Pflege kann sich isolierend anfühlen – besonders, wenn man allein vor großen Fragen steht. Die Community von Navicare Now schafft einen geschützten Raum, in dem Angehörige und Pflegekräfte sich austauschen, voneinander lernen und gegenseitig Kraft schöpfen.
+Mit NaviCare Now reduzieren Sie den Dokumentationsaufwand in der Erstaufnahme deutlich. Pro Bewohner*in sparen Ihre Fachkräfte mehrere Stunden, weil Datenerhebung, Risikoanalyse und Dokumentation extern vorbereitet werden.
 
-Hier können Sie Erfahrungen teilen, Fragen stellen und entdecken, dass Sie nicht allein sind. Moderiert von Pflegefachkräften, bleibt der Raum sicher und hilfreich.
+Auf Monats- oder Quartalssicht entstehen so spürbare Freiräume in der Personalplanung – ohne Qualitätseinbußen, im Gegenteil: Qualität und Sicherheit steigen.
 
-### Was die Community bietet
+### Zeitgewinne im Überblick
 
-- Geschützter Austausch mit anderen pflegenden Angehörigen
-- Gemeinsame Lerngruppen und Themenabende
-- Moderation durch Pflegefachkräfte
-- Tipps und Best Practices aus der Praxis
-- Unterstützung bei emotionalen und praktischen Fragen
-
----
-
-## Pflegewissen leicht zugänglich
-
-Gleichzeitig bieten wir umfassende Schulungen und Lernmodule – für pflegende Angehörige, für Einrichtungen und für internationale Pflegekräfte.
-
-Unsere Videos, Checklisten und interaktiven Sprachmodule vermitteln Pflegewissen in verständlicher Form. Ob Grundlagen der Körperpflege, richtige Kommunikation oder sprachliche Integration – alles ist aufbereitet für schnelle, praktische Anwendung.
-
-<hr>
-
-## Besonders für internationale Fachkräfte
-
-Wir verstehen, dass Integration mehr ist als Sprache allein. Unsere Sprachmodule trainieren nicht nur Deutsch, sondern auch Pfagefachbegriffe im kulturellen Kontext. So entstehen sichere, gut integrierte Teams.
+- Bis zu 4,5 Stunden weniger Aufwand pro Neuaufnahme
+- Weniger Unterbrechungen im Pflegealltag durch Dokumentationsfragen
+- Entlastung insbesondere in Phasen hoher Auslastung und Personalknappheit
+- Bessere Planbarkeit von Diensten und Ressourcen
 
 ---
 
-## Gemeinsam lernen, gemeinsam wachsen
+## Wirtschaftliche Effekte für Ihre Einrichtung
 
-Eine gute Pflege entsteht nicht isoliert. Sie entstehen im Austausch, im Lernen voneinander, im gegenseitigen Verständnis. Genau das fördern Community und Schulungen bei Navicare Now.
+Jede vermiedene Komplikation, jeder vermiedene Krankenhausaufenthalt und jede reduzierte Nachdokumentation senkt indirekte Kosten. Gleichzeitig stärken Sie Ihre Position gegenüber Kostenträgern und Aufsichtsbehörden durch nachweislich hohe Dokumentationsqualität.
+
+NaviCare Now zahlt damit direkt auf die wirtschaftliche Stabilität Ihrer Einrichtung ein – bei gleichzeitiger Entlastung Ihrer Teams.
+
+### Konkrete Vorteile
+
+- Weniger Aufwand für Nacharbeit, Korrekturen und externe Beratungen
+- Reduziertes Risiko kostenintensiver Haftungsfälle
+- Bessere Ausgangslage bei Verhandlungen mit Trägern und Kostenträgern
+- Stärkung von Arbeitgeberattraktivität und Mitarbeiterzufriedenheit durch Entlastung

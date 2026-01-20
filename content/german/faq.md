@@ -1,68 +1,41 @@
 ---
 title: 'Häufige Fragen'
-description: 'Antworten für Angehörige und Pflegeeinrichtungen'
+description: 'Antworten für Einrichtungsleitung, Qualitätsmanagement und Pflegeteams'
 layout: 'faq'
 draft: false
 
 faq:
-  subtitle: 'Häufig gestellte Fragen'
-  title: 'FAQ – Häufige Fragen'
+  subtitle: 'Antworten für Pflegeeinrichtungen'
+  title: 'FAQ – NaviCare Now für stationäre Pflege'
 
 faq_item:
-  - title: 'Wie vereinbare ich Pflege mit meinem Job?'
-    content: 'Die Doppelrolle ist eine echte Herausforderung. In Deutschland haben Sie Rechtanspruch auf Pflegezeit (bis 10 Tage bezahlt) und Familienpflegezeit (bis 24 Monate unbezahlt, optional zinsloses Darlehen). Sie können Arbeitszeit reduzieren, im Homeoffice arbeiten oder sich freigestellt nehmen. Unser Fragebogen ermittelt Ihre Optionen und Finanzauswirkungen. In unserer Erstberatung besprechen wir konkret, wie Sie und Ihr Arbeitgeber das organisieren können – ohne dass Ihre Karriere leidet.'
+  - title: 'Wie funktioniert der Aufnahmeprozess mit NaviCare Now?'
+    content: 'NaviCare Now übernimmt die Neuaufnahme extern: Unsere Pflegefachpersonen führen strukturierte Gespräche mit Bewohner*innen, Angehörigen und behandelnden Ärzt*innen – telefonisch oder per Video. Wir erheben alle relevanten medizinischen, pflegerischen und sozialen Daten, prüfen sie fachlich und erstellen daraus ein vollständiges Aufnahme- und Pflegepaket (SIS, Risikoeinschätzungen, Pflegeplanung). Das Ergebnis übergeben wir Ihrer Einrichtung innerhalb der vorgegebenen Fristen, sodass Sie die Daten in Ihr Dokumentationssystem übernehmen können.'
 
-  - title: 'Wie erkenne ich, ob ein Pflegegrad beantragt werden sollte?'
-    content: 'Wenn alltägliche Verrichtungen (Körperpflege, Mobilität, Ernährung, Haushaltsführung) zunehmend schwerfallen oder Angehörige dauerhaft überfordert sind, lohnt sich ein Antrag. Ihr Hausarzt kann erste Hinweise geben; die Pflegekasse veranlasst dann die Begutachtung (MDK). Navicare Now hilft bei der Vorbereitung – damit Sie keine Hilfe verschenken.'
+  - title: 'Welche Daten werden erhoben und wie?'
+    content: 'Wir erfassen alle Informationen, die für eine MD-konforme Aufnahme notwendig sind: Anamnesen, Diagnosen, Medikation, Pflegebedarf, Mobilität, kognitive Fähigkeiten, Biografie, Gewohnheiten, Ressourcen und Risiken. Die Datenerhebung erfolgt über strukturierte Interviews mit Bewohner*innen (soweit möglich), Angehörigen und Ärzt*innen sowie anhand vorhandener Unterlagen. Unsere Fachpersonen arbeiten nach standardisierten Leitfäden, um Lücken zu vermeiden und eine konsistente Dokumentationsbasis zu schaffen.'
 
-  - title: 'Was kostet Pflege und wer zahlt das?'
-    content: 'Pflegekosten sind erheblich: ambulante Dienste kosten 1.500–3.000€/Monat, Pflegeheime 3.000–5.000€+. Die Pflegeversicherung deckt Teile ab (je nach Pflegegrad: 125–3.393€ Leistungen + 125–1.995€ Pflegegeld). Den Rest zahlen Sie oft selbst – manchmal aus Ersparnissen oder Einkommen. Unser Fragebogen kalkuliert konkrete Summen: welche Förderungen Ihnen zustehen, welche Lücken bleiben, welche Zuschüsse es gibt. So wissen Sie sofort, ob Sie sich das leisten können.'
+  - title: 'Wie lange dauert es bis zur fertigen Dokumentation?'
+    content: 'In der Regel erhalten Sie das vollständige Aufnahme- und Pflegepaket innerhalb von 24 Stunden nach Abschluss der Datenerhebung – und damit innerhalb der Zeitfenster, die der Medizinische Dienst für Neuaufnahmen erwartet. In Einzelfällen mit komplexen Konstellationen sprechen wir konkrete Fristen mit Ihnen ab. Ziel ist immer: so schnell wie nötig, so gründlich wie möglich – ohne Qualitätskompromisse.'
 
-  - title: 'Wie beantrage ich Pflegeleistungen bei der Pflegekasse?'
-    content: 'Den Antrag stellen Sie schriftlich bei der zuständigen Pflegekasse der versicherten Person. Navicare Now unterstützt beim Ausfüllen der Formulare, erklärt erforderliche Unterlagen und bereitet die Informationen für die Begutachtung vor. Wichtig: Stellen Sie den Antrag schnell – Leistungen gelten ab Antragstellung, nicht rückwirkend.'
+  - title: 'Wie integrieren wir die Daten in unser bestehendes System?'
+    content: 'NaviCare Now ist kein weiteres Doku-Tool, sondern liefert vorbereitete Inhalte für Ihre bestehenden Systeme (z. B. Vivendi, MediFox u. a.). Sie erhalten die Ergebnisse in klar strukturierten Dokumenten bzw. Formaten, die Sie in Ihre Software übertragen oder importieren können. Auf Wunsch richten wir gemeinsam mit Ihnen Standards und Vorlagen ein, damit die Integration in Ihre Abläufe möglichst effizient erfolgt.'
 
-  - title: 'Welche Leistungen gibt es (Pflegegeld vs. Pflegesachleistungen)?'
-    content: 'Pflegegeld (für private Betreuung durch Angehörige) und Pflegesachleistungen (durch ambulante Dienste) sind zentrale Leistungen. Es gibt ergänzend Leistungen wie Kurzzeitpflege (temporäre stationäre Hilfe), Verhinderungspflege (wenn der Angehörige mal Pause braucht) oder Zuschüsse für Pflegehilfsmittel (Rollator, Windeln, etc.). Welche Option sinnvoll ist, hängt vom Pflegegrad und dem individuellen Bedarf ab. Unser Fragebogen zeigt konkret, welche Kombination für Sie optimal ist.'
+  - title: 'Was kostet NaviCare Now pro Neuaufnahme?'
+    content: 'Die Kosten richten sich nach Leistungsumfang, Einrichtungsgröße und vereinbartem Kontingent. Üblich sind pauschale Beträge pro Neuaufnahme oder monatliche Kontingente für eine bestimmte Anzahl von Aufnahmen. Gerne erstellen wir ein individuelles Angebot auf Basis Ihrer Strukturen und Fallzahlen. In jedem Fall steht für uns im Vordergrund, dass sich die Entlastung in Zeit, Qualität und vermiedenen Folgekosten für Sie rechnet.'
 
-  - title: 'Wie läuft die Einstufung in einen Pflegegrad ab?'
-    content: 'Nach Antrag besucht ein Gutachter (MDK/Medicana) die betroffene Person, bewertet Selbstständigkeit und Alltagsfähigkeiten und schlägt einen Pflegegrad vor. Die Kriterien sind: Mobilität, kognitive/psychische Fähigkeiten, Selbstversorgung, Umgang mit krankheitsbedingten Anforderungen, Alltagsgestaltung. Navicare Now bereitet Ihre Unterlagen vor und erklärt die Kriterien, damit Sie gezielt dokumentieren – das erhöht die Chancen auf einen angemessenen Grad.'
+  - title: 'Wie sicher sind die Daten und wo werden sie verarbeitet?'
+    content: 'Datenschutz und Informationssicherheit haben höchste Priorität. NaviCare Now arbeitet DSGVO-konform, mit Hosting und Verarbeitung in der EU. Zugriffe sind rollenbasiert geregelt, Daten werden verschlüsselt übertragen und gespeichert. Wir schließen mit Ihrer Einrichtung einen Auftragsverarbeitungsvertrag (AVV) ab und dokumentieren alle relevanten technischen und organisatorischen Maßnahmen (TOMs).'
 
-  - title: 'Was ist der erste praktische Schritt nach einem Pflegefall?'
-    content: 'Atmen Sie durch. Dann: (1) Pflegekasse anrufen und einen Beratungstermin buchen (kostenlos!), (2) unseren Fragebogen ausfüllen (5 Min.), (3) mit uns einen kostenlosen Fahrplan erstellen. So haben Sie innerhalb von 1–2 Tagen Klarheit über Ihre Optionen – statt in Panik Fehler zu machen. Checklisten und Vorlagen helfen Ihnen, nichts Wichtiges zu vergessen.'
+  - title: 'Welche Qualitätsstandards erfüllt NaviCare Now?'
+    content: 'Unsere Arbeit orientiert sich an den aktuellen Expertenstandards in der Pflege sowie den Anforderungen des Medizinischen Dienstes. Alle Aufnahmen werden von qualifizierten Pflegefachpersonen verantwortet, die Erfahrung in stationären Einrichtungen und mit Prüfungen haben. Prozessleitfäden, Checklisten und interne Qualitätssicherungsmaßnahmen sorgen dafür, dass Inhalte vollständig, nachvollziehbar und prüffähig sind.'
 
-  - title: 'Wie finde ich passende Pflegekräfte oder Unterstützungskräfte?'
-    content: 'Navicare Now vernetzt Angehörige, Einrichtungen und geprüfte Fachkräfte. Wir bieten außerdem Sprachmodule und Schulungen für internationale Pflegekräfte, um passende Vermittlungen und Integration zu erleichtern. Egal ob ambulanter Pflegedienst, private Pflegekraft oder Heimplatz – wir finden Optionen und klären Kosten, Verfügbarkeit und Kompatibilität.'
+  - title: 'Können wir NaviCare Now zunächst testen oder pilotieren?'
+    content: 'Ja. Viele Einrichtungen starten mit einem Pilotprojekt für eine definierte Anzahl von Neuaufnahmen oder in ausgewählten Wohnbereichen. So können Sie den Entlastungseffekt und die Qualität der Unterlagen in der Praxis erleben, bevor Sie NaviCare Now breiter ausrollen. Sprechen Sie uns einfach an – wir konzipieren gemeinsam ein Pilot-Setup, das zu Ihrer Einrichtung passt.'
 
-  - title: 'Wie organisiere ich Pflege, wenn ich arbeiten muss?'
-    content: 'Das ist die zentrale Frage! Optionen: (1) Pflegedienst übernimmt tagsüber, Sie am Abend/Wochenende, (2) internationale Pflegekraft vor Ort 24h oder Teilzeit, (3) teilstationäre Angebote (Tagespflege), (4) Kombinationen aus (1)–(3). Welches Modell passt, hängt von Pflegegrad, Ihren Arbeitszeiten, Ihrem Budget und der Nähe zu Angehörigen ab. Unser Fragebogen ermittelt das Beste für Sie und zeigt konkrete Dienste/Heime an.'
+  - title: 'Wie viel Zeit spart unser Team wirklich?'
+    content: 'Je nach Ausgangssituation lassen sich pro Neuaufnahme bis zu 4,5 Stunden Fachkraftzeit einsparen, weil Datenerhebung, Risikoanalyse und Dokumentationsentwurf extern erfolgen. Gleichzeitig sinkt der Aufwand für Nachdokumentation und Korrekturen. In Summe entsteht mehr Zeit für direkte Pflege, bessere Planbarkeit und weniger Überstunden – insbesondere in hochbelasteten Phasen.'
 
-  - title: 'Wie hilft Navicare Now im Alltag (Erinnerungen, Dokumentation)?'
-    content: 'Unsere Plattform bietet eine digitale Pflegeakte, Erinnerungsfunktionen (Medikation, Termine, Arztbesuche), automatische Aufgabenlisten und persönliche Pflegeplanung durch Fachkräfte. Das vermindert Vergessen, reduziert mentale Last und schafft Transparenz – perfekt, wenn mehrere Menschen in die Pflege involviert sind (Familie, Pflegedienst, etc.).'
-
-  - title: 'Was können Pflegeeinrichtungen von Navicare Now erwarten?'
-    content: 'Einrichtungen profitieren von effizienterer Dokumentation, besserer Kommunikation mit Angehörigen, digitalen Pflegedaten bei Aufnahme und Schulungsangeboten für internationales Personal – alles DSGVO-konform gehostet in der EU. Das spart Zeit, reduziert Fehler und verbessert die Qualität.'
-
-  - title: 'Wie sicher sind die Daten?'
-    content: 'Datenschutz ist zentral: Hosting und Verarbeitung richten sich nach DSGVO-Standards. Zugriffsrechte, Verschlüsselung und klare Verantwortlichkeiten sorgen für Schutz sensibler Pflegeinformationen. Sie entscheiden, wer was sieht – Ihre Kontrolle über Ihre Daten ist garantiert.'
-
-  - title: 'Welche Rechte habe ich als Arbeitnehmer mit Pflegefall?'
-    content: 'Sie haben Anspruch auf Pflegezeit (kurzzeitig, bezahlt), Familienpflegezeit (bis 24 Monate), Pflegeunterstützungsgeld (finanzielle Hilfe bei Freistellung) und Kündigungsschutz während dieser Phasen. Sie dürfen nicht wegen Pflegearbeit benachteiligt werden. Ihr Arbeitgeber muss Sie informieren und konstruktiv mit Ihnen nach Lösungen suchen. Bei Konflikten helfen Betriebsrat oder Beratungsstellen. Unser Ratgeber zeigt Ihnen, wie Sie das Gespräch mit dem Chef führen.'
-
-  - title: 'Wie wirkt sich eine Arbeitszeitreduktion auf meine Rente und Finanzen aus?'
-    content: 'Wer weniger arbeitet, zahlt weniger in die Rentenversicherung ein – das kann die spätere Rente senken. Es gibt aber Ausgleichsmechanismen: während Pflegezeit können Rentenbeiträge gezahlt werden, Anrechnung von Pflegemonaten ist möglich. Steuerliche Entlastungen (z. B. Pflegepauschbeträge) helfen zusätzlich. Unser Fragebogen zeigt Ihnen konkrete Zahlen für Ihr Szenario, damit Sie kalkulieren können.'
-
-  - title: 'Gibt es Zuschüsse oder finanzielle Hilfen für mich?'
-    content: 'Ja! Pflegeunterstützungsgeld unterstützt bei kurzfristiger Freistellung. Familienpflegezeit erlaubt zinslose Darlehen. Es gibt Zuschüsse für Hilfsmittel, Kurzzeitpflege, Verhinderungspflege. Manche Bundesländer bieten zusätzliche Pauschbeträge. Welche Hilfen Ihnen konkret zustehen, ermittelt unser Fragebogen automatisch – dann wissen Sie genau, worauf Sie einen Anspruch haben.'
-
-  - title: 'Wie beuge ich Burnout und Überlastung vor?'
-    content: 'Pflege + Beruf führt zu chronischem Stress. Das Wichtigste: Grenzen setzen, Aufgaben delegieren (Pflegedienst, Familie, Freunde), regelmäßige Pausen, Sport und eigene Hobbys bewahren. Unsere Plattform bietet automatische Aufgabenplanung (damit Sie nicht alles im Kopf halten), eine Community zum Austausch mit anderen Caregivers und Zugang zu psychologischer Unterstützung. Auch Schlaf und mentale Gesundheit sind zentral – ignorieren Sie nicht die Warnsignale.'
-
-  - title: 'Wie spreche ich mit meinem Arbeitgeber über die Pflegesituation?'
-    content: 'Viele fürchten Nachteile oder Unverständnis. Der Schlüssel: früh, klar und proaktiv kommunizieren. Bereiten Sie sich vor (Know Ihre Rechte, haben Sie konkrete Lösungsvorschläge). Betonen Sie, dass Sie Ihre Arbeit noch gut machen wollen – nur eben mit geändertem Stundenumfang oder flexibler Gestaltung. Unser Ratgeber bietet Textvorlagen und Gesprächsleitfäden, damit Sie sicherer in das Gespräch gehen.'
-
-  - title: 'Kann ich mich mit anderen austauschen, die dasselbe erleben?'
-    content: 'Ja! Peer-Support ist oft die größte Hilfe. In Navicare Now gibt es eine geschützte Community, in der Sie mit anderen pflegenden Angehörigen in ähnlichen Situationen sprechen, Tipps austauschen und sich gegenseitig Mut zusprechen können. Auch lokale Selbsthilfegruppen und Online-Foren helfen.'
-
-  - title: 'Wie beginne ich mit Navicare Now / kann ich Pilotkunde werden?'
-    content: 'Machen Sie zuerst unseren kostenlosen Fragebogen (5 Minuten) – Sie erhalten sofort eine Ersteinschätzung zu Ihren Optionen, Förderungen und nächsten Schritten. Buchen Sie danach eine gratis Erstberatung mit unseren Expert:innen, um offene Fragen zu klären und einen Fahrplan zu erstellen. Kontaktieren Sie uns auch gerne für Pilotprogramme – wir testen die Plattform praxisnah mit Familien und Einrichtungen.'
+  - title: 'Was passiert, wenn Informationen fehlen oder sich nachträglich ändern?'
+    content: 'Fehlende Informationen kennzeichnen wir transparent und holen sie nach Möglichkeit nach. Ihre Einrichtung bleibt jederzeit in der Lage, Ergänzungen und Aktualisierungen vorzunehmen. Wir empfehlen klare interne Prozesse, um Änderungen (z. B. neue Diagnosen, Medikationsanpassungen) zeitnah in die Dokumentation zu überführen. Gerne unterstützen wir Sie bei der Gestaltung dieser Prozesse und passen unsere Zusammenarbeit an Ihre internen Abläufe an.'
 ---
