@@ -293,16 +293,16 @@ a.text-black:hover {
       border-top-right-radius: 8px;
     }
     &.note::before {
-      background-color: #6ab0de;
+      background-color: lighten($primary-color, 20%);
     }
     &.tip::before {
-      background-color: #78C578;
+      background-color: $secondary-color;
     }
     &.info::before {
-      background-color: #F0B37E;
+      background-color: lighten($secondary-color, 18%);
     }
     &.warning::before {
-      background-color: #E06F6C;
+      background-color: #E86A5C;
     }
   }
 

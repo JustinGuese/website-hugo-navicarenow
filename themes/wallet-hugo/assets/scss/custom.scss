@@ -1,0 +1,31 @@
+// Brand accent color and utilities
+// Primary:   #0C445A
+// Secondary: #00A2B5
+// Accent:    #E86A5C
+
+$accent-color: #E86A5C;
+
+.bg-accent {
+  background-color: $accent-color !important;
+}
+
+.text-accent {
+  color: $accent-color !important;
+}
+
+.border-accent {
+  border-color: $accent-color !important;
+}
+
+.btn-accent {
+  background-color: $accent-color;
+  border-color: $accent-color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: darken($accent-color, 7%);
+    border-color: darken($accent-color, 7%);
+    color: $white;
+  }
+}
