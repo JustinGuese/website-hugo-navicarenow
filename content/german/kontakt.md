@@ -10,11 +10,11 @@ contact:
   description: "Sie haben Fragen oder benötigen Unterstützung? Wir sind gerne für Sie da."
 
 contactInfo:
-  - title: "Direkt kontaktieren"
-    content: "Rufen Sie uns gerne an – wir helfen Ihnen weiter! <br>
-    [+49 1567 9719965](tel:+4915679719965) <br>
-    Montag bis Freitag <br>
-    9 bis 18 Uhr"
+  # - title: "Direkt kontaktieren"
+  #   content: "Rufen Sie uns gerne an – wir helfen Ihnen weiter! <br>
+  #   [+49 175 5910688](tel:+491755910688) <br>
+  #   Montag bis Freitag <br>
+  #   9 bis 18 Uhr"
 
   - title: "E-Mail"
     content: "[info@navicarenow.de](mailto:info@navicarenow.de)"
