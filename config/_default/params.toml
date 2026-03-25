@@ -1,7 +1,7 @@
 #################### default parameters ################################
-logo = "images/logo.png"
+logo = "images/logo_neu.png"
 logo_text = "NavicareNow"
-logo_width = "160x"
+logo_width = "120"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -33,12 +33,12 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button_solid]
 enable = true
 label = "Soforthilfe"
-link = "/soforthilfe"
+link = "https://app.navicarenow.de"
 
 [navigation_button_bordered]
 enable = true
 label = "Kontakt"
-link = "/kontakt"
+link = "/kontakt/"
 
 # Sections
 [service_section]

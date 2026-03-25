@@ -1,41 +1,29 @@
 ---
-title: 'Häufige Fragen'
-description: 'Antworten für Einrichtungsleitung, Qualitätsmanagement und Pflegeteams'
+title: 'Häufig gestellte Fragen'
+description: 'Antworten für pflegende Angehörige und Familien'
 layout: 'faq'
 draft: false
 
 faq:
-  subtitle: 'Antworten für Pflegeeinrichtungen'
-  title: 'FAQ – NaviCare Now für stationäre Pflege'
+  subtitle: 'Antworten für pflegende Angehörige'
+  title: 'FAQ – NaviCare Now im Alltag'
 
 faq_item:
-  - title: 'Wie funktioniert der Aufnahmeprozess mit NaviCare Now?'
-    content: 'NaviCare Now übernimmt die Neuaufnahme extern: Unsere Pflegefachpersonen führen strukturierte Gespräche mit Bewohner*innen, Angehörigen und behandelnden Ärzt*innen – telefonisch oder per Video. Wir erheben alle relevanten medizinischen, pflegerischen und sozialen Daten, prüfen sie fachlich und erstellen daraus ein vollständiges Aufnahme- und Pflegepaket (SIS, Risikoeinschätzungen, Pflegeplanung). Das Ergebnis übergeben wir Ihrer Einrichtung innerhalb der vorgegebenen Fristen, sodass Sie die Daten in Ihr Dokumentationssystem übernehmen können.'
+  - title: 'Ist NaviCare Now kostenlos?'
+    content: 'Der Start ist vollständig kostenlos. Ohne Kreditkarte, ohne Abo, ohne Tricks. Der Pflegebedarfsrechner, das Basisprofil und das Pflegetagebuch stehen dauerhaft gratis zur Verfügung. Wer mehr möchte, kann jederzeit upgraden und jederzeit auch wieder kündigen.'
 
-  - title: 'Welche Daten werden erhoben und wie?'
-    content: 'Wir erfassen alle Informationen, die für eine MD-konforme Aufnahme notwendig sind: Anamnesen, Diagnosen, Medikation, Pflegebedarf, Mobilität, kognitive Fähigkeiten, Biografie, Gewohnheiten, Ressourcen und Risiken. Die Datenerhebung erfolgt über strukturierte Interviews mit Bewohner*innen (soweit möglich), Angehörigen und Ärzt*innen sowie anhand vorhandener Unterlagen. Unsere Fachpersonen arbeiten nach standardisierten Leitfäden, um Lücken zu vermeiden und eine konsistente Dokumentationsbasis zu schaffen.'
+  - title: 'Sind meine Gesundheitsdaten sicher?'
+    content: 'Ja. Ihre Daten werden auf EU-Servern in Deutschland gespeichert, nach DSGVO Art. 9 verarbeitet und niemals an Dritte weitergegeben oder für Werbung genutzt. Sie entscheiden jederzeit, was gespeichert wird und können alles löschen.'
 
-  - title: 'Wie lange dauert es bis zur fertigen Dokumentation?'
-    content: 'In der Regel erhalten Sie das vollständige Aufnahme- und Pflegepaket innerhalb von 24 Stunden nach Abschluss der Datenerhebung – und damit innerhalb der Zeitfenster, die der Medizinische Dienst für Neuaufnahmen erwartet. In Einzelfällen mit komplexen Konstellationen sprechen wir konkrete Fristen mit Ihnen ab. Ziel ist immer: so schnell wie nötig, so gründlich wie möglich – ohne Qualitätskompromisse.'
+  - title: 'Bin ich pflegebedürftig genug für NaviCare Now?'
+    content: 'NaviCare ist für alle, die einen Angehörigen begleiten, egal ob bereits ein Pflegegrad vorhanden ist oder nicht. Auch wenn Sie gerade erst merken, dass jemand mehr Unterstützung benötigt, ist NaviCare Now der richtige Ausgangspunkt.'
 
-  - title: 'Wie integrieren wir die Daten in unser bestehendes System?'
-    content: 'NaviCare Now ist kein weiteres Doku-Tool, sondern liefert vorbereitete Inhalte für Ihre bestehenden Systeme (z. B. Vivendi, MediFox u. a.). Sie erhalten die Ergebnisse in klar strukturierten Dokumenten bzw. Formaten, die Sie in Ihre Software übertragen oder importieren können. Auf Wunsch richten wir gemeinsam mit Ihnen Standards und Vorlagen ein, damit die Integration in Ihre Abläufe möglichst effizient erfolgt.'
+  - title: 'Kann ich NaviCare Now nutzen, wenn noch kein Pflegegrad beantragt ist?'
+    content: 'Ja, genau dafür ist der kostenlose Rechner da. Er hilft Ihnen einzuschätzen, ob ein Antrag sinnvoll ist, was dabei herauskommt und welche Schritte Sie als Nächstes gehen sollten. Viele Nutzer starten mit NaviCare Now, bevor sie überhaupt mit der Pflegekasse gesprochen haben.'
 
-  - title: 'Was kostet NaviCare Now pro Neuaufnahme?'
-    content: 'Die Kosten richten sich nach Leistungsumfang, Einrichtungsgröße und vereinbartem Kontingent. Üblich sind pauschale Beträge pro Neuaufnahme oder monatliche Kontingente für eine bestimmte Anzahl von Aufnahmen. Gerne erstellen wir ein individuelles Angebot auf Basis Ihrer Strukturen und Fallzahlen. In jedem Fall steht für uns im Vordergrund, dass sich die Entlastung in Zeit, Qualität und vermiedenen Folgekosten für Sie rechnet.'
+  - title: 'Was unterscheidet NaviCare Now von anderen Apps?'
+    content: 'Die meisten Pflege-Apps sind Dokumentationstools: sie helfen, Dinge festzuhalten. NaviCare Now denkt mit: Es erkennt Risiken, bevor sie zur Krise werden, navigiert durch Leistungen und Bürokratie und fragt auch, wie es Ihnen selbst geht. Entwickelt von echten Pflegefachpersonen, nicht von Technologen, die Pflege vom Schreibtisch aus kennen.'
 
-  - title: 'Wie sicher sind die Daten und wo werden sie verarbeitet?'
-    content: 'Datenschutz und Informationssicherheit haben höchste Priorität. NaviCare Now arbeitet DSGVO-konform, mit Hosting und Verarbeitung in der EU. Zugriffe sind rollenbasiert geregelt, Daten werden verschlüsselt übertragen und gespeichert. Wir schließen mit Ihrer Einrichtung einen Auftragsverarbeitungsvertrag (AVV) ab und dokumentieren alle relevanten technischen und organisatorischen Maßnahmen (TOMs).'
-
-  - title: 'Welche Qualitätsstandards erfüllt NaviCare Now?'
-    content: 'Unsere Arbeit orientiert sich an den aktuellen Expertenstandards in der Pflege sowie den Anforderungen des Medizinischen Dienstes. Alle Aufnahmen werden von qualifizierten Pflegefachpersonen verantwortet, die Erfahrung in stationären Einrichtungen und mit Prüfungen haben. Prozessleitfäden, Checklisten und interne Qualitätssicherungsmaßnahmen sorgen dafür, dass Inhalte vollständig, nachvollziehbar und prüffähig sind.'
-
-  - title: 'Können wir NaviCare Now zunächst testen oder pilotieren?'
-    content: 'Ja. Viele Einrichtungen starten mit einem Pilotprojekt für eine definierte Anzahl von Neuaufnahmen oder in ausgewählten Wohnbereichen. So können Sie den Entlastungseffekt und die Qualität der Unterlagen in der Praxis erleben, bevor Sie NaviCare Now breiter ausrollen. Sprechen Sie uns einfach an – wir konzipieren gemeinsam ein Pilot-Setup, das zu Ihrer Einrichtung passt.'
-
-  - title: 'Wie viel Zeit spart unser Team wirklich?'
-    content: 'Je nach Ausgangssituation lassen sich pro Neuaufnahme bis zu 4,5 Stunden Fachkraftzeit einsparen, weil Datenerhebung, Risikoanalyse und Dokumentationsentwurf extern erfolgen. Gleichzeitig sinkt der Aufwand für Nachdokumentation und Korrekturen. In Summe entsteht mehr Zeit für direkte Pflege, bessere Planbarkeit und weniger Überstunden – insbesondere in hochbelasteten Phasen.'
-
-  - title: 'Was passiert, wenn Informationen fehlen oder sich nachträglich ändern?'
-    content: 'Fehlende Informationen kennzeichnen wir transparent und holen sie nach Möglichkeit nach. Ihre Einrichtung bleibt jederzeit in der Lage, Ergänzungen und Aktualisierungen vorzunehmen. Wir empfehlen klare interne Prozesse, um Änderungen (z. B. neue Diagnosen, Medikationsanpassungen) zeitnah in die Dokumentation zu überführen. Gerne unterstützen wir Sie bei der Gestaltung dieser Prozesse und passen unsere Zusammenarbeit an Ihre internen Abläufe an.'
+  - title: 'Kann ich NaviCare Now über die Pflegekasse finanzieren?'
+    content: 'Wir arbeiten daran, als DiPA (Digitale Pflegeanwendung) nach §40a SGB XI gelistet zu werden, das bedeutet bis zu 50 € monatliche Erstattung durch Ihre Pflegekasse. Bis dahin: Viele Kosten lassen sich als haushaltsnahe Dienstleistung oder außergewöhnliche Belastung steuerlich absetzen.'
 ---

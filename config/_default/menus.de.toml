@@ -13,34 +13,39 @@ weight = 3
 
 [[main]]
 parent = "Services"
-name = "Integration in Ihre Systeme"
-url = "services/zentraler-informations-hub/"
+name = "Pflegegrad einschätzen"
+url = "services/pflegegrad-einschaetzen/"
 weight = 1
-
 
 [[main]]
 parent = "Services"
-name = "Zeit- und Kostenersparnis"
-url = "services/community-schulungen/"
+name = "Warnzeichen erkennen"
+url = "services/warnzeichen-sehen/"
 weight = 2
 
 [[main]]
 parent = "Services"
-name = "Externe Aufnahme-Übernahme"
-url = "services/digitale-pflegeakte/"
+name = "Medikamentenplan"
+url = "services/medikamentenplan/"
 weight = 3
 
 [[main]]
 parent = "Services"
-name = "Risikoerfassung & Qualität"
-url = "services/interaktiver-alltagshelfer/"
+name = "Pflegetagebuch"
+url = "services/pflegetagebuch/"
 weight = 4
 
 [[main]]
 parent = "Services"
-name = "MD-konforme Dokumentation"
-url = "services/personalisierte-beratung/"
+name = "Pflegeleistungen im Blick"
+url = "services/pflegeleistungen-uebersicht/"
 weight = 5
+
+[[main]]
+parent = "Services"
+name = "Entlastung für Angehörige"
+url = "services/entlastung-angehoerige/"
+weight = 6
 
 [[main]]
 name = "FAQ"
@@ -102,7 +107,7 @@ url = "about/"
 
 [[about]]
 name = "Careers"
-url = "/kontakt"
+url = "kontakt/"
 
 
 [[help]]
@@ -111,4 +116,4 @@ url = "faq/"
 
 [[help]]
 name = "Kontakt"
-url = "/kontakt"
+url = "kontakt/"

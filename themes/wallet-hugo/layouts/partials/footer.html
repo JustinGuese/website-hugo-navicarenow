@@ -65,13 +65,10 @@
     <div class="row align-items-center mt-5 text-center text-md-start">
       <div class="col-lg-4">
         <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-          {{ $logo:= site.Params.logo }}
-          {{ if fileExists (add `assets/` $logo) }}
-          {{ $logo:= resources.Get $logo }}
-          {{ $option := add (string site.Params.logo_width) " webp" }}
-          {{ $logo:= $logo.Resize site.Params.logo_width }}
-          {{ $logo_webp:= $logo.Resize $option }}
-          <img loading="prelaod" decoding="async" class="img-fluid" width="{{$logo.Width}}" height="{{$logo.Height}}" src="{{$logo_webp.RelPermalink}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{$logo.RelPermalink}}'">
+          {{ $logoPath := site.Params.logo }}
+          {{ if fileExists (add `assets/` $logoPath) }}
+          {{ $logoResource := resources.Get $logoPath }}
+          <img loading="lazy" decoding="async" class="img-fluid" src="{{ $logoResource.RelPermalink }}" alt="{{ site.Title }}" style="max-width: {{ site.Params.logo_width | default "160" }}px;">
           {{ else }}
           {{site.Params.logo_text | markdownify}}
           {{ end }}

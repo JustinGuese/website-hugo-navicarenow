@@ -1,62 +1,56 @@
 ---
-title: 'SIS in der Pflege: So gelingt die strukturierte Informationssammlung'
-date: 2025-03-14T15:40:24+06:00
+title: 'Beruf und Pflege vereinbaren: Wege aus der Belastungsfalle'
+date: '2025-03-12T09:40:24.000Z'
 images:
-  - 'images/blog/post-3.jpg'
-author: 'Julia Camara'
-description: 'SIS in der stationären Pflege: Aufbau, Themenfelder und Praxistipps für eine schlanke, rechtssichere Informationssammlung.'
-categories: ['Pflegedokumentation']
-tags: ['SIS', 'Pflegedokumentation', 'Pflegeplanung']
+  - images/blog/post-3.jpg
+author: Sandra (Gastbeitrag)
+description: 'Als berufstätige Tochter stehe ich oft vor der Wahl: Job oder Pflege? Wir zeigen Ihnen, wie Sie diese Doppelbelastung meistern und welche Hilfen es gibt.'
+categories:
+  - Pflegealltag
+tags:
+  - Vereinbarkeit
+  - Berufstätig
+  - Angehörige
 draft: false
 ---
 
-## Warum die SIS heute Standard ist
+## Wenn das Leben zur Zerreißprobe wird
 
-Die Strukturierte Informationssammlung (SIS) ist Herzstück vieler moderner Pflegedokumentationsmodelle in Deutschland. Sie bündelt alle relevanten Informationen zur Lebenssituation, Gesundheit und Selbstständigkeit eines Menschen in wenigen, klar strukturierten Themenfeldern – und bildet so die Grundlage für eine individuelle Pflegeplanung.
+„Ich liebe meine Mutter, aber manchmal weiß ich einfach nicht mehr, wie ich alles schaffen soll.“ Sätze wie diesen hören wir oft von pflegenden Angehörigen, die gleichzeitig im Berufsleben stehen. Der Spagat zwischen Job, eigener Familie und der Pflege der Eltern ist ein Kraftakt, der oft unbemerkt an die Substanz geht.
 
-Richtig genutzt, reduziert die SIS Dokumentationsaufwand, macht Entscheidungen nachvollziehbar und unterstützt Einrichtungen dabei, gesetzlichen Anforderungen und Expertenstandards gerecht zu werden.
+In Deutschland pflegen Millionen von Menschen ihre Angehörigen neben dem Vollzeitjob. Hier sind Strategien, damit Sie nicht auf der Strecke bleiben.
 
-## Die sechs Themenfelder der SIS im Überblick
+## Kennen Sie Ihre Rechte am Arbeitsplatz?
 
-1. **Kognitive und kommunikative Fähigkeiten** – Wie gut versteht und verarbeitet der Mensch Informationen? Wie drückt er sich aus?  
-2. **Mobilität und Beweglichkeit** – Gehen, Aufstehen, Transfers, Sturzrisiko.  
-3. **Krankheitsbezogene Anforderungen und Belastungen** – Diagnosen, Therapien, Schmerzen, Medikation.  
-4. **Selbstversorgung** – Körperpflege, An- und Auskleiden, Essen und Trinken, Ausscheidung.  
-5. **Leben in sozialen Beziehungen** – Familie, soziale Kontakte, Rollenbilder, Einsamkeit.  
-6. **Haushaltsführung** – Alltagsorganisation, Einkaufen, Haushaltsaufgaben.
+Das Pflegezeitgesetz und das Familienpflegezeitgesetz bieten verschiedene Möglichkeiten, um bei Pflegefällen zeitlich flexibel zu reagieren.
 
-Viele Einrichtungen kombinieren diese Themenfelder mit digitalen Dokumentationssystemen und klaren Leitfragen, um die Erfassung zu erleichtern ([Gesund.bund.de](https://gesund.bund.de/digitalisierung-in-der-pflege)).
+### Ihre Optionen im Überblick:
+- **Kurzzeitige Arbeitsverhinderung:** Bis zu 10 Tage frei, um eine akute Pflegesituation zu organisieren (mit Lohnersatzleistung).
+- **Pflegezeit:** Bis zu 6 Monate vollständige oder teilweise Freistellung.
+- **Familienpflegezeit:** Bis zu 24 Monate Reduzierung der Arbeitszeit auf mindestens 15 Stunden pro Woche.
 
-## Typische Stolpersteine bei der SIS-Erhebung
+## Struktur bringt Entlastung
 
-### Zu viel Text, zu wenig Struktur
+Oft ist es nicht die Pflege selbst, die am meisten belastet, sondern die ständige Organisation und das Gefühl, etwas zu vergessen.
 
-Wenn freie Textfelder ohne Leitplanken genutzt werden, entsteht schnell ein „Roman“, der im Alltag niemandem hilft. Besser sind kurze, prägnante Formulierungen, die direkt auf Risiken, Ressourcen und Bedarfe hinweisen.
+### Tipps für einen entspannteren Alltag:
+- **Aufgaben teilen:** Wenn möglich, beziehen Sie Geschwister oder andere Verwandte ein. Ein gemeinsamer Kalender hilft dabei, Termine abzustimmen.
+- **Digitale Unterstützung:** Nutzen Sie Tools wie NaviCare Now, um Informationen an einem Ort zu bündeln. Wenn alle Geschwister das Pflegetagebuch nutzen, ist jeder sofort auf dem gleichen Stand – ganz ohne endlose WhatsApp-Nachrichten.
+- **Leistungen abrufen:** Nutzen Sie den Entlastungsbetrag für eine Haushaltshilfe oder Alltagsbegleitung. Jede Stunde, in der Sie nicht selbst putzen oder einkaufen müssen, ist Zeit für Sie oder Ihre Familie.
 
-### Fehlende Verknüpfung zur Maßnahmenplanung
+## Selbstfürsorge ist kein Luxus
 
-Die SIS ist kein Selbstzweck. Informationen aus der SIS müssen sichtbar in Ziele, Maßnahmen und Evaluation einfließen. Sonst bleibt unklar, wie aus der Analyse konkrete Pflege wird – ein häufiger Kritikpunkt bei Prüfungen.
+Wer erschöpft ist, kann nicht gut pflegen. Nehmen Sie Warnsignale Ihres Körpers ernst. Kopfschmerzen, Schlafstörungen oder Reizbarkeit sind Zeichen, dass Sie eine Pause brauchen.
 
-### Einmal erhoben, nie wieder aktualisiert
+Nutzen Sie die Verhinderungspflege, um sich Auszeiten zu verschaffen. Ein Wochenende ohne Pflegeverantwortung kann Wunder wirken.
 
-Leben, Gesundheit und Ressourcen verändern sich – die SIS muss mitgehen. Besonders nach Krankenhausaufenthalten, Stürzen oder deutlichen Veränderungen im Alltag sollte eine Aktualisierung erfolgen.
+## NaviCare Now: Ihr Begleiter im Chaos
 
-## So wird die SIS zum Entlastungs- statt Zeitfresser
+Wir haben NaviCare Now speziell für Menschen wie Sandra entwickelt. Wir geben Ihnen die Struktur, die Sie brauchen:
+- **Tagesplaner & Erinnerungen:** Damit Sie im Job nicht an die Tabletten denken müssen.
+- **Wöchentlicher Überblick:** Ein schneller Export für den nächsten Arzttermin spart Zeit beim Vorbereiten.
+- **Risikoanalyse:** Damit Sie sicher sein können, dass nichts Wichtiges übersehen wird, während Sie bei der Arbeit sind.
 
-### Klare Leitfragen und Schulung des Teams
+**Fazit:** Sie müssen das nicht alleine schaffen. Nutzen Sie die verfügbaren Hilfen und fordern Sie Unterstützung ein.
 
-Schlüssig ist, mit einheitlichen Fragen je Themenfeld zu arbeiten und Mitarbeitende gezielt zu schulen. Studien zeigen, dass digitale Unterstützung und strukturierte Hilfen die Akzeptanz erhöhen und Prozesse beschleunigen ([VDSP Studien](https://www.vdsp.org/studien/)).
-
-### Digitale Dokumentation sinnvoll nutzen
-
-Digitale Systeme können dabei helfen, Eingabefehler zu vermeiden, Pflichtfelder zu kennzeichnen und Zusammenhänge zwischen SIS, Maßnahmenplanung und Evaluation sichtbar zu machen ([Gesund.bund.de](https://gesund.bund.de/digitalisierung-in-der-pflege)). Wichtig ist, dass Masken zur Realität des Pflegealltags passen – sonst entsteht Frust.
-
-### Erhebung auslagern, Pflegealltag entlasten
-
-Gerade bei Neuaufnahmen kostet die strukturierte Ersterhebung viel Zeit. Externe Fachpartner können diesen Prozess übernehmen, die SIS vollständig ausarbeiten und der Einrichtung eine praxistaugliche, MD-konforme Grundlage liefern. Das entlastet Pflegeteams und sorgt für einen konsistenten Start in die Versorgung.
-
-## Fazit: Gute SIS – gute Pflegeplanung
-
-Eine professionell durchgeführte SIS macht Bedürfnisse, Risiken und Ressourcen klar sichtbar – und unterstützt Teams dabei, individuelle, wirksame Pflege zu planen. Einrichtungen, die hier in klare Strukturen, Schulung und ggf. externe Unterstützung investieren, reduzieren Dokumentationsaufwand und verbessern gleichzeitig die Versorgungsqualität.
-
-Wenn Sie wissen möchten, wie Sie die Ersterhebung und Pflegedokumentation bei Neuaufnahmen in Ihrer Einrichtung verschlanken können, sprechen Sie uns an: [Kontakt aufnehmen](/kontakt/).
+[Jetzt Unterstützung finden](https://app.navicarenow.de)
