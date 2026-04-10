@@ -73,7 +73,7 @@ features:
     - icon: 'fas fa-book-open'
       icon_label: 'Alltag dokumentieren'
       title: 'Pflegetagebuch in 60 Sekunden'
-      description: 'Kurz antippen, was heute war und NaviCare hat den Überblick. Trinkmenge, Stimmung, Medikamente: alles festgehalten, ohne Aufwand. Für Sie, für den nächsten Arzttermin, für die Familie.'
+      description: 'Der Wochenbericht wird automatisch als PDF erstellt – perfekt vorbereitet für den nächsten Arzttermin. Trinkmenge, Stimmung, Medikamente: bereits dokumentiert, ohne Aufwand.'
     - icon: 'fas fa-euro-sign'
       icon_label: 'Leistungen nutzen'
       title: 'Alle Pflegeleistungen auf einen Blick'
@@ -118,17 +118,17 @@ social_proof:
 calculator_teaser:
   enable: true
   title: 'Wissen Sie, welcher Pflegegrad wirklich passt?'
-  subtitle: 'Unser kostenloser Rechner gibt Ihnen in wenigen Minuten eine ehrliche Einschätzung – ohne Anmeldung, ohne Fachjargon, ohne Wartezeit. Sie sehen sofort, welche Leistungen möglich sind.'
+  subtitle: 'Bis zu 12.000 € jährlich stehen Familien zu – die meisten wissen nicht, wie viel davon für sie gilt.'
   benefits:
     - 'Schätzung des möglichen Pflegegrades in 8 Fragen'
-    - 'Sofortige Übersicht der zugehörigen Pflegeleistungen und Beträge'
+    - 'Sofortige Übersicht: wie viel Pflegegeld, Entlastungsbetrag & Verhinderungspflege Ihnen zusteht'
     - 'Erste konkrete nächste Schritte – klar und verständlich'
     - 'Kein Account, kein Abo, kein Kleingedrucktes'
   cta:
     label: 'Kostenlosen Rechner starten'
     href: 'https://navicarenow.datafortress.cloud/'
   trust_line: 'Kostenlos · Anonym · Dauert 5–8 Minuten'
-  whats_next: 'Nach dem Rechner sehen Sie Ihr persönliches Ergebnis mit einer Übersicht aller Leistungen, die in Ihrer Situation infrage kommen. Wenn Sie möchten, können Sie direkt ein kostenloses Profil anlegen und die Begleitung vertiefen.'
+  whats_next: 'Ihr Ergebnis + vollständiger PDF-Report werden Ihnen sofort per E-Mail zugesendet. Mit einem Klick können Sie danach kostenfrei ein Profil anlegen und die App-Begleitung starten.'
 
 ############################ Sektion 7 – ABO-ÜBERSICHT ##################################
 pricing:
@@ -219,6 +219,7 @@ personas:
         - 'Tagesstruktur und Erinnerungen, damit nichts vergessen wird'
         - 'Wöchentlicher Überblick für den nächsten Arzttermin'
       quote: '„Zum ersten Mal seit Monaten weiß ich, was ich als Nächstes tun muss."”'
+      cta_label: 'Jetzt Leistungen für Ihre Situation prüfen'
     - name: 'Der pflegende Ehemann'
       situation: 'Er pflegt seine Frau zuhause – seit Jahren, fast alleine, und merkt selbst, dass er an seine Grenzen kommt.'
       features:
@@ -226,6 +227,7 @@ personas:
         - 'Unterstützungsangebote sichtbar machen, auch für ihn selbst'
         - 'Einfaches Dokumentieren, ohne Aufwand'
       quote: '„NaviCare hat mir gezeigt: Ich muss das nicht alleine schaffen."”'
+      cta_label: 'Risiken früh erkennen – App kostenlos starten'
     - name: 'Die koordinierende Geschwistergruppe'
       situation: 'Drei Geschwister, drei Städte, ein Vater und kein gemeinsames System, das alle auf dem gleichen Stand hält.'
       features:
@@ -233,6 +235,7 @@ personas:
         - 'Klare Aufgabenteilung statt WhatsApp-Chaos'
         - 'Alle sehen sofort, was wichtig ist'
       quote: '„Endlich reden wir nicht mehr aneinander vorbei."”'
+      cta_label: 'Gemeinsam koordinieren mit NaviCare Now'
 
 ############################ Sektion 10 – DATENSCHUTZ & VERTRAUEN ##################################
 trust:
@@ -277,8 +280,8 @@ faq:
 ############################ Sektion 13 – FINALER CTA ##################################
 cta:
   enable: true
-  title: 'Sie haben lange genug alleine navigiert.'
-  subtitle: 'In unter 10 Minuten wissen Sie, wo Sie stehen, was Ihnen zusteht, was Sie jetzt tun können und dass Sie nicht alleine damit sind.'
+  title: 'In 8 Minuten wissen Sie, ob Sie Anspruch auf bis zu 12.000 € jährlich haben.'
+  subtitle: 'Kostenloser PDF-Report direkt im Anschluss. Kein Account nötig, kein Risiko – nur Klarheit.'
   primary_button:
     label: 'Jetzt Pflegebedarf berechnen'
     href: 'https://navicarenow.datafortress.cloud/'

@@ -1,5 +1,482 @@
 media: static/images
 content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: content/german/_index.md
+    fields:
+      - name: banner
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: button
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: label
+                type: string
+              - name: icon
+                type: string
+              - name: button_modal_target
+                type: string
+          - name: button_secondary
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: label
+                type: string
+              - name: icon
+                type: string
+              - name: button_modal_target
+                type: string
+          - name: trust_element
+            type: string
+          - name: image
+            type: image
+
+      - name: problem
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: bridge
+            type: string
+          - name: problems
+            type: list
+            field:
+              type: object
+              fields:
+                - name: title
+                  type: string
+                - name: icon
+                  type: string
+
+      - name: how_it_works
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: steps
+            type: list
+            field:
+              type: object
+              fields:
+                - name: icon
+                  type: string
+                - name: icon_label
+                  type: string
+                - name: title
+                  type: string
+                - name: description
+                  type: rich-text
+          - name: cta
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: label
+                type: string
+              - name: href
+                type: string
+
+      - name: features
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: items
+            type: list
+            field:
+              type: object
+              fields:
+                - name: icon
+                  type: string
+                - name: icon_label
+                  type: string
+                - name: title
+                  type: string
+                - name: description
+                  type: rich-text
+
+      - name: social_proof
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: testimonials
+            type: list
+            field:
+              type: object
+              fields:
+                - name: text
+                  type: rich-text
+                - name: name
+                  type: string
+                - name: role
+                  type: string
+          - name: trust_badges
+            type: list
+            field:
+              type: object
+              fields:
+                - name: icon
+                  type: string
+                - name: text
+                  type: string
+          - name: stats
+            type: list
+            field:
+              type: object
+              fields:
+                - name: value
+                  type: string
+                - name: label
+                  type: string
+                - name: source
+                  type: string
+
+      - name: calculator_teaser
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: benefits
+            type: list
+            field:
+              type: string
+          - name: cta
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: href
+                type: string
+          - name: trust_line
+            type: string
+          - name: whats_next
+            type: rich-text
+
+      - name: pricing
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: plans
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: popular
+                  type: boolean
+                - name: price
+                  type: string
+                - name: target
+                  type: string
+                - name: features
+                  type: list
+                  field:
+                    type: string
+                - name: cta_label
+                  type: string
+                - name: cta_href
+                  type: string
+          - name: faq_teaser
+            type: object
+            fields:
+              - name: question
+                type: string
+              - name: answer
+                type: rich-text
+
+      - name: benefits
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: items
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: amount
+                  type: string
+                - name: description
+                  type: rich-text
+          - name: closing_sentence
+            type: string
+          - name: cta_label
+            type: string
+          - name: cta_href
+            type: string
+
+      - name: personas
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: items
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: situation
+                  type: rich-text
+                - name: features
+                  type: list
+                  field:
+                    type: string
+                - name: quote
+                  type: string
+                - name: cta_label
+                  type: string
+
+      - name: trust
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: items
+            type: list
+            field:
+              type: object
+              fields:
+                - name: title
+                  type: string
+                - name: description
+                  type: rich-text
+          - name: disclaimer
+            type: string
+
+      - name: about_us
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: mission
+            type: rich-text
+          - name: team_intro
+            type: rich-text
+          - name: quote
+            type: string
+          - name: funding
+            type: rich-text
+
+      - name: faq
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: faq_items
+            type: list
+            field:
+              type: object
+              fields:
+                - name: question
+                  type: string
+                - name: answer
+                  type: rich-text
+
+      - name: cta
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: primary_button
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: href
+                type: string
+          - name: secondary_button
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: label
+                type: string
+              - name: href
+                type: string
+          - name: trust_line
+            type: string
+
+  - name: about
+    label: About Page
+    type: file
+    path: content/german/about.md
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: about_us_
+        label: About Section
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: image
+            type: image
+          - name: content
+            type: rich-text
+      - name: who_we_are
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: lead
+            type: string
+          - name: content
+            type: rich-text
+      - name: what_we_offer
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: lead
+            type: string
+          - name: content
+            type: rich-text
+      - name: feature
+        label: Highlights
+        type: list
+        field:
+          type: object
+          fields:
+            - name: name
+              type: string
+            - name: icon
+              type: string
+            - name: content
+              type: rich-text
+      - name: core_value
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: content
+            type: rich-text
+          - name: core_value_item
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: content
+                  type: rich-text
+      - name: team
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: description
+            type: rich-text
+          - name: team_member
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: designation
+                  type: string
+                - name: image
+                  type: image
+                - name: social
+                  type: list
+                  field:
+                    type: object
+                    fields:
+                      - name: name
+                        type: string
+                      - name: icon
+                        type: string
+                      - name: link
+                        type: string
+      - name: founder_details
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: founders
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: role
+                  type: string
+                - name: image
+                  type: image
+                - name: expertise
+                  type: list
+                  field:
+                    type: object
+                    fields:
+                      - name: title
+                        type: string
+                      - name: description
+                        type: rich-text
+      - name: draft
+        type: boolean
+
   - name: blog
     label: Blog Posts
     type: collection
@@ -52,7 +529,7 @@ content:
       - name: body
         type: rich-text
 
-  - name: faq
+  - name: faq_page
     label: FAQ Page
     type: file
     path: content/german/faq.md
@@ -92,7 +569,7 @@ content:
       - name: description
         type: string
       - name: contact
-        label: Contact Info
+        label: Contact Header
         type: object
         fields:
           - name: title
@@ -123,6 +600,10 @@ content:
         type: string
       - name: description
         type: string
+      - name: date
+        type: datetime
+      - name: image
+        type: image
       - name: draft
         type: boolean
       - name: body

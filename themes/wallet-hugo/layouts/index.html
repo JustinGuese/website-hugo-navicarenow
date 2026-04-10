@@ -262,6 +262,12 @@ html {
       </div>
       {{ end }}
     </div>
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p class="h5 mb-4">Gehören Sie zu den 86%? Finden Sie in 8 Minuten heraus, welche Unterstützung Ihnen zusteht.</p>
+        <a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary pulse">Jetzt kostenlos prüfen <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
   </div>
 </section>
 {{ end }}
@@ -401,8 +407,11 @@ html {
               {{ end }}
             </ul>
           </div>
-          <div class="bg-light p-3 rounded fst-italic small text-secondary">
+          <div class="bg-light p-3 rounded fst-italic small text-secondary flex-grow-0 mb-3">
             {{ $p.quote }}
+          </div>
+          <div class="mt-auto">
+            <a href="https://navicarenow.datafortress.cloud/" class="fw-bold text-primary small">{{ $p.cta_label }} <i class="fas fa-arrow-right ms-1"></i></a>
           </div>
         </div>
       </div>
