@@ -2,8 +2,8 @@
 ############################ Sektion 1 – HERO ##################################
 banner:
   enable: true
-  title: 'Orientierung in der Pflege. In unter 10 Minuten.'
-  subtitle: 'Das Pflegesystem ist kompliziert. Ihre Situation ist es auch. NaviCare Now gibt Ihnen in wenigen Minuten eine klare Einschätzung, was jetzt wichtig ist, was Ihnen zusteht und wie Sie es bekommen.'
+  title: 'Pflegebedarf berechnen – und den Alltag mit der App organisieren.'
+  subtitle: 'NaviCare Now gibt Ihnen in wenigen Minuten eine klare Einschätzung Ihrer Ansprüche inkl. kostenlosem PDF-Report. Organisieren Sie danach den Pflegealltag einfach und sicher mit unserer App.'
   button:
     enable: true
     label: 'Kostenlos Pflegebedarf berechnen'
@@ -14,7 +14,7 @@ banner:
     label: 'So funktioniert NaviCare Now'
     icon: 'fas fa-arrow-right'
     button_modal_target: '#how-it-works'
-  trust_element: 'Kostenlos starten · Kein Account nötig · Ergebnis in unter 10 Minuten'
+  trust_element: 'Kostenloses PDF-Ergebnis · Kein Account nötig · App-Begleitung starten'
   image: 'images/banner/calculator_mockup.png'
 
 ############################ Sektion 2 – PROBLEM ##################################

@@ -1,0 +1,129 @@
+media: static/images
+content:
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: content/german/blog
+    exclude: ["_index.md"]
+    fields:
+      - name: title
+        type: string
+      - name: date
+        type: datetime
+      - name: author
+        type: string
+      - name: description
+        type: string
+      - name: images
+        label: Images
+        type: list
+        field:
+          type: string
+      - name: categories
+        type: list
+        field:
+          type: string
+      - name: tags
+        type: list
+        field:
+          type: string
+      - name: draft
+        type: boolean
+      - name: body
+        type: rich-text
+
+  - name: services
+    label: Services
+    type: collection
+    path: content/german/services
+    exclude: ["_index.md"]
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: icon
+        type: string
+        help: Font Awesome class (e.g. fas fa-book-open)
+      - name: date
+        type: datetime
+      - name: draft
+        type: boolean
+      - name: body
+        type: rich-text
+
+  - name: faq
+    label: FAQ Page
+    type: file
+    path: content/german/faq.md
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: faq
+        label: FAQ Header
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+      - name: faq_item
+        label: FAQ Items
+        type: list
+        field:
+          type: object
+          fields:
+            - name: title
+              type: string
+            - name: content
+              type: rich-text
+      - name: draft
+        type: boolean
+
+  - name: contact
+    label: Contact Page
+    type: file
+    path: content/german/kontakt.md
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: contact
+        label: Contact Info
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: subtitle
+            type: string
+          - name: description
+            type: string
+      - name: contactInfo
+        label: Contact Details
+        type: list
+        field:
+          type: object
+          fields:
+            - name: title
+              type: string
+            - name: content
+              type: rich-text
+      - name: draft
+        type: boolean
+
+  - name: legal
+    label: Legal
+    type: collection
+    path: content/german/legal
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: draft
+        type: boolean
+      - name: body
+        type: rich-text

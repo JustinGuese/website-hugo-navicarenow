@@ -37,8 +37,8 @@ link = "https://navicarenow.datafortress.cloud/"
 
 [navigation_button_bordered]
 enable = true
-label = "Kontakt"
-link = "/kontakt/"
+label = "Login / Zur App"
+link = "https://navicarenow.datafortress.cloud/"
 
 # Sections
 [service_section]
