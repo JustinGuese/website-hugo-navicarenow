@@ -477,7 +477,7 @@ content:
       - name: draft
         type: boolean
 
-  - name: blog
+  - name: blog_posts
     label: Blog Posts
     type: collection
     path: content/german/blog
@@ -509,7 +509,19 @@ content:
       - name: body
         type: rich-text
 
-  - name: services
+  - name: blog_list
+    label: Blog List Page Settings
+    type: file
+    path: content/german/blog/_index.md
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: string
+      - name: draft
+        type: boolean
+
+  - name: service_items
     label: Services
     type: collection
     path: content/german/services
@@ -528,6 +540,22 @@ content:
         type: boolean
       - name: body
         type: rich-text
+
+  - name: services_list
+    label: Services List Page Settings
+    type: file
+    path: content/german/services/_index.md
+    fields:
+      - name: title
+        type: string
+      - name: section_title
+        type: string
+      - name: description
+        type: string
+      - name: date
+        type: datetime
+      - name: draft
+        type: boolean
 
   - name: faq_page
     label: FAQ Page
@@ -592,7 +620,7 @@ content:
         type: boolean
 
   - name: legal
-    label: Legal
+    label: Legal Pages
     type: collection
     path: content/german/legal
     fields:
