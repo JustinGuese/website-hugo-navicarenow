@@ -1,5 +1,9 @@
 # main menu
 
+[[main]]
+name = "Pflegegrad-Rechner"
+url = "https://navicarenow.datafortress.cloud/"
+weight = 1
 
 [[main]]
 name = "Über uns"

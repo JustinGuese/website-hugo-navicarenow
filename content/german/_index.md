@@ -6,16 +6,16 @@ banner:
   subtitle: 'Das Pflegesystem ist kompliziert. Ihre Situation ist es auch. NaviCare Now gibt Ihnen in wenigen Minuten eine klare Einschätzung, was jetzt wichtig ist, was Ihnen zusteht und wie Sie es bekommen.'
   button:
     enable: true
-    label: 'Pflegebedarf einschätzen'
+    label: 'Kostenlos Pflegebedarf berechnen'
     icon: 'fas fa-arrow-right'
-    button_modal_target: 'https://app.navicarenow.de'
+    button_modal_target: 'https://navicarenow.datafortress.cloud/'
   button_secondary:
     enable: true
     label: 'So funktioniert NaviCare Now'
     icon: 'fas fa-arrow-right'
     button_modal_target: '#how-it-works'
   trust_element: 'Kostenlos starten · Kein Account nötig · Ergebnis in unter 10 Minuten'
-  image: 'images/banner/hands-4344711_1280.jpg'
+  image: 'images/banner/calculator_mockup.png'
 
 ############################ Sektion 2 – PROBLEM ##################################
 problem:
@@ -49,8 +49,8 @@ how_it_works:
       description: 'NaviCare Now begleitet Sie im Alltag: mit dem Pflegetagebuch, Erinnerungen, verständlichen Erklärungen zu Leistungen und einem täglichen Impuls. Sie fühlen sich nicht mehr allein mit dieser Aufgabe.'
   cta:
     enable: true
-    label: 'Jetzt kostenlos starten'
-    href: 'https://app.navicarenow.de'
+    label: 'Direkt zum Pflegegrad-Rechner'
+    href: 'https://navicarenow.datafortress.cloud/'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
 features:
@@ -125,8 +125,8 @@ calculator_teaser:
     - 'Erste konkrete nächste Schritte – klar und verständlich'
     - 'Kein Account, kein Abo, kein Kleingedrucktes'
   cta:
-    label: 'Pflegebedarf einschätzen'
-    href: 'https://app.navicarenow.de'
+    label: 'Kostenlosen Rechner starten'
+    href: 'https://navicarenow.datafortress.cloud/'
   trust_line: 'Kostenlos · Anonym · Dauert 5–8 Minuten'
   whats_next: 'Nach dem Rechner sehen Sie Ihr persönliches Ergebnis mit einer Übersicht aller Leistungen, die in Ihrer Situation infrage kommen. Wenn Sie möchten, können Sie direkt ein kostenloses Profil anlegen und die Begleitung vertiefen.'
 
@@ -145,8 +145,8 @@ pricing:
         - 'Pflegeportrait erstellen'
         - 'Pflegetagebuch & Erinnerungen'
         - 'KI-Assistent für Pflegefragen'
-      cta_label: 'Jetzt kostenlos starten'
-      cta_href: 'https://app.navicarenow.de'
+      cta_label: 'Zum Rechner & kostenlos starten'
+      cta_href: 'https://navicarenow.datafortress.cloud/'
     - name: 'Plus'
       popular: true
       price: '29,99 € / Monat'
@@ -158,7 +158,7 @@ pricing:
         - 'Geteiltes Tagebuch für bis zu 5 Familienmitglieder'
         - 'Verlauf über 90 Tage · Wochenbericht-PDF'
       cta_label: 'Plus testen'
-      cta_href: 'https://app.navicarenow.de'
+      cta_href: 'https://navicarenow.datafortress.cloud/'
     - name: 'Pro'
       price: '59–79 € / Monat'
       target: 'Für komplexe Situationen mit mehreren Diagnosen oder vielen Medikamenten.'
@@ -169,7 +169,7 @@ pricing:
         - 'Antragshilfe: Pflegegrad Schritt für Schritt beantragen'
         - 'Widerspruchsservice bei Ablehnung'
       cta_label: 'Pro entdecken'
-      cta_href: 'https://app.navicarenow.de'
+      cta_href: 'https://navicarenow.datafortress.cloud/'
     - name: 'Care'
       price: '99–149 € / Monat'
       target: 'Für alle, die die Organisation komplett abgeben möchten.'
@@ -204,8 +204,8 @@ benefits:
       amount: 'Bis zu 4.180 € pro Maßnahme'
       description: 'Für Haltegriffe, barrierefreie Dusche oder Rampen – aber nur, wenn der Antrag VOR dem Umbau gestellt wird.'
   closing_sentence: 'NaviCare Now zeigt Ihnen, was Ihnen zusteht und wie Sie es bekommen.'
-  cta_label: 'Meine Leistungen prüfen'
-  cta_href: 'https://app.navicarenow.de'
+  cta_label: 'Leistungen im Rechner ermitteln'
+  cta_href: 'https://navicarenow.datafortress.cloud/'
 
 ############################ Sektion 9 – FÜR WEN IST NAVICARE NOW? ##################################
 personas:
@@ -280,8 +280,8 @@ cta:
   title: 'Sie haben lange genug alleine navigiert.'
   subtitle: 'In unter 10 Minuten wissen Sie, wo Sie stehen, was Ihnen zusteht, was Sie jetzt tun können und dass Sie nicht alleine damit sind.'
   primary_button:
-    label: 'Pflegebedarf einschätzen'
-    href: 'https://app.navicarenow.de'
+    label: 'Jetzt Pflegebedarf berechnen'
+    href: 'https://navicarenow.datafortress.cloud/'
   secondary_button:
     enable: true
     label: 'Zuerst mehr erfahren'

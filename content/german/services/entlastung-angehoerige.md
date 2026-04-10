@@ -18,4 +18,4 @@ NaviCare Now stellt den Menschen in den Mittelpunkt – und dazu gehören auch S
 - **Organisation in der Familie:** Koordinieren Sie Aufgaben mit Geschwistern oder Partnern direkt in der App, um die Last auf mehrere Schultern zu verteilen.
 - **Impulse:** Erhalten Sie täglich kleine Tipps für Pausen und Selbstfürsorge im stressigen Pflegealltag.
 
-[Jetzt Unterstützung finden](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt Unterstützung finden</a>

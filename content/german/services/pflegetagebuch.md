@@ -18,4 +18,4 @@ Mit dem digitalen Pflegetagebuch von NaviCare Now dokumentieren Sie den Zustand 
 - **Export-Funktion:** Erstellen Sie auf Knopfdruck ein PDF-Protokoll für den Arzt oder den Pflegedienst.
 - **Teilen mit der Familie:** In der Plus-Version können bis zu 5 Familienmitglieder gemeinsam im Tagebuch dokumentieren – ideal für Geschwistergruppen.
 
-[Kostenloses Pflegetagebuch starten](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Kostenloses Pflegetagebuch starten</a>

@@ -1,4 +1,40 @@
 {{ "<!-- navigation -->" | safeHTML }}
+<style>
+  .pulse {
+    animation: pulse-animation 2s infinite;
+  }
+
+  @keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .announcement-banner {
+    background-color: #0C445A;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 1030;
+    position: relative;
+  }
+
+  .announcement-banner a {
+    color: #00A2B5;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+</style>
+
+<div class="announcement-banner">
+  <div class="container">
+    🚀 Neu: Kostenloser Pflegegrad-Rechner! Erfahren Sie Ihre Ansprüche in unter 10 Minuten. 
+    <a href="https://navicarenow.datafortress.cloud/">Jetzt berechnen</a>
+  </div>
+</div>
+
 {{if site.Params.top_hedaer}}
 <div class="header-top bg-primary">
   <div class="container">
@@ -116,7 +152,7 @@
         {{ if site.Params.navigation_button_solid.enable }}
         {{ "<!-- account btn -->" | safeHTML }}
         <a href="{{ site.Params.navigation_button_solid.link | absLangURL }}" target="_blank"
-          class="btn btn-primary ms-2 ms-lg-3">{{ site.Params.navigation_button_solid.label }}</a>
+          class="btn btn-primary ms-2 ms-lg-3 pulse">{{ site.Params.navigation_button_solid.label }}</a>
         {{ end }}
       </div>
     </div>

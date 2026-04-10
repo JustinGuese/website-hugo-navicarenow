@@ -49,4 +49,4 @@ Wir wissen, dass diese Zahlen und Regeln erst einmal erschlagend wirken. Deshalb
 
 **Fazit:** Lassen Sie kein Geld liegen, das Ihnen zusteht. Es ist kein „Almosen“, sondern eine gesetzlich verankerte Unterstützung für Ihre wertvolle Arbeit als pflegende Angehörige.
 
-[Jetzt Ihre Leistungen prüfen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt Ihre Leistungen prüfen</a>

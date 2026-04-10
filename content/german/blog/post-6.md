@@ -55,4 +55,4 @@ Wir haben NaviCare Now gebaut, um genau diese schleichenden Veränderungen sicht
 
 **Fazit:** Achten Sie auf die kleinen Zeichen. Je früher Sie handeln, desto länger können Ihre Eltern sicher und selbstbestimmt zu Hause leben.
 
-[Jetzt Warnzeichen erkennen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt Warnzeichen erkennen</a>

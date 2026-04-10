@@ -19,4 +19,4 @@ NaviCare Now zeigt Ihnen konkret für Ihre Situation, welche Gelder und Sachleis
 - **Wohnraumanpassung:** Wir erklären, wie Sie bis zu 4.000 € für Haltegriffe oder barrierefreie Duschen beantragen.
 - **Übersetzung:** Wir machen aus Behördendeutsch verständliche Anleitungen.
 
-[Meine Leistungen prüfen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Meine Leistungen prüfen</a>

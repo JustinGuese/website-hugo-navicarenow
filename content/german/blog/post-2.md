@@ -50,4 +50,4 @@ Mit der NaviCare Now App wird die Vorbereitung zum Kinderspiel. Nutzen Sie unser
 
 **Fazit:** Ein erfolgreicher Pflegegrad-Antrag ist kein Glücksspiel, sondern eine Frage der richtigen Vorbereitung.
 
-[Jetzt Pflegegrad einschätzen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt Pflegegrad einschätzen</a>

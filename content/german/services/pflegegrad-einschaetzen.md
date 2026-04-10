@@ -18,4 +18,4 @@ Mit dem NaviCare Now Pflegegradrechner erhalten Sie in unter 10 Minuten eine fun
 - **Leistungsübersicht:** Wir zeigen Ihnen, wie viel Pflegegeld oder Sachleistungen Ihnen bei dieser Einstufung zustehen würden.
 - **Konkrete Schritte:** Sie erfahren, wie Sie den Antrag stellen und worauf Sie beim Besuch des Gutachters achten müssen.
 
-[Jetzt Pflegebedarf einschätzen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt kostenlos Pflegebedarf berechnen</a>

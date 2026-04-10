@@ -18,4 +18,4 @@ NaviCare Now bietet Ihnen einen strukturierten Medikamentenplan mit intelligente
 - **Einnahme-Kontrolle:** Dokumentieren Sie mit einem Klick, ob die Tablette genommen wurde – für Ihre Sicherheit und den nächsten Arztbesuch.
 - **Aktualität:** Änderungen im Plan können Sie jederzeit einfach und sicher hinterlegen.
 
-[Medikamentenplan jetzt anlegen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Medikamentenplan jetzt anlegen</a>

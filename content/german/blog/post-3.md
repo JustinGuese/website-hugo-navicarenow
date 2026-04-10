@@ -53,4 +53,4 @@ Wir haben NaviCare Now speziell für Menschen wie Sandra entwickelt. Wir geben I
 
 **Fazit:** Sie müssen das nicht alleine schaffen. Nutzen Sie die verfügbaren Hilfen und fordern Sie Unterstützung ein.
 
-[Jetzt Unterstützung finden](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt Unterstützung finden</a>

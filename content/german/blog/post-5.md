@@ -51,4 +51,4 @@ Wir haben NaviCare Now so entwickelt, dass es als neutrale Informationsquelle di
 
 **Fazit:** Häusliche Pflege ist ein Marathon. Nur wenn Sie als Familie an einem Strang ziehen, kommen Sie sicher ins Ziel.
 
-[Jetzt als Familie starten](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt als Familie starten</a>

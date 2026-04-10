@@ -97,7 +97,7 @@ html {
           <p class="mb-4 fs-5">{{ .subtitle | markdownify }}</p>
           <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
             {{ if .button.enable }}
-            <a type="button" class="btn btn-primary btn-lg" href="{{ .button.button_modal_target }}">{{ .button.label }} <i class="ms-2 {{ .button.icon }}"></i></a>
+            <a type="button" class="btn btn-primary btn-lg pulse" href="{{ .button.button_modal_target }}">{{ .button.label }} <i class="ms-2 {{ .button.icon }}"></i></a>
             {{ end }}
             {{ if .button_secondary.enable }}
             <a type="button" class="btn btn-outline-primary btn-lg" href="{{ .button_secondary.button_modal_target }}">{{ .button_secondary.label }} <i class="ms-2 {{ .button_secondary.icon }}"></i></a>
@@ -512,7 +512,7 @@ html {
         <h2 class="text-white mb-4 display-5 fw-bold">{{ .title | markdownify }}</h2>
         <p class="lead mb-5 text-white">{{ .subtitle | markdownify }}</p>
         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4">
-          <a type="button" class="btn btn-light btn-lg text-primary fw-bold px-5" href="{{ .primary_button.href }}">{{ .primary_button.label }}</a>
+          <a type="button" class="btn btn-light btn-lg text-primary fw-bold px-5 pulse" href="{{ .primary_button.href }}">{{ .primary_button.label }}</a>
           {{ if .secondary_button.enable }}
           <a type="button" class="btn btn-outline-light btn-lg px-4" href="{{ .secondary_button.href }}">{{ .secondary_button.label }}</a>
           {{ end }}

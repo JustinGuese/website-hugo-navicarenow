@@ -18,4 +18,4 @@ NaviCare Now denkt für Sie mit. Unsere intelligente Risikoanalyse wertet Ihre E
 - **Frühwarnsystem:** Wenn sich Werte verschlechtern, schlägt die App Alarm, damit Sie rechtzeitig einen Arzt oder Pflegedienst hinzuziehen können.
 - **Sicherheit:** Sie müssen kein medizinisches Fachwissen haben – NaviCare Now behält die Expertenstandards für Sie im Blick.
 
-[Mehr über Risikoerkennung erfahren](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Mehr über Risikoerkennung erfahren</a>

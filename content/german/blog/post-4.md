@@ -50,4 +50,4 @@ Wir haben NaviCare Now gebaut, um Ihnen genau diese Orientierung zu geben:
 
 **Fazit:** Das System ist zwar komplex, aber es hält viele Hilfen bereit. Man muss nur wissen, wo man suchen muss.
 
-[Jetzt Orientierung bekommen](https://app.navicarenow.de)
+<a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary mt-3 mb-4">Jetzt Orientierung bekommen</a>

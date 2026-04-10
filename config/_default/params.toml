@@ -32,8 +32,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation buttons
 [navigation_button_solid]
 enable = true
-label = "Soforthilfe"
-link = "https://app.navicarenow.de"
+label = "Zum Pflegegrad-Rechner"
+link = "https://navicarenow.datafortress.cloud/"
 
 [navigation_button_bordered]
 enable = true
