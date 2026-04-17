@@ -1,5 +1,5 @@
 #################### default parameters ################################
-logo = "images/logo_neu.png"
+logo = "images/logo.png"
 logo_text = "NavicareNow"
 logo_width = "120"
 favicon = "images/favicon.png"
