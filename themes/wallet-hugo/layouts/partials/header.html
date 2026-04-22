@@ -5,9 +5,17 @@
   }
 
   @keyframes pulse-animation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.05);
+    }
+
+    100% {
+      transform: scale(1);
+    }
   }
 
   .announcement-banner {
@@ -30,7 +38,7 @@
 
 <div class="announcement-banner">
   <div class="container">
-    🚀 Neu: Kostenloser Pflegegrad-Rechner! Erfahren Sie Ihre Ansprüche in unter 10 Minuten. 
+    🚀 Neu: Kostenlose Pflegebedarfsermittlung! Erfahren Sie Ihre Ansprüche in 15-25 Minuten.
     <a href="https://navicarenow.datafortress.cloud/">Jetzt berechnen</a>
   </div>
 </div>
@@ -45,7 +53,8 @@
           <span class="mx-2">|</span>
           <ul class="list-unstyled list-inline mb-0 lead">
             {{range site.Params.social }}
-            <li class="list-inline-item"><a title="Explorer {{ .title | humanize }} Profile" href="{{ .link }}" class="px-1"><i class="{{ .icon }}"></i></a></li>
+            <li class="list-inline-item"><a title="Explorer {{ .title | humanize }} Profile" href="{{ .link }}"
+                class="px-1"><i class="{{ .icon }}"></i></a></li>
             {{end}}
           </ul>
         </div>
@@ -68,13 +77,16 @@
         {{ $logoPath := site.Params.logo }}
         {{ if fileExists (add `assets/` $logoPath) }}
         {{ $logoResource := resources.Get $logoPath }}
-        <img fetchpriority="high" loading="eager" decoding="async" class="img-fluid" src="{{ $logoResource.RelPermalink }}" alt="{{ site.Title }}" style="max-width: {{ site.Params.logo_width | default "160" }}px;">
+        <img fetchpriority="high" loading="eager" decoding="async" class="img-fluid"
+          src="{{ $logoResource.RelPermalink }}" alt="{{ site.Title }}"
+          style="max-width: {{ site.Params.logo_width | default " 160" }}px;">
         {{ else }}
         {{site.Params.logo_text | markdownify}}
         {{ end }}
       </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -84,7 +96,7 @@
           <li class="nav-item {{if .IsHome}}active{{end}}">
             <a class="nav-link" href="{{ site.BaseURL | relLangURL }}">Home</a>
           </li>
-          
+
           {{ $currentPage := . }}
           {{ range site.Menus.main }}
 
@@ -94,7 +106,8 @@
 
           {{ if .HasChildren }}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               {{ .Name }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -103,15 +116,18 @@
               {{ $drop_menu_item_url := .URL | absLangURL }}
               {{ $active := eq $drop_menu_item_url $page_url}}
 
-              <li><a class="dropdown-item {{if $active}}active{{end}}" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
-                href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | absLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a></li>
+              <li><a class="dropdown-item {{if $active}}active{{end}}" {{if findRE `^http` .URL}}target="_blank"
+                  rel="noopener" {{end}}
+                  href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | absLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{
+                  .Name }}</a></li>
               {{ end }}
             </ul>
           </li>
           {{ else }}
           <li class="nav-item {{if $active}}active{{end}}">
             <a class="nav-link" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
-              href="{{if findRE `^#` .URL}}{{site.BaseURL | absLangURL}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+              href="{{if findRE `^#` .URL}}{{site.BaseURL | absLangURL}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{
+              .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
@@ -129,10 +145,12 @@
                 {{ if eq $translation.Lang .Lang }}
                 {{ $selected := false }}
                 {{ if eq $pageLang .Lang}}
-                <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+                <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName
+                  }}
                 </option>
                 {{ else }}
-                <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+                <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}
+                </option>
                 {{ end }}
                 {{ end }}
                 {{ end }}
@@ -145,8 +163,8 @@
 
         {{ if site.Params.navigation_button_bordered.enable }}
         {{ "<!-- account btn -->" | safeHTML }}
-        <a href="{{ site.Params.navigation_button_bordered.link | absLangURL }}"
-          class="btn btn-outline-primary">{{ site.Params.navigation_button_bordered.label }}</a>
+        <a href="{{ site.Params.navigation_button_bordered.link | absLangURL }}" class="btn btn-outline-primary">{{
+          site.Params.navigation_button_bordered.label }}</a>
         {{ end }}
 
         {{ if site.Params.navigation_button_solid.enable }}

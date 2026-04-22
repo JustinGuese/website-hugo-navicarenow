@@ -58,6 +58,23 @@
             {{.Content}}
           </div>
 
+          {{ if site.Params.subscription.enable }}
+          <div class="mt-5 p-4 bg-tertiary rounded shadow-sm">
+            <h4 class="mb-3">Auf dem Laufenden bleiben</h4>
+            <p class="mb-4">Melden Sie sich für unseren Newsletter und die Warteliste unserer App an, um keine Neuigkeiten zu verpassen.</p>
+            {{ if site.Params.subscription.eocampaign_script }}
+              {{ if findRE `^<script` site.Params.subscription.eocampaign_script }}
+                {{ site.Params.subscription.eocampaign_script | safeHTML }}
+              {{ else }}
+                {{ $script := resources.Get site.Params.subscription.eocampaign_script }}
+                {{ if $script }}
+                <script async src="{{ $script.RelPermalink }}" data-form="{{ site.Params.subscription.eocampaign_form_id }}"></script>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ end }}
+
           <!-- comments -->
           {{ if site.Config.Services.Disqus.Shortname }}
           <div class="mt-5">

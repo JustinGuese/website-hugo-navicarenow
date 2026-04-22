@@ -170,7 +170,7 @@ html {
       {{ range $i, $step := .steps }}
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ mul $i 200 }}">
         <div class="card-hover bg-white p-4 p-lg-5 rounded shadow-sm h-100 position-relative">
-          <div class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-brand px-3 py-2 fs-6">Schritt {{ add $i 1 }}</div>
+          <div class="position-absolute top-0 start-0 translate-middle-y ms-4 badge rounded-pill bg-brand px-3 py-2 fs-6">Schritt {{ add $i 1 }}</div>
           <div class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-brand text-white mb-4 mt-2" style="width: 60px; height: 60px;">
             <i class="{{ $step.icon }} fa-xl"></i>
           </div>
@@ -229,7 +229,7 @@ html {
     <div class="row justify-content-center mb-5">
       {{ range $badge := .trust_badges }}
       <div class="col-auto mb-3">
-        <span class="badge bg-white text-dark border p-2 shadow-sm fs-6 fw-normal"><i class="{{ $badge.icon }} text-primary me-2"></i>{{ $badge.text }}</span>
+        <span class="badge bg-white text-dark border p-2 shadow-sm fs-6 fw-normal text-wrap d-inline-block" style="line-height: 1.4; max-width: 300px;"><i class="{{ $badge.icon }} text-primary me-2"></i>{{ $badge.text }}</span>
       </div>
       {{ end }}
     </div>
@@ -349,6 +349,45 @@ html {
   </div>
 </section>
 {{ end }}
+{{ end }}
+
+<!-- 7.5 NEWSLETTER & WARTELISTE -->
+{{ if site.Params.subscription.enable }}
+<section class="section bg-white" data-aos="fade-up">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="p-4 p-lg-5 rounded-4 shadow-lg border" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="mb-3 text-primary">NaviCare Now App Warteliste</h2>
+              <p class="lead mb-4">Wir bauen die App, die Pflege wirklich einfacher macht. Melden Sie sich jetzt für den frühen Zugang an und erhalten Sie zusätzlich wertvolle Tipps für den Pflegealltag.</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Erfahren Sie als Erste vom App-Start</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Exklusive Tipps zu Pflegeleistungen</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>Kostenfrei & jederzeit abmeldbar</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-white p-4 rounded shadow-sm border">
+                {{ if site.Params.subscription.eocampaign_script }}
+                  {{ if findRE `^<script` site.Params.subscription.eocampaign_script }}
+                    {{ site.Params.subscription.eocampaign_script | safeHTML }}
+                  {{ else }}
+                    {{ $script := resources.Get site.Params.subscription.eocampaign_script }}
+                    {{ if $script }}
+                    <script async src="{{ $script.RelPermalink }}" data-form="{{ site.Params.subscription.eocampaign_form_id }}"></script>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}
 
 <!-- 8. PFLEGELEISTUNGEN-TEASER -->

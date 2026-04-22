@@ -10,9 +10,10 @@ date: 2025-03-12T10:00:00+01:00
 
 Wissen Sie, welcher Pflegegrad Ihrer Mutter oder Ihrem Vater wirklich zusteht? Das deutsche Pflegesystem ist komplex und die Einstufung durch den Medizinischen Dienst (MD) oft eine Hürde.
 
-Mit dem NaviCare Now Pflegegradrechner erhalten Sie in unter 10 Minuten eine fundierte Einschätzung. 
+Mit dem NaviCare Now Pflegebedarfrechner erhalten Sie in 15-25 Minuten eine fundierte Einschätzung.
 
 ### Was der Rechner für Sie tut:
+
 - **8 einfache Fragen:** Wir fragen nach der Selbstständigkeit im Alltag, nicht nach Paragraphen.
 - **Sofort-Ergebnis:** Sie sehen direkt, welcher Pflegegrad wahrscheinlich ist.
 - **Leistungsübersicht:** Wir zeigen Ihnen, wie viel Pflegegeld oder Sachleistungen Ihnen bei dieser Einstufung zustehen würden.

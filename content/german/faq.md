@@ -10,7 +10,7 @@ faq:
 
 faq_item:
   - title: 'Ist NaviCare Now kostenlos?'
-    content: 'Der Start ist vollständig kostenlos. Ohne Kreditkarte, ohne Abo, ohne Tricks. Der Pflegebedarfsrechner, das Basisprofil und das Pflegetagebuch stehen dauerhaft gratis zur Verfügung. Wer mehr möchte, kann jederzeit upgraden und jederzeit auch wieder kündigen.'
+    content: 'Der Start ist vollständig kostenlos. Ohne Kreditkarte, ohne Abo, ohne Tricks. Der Pflegebedarfsrechner, das Basisprofil und das Pflegetagebuch stehen dauerhaft gratis zur Verfügung.'
 
   - title: 'Sind meine Gesundheitsdaten sicher?'
     content: 'Ja. Ihre Daten werden auf EU-Servern in Deutschland gespeichert, nach DSGVO Art. 9 verarbeitet und niemals an Dritte weitergegeben oder für Werbung genutzt. Sie entscheiden jederzeit, was gespeichert wird und können alles löschen.'

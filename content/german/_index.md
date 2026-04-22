@@ -49,7 +49,7 @@ how_it_works:
       description: 'NaviCare Now begleitet Sie im Alltag: mit dem Pflegetagebuch, Erinnerungen, verständlichen Erklärungen zu Leistungen und einem täglichen Impuls. Sie fühlen sich nicht mehr allein mit dieser Aufgabe.'
   cta:
     enable: true
-    label: 'Direkt zum Pflegegrad-Rechner'
+    label: 'Direkt zum Pflegebedarfsermittlung'
     href: 'https://navicarenow.datafortress.cloud/'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
@@ -132,7 +132,7 @@ calculator_teaser:
 
 ############################ Sektion 7 – ABO-ÜBERSICHT ##################################
 pricing:
-  enable: true
+  enable: false
   title: 'Starten Sie kostenlos. Bleiben Sie, weil es hilft.'
   subtitle: 'NaviCare Now ist auch kostenlos nutzbar und wächst mit Ihrem Bedarf. Kein Vertrag, kein Risiko.'
   plans:
@@ -267,7 +267,7 @@ faq:
   title: 'Häufig gestellte Fragen'
   faq_items:
     - question: 'Ist NaviCare Now kostenlos?'
-      answer: 'Der Start ist vollständig kostenlos. Ohne Kreditkarte, ohne Abo, ohne Tricks. Der Pflegebedarfsrechner, das Basisprofil und das Pflegetagebuch stehen dauerhaft gratis zur Verfügung. Wer mehr möchte, kann jederzeit upgraden und jederzeit auch wieder kündigen.'
+      answer: 'Der Start ist vollständig kostenlos. Ohne Kreditkarte, ohne Abo, ohne Tricks. Der Pflegebedarfsrechner, das Basisprofil und das Pflegetagebuch stehen dauerhaft gratis zur Verfügung.'
     - question: 'Sind meine Gesundheitsdaten sicher?'
       answer: 'Ja. Ihre Daten werden auf EU-Servern in Deutschland gespeichert, nach DSGVO Art. 9 verarbeitet und niemals an Dritte weitergegeben oder für Werbung genutzt. Sie entscheiden jederzeit, was gespeichert wird und können alles löschen.'
     - question: 'Bin ich pflegebedürftig genug für NaviCare Now?'
@@ -289,5 +289,5 @@ cta:
     enable: true
     label: 'Zuerst mehr erfahren'
     href: '#how-it-works'
-  trust_line: 'Kostenlos starten · Kein Account nötig · Jederzeit kündbar'
+  trust_line: 'Kostenlos starten · Kein Account nötig'
 ---

@@ -31,6 +31,7 @@ Es geht nicht darum zu übertreiben, sondern ehrlich darzustellen, wo die Grenze
 Nichts überzeugt einen Gutachter mehr als eine lückenlose Dokumentation. Wer täglich notiert, wo Hilfe bei der Körperpflege, Ernährung oder Mobilität nötig war, hat handfeste Beweise statt vager Erinnerungen.
 
 ### Was ein gutes Tagebuch enthalten sollte:
+
 - **Dauer der Unterstützung:** Wie lange brauchen Sie für die tägliche Hygiene?
 - **Häufigkeit:** Wie oft müssen Sie beim Essen oder Trinken unterstützen?
 - **Besondere Vorfälle:** Gab es Stürze, Verwirrtheit oder nächtliche Unruhe?
@@ -40,13 +41,14 @@ Nichts überzeugt einen Gutachter mehr als eine lückenlose Dokumentation. Wer t
 Angehörige sollten unbedingt beim Termin dabei sein. Sie kennen den Alltag am besten und können Details ergänzen, die der Pflegebedürftige vielleicht vergisst oder unbewusst beschönigt.
 
 ### Checkliste für den Termin:
+
 - **Unterlagen bereitlegen:** Arztberichte, Diagnosen, Medikamentenplan.
 - **Wohnsituation zeigen:** Hilfsmittel wie Haltegriffe, Rampen oder ein Pflegebett vorführen.
 - **Ruhige Atmosphäre:** Schalten Sie Störquellen wie den Fernseher aus.
 
 ## NaviCare Now: Ihr digitaler Begleiter
 
-Mit der NaviCare Now App wird die Vorbereitung zum Kinderspiel. Nutzen Sie unser digitales Pflegetagebuch, um schon Wochen vor dem Termin Daten zu sammeln. Unser Pflegegradrechner gibt Ihnen vorab eine Einschätzung, damit Sie wissen, worauf der Gutachter besonders achten wird.
+Mit der NaviCare Now App wird die Vorbereitung zum Kinderspiel. Nutzen Sie unser digitales Pflegetagebuch, um schon Wochen vor dem Termin Daten zu sammeln. Unser Pflegebedarfrechner gibt Ihnen vorab eine Einschätzung, damit Sie wissen, worauf der Gutachter besonders achten wird.
 
 **Fazit:** Ein erfolgreicher Pflegegrad-Antrag ist kein Glücksspiel, sondern eine Frage der richtigen Vorbereitung.
 

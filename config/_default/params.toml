@@ -32,7 +32,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation buttons
 [navigation_button_solid]
 enable = true
-label = "Zum Pflegegrad-Rechner"
+label = "Zum Pflegebedarfsermittlung"
 link = "https://navicarenow.datafortress.cloud/"
 
 [navigation_button_bordered]
@@ -48,6 +48,8 @@ section = "services"
 [subscription]
 enable = true
 description = "Tragen sie sich jetzt ein um immer die neuesten News in Sachen Pflegeförderungen und Unterstützung informiert zu sein"
+eocampaign_script = "js/newsletteroctopus.js"
+eocampaign_form_id = "4bc6c7ea-3e5a-11f1-8414-e33116518703"
 # mailchimp subsciption
 mailchimp_form_action = "https://formspree.io/f/xblqgzro" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours

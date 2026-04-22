@@ -25,6 +25,7 @@ Als pflegende Angehörige sind Sie oft schon mit der täglichen Versorgung voll 
 Wenn Sie die Pflege eines Angehörigen zu Hause selbst übernehmen (oder mit Hilfe von Freunden und Verwandten), haben Sie ab Pflegegrad 2 Anspruch auf Pflegegeld. Dieses Geld ist zur freien Verfügung und soll die Pflegebereitschaft der Angehörigen anerkennen und unterstützen.
 
 ### Die Beträge im Überblick (Stand 2025):
+
 - **Pflegegrad 2:** 332 € monatlich
 - **Pflegegrad 3:** 573 € monatlich
 - **Pflegegrad 4:** 765 € monatlich
@@ -35,15 +36,18 @@ Wenn Sie die Pflege eines Angehörigen zu Hause selbst übernehmen (oder mit Hil
 Neben dem Pflegegeld gibt es weitere Töpfe, die oft ungenutzt bleiben:
 
 ### 1. Der Entlastungsbetrag (125 € monatlich)
+
 Jeder Pflegebedürftige (auch bei Pflegegrad 1) hat Anspruch auf 125 Euro pro Monat für zusätzliche Betreuungs- und Entlastungsleistungen. Das kann eine Haushaltshilfe sein, eine Alltagsbegleitung oder die Teilnahme an einer Betreuungsgruppe. **Wichtig:** Nicht genutztes Geld kann bis zum 30. Juni des Folgejahres angespart werden!
 
 ### 2. Verhinderungspflege (bis zu 2.418 € jährlich)
+
 Wenn Sie als Hauptpflegeperson krank sind, in den Urlaub fahren oder einfach mal eine Pause brauchen, übernimmt die Kasse die Kosten für eine Ersatzpflege. Zusammen mit Mitteln aus der Kurzzeitpflege stehen Ihnen hier jährlich stattliche Summen zur Verfügung.
 
 ## Wie NaviCare Now Ihnen hilft
 
 Wir wissen, dass diese Zahlen und Regeln erst einmal erschlagend wirken. Deshalb haben wir NaviCare Now entwickelt:
-- **Pflegegradrechner:** Ermitteln Sie in Minuten, welcher Grad wahrscheinlich passt.
+
+- **Pflegebedarfrechner:** Ermitteln Sie in Minuten, welcher Grad wahrscheinlich passt.
 - **Leistungs-Check:** Wir zeigen Ihnen genau, welche Beträge Sie abrufen können.
 - **Antragshilfe:** Wir führen Sie Schritt für Schritt durch das Behörden-Chaos.
 

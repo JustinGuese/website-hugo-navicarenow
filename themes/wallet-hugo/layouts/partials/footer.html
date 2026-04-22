@@ -39,9 +39,19 @@
       {{if .enable }}
       <div class="col-lg-4 col-md-12 newsletter-form">
         <div style="background-color: #F4F4F4; padding: 35px;">
-          <h5 class="mb-4 text-primary font-secondary">{{i18n `subscribe`}}</h5>
+          <h5 class="mb-4 text-primary font-secondary">{{i18n `subscribe` | default "Newsletter & Warteliste" }}</h5>
 
           <div class="pe-0 pe-xl-5">
+            {{ if .eocampaign_script }}
+              {{ if findRE `^<script` .eocampaign_script }}
+                {{ .eocampaign_script | safeHTML }}
+              {{ else }}
+                {{ $script := resources.Get .eocampaign_script }}
+                {{ if $script }}
+                <script async src="{{ $script.RelPermalink }}" data-form="{{ .eocampaign_form_id }}"></script>
+                {{ end }}
+              {{ end }}
+            {{ else }}
             <form action="{{ .mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
               <div class="input-group mb-3">
                 <input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address">
@@ -53,9 +63,12 @@
                 <input type="text" name="{{ .mailchimp_form_name }}" tabindex="-1">
               </div>
             </form>
+            {{ end }}
           </div>
 
+          {{ if not .eocampaign_script }}
           <p class="mb-0">{{.description | markdownify}}</p>
+          {{ end }}
         </div>
         </div>
       {{ end }}
