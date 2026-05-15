@@ -43,7 +43,7 @@ how_it_works:
       description: 'NaviCare Now begleitet Sie im Alltag: mit dem Pflegetagebuch, Erinnerungen, verständlichen Erklärungen zu Leistungen und einem täglichen Impuls. Sie fühlen sich nicht mehr allein mit dieser Aufgabe.'
   cta:
     enable: true
-    label: 'Direkt zum Pflegebedarfsermittlung'
+    label: 'Direkt zur Pflegebedarfsermittlung'
     href: 'https://navicarenow.datafortress.cloud/'
 
 ############################ Sektion 3.5 – PILLARS ##################################
@@ -120,7 +120,7 @@ partner_cta:
   enable: true
   title: 'Jetzt innovativer Kooperationspartner werden'
   description: 'Ob Pflegedienst, Klinik, Kasse oder Hochschule — schreiben Sie uns an und lassen Sie uns gemeinsam die Zukunft gestalten.'
-  button_label: 'Gespräch anfragen →'
+  button_label: 'Gespräch vereinbaren →'
   button_link: 'mailto:info@navicarenow.de'
 
 ############################ Sektion 5 – SOCIAL PROOF ##################################
@@ -383,6 +383,6 @@ cta:
   title: 'Pflege und Versorgung neu <span>navigieren.</span> Gemeinsam.'
   subtitle: 'Wir sind noch am Anfang — und genau deshalb ist Ihr Einstieg jetzt so wertvoll. Lassen Sie uns sprechen.'
   primary_button:
-    label: 'Gespräch anfragen →'
+    label: 'Gespräch vereinbaren →'
     href: 'mailto:info@navicarenow.de'
 ---
