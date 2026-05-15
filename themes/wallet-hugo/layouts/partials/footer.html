@@ -1,4 +1,4 @@
-<footer class="bg-light border-top">
+<footer class="border-top">
   <div class="container py-5">
     <div class="row g-5">
       <div class="col-lg-4 text-center text-lg-start">
@@ -8,7 +8,7 @@
           {{ $logoResource := resources.Get $logoPath }}
           <img loading="lazy" decoding="async" class="footer-icon me-3" src="{{ $logoResource.RelPermalink }}" alt="{{ site.Title }}" style="height: 52px;">
           {{ end }}
-          <div class="footer-wordmark text-dark">NaviCare <span class="now">Now</span><sup>®</sup></div>
+          <div class="footer-wordmark text-white">NaviCare <span class="now">Now</span><sup>®</sup></div>
         </div>
         <p class="text-muted small mb-4">NaviCare Now GmbH i.G. · Bayern · NRW · deutschlandweit</p>
         <div class="social-icons">
@@ -19,7 +19,7 @@
       </div>
 
       <div class="col-lg-2 col-md-4 col-6">
-        <h5 class="text-dark mb-4">{{ i18n `service` }}</h5>
+        <h5 class="text-white mb-4">{{ i18n `service` }}</h5>
         <ul class="list-unstyled small">
           {{ with site.GetPage "section" (string site.Params.service_section.section) }}
           {{ range .Data.Pages }}
@@ -30,7 +30,7 @@
       </div>
 
       <div class="col-lg-2 col-md-4 col-6">
-        <h5 class="text-dark mb-4">{{ i18n `links` | default "Links" }}</h5>
+        <h5 class="text-white mb-4">{{ i18n `links` | default "Links" }}</h5>
         <ul class="list-unstyled small">
           {{ range site.Menus.footer }}
           <li class="mb-2"><a href="{{ .URL | absLangURL }}" class="text-muted">{{ .Name }}</a></li>
