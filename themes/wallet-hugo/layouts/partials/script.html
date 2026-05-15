@@ -37,7 +37,7 @@
   {{$fontFamilies = $fontFamilies | append (printf "%s&display=swap" (. | default `Rubik:wght@400;500;700`)) }}
 {{ end }}
 {{$fontFamiliesJSON := $fontFamilies | jsonify }}
-<script type="application/javascript" data-font-families='{{ $fontFamiliesJSON | htmlEscape }}'>
+<script type="application/javascript" data-font-families="{{ $fontFamiliesJSON }}">
   (function() {
     if (typeof window === 'undefined') return;
     if (sessionStorage.fontsLoaded === 'true') return;

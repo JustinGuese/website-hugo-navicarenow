@@ -61,6 +61,21 @@ expire_days = 2
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
+[variables]
+primary_font = "Rubik:wght@400;500;700"
+secondary_font = "Gruppo"
+primary_color = "#E86A5C" # Coral
+secondary_color = "#7B5EA7" # Lila
+tertiary_color = "#16477E" # Navy
+quaternary_color = "#2DCDC8" # Türkis
+text_color = "#888888"
+text_color_dark = "#0D0D0D"
+text_color_light = "rgba(0,0,0,0.55)"
+body_color = "#FFFFFF" # White
+white = "#FFFFFF"
+black = "#0D0D0D"
+dark = "#F8F9FA" # Light gray for "dark" sections
+light = "#FFFFFF" # White for "light" sections
 
 ######################## sidebar widgets #########################
 [widgets]

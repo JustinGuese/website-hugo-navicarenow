@@ -19,7 +19,7 @@
   }
 
   .announcement-banner {
-    background-color: #0C445A;
+    background-color: #0D0D0D;
     color: white;
     padding: 8px 0;
     text-align: center;
@@ -30,7 +30,7 @@
   }
 
   .announcement-banner a {
-    color: #00A2B5;
+    color: var(--teal);
     text-decoration: underline;
     margin-left: 10px;
   }
@@ -44,7 +44,7 @@
 </div>
 
 {{if site.Params.top_hedaer}}
-<div class="header-top bg-primary">
+<div class="header-top bg-light">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-2 mb-lg-0">
@@ -79,7 +79,7 @@
         {{ $logoResource := resources.Get $logoPath }}
         <img fetchpriority="high" loading="eager" decoding="async" class="img-fluid"
           src="{{ $logoResource.RelPermalink }}" alt="{{ site.Title }}"
-          style="max-width: {{ site.Params.logo_width | default " 160" }}px;">
+          style="max-height: 60px; width: auto;">
         {{ else }}
         {{site.Params.logo_text | markdownify}}
         {{ end }}
@@ -163,14 +163,14 @@
 
         {{ if site.Params.navigation_button_bordered.enable }}
         {{ "<!-- account btn -->" | safeHTML }}
-        <a href="{{ site.Params.navigation_button_bordered.link | absLangURL }}" class="btn btn-outline-primary">{{
+        <a href="{{ site.Params.navigation_button_bordered.link | absLangURL }}" class="btn btn-secondary-custom">{{
           site.Params.navigation_button_bordered.label }}</a>
         {{ end }}
 
         {{ if site.Params.navigation_button_solid.enable }}
         {{ "<!-- account btn -->" | safeHTML }}
         <a href="{{ site.Params.navigation_button_solid.link | absLangURL }}" target="_blank"
-          class="btn btn-primary ms-2 ms-lg-3 pulse">{{ site.Params.navigation_button_solid.label }}</a>
+          class="btn btn-primary-custom ms-2 ms-lg-3 pulse">{{ site.Params.navigation_button_solid.label }}</a>
         {{ end }}
       </div>
     </div>

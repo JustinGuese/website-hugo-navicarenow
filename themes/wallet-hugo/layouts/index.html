@@ -1,514 +1,130 @@
 {{ define "main" }}
 
-<style>
-/* primary buttons use brand color */
-.btn-primary {
-  background-color: #0C445A !important;
-  border-color: #0C445A !important;
-  color: #fff !important;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: #073244 !important;
-  border-color: #073244 !important;
-  box-shadow: 0 6px 18px rgba(12,68,90,0.25) !important;
-  color: #fff !important;
-}
-/* secondary outline buttons */
-.btn-outline-primary {
-  background-color: transparent !important;
-  border-color: #0C445A !important;
-  color: #0C445A !important;
-  border-width: 2px !important;
-}
-.btn-outline-primary:hover,
-.btn-outline-primary:focus,
-.btn-outline-primary:active {
-  background-color: #0C445A !important;
-  border-color: #0C445A !important;
-  color: #fff !important;
-  box-shadow: 0 6px 18px rgba(12,68,90,0.25) !important;
-}
-/* Transitions */
-.card-hover { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
-.card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(12,68,90,0.15) !important;
-}
-.icon-wrapper { transition: transform 0.4s cubic-bezier(0.4,0,0.2,1); }
-.card-hover:hover .icon-wrapper { transform: scale(1.1) rotate(5deg); }
-
-/* brand background utility */
-.bg-brand {
-  background-color: #00A2B5 !important;
-  color: #fff !important;
-}
-
-/* Pricing Cards */
-.pricing-card {
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-.pricing-card.popular {
-  border-color: #00A2B5;
-  transform: scale(1.05);
-  z-index: 2;
-}
-@media (max-width: 991px) {
-  .pricing-card.popular { transform: none; }
-}
-
-/* Stats Block */
-.stat-box {
-  border-left: 4px solid #00A2B5;
-}
-
-/* FAQ accordion animations */
-.accordion-item {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-left: 3px solid transparent !important;
-}
-.accordion-item:hover {
-  border-left-color: #00A2B5 !important;
-  background-color: rgba(0,162,181,0.03);
-  transform: translateX(5px);
-}
-.accordion-button:not(.collapsed) {
-  background-color: rgba(12,68,90,0.08) !important;
-  color: #0C445A !important;
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-</style>
-
 <!-- 1. HERO -->
 {{ if .Params.banner.enable }}
 {{ with .Params.banner }}
-<section class="banner bg-tertiary position-relative overflow-hidden pt-5 pb-5" data-aos="fade-up" data-aos-duration="800">
-  <div class="container mt-5">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <div class="block text-center text-lg-start pe-0 pe-xl-5">
-          <h1 class="mb-4">{{ .title | markdownify }}</h1>
-          <p class="mb-4 fs-5">{{ .subtitle | markdownify }}</p>
-          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
-            {{ if .button.enable }}
-            <a type="button" class="btn btn-primary btn-lg pulse" href="{{ .button.button_modal_target }}">{{ .button.label }} <i class="ms-2 {{ .button.icon }}"></i></a>
-            {{ end }}
-            {{ if .button_secondary.enable }}
-            <a type="button" class="btn btn-outline-primary btn-lg" href="{{ .button_secondary.button_modal_target }}">{{ .button_secondary.label }} <i class="ms-2 {{ .button_secondary.icon }}"></i></a>
-            {{ end }}
-          </div>
-          {{ if .trust_element }}
-          <div class="text-muted small fw-bold"><i class="fas fa-check-circle text-success me-2"></i>{{ .trust_element }}</div>
-          {{ end }}
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="ps-lg-5 text-center">
-          {{ if .image }}
-          {{ $img := resources.Get (.image) }}
-          {{ if $img }}
-          {{ $img := $img.Resize "800x q80 webp" }}
-          <img fetchpriority="high" decoding="async" loading="eager" src="{{ $img.RelPermalink }}" alt="{{ .title }}" class="w-100 rounded shadow-lg" width="{{ $img.Width }}" height="{{ $img.Height }}">
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 2. PROBLEM -->
-{{ if .Params.problem.enable }}
-{{ with .Params.problem }}
-<section class="section bg-white position-relative" data-aos="fade-up" data-aos-duration="800">
-  <div class="container">
-    <div class="row justify-content-center mb-5 text-center">
-      <div class="col-lg-8">
-        <h2 class="mb-4">{{ .title | markdownify }}</h2>
-      </div>
-    </div>
-    <div class="row g-4 justify-content-center">
-      {{ range $i, $p := .problems }}
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ mul $i 150 }}">
-        <div class="card-hover h-100 p-4 rounded-3 shadow-sm border-0 bg-light text-center">
-          <div class="mb-3">
-            <i class="{{ $p.icon }} fa-3x text-secondary opacity-50"></i>
-          </div>
-          <p class="h5 fw-normal text-dark">„{{ $p.title }}“</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <div class="row mt-5">
-      <div class="col-12 text-center">
-        <h3 class="text-primary">{{ .bridge | markdownify }}</h3>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 3. SO FUNKTIONIERT ES -->
-{{ if .Params.how_it_works.enable }}
-{{ with .Params.how_it_works }}
-<section id="how-it-works" class="section bg-tertiary" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
-      <p class="text-primary text-uppercase fw-bold mb-2">So funktioniert es</p>
-      <h2>{{ .title | markdownify }}</h2>
-    </div>
-    <div class="row g-4 position-relative">
-      {{ range $i, $step := .steps }}
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ mul $i 200 }}">
-        <div class="card-hover bg-white p-4 p-lg-5 rounded shadow-sm h-100 position-relative">
-          <div class="position-absolute top-0 start-0 translate-middle-y ms-4 badge rounded-pill bg-brand px-3 py-2 fs-6">Schritt {{ add $i 1 }}</div>
-          <div class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-brand text-white mb-4 mt-2" style="width: 60px; height: 60px;">
-            <i class="{{ $step.icon }} fa-xl"></i>
-          </div>
-          <p class="text-uppercase text-muted small fw-bold mb-2">{{ $step.icon_label }}</p>
-          <h4 class="mb-3">{{ $step.title }}</h4>
-          <p class="text-muted mb-0">{{ $step.description }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    {{ if .cta.enable }}
-    <div class="text-center mt-5">
-      <a href="{{ .cta.href }}" class="btn btn-primary btn-lg">{{ .cta.label }}</a>
-    </div>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 4. KERNFEATURE-ÜBERSICHT -->
-{{ if .Params.features.enable }}
-{{ with .Params.features }}
-<section class="section" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2>{{ .title | markdownify }}</h2>
-      <p class="lead text-muted">{{ .subtitle | markdownify }}</p>
-    </div>
-    <div class="row g-4">
-      {{ range $i, $feature := .items }}
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ mul $i 100 }}">
-        <div class="card-hover border p-4 rounded h-100 bg-white">
-          <div class="d-flex align-items-center mb-3">
-            <div class="icon-wrapper bg-light rounded text-primary d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">
-              <i class="{{ $feature.icon }} fa-lg"></i>
-            </div>
-            <span class="text-uppercase text-muted small fw-bold">{{ $feature.icon_label }}</span>
-          </div>
-          <h4 class="h5 mb-3">{{ $feature.title }}</h4>
-          <p class="text-muted mb-0">{{ $feature.description }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 5. SOCIAL PROOF -->
-{{ if .Params.social_proof.enable }}
-{{ with .Params.social_proof }}
-<section class="section bg-tertiary overflow-hidden" data-aos="fade-up">
-  <div class="container">
-    <div class="row justify-content-center mb-5">
-      {{ range $badge := .trust_badges }}
-      <div class="col-auto mb-3">
-        <span class="badge bg-white text-dark border p-2 shadow-sm fs-6 fw-normal text-wrap d-inline-block" style="line-height: 1.4; max-width: 300px;"><i class="{{ $badge.icon }} text-primary me-2"></i>{{ $badge.text }}</span>
-      </div>
-      {{ end }}
-    </div>
-    
-    <div class="row g-4 mb-5">
-      {{ range $i, $t := .testimonials }}
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ mul $i 150 }}">
-        <div class="card-hover bg-white p-4 rounded shadow-sm h-100 d-flex flex-column">
-          <div class="mb-auto">
-            <div class="text-primary mb-3"><i class="fas fa-quote-left fa-2x opacity-25"></i></div>
-            <p class="fst-italic">„{{ $t.text }}“</p>
-          </div>
-          <div class="mt-4 border-top pt-3">
-            <h5 class="mb-1">{{ $t.name }}</h5>
-            <small class="text-muted">{{ $t.role }}</small>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-
-    <div class="row g-4 justify-content-center text-center">
-      {{ range $i, $s := .stats }}
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ mul $i 100 }}">
-        <div class="p-3">
-          <h2 class="display-4 text-primary fw-bold mb-2">{{ $s.value }}</h2>
-          <p class="h6 mb-2">{{ $s.label }}</p>
-          <small class="text-muted">Quelle: {{ $s.source }}</small>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <div class="row mt-4">
-      <div class="col-12 text-center">
-        <p class="h5 mb-4">Gehören Sie zu den 86%? Finden Sie in 8 Minuten heraus, welche Unterstützung Ihnen zusteht.</p>
-        <a href="https://navicarenow.datafortress.cloud/" class="btn btn-primary pulse">Jetzt kostenlos prüfen <i class="fas fa-arrow-right ms-2"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 6. PFLEGEBEDARFSRECHNER -->
-{{ if .Params.calculator_teaser.enable }}
-{{ with .Params.calculator_teaser }}
-<section class="section bg-white" data-aos="fade-up">
-  <div class="container">
-    <div class="row align-items-center bg-light rounded-4 shadow-sm p-4 p-lg-5 border-start border-5 border-primary">
-      <div class="col-lg-7 mb-4 mb-lg-0 pe-lg-5">
-        <h2 class="mb-3">{{ .title | markdownify }}</h2>
-        <p class="lead text-muted mb-4">{{ .subtitle | markdownify }}</p>
-        <ul class="list-unstyled mb-4">
-          {{ range .benefits }}
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>{{ . }}</li>
-          {{ end }}
-        </ul>
-        <div class="mt-4">
-          <a href="{{ .cta.href }}" class="btn btn-primary btn-lg me-3 mb-2">{{ .cta.label }}</a>
-          <span class="text-muted small d-inline-block">{{ .trust_line }}</span>
-        </div>
-      </div>
-      <div class="col-lg-5 bg-white p-4 rounded shadow-sm border text-center">
-        <div class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-brand text-white mb-3" style="width: 80px; height: 80px;">
-          <i class="fas fa-calculator fa-2x"></i>
-        </div>
-        <h5 class="mb-3">Was passiert danach?</h5>
-        <p class="text-muted small mb-0">{{ .whats_next }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 7. ABO-ÜBERSICHT -->
-{{ if .Params.pricing.enable }}
-{{ with .Params.pricing }}
-<section class="section bg-tertiary" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2>{{ .title | markdownify }}</h2>
-      <p class="lead text-muted">{{ .subtitle | markdownify }}</p>
-    </div>
-    
-    <div class="row g-4 justify-content-center align-items-center mb-5">
-      {{ range $i, $plan := .plans }}
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ mul $i 100 }}">
-        <div class="pricing-card card h-100 bg-white shadow-sm {{ if $plan.popular }}popular{{ end }} position-relative">
-          {{ if $plan.popular }}
-          <div class="position-absolute top-0 start-50 translate-middle badge bg-primary text-white px-3 py-2 rounded-pill shadow-sm" style="z-index: 10; background-color: #0C445A !important;">⭐ Häufig gewählt</div>
-          {{ end }}
-          <div class="card-body p-4 {{ if $plan.popular }}pt-5{{ end }} d-flex flex-column">
-            <h4 class="card-title text-center mb-3">{{ $plan.name }}</h4>
-            <h3 class="text-center text-primary mb-3">{{ $plan.price }}</h3>
-            <p class="text-center text-muted small border-bottom pb-3 mb-4">{{ $plan.target }}</p>
-            <ul class="list-unstyled mb-4 flex-grow-1">
-              {{ range $plan.features }}
-              <li class="mb-2 small"><i class="fas fa-check text-success me-2"></i>{{ . }}</li>
-              {{ end }}
-            </ul>
-            <a href="{{ $plan.cta_href }}" class="btn w-100 {{ if $plan.popular }}btn-primary{{ else }}btn-outline-primary{{ end }}">{{ $plan.cta_label }}</a>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <div class="bg-white p-4 rounded shadow-sm border">
-          <h5 class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i>{{ .faq_teaser.question }}</h5>
-          <p class="text-muted small mb-0">{{ .faq_teaser.answer }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 7.5 NEWSLETTER & WARTELISTE -->
-{{ if site.Params.subscription.enable }}
-<section class="section bg-white" data-aos="fade-up">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="p-4 p-lg-5 rounded-4 shadow-lg border" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-          <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <h2 class="mb-3 text-primary">NaviCare Now App Warteliste</h2>
-              <p class="lead mb-4">Wir bauen die App, die Pflege wirklich einfacher macht. Melden Sie sich jetzt für den frühen Zugang an und erhalten Sie zusätzlich wertvolle Tipps für den Pflegealltag.</p>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Erfahren Sie als Erste vom App-Start</li>
-                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Exklusive Tipps zu Pflegeleistungen</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i>Kostenfrei & jederzeit abmeldbar</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <div class="bg-white p-4 rounded shadow-sm border">
-                {{ if site.Params.subscription.eocampaign_script }}
-                  {{ if findRE `^<script` site.Params.subscription.eocampaign_script }}
-                    {{ site.Params.subscription.eocampaign_script | safeHTML }}
-                  {{ else }}
-                    {{ $script := resources.Get site.Params.subscription.eocampaign_script }}
-                    {{ if $script }}
-                    <script async src="{{ $script.RelPermalink }}" data-form="{{ site.Params.subscription.eocampaign_form_id }}"></script>
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-
-<!-- 8. PFLEGELEISTUNGEN-TEASER -->
-{{ if .Params.benefits.enable }}
-{{ with .Params.benefits }}
-<section class="section bg-white" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2>{{ .title | markdownify }}</h2>
-      <p class="lead text-muted">{{ .subtitle | markdownify }}</p>
-    </div>
-    <div class="row g-4 mb-5">
-      {{ range $i, $item := .items }}
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="{{ mul $i 100 }}">
-        <div class="card-hover d-flex p-4 border rounded shadow-sm h-100 bg-light">
-          <div class="me-4 text-primary mt-1">
-            <i class="fas fa-euro-sign fa-2x"></i>
-          </div>
-          <div>
-            <h4 class="h5 mb-1">{{ $item.name }}</h4>
-            <p class="text-brand fw-bold mb-2 text-primary">{{ $item.amount }}</p>
-            <p class="text-muted mb-0 small">{{ $item.description }}</p>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <div class="text-center">
-      <p class="h5 mb-4">{{ .closing_sentence }}</p>
-      <a href="{{ .cta_href }}" class="btn btn-primary btn-lg">{{ .cta_label }}</a>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 9. FÜR WEN IST NAVICARE NOW? -->
-{{ if .Params.personas.enable }}
-{{ with .Params.personas }}
-<section class="section bg-tertiary" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2>{{ .title | markdownify }}</h2>
-    </div>
-    <div class="row g-4">
-      {{ range $i, $p := .items }}
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ mul $i 150 }}">
-        <div class="card-hover bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-primary d-flex flex-column">
-          <h4 class="mb-3">{{ $p.name }}</h4>
-          <p class="text-muted small mb-4 pb-3 border-bottom">{{ $p.situation }}</p>
-          <div class="mb-4 flex-grow-1">
-            <p class="fw-bold small mb-2 text-dark">Was NaviCare Now tut:</p>
-            <ul class="list-unstyled small text-muted">
-              {{ range $p.features }}
-              <li class="mb-2"><i class="fas fa-check text-success me-2"></i>{{ . }}</li>
-              {{ end }}
-            </ul>
-          </div>
-          <div class="bg-light p-3 rounded fst-italic small text-secondary flex-grow-0 mb-3">
-            {{ $p.quote }}
-          </div>
-          <div class="mt-auto">
-            <a href="https://navicarenow.datafortress.cloud/" class="fw-bold text-primary small">{{ $p.cta_label }} <i class="fas fa-arrow-right ms-1"></i></a>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 10. DATENSCHUTZ & VERTRAUEN -->
-{{ if .Params.trust.enable }}
-{{ with .Params.trust }}
-<section class="section bg-white" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2><i class="fas fa-shield-alt text-primary me-2"></i>{{ .title | markdownify }}</h2>
-    </div>
-    <div class="row g-4 mb-4">
-      {{ range $i, $item := .items }}
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="{{ mul $i 100 }}">
-        <div class="d-flex align-items-start p-3">
-          <i class="fas fa-check-circle text-success mt-1 me-3 fa-lg"></i>
-          <div>
-            <h5 class="mb-1">{{ $item.title }}</h5>
-            <p class="text-muted small mb-0">{{ $item.description }}</p>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <div class="text-center mt-4">
-      <p class="text-muted small badge bg-light text-wrap p-3 border"><i class="fas fa-info-circle me-2"></i>{{ .disclaimer }}</p>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- 11. ÜBER NAVICARE NOW -->
-{{ if .Params.about_us.enable }}
-{{ with .Params.about_us }}
-<section class="section bg-tertiary" data-aos="fade-up">
+<section class="hero d-flex align-items-center min-vh-100" data-aos="fade-in">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
-        <h2 class="mb-4">{{ .title | markdownify }}</h2>
-        <p class="lead text-dark mb-4">{{ .mission }}</p>
-        <p class="text-muted mb-4">{{ .team_intro }}</p>
-        <blockquote class="blockquote border-start border-4 border-primary ps-3 py-2 bg-white shadow-sm rounded">
-          <p class="fst-italic small mb-0">{{ .quote }}</p>
-        </blockquote>
+      <div class="col-lg-7">
+        <div class="badge mb-4"><div class="badge-dot"></div>{{ .badge }}</div>
+        <h1 class="mb-3 text-navy display-4">{{ .title | safeHTML }}</h1>
+        <p class="hero-sub mb-4 lead text-muted">{{ .subtitle | markdownify }}</p>
+        <p class="hero-tagline mb-5 h5 text-teal">{{ .tagline | markdownify }}</p>
+        <div class="d-flex flex-column flex-sm-row gap-3">
+          {{ if .button.enable }}
+          <a href="{{ .button.link }}" class="btn btn-primary-custom btn-lg">{{ .button.label }}</a>
+          {{ end }}
+          {{ if .button_secondary.enable }}
+          <a href="{{ .button_secondary.link }}" class="btn btn-outline-navy btn-lg">{{ .button_secondary.label }}</a>
+          {{ end }}
+        </div>
       </div>
-      <div class="col-lg-6">
-        <div class="bg-white p-4 rounded shadow text-center">
-           <img src="{{ `images/logo.png` | relURL }}" alt="NaviCare Now" class="img-fluid mb-4" style="max-height: 80px;">
-           <hr>
-           <p class="text-muted small mb-0"><i class="fas fa-hands-helping text-primary me-2"></i>{{ .funding }}</p>
+      <div class="col-lg-5 d-none d-lg-block">
+        {{ if .image }}
+        {{ $img := resources.Get (.image) }}
+        {{ if $img }}
+        {{ $img := $img.Resize "800x q80 webp" }}
+        <img src="{{ $img.RelPermalink }}" alt="{{ .title }}" class="img-fluid floating">
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <a href="#warum" class="hero-scroll" aria-label="scroll"></a>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 2. PROBLEM (WARUM) -->
+{{ if .Params.problem.enable }}
+{{ with .Params.problem }}
+<section class="section bg-light" id="warum" data-aos="fade-up">
+  <div class="container">
+    <p class="section-label text-coral">{{ .label }}</p>
+    <h2 class="text-navy mb-5 display-6">{{ .title | markdownify }}</h2>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <p class="lead text-muted mb-4">{{ .subtitle | markdownify }}</p>
+        <p class="h4 text-navy opacity-75">{{ .bridge | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 3. STATS -->
+{{ if .Params.social_proof.enable }}
+{{ with .Params.social_proof }}
+<section class="section bg-soft" data-aos="fade-up">
+  <div class="container">
+    <div class="row g-4">
+      {{ range .stats }}
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card {{ .color }} h-100 shadow-sm border-0 rounded-4">
+          <div class="stat-number display-6 fw-bold mb-2">{{ .value }}</div>
+          <p class="mb-0 text-secondary">{{ .label }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 4. PILLARS (FUNDAMENT) -->
+{{ if .Params.pillars.enable }}
+{{ with .Params.pillars }}
+<section class="section bg-white" id="saeulen" data-aos="fade-up">
+  <div class="container">
+    <p class="section-label text-teal">{{ .label }}</p>
+    <h2 class="text-navy mb-5 display-6">{{ .title | markdownify }}</h2>
+
+    <div class="row g-4">
+      {{ range .items }}
+      <div class="col-lg-3 col-md-6">
+        <div class="pillar-card pillar-{{ .color }} h-100 shadow-sm border-0 rounded-4">
+          <div class="pillar-dot dot-{{ .color }} mb-3"></div>
+          <p class="section-label text-{{ .color }} mb-2 fw-bold small">{{ .tag }}</p>
+          <h3 class="text-navy h5 mb-3">{{ .title }}</h3>
+          <p class="text-muted small mb-0">{{ .description }}</p>
+          <div class="pillar-word">{{ .word }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 5. NETZWERK -->
+{{ if .Params.netzwerk.enable }}
+{{ with .Params.netzwerk }}
+<section class="section bg-white" id="partner" data-aos="fade-up">
+  <div class="container">
+    <p class="section-label text-lila">{{ .label }}</p>
+    <h2 class="text-navy mb-5 display-6">{{ .title | markdownify }}</h2>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <p class="lead text-secondary mb-5">{{ .description | markdownify | safeHTML }}</p>
+      </div>
+    </div>
+    <div class="spoc-composition mt-4 shadow-sm">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8 text-center text-lg-start">
+           <p class="display-6 fst-italic text-lila mb-0">„{{ .spoc.quote }}“</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="spoc-badge shadow">
+            <span class="spoc-highlight mb-2">{{ .spoc.badge_highlight }}</span>
+            <p class="mb-2 small">{{ .spoc.badge_text }}</p>
+            <span class="spoc-sub small text-uppercase">{{ .spoc.badge_sub }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -517,32 +133,93 @@ html {
 {{ end }}
 {{ end }}
 
-<!-- 12. FAQ -->
-{{ if .Params.faq.enable }}
-{{ with .Params.faq }}
-<section class="section bg-white" data-aos="fade-up">
+<!-- 6. PARTNER CTA -->
+{{ if .Params.partner_cta.enable }}
+{{ with .Params.partner_cta }}
+<section class="section bg-light py-5" data-aos="fade-up">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center mb-5">
-        <h2>{{ .title | markdownify }}</h2>
+    <div class="bg-tertiary p-5 rounded-4 text-center text-white shadow-lg">
+      <h3 class="text-white mb-3 display-6" style="color: white !important;">{{ .title }}</h3>
+      <p class="lead mb-4 opacity-75 text-white">{{ .description }}</p>
+      <a href="{{ .button_link }}" class="btn btn-primary-custom fw-bold px-5 py-3 rounded-pill shadow-sm transition-all hover-translate-y">{{ .button_label }}</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 7. ZIELGRUPPEN (MITMACHEN) -->
+{{ if .Params.personas.enable }}
+{{ with .Params.personas }}
+<section class="section bg-soft" id="mitmachen" data-aos="fade-up">
+  <div class="container">
+    <p class="section-label text-teal">{{ .label }}</p>
+    <h2 class="text-navy mb-5 display-6">{{ .title | markdownify }}</h2>
+
+    <div class="row g-4">
+      {{ range .items }}
+      <div class="col-lg-3 col-md-6">
+        <div class="zkg-card {{ .color }} h-100 d-flex flex-column transition-all hover-shadow-lg border-0 rounded-4 shadow-sm">
+          <div class="display-4 text-center mb-3">{{ .icon }}</div>
+          <p class="section-label text-{{ .color }} text-center mb-2 small fw-bold">{{ .tag }}</p>
+          <h3 class="h4 text-center mb-3 fw-bold">{{ .name }}</h3>
+          <p class="text-muted small text-center mb-4">{{ .situation }}</p>
+          <ul class="list-unstyled mb-4 small flex-grow-1">
+            {{ range .features }}
+            <li class="mb-2 d-flex align-items-start"><i class="fas fa-arrow-right text-muted me-2 mt-1"></i><span>{{ . }}</span></li>
+            {{ end }}
+          </ul>
+          {{ if .partners_list }}
+          <p class="text-muted smaller text-center mb-4 fst-italic">{{ .partners_list }}</p>
+          {{ end }}
+          <div class="text-center mt-auto">
+            <a href="{{ .cta_link }}" class="btn btn-outline-{{ .color }} rounded-pill px-4 py-2 small fw-bold">{{ .cta_label }}</a>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-8">
-        <div class="accordion shadow-sm rounded bg-white" id="accordionFAQ">
-          {{ range $i, $e := .faq_items }}
-          <div class="accordion-item border-bottom mb-0">
-            <h2 class="accordion-header" id="heading-{{ $i }}">
-              <button class="accordion-button {{ if ne $i 0 }}collapsed{{ end }} h6 mb-0 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $i }}" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}" aria-controls="collapse-{{ $i }}">
-                {{ .question }}
-              </button>
-            </h2>
-            <div id="collapse-{{ $i }}" class="accordion-collapse collapse {{ if eq $i 0 }}show{{ end }}" aria-labelledby="heading-{{ $i }}" data-bs-parent="#accordionFAQ">
-              <div class="accordion-body text-muted small pt-0 pb-3">
-                {{ .answer }}
-              </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 8. TEAM -->
+{{ if .Params.about_us.enable }}
+{{ with .Params.about_us }}
+<section class="section bg-light" id="team" data-aos="fade-up">
+  <div class="container">
+    <p class="section-label text-teal">{{ .label }}</p>
+    <h2 class="text-navy mb-5 display-6">{{ .title | markdownify }}</h2>
+
+    <div class="row g-4">
+      {{ range .team_members }}
+      <div class="col-lg-4">
+        <div class="team-card {{ .color }} h-100 shadow-sm border-start border-4 rounded-4 bg-white">
+          <div class="team-info">
+            <p class="section-label text-{{ .color }} mb-1 small fw-bold">{{ .role }}</p>
+            <h4 class="text-navy h5 mb-2">{{ .name }}</h4>
+            <p class="text-muted small mb-0">{{ .description }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="mt-5 pt-4 border-top border-dark border-opacity-10">
+      <p class="text-navy opacity-50 mb-4 h5">{{ .extended_team_title }}</p>
+      <div class="row g-4">
+        {{ range .extended_team }}
+        <div class="col-lg-6">
+          <div class="team-card {{ .color }} h-100 shadow-sm border-start border-4 rounded-4 bg-white">
+            <div class="team-info">
+              <p class="section-label text-{{ .color }} mb-1 small fw-bold">{{ .role }}</p>
+              <h4 class="text-navy h5 mb-2">{{ .name }}</h4>
+              <p class="text-muted small mb-0">{{ .description }}</p>
             </div>
           </div>
-          {{ end }}
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -550,57 +227,51 @@ html {
 {{ end }}
 {{ end }}
 
-<!-- 13. FINALER CTA -->
+<!-- 9. FINAL CTA -->
 {{ if .Params.cta.enable }}
 {{ with .Params.cta }}
-<section class="section bg-primary text-white position-relative overflow-hidden" data-aos="zoom-in" style="background-color: #0C445A !important;">
-  <div class="container text-center py-5 position-relative z-1">
+<section class="section bg-white text-center py-5" id="kontakt" data-aos="zoom-in">
+  <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <h2 class="text-white mb-4 display-5 fw-bold">{{ .title | markdownify }}</h2>
-        <p class="lead mb-5 text-white">{{ .subtitle | markdownify }}</p>
-        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4">
-          <a type="button" class="btn btn-light btn-lg text-primary fw-bold px-5 pulse" href="{{ .primary_button.href }}">{{ .primary_button.label }}</a>
-          {{ if .secondary_button.enable }}
-          <a type="button" class="btn btn-outline-light btn-lg px-4" href="{{ .secondary_button.href }}">{{ .secondary_button.label }}</a>
-          {{ end }}
-        </div>
-        <p class="small opacity-50 mb-0"><i class="fas fa-check me-1"></i>{{ .trust_line }}</p>
+        <h2 class="text-navy mb-3 display-4">{{ .title | safeHTML }}</h2>
+        <p class="lead text-muted mb-5">{{ .subtitle | markdownify }}</p>
+        <a href="{{ .primary_button.href }}" class="btn btn-primary-custom px-5 py-3 rounded-pill h4">{{ .primary_button.label }}</a>
       </div>
     </div>
-  </div>
-  <!-- Abstract shapes for visual interest -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="opacity: 0.1; pointer-events: none;">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; top: -50%; left: -20%; width: 100%; height: 200%;"><circle cx="50" cy="50" r="40" fill="currentColor"/></svg>
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; bottom: -50%; right: -20%; width: 80%; height: 150%;"><circle cx="50" cy="50" r="40" fill="currentColor"/></svg>
   </div>
 </section>
 {{ end }}
 {{ end }}
 
-<script>
-(function () {
-  function initAOS() {
-    if (typeof AOS === 'undefined') {
-      return;
-    }
-    AOS.init({
-      once: true,
-      duration: 800,
-      easing: 'ease-out-cubic'
-    });
-  }
-
-  if (typeof AOS !== 'undefined') {
-    initAOS();
-  } else {
-    var onAOSLoaded = function () {
-      document.removeEventListener('aos:loaded', onAOSLoaded);
-      initAOS();
-    };
-    document.addEventListener('aos:loaded', onAOSLoaded);
-  }
-})();
-</script>
+<style>
+.transition-all { transition: all 0.3s ease; }
+.hover-shadow-lg:hover { transform: translateY(-5px); box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; }
+.hover-translate-y:hover { transform: translateY(-3px); }
+.smaller { font-size: 0.75rem; }
+.floating { animation: float 6s ease-in-out infinite; }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+.spoc-badge {
+  background: var(--navy);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+.spoc-highlight {
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: block;
+}
+.spoc-sub {
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+</style>
 
 {{ end }}

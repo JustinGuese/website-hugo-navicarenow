@@ -2,33 +2,27 @@
 ############################ Sektion 1 – HERO ##################################
 banner:
   enable: true
-  title: 'Pflegebedarf berechnen – und den Alltag mit der App organisieren.'
-  subtitle: 'NaviCare Now gibt Ihnen in wenigen Minuten eine klare Einschätzung Ihrer Ansprüche inkl. kostenlosem PDF-Report. Organisieren Sie danach den Pflegealltag einfach und sicher mit unserer App.'
+  badge: 'NURSE-LED · DIGITAL · SEKTORENÜBERGREIFEND'
+  title: 'Pflege und Versorgung neu <em>navigieren.</em>'
+  subtitle: 'NaviCare Now® verbindet Menschen mit Unterstützungsbedarf, pflegende Angehörige, Pflegefachpersonen, Einrichtungen und Akteure — digital, verlässlich und menschlich. Wir sind kein weiterer Konzern. Wir bauen ein Netzwerk.'
+  tagline: 'Von Anfang an. Für alle.'
   button:
     enable: true
-    label: 'Kostenlos Pflegebedarf berechnen'
-    icon: 'fas fa-arrow-right'
-    button_modal_target: 'https://navicarenow.datafortress.cloud/'
+    label: 'Jetzt mitmachen'
+    link: '#mitmachen'
   button_secondary:
     enable: true
-    label: 'So funktioniert NaviCare Now'
-    icon: 'fas fa-arrow-right'
-    button_modal_target: '#how-it-works'
-  trust_element: 'Kostenloses PDF-Ergebnis · Kein Account nötig · App-Begleitung starten'
-  image: 'images/banner/calculator_mockup.png'
+    label: 'Kooperationspartner werden'
+    link: '#partner'
+  image: 'images/screenshots/calculator_resultscreen.png'
 
 ############################ Sektion 2 – PROBLEM ##################################
 problem:
   enable: true
-  title: "Pflege trifft die meisten Menschen unvorbereitet mitten im normalen Leben."
-  bridge: "NaviCare Now gibt Ihnen die Orientierung, die das System Ihnen schuldig geblieben ist."
-  problems:
-    - title: "Sie wissen nicht, welche Hilfe Ihrer Mutter wirklich zusteht und ob Sie schon Geld verloren haben."
-      icon: "fas fa-question-circle"
-    - title: "Sie verbringen Stunden mit Formularen, Telefonaten und Suchen und haben trotzdem das Gefühl, den Überblick zu verlieren."
-      icon: "fas fa-file-invoice"
-    - title: "Sie möchten alles richtig machen. Aber niemand erklärt Ihnen, was „richtig\" überhaupt bedeutet."
-      icon: "fas fa-hands-helping"
+  label: 'WARUM NAVICARE NOW?'
+  title: 'Das Pflegesystem ist fragmentiert. Wir verbinden.'
+  subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
+  bridge: 'NaviCare Now® schafft den **Single Point of Contact** — eine digitale Schaltzentrale, die alle Beteiligten verbindet und Pflegekoordination endlich sektorenübergreifend ermöglicht.'
 
 ############################ Sektion 3 – SO FUNKTIONIERT ES ##################################
 how_it_works:
@@ -51,6 +45,33 @@ how_it_works:
     enable: true
     label: 'Direkt zum Pflegebedarfsermittlung'
     href: 'https://navicarenow.datafortress.cloud/'
+
+############################ Sektion 3.5 – PILLARS ##################################
+pillars:
+  enable: true
+  label: 'UNSER FUNDAMENT'
+  title: 'Vier Säulen. Eine Vision.'
+  items:
+    - title: 'Menschliche Pflege und Versorgung'
+      tag: 'CARE'
+      color: 'coral'
+      description: 'Regionales Infrastrukturmonitoring, Care- und Case Management, APN/CHN-Struktur, Risikoanalysen und alle evidenzbasierten pflegefachlichen Inhalte der App.'
+      word: 'JETZT'
+    - title: 'Stärke & Kompetenz'
+      tag: 'EMPOWERMENT'
+      color: 'lila'
+      description: 'Fachschulungen für Angehörige und Pflegefachpersonen — Selbstwirksamkeit und Würde stärken.'
+      word: 'ZIEL'
+    - title: 'Digitale Innovation'
+      tag: 'TECH'
+      color: 'navy'
+      description: 'App-Entwicklung, KI-gestützte Risikoanalyse, DSGVO-konforme Infrastruktur für die Zukunft der Pflege und der Versorgung.'
+      word: 'RICHTUNG'
+    - title: 'Struktur & Qualität'
+      tag: 'PROCESS'
+      color: 'teal'
+      description: 'Führungs- und Organisationsentwicklung, QMS, verlässliche Prozesse und Nachhaltigkeit.'
+      word: 'WEG'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
 features:
@@ -83,36 +104,58 @@ features:
       title: 'Entlastung für pflegende Angehörige'
       description: 'NaviCare Now fragt auch, wie es Ihnen geht. Wer erschöpft ist, kann nicht gut pflegen. Deshalb zeigt die App, welche Unterstützung Sie selbst bekommen können und erinnert Sie daran, dass Ihre Kraft zählt.'
 
+############################ Sektion 4.5 – NETZWERK ##################################
+netzwerk:
+  enable: true
+  label: 'KOOPERATIONSPARTNER'
+  title: 'Wir trennen nicht. Wir bauen ein Netzwerk.'
+  description: "NaviCare Now® ist kein Konkurrent und kein Ersatz. Wir sind der Knotenpunkt, der bestehende Strukturen miteinander verbindet — zum Wohl der Menschen, die Pflege brauchen.\n\nWir suchen innovationsfreudige Partner, die das Problem genauso sehen wie wir — und Vorreiter für die Zukunft der Versorgung sein wollen. Von der Basis aus. Gemeinsam."
+  spoc:
+    quote: '„Gemeinsam navigieren statt allein kämpfen."'
+    badge_highlight: 'Single-Point-of-Contact'
+    badge_text: 'NaviCare Now® verbindet alle Beteiligten in einem digitalen Netzwerk — sektorenübergreifend.'
+    badge_sub: 'Ein Kontaktpunkt. Alle Akteure. Jederzeit.'
+
+partner_cta:
+  enable: true
+  title: 'Jetzt innovativer Kooperationspartner werden'
+  description: 'Ob Pflegedienst, Klinik, Kasse oder Hochschule — schreiben Sie uns an und lassen Sie uns gemeinsam die Zukunft gestalten.'
+  button_label: 'Gespräch anfragen →'
+  button_link: 'mailto:info@navicarenow.de'
+
 ############################ Sektion 5 – SOCIAL PROOF ##################################
 social_proof:
   enable: true
   testimonials:
-    - text: "Ich habe meiner Mutter monatelang geholfen, ohne zu wissen, dass ihr 600 Euro Pflegegeld monatlich zustehen. NaviCare Now hat mir das in zehn Minuten gezeigt und mir das Gefühl gegeben, dass ich es jetzt im Griff habe."
-      name: "Sandra, 48"
-      role: "pflegt ihre Mutter mit Pflegegrad 3 neben einem Vollzeitjob"
-    - text: "Meine Frau und ich machen das schon zwei Jahre zusammen. Aber erst durch NaviCare Now habe ich verstanden, dass ich auch selbst Hilfe beantragen darf und dass das kein Versagen ist."
-      name: "Heinz, 71"
-      role: "pflegt seine Frau nach einem Schlaganfall zuhause"
-    - text: "Wir sind zu dritt und haben uns monatelang gestritten, wer was macht. NaviCare Now hat uns eine gemeinsame Grundlage gegeben. Jetzt weiß jeder, was gerade wichtig ist und keiner fühlt sich allein damit."
-      name: "Familie W."
-      role: "drei Geschwister koordinieren die Pflege ihres Vaters aus verschiedenen Städten"
+    - text: 'Ich habe meiner Mutter monatelang geholfen, ohne zu wissen, dass ihr 600 Euro Pflegegeld monatlich zustehen. NaviCare Now hat mir das in zehn Minuten gezeigt und mir das Gefühl gegeben, dass ich es jetzt im Griff habe.'
+      name: 'Sandra, 48'
+      role: 'pflegt ihre Mutter mit Pflegegrad 3 neben einem Vollzeitjob'
+    - text: 'Meine Frau und ich machen das schon zwei Jahre zusammen. Aber erst durch NaviCare Now habe ich verstanden, dass ich auch selbst Hilfe beantragen darf und dass das kein Versagen ist.'
+      name: 'Heinz, 71'
+      role: 'pflegt seine Frau nach einem Schlaganfall zuhause'
+    - text: 'Wir sind zu dritt und haben uns monatelang gestritten, wer was macht. NaviCare Now hat uns eine gemeinsame Grundlage gegeben. Jetzt weiß jeder, was gerade wichtig ist und keiner fühlt sich allein damit.'
+      name: 'Familie W.'
+      role: 'drei Geschwister koordinieren die Pflege ihres Vaters aus verschiedenen Städten'
   trust_badges:
-    - icon: "fas fa-lock"
-      text: "DSGVO-konform · EU-Server · Keine Datenweitergabe"
-    - icon: "fas fa-hospital"
-      text: "Entwickelt mit Pflegefachpersonen"
-    - icon: "fas fa-trophy"
-      text: "Gefördert durch den Freistaat Bayern · Now2Next Accelerator"
+    - icon: 'fas fa-lock'
+      text: 'DSGVO-konform · EU-Server · Keine Datenweitergabe'
+    - icon: 'fas fa-hospital'
+      text: 'Entwickelt mit Pflegefachpersonen'
+    - icon: 'fas fa-trophy'
+      text: 'Gefördert durch den Freistaat Bayern · Now2Next Accelerator'
   stats:
-    - value: "86 %"
-      label: "der Pflegebedürftigen werden zuhause versorgt"
-      source: "Destatis 2023"
-    - value: "49 Stunden"
-      label: "pflegen Angehörige durchschnittlich pro Woche"
-      source: "AOK/WIdO"
-    - value: "11.700"
-      label: "stationäre Pflegeeinrichtungen in Deutschland"
-      source: "Statistisches Bundesamt"
+    - value: '5 Mio.+'
+      label: 'pflegebedürftige Menschen in Deutschland'
+      color: 'c'
+    - value: '80%'
+      label: 'der Pflege wird zu Hause geleistet — oft ohne professionelle Unterstützung'
+      color: 'l'
+    - value: '3+'
+      label: 'Sektorengrenzen, die Koordination täglich erschweren'
+      color: 'n'
+    - value: 'JETZT'
+      label: 'ist der richtige Zeitpunkt für systemische Navigation'
+      color: 't'
 
 ############################ Sektion 6 – PFLEGEBEDARFSRECHNER ##################################
 calculator_teaser:
@@ -210,32 +253,61 @@ benefits:
 ############################ Sektion 9 – FÜR WEN IST NAVICARE NOW? ##################################
 personas:
   enable: true
-  title: 'NaviCare Now ist für Sie da, egal wo Sie gerade stehen.'
+  label: 'AKTIV MITGESTALTEN'
+  title: 'Ihre Erfahrung zählt. Jetzt einsteigen.'
   items:
-    - name: 'Die berufstätige Tochter'
-      situation: 'Sie pflegt ihre Mutter neben einem Vollzeitjob und einer eigenen Familie – mit wenig Zeit und noch weniger Ahnung, was das System eigentlich bietet.'
+    - name: 'Pflegende Angehörige'
+      tag: 'APP-TEST GESUCHT'
+      color: 'coral'
+      icon: '👨‍👩‍👧'
+      situation: 'Sie pflegen zu Hause und kennen die täglichen Herausforderungen aus erster Hand. Genau deshalb brauchen wir Sie — nicht als Nutzer, sondern als Mitgestalter.'
       features:
-        - 'Übersicht über alle Leistungen, die jetzt infrage kommen'
-        - 'Tagesstruktur und Erinnerungen, damit nichts vergessen wird'
-        - 'Wöchentlicher Überblick für den nächsten Arzttermin'
-      quote: '„Zum ersten Mal seit Monaten weiß ich, was ich als Nächstes tun muss."”'
-      cta_label: 'Jetzt Leistungen für Ihre Situation prüfen'
-    - name: 'Der pflegende Ehemann'
-      situation: 'Er pflegt seine Frau zuhause – seit Jahren, fast alleine, und merkt selbst, dass er an seine Grenzen kommt.'
+        - 'App kostenlos testen und direkt Feedback geben'
+        - 'Ihre Alltagserfahrungen fließen in die Entwicklung ein'
+        - 'Zugang zu Schulungsmaterialien und Beratung'
+        - 'Teil einer wachsenden Community'
+      cta_label: 'App testen →'
+      cta_link: 'mailto:info@navicarenow.de'
+    - name: 'Pflegeeinrichtungen und Pflegedienste'
+      tag: 'PILOT-PARTNER GESUCHT'
+      color: 'navy'
+      icon: '🏥'
+      situation: 'Werden Sie Teil der ersten Implementierungsphase. Als Pilot-Partner gestalten Sie mit uns die Lösung, die Ihren Alltag wirklich erleichtert.'
       features:
-        - 'Risiken früh erkennen, bevor sie zur Krise werden'
-        - 'Unterstützungsangebote sichtbar machen, auch für ihn selbst'
-        - 'Einfaches Dokumentieren, ohne Aufwand'
-      quote: '„NaviCare hat mir gezeigt: Ich muss das nicht alleine schaffen."”'
-      cta_label: 'Risiken früh erkennen – App kostenlos starten'
-    - name: 'Die koordinierende Geschwistergruppe'
-      situation: 'Drei Geschwister, drei Städte, ein Vater und kein gemeinsames System, das alle auf dem gleichen Stand hält.'
+        - 'Früher Zugang zur NCN-Plattform'
+        - 'Direkte Einflussnahme auf Produktentwicklung'
+        - 'Evidenzbasiertes Wissen'
+        - 'Vorzugsbedingungen als Erstpartner'
+      cta_label: 'Pilot-Partner werden →'
+      cta_link: 'mailto:info@navicarenow.de'
+    - name: 'Fachpersonen & Zukunftsgestaltende'
+      tag: 'COMMUNITY GESUCHT'
+      color: 'lila'
+      icon: '🧑‍⚕️'
+      situation: 'Für alle, die das System von innen kennen und bereit sind, es gemeinsam zu verändern.'
       features:
-        - 'Geteiltes Tagebuch für die ganze Familie'
-        - 'Klare Aufgabenteilung statt WhatsApp-Chaos'
-        - 'Alle sehen sofort, was wichtig ist'
-      quote: '„Endlich reden wir nicht mehr aneinander vorbei."”'
-      cta_label: 'Gemeinsam koordinieren mit NaviCare Now'
+        - 'Expertise einbringen & sichtbar machen'
+        - 'Teil einer wachsenden Fachcommunity werden'
+        - 'Mitgestalten statt nur ausführen'
+        - 'Netzwerk mit Pflegefachpersonen, CHN, APN, Sozialarbeitenden, Pädagogen u.v.m.'
+        - 'Menschen, die wirklich etwas bewegen wollen'
+      cta_label: 'Jetzt vernetzen →'
+      cta_link: 'mailto:info@navicarenow.de'
+    - name: 'Gesundheitspartner'
+      tag: 'NETZWERKPARTNER'
+      color: 'teal'
+      icon: '🤝'
+      situation: 'Werden Sie Teil eines wachsenden Netzwerks — weil Versorgung nur gemeinsam gelingt.'
+      features:
+        - 'Gemeinsame Datenbasis & weniger Schnittstellenverluste'
+        - 'Skalierbare Reichweite in den Pflegesektor'
+        - 'Entlastete Koordination & klare Zuständigkeiten'
+        - 'Frühzeitige Risikoerkennung durch KI'
+        - 'Regionales Infrastrukturmonitoring'
+        - 'Nahtlose Übergänge & geteilte Versorgungsplanung'
+      partners_list: 'Apotheken · Sanitätshäuser · Hausärzte · Fachärzte · Pflegestützpunkte · Krankenkassen · Sozialdienste · Rehabilitationseinrichtungen · Coaches · Trainer · Schulungspartner · Kommunen u.v.m.'
+      cta_label: 'Netzwerk beitreten →'
+      cta_link: 'mailto:info@navicarenow.de'
 
 ############################ Sektion 10 – DATENSCHUTZ & VERTRAUEN ##################################
 trust:
@@ -255,11 +327,39 @@ trust:
 ############################ Sektion 11 – ÜBER NAVICARE NOW ##################################
 about_us:
   enable: true
-  title: 'Gebaut von Menschen, die Pflege aus dem Alltag kennen.'
-  mission: 'NaviCare Now entstand aus einer einfachen Erkenntnis: Das Pflegesystem überfordert die Menschen, die es am meisten brauchen. Wir glauben, dass jeder Mensch, egal wie viel Zeit, Geld oder Wissen er hat, eine faire Chance auf gute Pflege verdient. Deshalb bauen wir das Tool, das wir selbst gebraucht hätten.'
-  team_intro: 'Hinter NaviCare Now stehen Julia Camara (examinierte Pflegefachperson und Pharmareferentin mit über 10 Jahren pflegerischer Erfahrung), Justin Güse (Technologie und Systemarchitektur) und Nicole Blom (Qualitätsmanagement und Pflegeprozesse). Gemeinsam mit Angela Bonn, Warlley DeLima Santos und Lisa Ziegler arbeiten wir täglich daran, Pflege neu zu denken und zwar strukturiert, menschlich und digital.'
-  quote: '„Ich habe als Pflegefachperson gesehen, wie viel unnötiges Leid durch fehlende Orientierung entsteht. NaviCare Now soll das ändern." — Julia Camara, Gründerin NaviCare Now'
-  funding: 'NaviCare Now wird gefördert durch den Freistaat Bayern im Rahmen des Now2Next Accelerator Programms des Digitalen Zentrums Schwaben.'
+  label: 'DAS TEAM'
+  title: 'Vier Säulen. Drei Gründende. Ein Ziel.'
+  team_members:
+    - name: 'Julia Camara'
+      role: 'CEO · COO'
+      color: 'lila'
+      description: 'Markteintritt & Vertrieb, operative Umsetzung, Industriepartnerschaften, Stakeholder-Management mit Krankenkassen, Einrichtungen und Pflegediensten.'
+    - name: 'Justin Güse'
+      role: 'CTO'
+      color: 'navy'
+      description: 'Software-Architektur, KI-Entwicklung für Risikoanalyse, Datensicherheit/DSGVO, technische Skalierung.'
+    - name: 'Nicole Blom'
+      role: 'CEO · CNO'
+      color: 'teal'
+      description: 'Strategische Vision, pflegewissenschaftliche Leitung (APN/CHN), wissenschaftliche Begleitung & Uni-Kooperation, Fördermittelmanagement.'
+  extended_team_title: 'Unser erweitertes Team'
+  extended_team:
+    - name: 'Warlley de Lima Santos'
+      role: 'Brand-Management & Marketing'
+      color: 'navy'
+      description: 'Markenentwicklung, visuelle Identität und Marketing-Strategie.'
+    - name: 'Angela Bonn'
+      role: 'Management-Support & Vertriebsassistenz'
+      color: 'lila'
+      description: 'Unterstützung im operativen Management und Vertrieb.'
+    - name: 'Lisa Ziegler'
+      role: 'Praxis-Validierung & pflegefachliche Beratung'
+      color: 'lila'
+      description: 'Pflegefachliche Praxisvalidierung und Beratung.'
+    - name: 'Nele Templer'
+      role: 'Head of Inclusion & Regional Relations'
+      color: 'coral'
+      description: 'Schnittstelle zur Eingliederungshilfe & Politik. Fokus: pädagogische Inklusion und regionales Lobbying.'
 
 ############################ Sektion 12 – FAQ ##################################
 faq:
@@ -280,14 +380,9 @@ faq:
 ############################ Sektion 13 – FINALER CTA ##################################
 cta:
   enable: true
-  title: 'In 8 Minuten wissen Sie, ob Sie Anspruch auf bis zu 12.000 € jährlich haben.'
-  subtitle: 'Kostenloser PDF-Report direkt im Anschluss. Kein Account nötig, kein Risiko – nur Klarheit.'
+  title: 'Pflege und Versorgung neu <span>navigieren.</span> Gemeinsam.'
+  subtitle: 'Wir sind noch am Anfang — und genau deshalb ist Ihr Einstieg jetzt so wertvoll. Lassen Sie uns sprechen.'
   primary_button:
-    label: 'Jetzt Pflegebedarf berechnen'
-    href: 'https://navicarenow.datafortress.cloud/'
-  secondary_button:
-    enable: true
-    label: 'Zuerst mehr erfahren'
-    href: '#how-it-works'
-  trust_line: 'Kostenlos starten · Kein Account nötig'
+    label: 'Gespräch anfragen →'
+    href: 'mailto:info@navicarenow.de'
 ---

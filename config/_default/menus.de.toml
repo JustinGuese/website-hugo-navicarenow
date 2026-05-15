@@ -1,9 +1,5 @@
 # main menu
 
-[[main]]
-name = "Pflegebedarfsermittlung"
-url = "https://navicarenow.datafortress.cloud/"
-weight = 1
 
 [[main]]
 name = "Über uns"
@@ -14,12 +10,6 @@ weight = 2
 name = "Services"
 url = "services/"
 weight = 3
-
-[[main]]
-parent = "Services"
-name = "Pflegegrad einschätzen"
-url = "services/pflegegrad-einschaetzen/"
-weight = 1
 
 [[main]]
 parent = "Services"
