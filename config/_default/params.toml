@@ -1,6 +1,6 @@
 #################### default parameters ################################
-logo = "images/logo.png"
-logo_text = "NavicareNow"
+logo = "images/LogoFull.png"
+logo_text = "NaviCare Now"
 logo_width = "120"
 favicon = "images/favicon.png"
 # Meta data
@@ -44,9 +44,9 @@ link = "https://navicarenow.datafortress.cloud/"
 [service_section]
 section = "services"
 
-# Subscription
+# Subscription (newsletter form in footer)
 [subscription]
-enable = true
+enable = false
 description = "Tragen sie sich jetzt ein um immer die neuesten News in Sachen Pflegeförderungen und Unterstützung informiert zu sein"
 eocampaign_script = "js/newsletteroctopus.js"
 eocampaign_form_id = "4bc6c7ea-3e5a-11f1-8414-e33116518703"

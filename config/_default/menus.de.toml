@@ -6,40 +6,30 @@ name = "Über uns"
 url = "about/"
 weight = 2
 
-[[main]]
-name = "Services"
-url = "services/"
-weight = 3
-
-[[main]]
-parent = "Services"
-name = "Warnzeichen erkennen"
-url = "services/warnzeichen-sehen/"
-weight = 2
-
-[[main]]
-parent = "Services"
-name = "Medikamentenplan"
-url = "services/medikamentenplan/"
-weight = 3
-
-[[main]]
-parent = "Services"
-name = "Pflegetagebuch"
-url = "services/pflegetagebuch/"
-weight = 4
-
-[[main]]
-parent = "Services"
-name = "Pflegeleistungen im Blick"
-url = "services/pflegeleistungen-uebersicht/"
-weight = 5
-
-[[main]]
-parent = "Services"
-name = "Entlastung für Angehörige"
-url = "services/entlastung-angehoerige/"
-weight = 6
+# [[footer_services]]
+# name = "Warnzeichen erkennen"
+# url = "services/warnzeichen-sehen/"
+# weight = 1
+# 
+# [[footer_services]]
+# name = "Medikamentenplan"
+# url = "services/medikamentenplan/"
+# weight = 2
+# 
+# [[footer_services]]
+# name = "Pflegetagebuch"
+# url = "services/pflegetagebuch/"
+# weight = 3
+# 
+# [[footer_services]]
+# name = "Pflegeleistungen im Blick"
+# url = "services/pflegeleistungen-uebersicht/"
+# weight = 4
+# 
+# [[footer_services]]
+# name = "Entlastung für Angehörige"
+# url = "services/entlastung-angehoerige/"
+# weight = 5
 
 [[main]]
 name = "FAQ"
@@ -52,10 +42,10 @@ name = "Kontakt"
 url = "kontakt/"
 weight = 5
 
-[[main]]
-name = "Blog"
-url = "blog/"
-weight = 5
+# [[main]]
+# name = "Blog"
+# url = "blog/"
+# weight = 5
 
 [[main]]
 name = "Legal"

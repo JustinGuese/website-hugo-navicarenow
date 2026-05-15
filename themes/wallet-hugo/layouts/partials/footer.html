@@ -8,7 +8,7 @@
           {{ $logoResource := resources.Get $logoPath }}
           <img loading="lazy" decoding="async" class="footer-icon me-3" src="{{ $logoResource.RelPermalink }}" alt="{{ site.Title }}" style="height: 52px;">
           {{ end }}
-          <div class="footer-wordmark text-white">NaviCare <span class="now">Now</span><sup>®</sup></div>
+          <!-- Removed text wordmark as LogoFull.png includes text -->
         </div>
         <p class="text-muted small mb-4">NaviCare Now GmbH i.G. · Bayern · NRW · deutschlandweit</p>
         <div class="social-icons">
@@ -21,10 +21,8 @@
       <div class="col-lg-2 col-md-4 col-6">
         <h5 class="text-white mb-4">{{ i18n `service` }}</h5>
         <ul class="list-unstyled small">
-          {{ with site.GetPage "section" (string site.Params.service_section.section) }}
-          {{ range .Data.Pages }}
-          <li class="mb-2"><a href="{{ .Permalink }}" class="text-muted">{{ .Title }}</a></li>
-          {{ end }}
+          {{ range site.Menus.footer_services }}
+          <li class="mb-2"><a href="{{ .URL | absLangURL }}" class="text-muted">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
@@ -41,9 +39,9 @@
         </ul>
       </div>
 
+      {{ with site.Params.subscription }}
+      {{ if .enable }}
       <div class="col-lg-4 newsletter-form">
-        {{ with site.Params.subscription }}
-        {{ if .enable }}
         <div class="bg-white p-4 rounded shadow-sm border">
           <h5 class="text-dark mb-3">{{ i18n `subscribe` | default "Newsletter & Warteliste" }}</h5>
           <div class="small text-muted mb-4">{{ .description | markdownify }}</div>
@@ -66,9 +64,9 @@
           </form>
           {{ end }}
         </div>
-        {{ end }}
-        {{ end }}
       </div>
+      {{ end }}
+      {{ end }}
     </div>
 
     <div class="mt-5 pt-4 border-top border-dark border-opacity-10 text-center">

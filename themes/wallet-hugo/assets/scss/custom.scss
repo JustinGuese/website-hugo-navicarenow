@@ -79,8 +79,8 @@ h2 {
 
 // Nav styles
 .navigation {
-  background: $navy !important;
-  border-bottom: 3px solid $coral;
+  background: $white !important;
+  border-bottom: 3px solid $teal;
 
   // Slimmer header
   .navbar { padding-top: 8px !important; padding-bottom: 8px !important; }
@@ -99,19 +99,19 @@ h2 {
     .dropdown-toggle,
     .navbar-brand,
     .navbar-text {
-      color: $white !important;
+      color: $navy !important;
       font-weight: 700;
-      &:hover, &:focus { color: $teal !important; }
+      &:hover, &:focus { color: $coral !important; }
     }
     .nav-item.active .nav-link { color: $coral !important; }
   }
 
   .dropdown-menu {
-    background: darken($navy, 4%);
-    border: 1px solid rgba(255,255,255,.08);
+    background: $white;
+    border: 1px solid rgba(0,0,0,.08);
     .dropdown-item {
-      color: $white !important;
-      &:hover, &:focus { background: rgba(255,255,255,.08); color: $teal !important; }
+      color: $navy !important;
+      &:hover, &:focus { background: rgba($teal, .1); color: $navy !important; }
     }
   }
 

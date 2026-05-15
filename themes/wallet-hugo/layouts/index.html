@@ -7,6 +7,10 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7">
+        {{ $heroLogo := resources.Get "images/LogoFull.png" }}
+        {{ if $heroLogo }}
+        <img src="{{ $heroLogo.RelPermalink }}" alt="NaviCare Now Logo" style="height: 50px;" class="mb-4 d-block">
+        {{ end }}
         <div class="badge mb-4"><div class="badge-dot"></div>{{ .badge }}</div>
         <h1 class="mb-3 text-navy display-4">{{ .title | safeHTML }}</h1>
         <p class="hero-sub mb-4 lead text-muted">{{ .subtitle | markdownify }}</p>

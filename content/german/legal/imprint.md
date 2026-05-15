@@ -8,7 +8,7 @@ Navicare Now
 
 Julia Camara
 
-Schöllerstraße 12, 89438 Offingen
+St.-Martin-Straße 2, 89415 Lauingen
 
 Deutschland
 

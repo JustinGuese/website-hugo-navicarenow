@@ -14,7 +14,7 @@ banner:
     enable: true
     label: 'Kooperationspartner werden'
     link: '#partner'
-  image: 'images/screenshots/calculator_resultscreen.png'
+  image: 'images/screenshots/phonemockups/calculator_resultscreen-left.png'
 
 ############################ Sektion 2 – PROBLEM ##################################
 problem:
@@ -111,7 +111,7 @@ netzwerk:
   title: 'Wir trennen nicht. Wir bauen ein Netzwerk.'
   description: "NaviCare Now® ist kein Konkurrent und kein Ersatz. Wir sind der Knotenpunkt, der bestehende Strukturen miteinander verbindet — zum Wohl der Menschen, die Pflege brauchen.\n\nWir suchen innovationsfreudige Partner, die das Problem genauso sehen wie wir — und Vorreiter für die Zukunft der Versorgung sein wollen. Von der Basis aus. Gemeinsam."
   spoc:
-    quote: '„Gemeinsam navigieren statt allein kämpfen."'
+    quote: 'Gemeinsam navigieren statt allein kämpfen.'
     badge_highlight: 'Single-Point-of-Contact'
     badge_text: 'NaviCare Now® verbindet alle Beteiligten in einem digitalen Netzwerk — sektorenübergreifend.'
     badge_sub: 'Ein Kontaktpunkt. Alle Akteure. Jederzeit.'
