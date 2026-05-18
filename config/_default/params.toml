@@ -19,6 +19,10 @@ stripe_product_id_pflegegraddoneforyou = "prod_TUQUKzl32q1S0W"
 stripe_publishable_key = "pk_test_51SXRaQLj1DrqgwLdsaW2IdYteT0bSlWopmVZ7I7rRPmpw7UxOvY1n1c0E0aZTDHL6BQzrhGpyITW76IafOZq5w8z00ZFBIKpri"
 api_base_url = "https://navicarenow-backend.api.datafortress.cloud"
 
+# Global CTA shown above the footer on every page
+[global_cta]
+enable = false
+
 # top hedaer
 top_hedaer = false
 # custom script on header
@@ -32,7 +36,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation buttons
 [navigation_button_solid]
 enable = true
-label = "Zum Pflegebedarfsermittlung"
+label = "Zur Pflegebedarfsermittlung"
 link = "https://navicarenow.datafortress.cloud/"
 
 [navigation_button_bordered]

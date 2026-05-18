@@ -15,6 +15,7 @@
 	{{ partial "page-header.html" . }}
 	{{ end }}
 	{{ block "main" . }}{{ end }}
+  {{ if site.Params.global_cta.enable }}
   <!-- Global CTA shown on all pages, above the footer (no animation to avoid flicker) -->
   <section class="section bg-light position-relative overflow-hidden py-5">
     <div class="container">
@@ -36,6 +37,7 @@
       </div>
     </div>
   </section>
+  {{ end }}
 	{{ partial "footer.html" . }}
 	{{ partialCached "script.html" . }}
 </body>

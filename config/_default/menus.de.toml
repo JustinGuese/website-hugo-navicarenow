@@ -1,10 +1,10 @@
 # main menu
 
 
-[[main]]
-name = "Über uns"
-url = "about/"
-weight = 2
+#[[main]]
+#name = "Über uns"
+#url = "about/"
+#weight = 2
 
 # [[footer_services]]
 # name = "Warnzeichen erkennen"
@@ -31,10 +31,10 @@ weight = 2
 # url = "services/entlastung-angehoerige/"
 # weight = 5
 
-[[main]]
-name = "FAQ"
-url = "faq/"
-weight = 4
+#[[main]]
+#name = "FAQ"
+#url = "faq/"
+#weight = 4
 
 
 [[main]]
@@ -48,7 +48,7 @@ weight = 5
 # weight = 5
 
 [[main]]
-name = "Legal"
+name = "Rechtliches"
 url = "#"
 weight = 7
 
@@ -73,11 +73,11 @@ weight = 3
 
 ################################### Footer Menu #####################################
 [[footer]]
-name = "Terms & Conditions"
+name = "AGB"
 url = "legal/terms-conditions/"
 
 [[footer]]
-name = "Privacy Policy"
+name = "Datenschutzerklärung"
 url = "legal/privacy-policy/"
 
 

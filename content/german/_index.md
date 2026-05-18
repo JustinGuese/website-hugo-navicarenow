@@ -14,15 +14,16 @@ banner:
     enable: true
     label: 'Kooperationspartner werden'
     link: '#partner'
-  image: 'images/screenshots/phonemockups/calculator_resultscreen-left.png'
+    # image: 'images/screenshots/phonemockups/calculator_resultscreen-left.png'
+  image: 'images/screenshots/phone.png'
 
 ############################ Sektion 2 – PROBLEM ##################################
 problem:
   enable: true
   label: 'WARUM NAVICARE NOW?'
-  title: 'Das Pflegesystem ist fragmentiert. Wir verbinden.'
+  title: 'Das Pflege- und Versorgungssystem ist fragmentiert. Wir verbinden.'
   subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
-  bridge: 'NaviCare Now® schafft den **Single Point of Contact** — eine digitale Schaltzentrale, die alle Beteiligten verbindet und Pflegekoordination endlich sektorenübergreifend ermöglicht.'
+  bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — eine digitale Schaltzentrale, die alle Beteiligten verbindet und Pflegekoordination endlich sektorenübergreifend ermöglicht.'
 
 ############################ Sektion 3 – SO FUNKTIONIERT ES ##################################
 how_it_works:
@@ -109,7 +110,7 @@ netzwerk:
   enable: true
   label: 'KOOPERATIONSPARTNER'
   title: 'Wir trennen nicht. Wir bauen ein Netzwerk.'
-  description: "NaviCare Now® ist kein Konkurrent und kein Ersatz. Wir sind der Knotenpunkt, der bestehende Strukturen miteinander verbindet — zum Wohl der Menschen, die Pflege brauchen.\n\nWir suchen innovationsfreudige Partner, die das Problem genauso sehen wie wir — und Vorreiter für die Zukunft der Versorgung sein wollen. Von der Basis aus. Gemeinsam."
+  description: "NaviCare Now® ist kein Konkurrent und kein Ersatz. Wir sind der Knotenpunkt, der bestehende Strukturen miteinander verbindet — zum Wohl der Menschen.\n\nWir suchen innovationsfreudige Partner, die das Problem genauso sehen wie wir — und Vorreiter für die Zukunft der Versorgung sein wollen. Von der Basis aus. Gemeinsam."
   spoc:
     quote: 'Gemeinsam navigieren statt allein kämpfen.'
     badge_highlight: 'Single-Point-of-Contact'
@@ -333,7 +334,7 @@ about_us:
     - name: 'Julia Camara'
       role: 'CEO · COO'
       color: 'lila'
-      description: 'Markteintritt & Vertrieb, operative Umsetzung, Industriepartnerschaften, Stakeholder-Management mit Krankenkassen, Einrichtungen und Pflegediensten.'
+      description: 'Markteintritt & Vertrieb, operative Umsetzung, Partnerschaften, Stakeholder-Management mit Krankenkassen, Einrichtungen und Pflegediensten.'
     - name: 'Justin Güse'
       role: 'CTO'
       color: 'navy'
@@ -341,7 +342,7 @@ about_us:
     - name: 'Nicole Blom'
       role: 'CEO · CNO'
       color: 'teal'
-      description: 'Strategische Vision, pflegewissenschaftliche Leitung (APN/CHN), wissenschaftliche Begleitung & Uni-Kooperation, Fördermittelmanagement.'
+      description: 'Pflegewissenschaftliche Leitung, wissenschaftliche Begleitung & Uni-Kooperation, Fördermittelmanagement.'
   extended_team_title: 'Unser erweitertes Team'
   extended_team:
     - name: 'Warlley de Lima Santos'
@@ -357,13 +358,13 @@ about_us:
       color: 'lila'
       description: 'Pflegefachliche Praxisvalidierung und Beratung.'
     - name: 'Nele Templer'
-      role: 'Head of Inclusion & Regional Relations'
+      role: 'Inclusion & Family Relations'
       color: 'coral'
-      description: 'Schnittstelle zur Eingliederungshilfe & Politik. Fokus: pädagogische Inklusion und regionales Lobbying.'
+      description: 'Schnittstelle zur Eingliederungshilfe. Fokus: pädagogische Inklusion'
 
 ############################ Sektion 12 – FAQ ##################################
 faq:
-  enable: true
+  enable: false
   title: 'Häufig gestellte Fragen'
   faq_items:
     - question: 'Ist NaviCare Now kostenlos?'
