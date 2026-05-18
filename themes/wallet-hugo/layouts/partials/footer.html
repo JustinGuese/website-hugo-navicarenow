@@ -11,11 +11,13 @@
           <!-- Removed text wordmark as LogoFull.png includes text -->
         </div>
         <p class="text-muted small mb-4">NaviCare Now GmbH i.G. · Bayern · NRW · deutschlandweit</p>
+        {{ if site.Params.social_icons.footer }}
         <div class="social-icons">
           {{ range site.Params.social }}
           <a title="{{ .title | humanize }}" class="text-secondary me-3 h5" href="{{ .link }}"><i class="{{ .icon }}"></i></a>
           {{ end }}
         </div>
+        {{ end }}
       </div>
 
       <!-- <div class="col-lg-2 col-md-4 col-6">

@@ -48,6 +48,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-2 mb-lg-0">
+        {{ if site.Params.social_icons.homepage }}
         <div class="d-flex justify-content-center justify-content-lg-start">
           <span>Social Links</span>
           <span class="mx-2">|</span>
@@ -58,6 +59,7 @@
             {{end}}
           </ul>
         </div>
+        {{ end }}
       </div>
       <div class="col-lg-6 text-center text-lg-end">
         <ul class="list-unstyled list-inline mb-0">

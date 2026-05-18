@@ -87,6 +87,12 @@ sidebar = ["categories", "tags", "recent-post", "social"]
 # available widget : categories,tags,recent-post,social
 
 ############################# social site ########################
+# Toggle social icon display per location
+[social_icons]
+homepage = false  # social icons in top header bar (shown on homepage + all pages)
+footer = false    # social icons in footer
+contact = false   # social icons on the contact (Kontakt) page
+
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook-f" # line-awesome : https://icons8.com/line-awesome

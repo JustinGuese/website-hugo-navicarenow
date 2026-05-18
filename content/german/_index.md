@@ -9,11 +9,11 @@ banner:
   button:
     enable: true
     label: 'Jetzt mitmachen'
-    link: '#mitmachen'
+    link: '/kontakt'
   button_secondary:
     enable: true
     label: 'Kooperationspartner werden'
-    link: '#partner'
+    link: '/kontakt'
     # image: 'images/screenshots/phonemockups/calculator_resultscreen-left.png'
   image: 'images/screenshots/phone.png'
 
@@ -122,7 +122,7 @@ partner_cta:
   title: 'Jetzt innovativer Kooperationspartner werden'
   description: 'Ob Pflegedienst, Klinik, Kasse oder Hochschule — schreiben Sie uns an und lassen Sie uns gemeinsam die Zukunft gestalten.'
   button_label: 'Gespräch vereinbaren →'
-  button_link: 'mailto:info@navicarenow.de'
+  button_link: '/kontakt'
 
 ############################ Sektion 5 – SOCIAL PROOF ##################################
 social_proof:
@@ -268,7 +268,7 @@ personas:
         - 'Zugang zu Schulungsmaterialien und Beratung'
         - 'Teil einer wachsenden Community'
       cta_label: 'App testen →'
-      cta_link: 'mailto:info@navicarenow.de'
+      cta_link: '/kontakt'
     - name: 'Pflegeeinrichtungen und Pflegedienste'
       tag: 'PILOT-PARTNER GESUCHT'
       color: 'navy'
@@ -280,7 +280,7 @@ personas:
         - 'Evidenzbasiertes Wissen'
         - 'Vorzugsbedingungen als Erstpartner'
       cta_label: 'Pilot-Partner werden →'
-      cta_link: 'mailto:info@navicarenow.de'
+      cta_link: '/kontakt'
     - name: 'Fachpersonen & Zukunftsgestaltende'
       tag: 'COMMUNITY GESUCHT'
       color: 'lila'
@@ -293,7 +293,7 @@ personas:
         - 'Netzwerk mit Pflegefachpersonen, CHN, APN, Sozialarbeitenden, Pädagogen u.v.m.'
         - 'Menschen, die wirklich etwas bewegen wollen'
       cta_label: 'Jetzt vernetzen →'
-      cta_link: 'mailto:info@navicarenow.de'
+      cta_link: '/kontakt'
     - name: 'Gesundheitspartner'
       tag: 'NETZWERKPARTNER'
       color: 'teal'
@@ -308,7 +308,7 @@ personas:
         - 'Nahtlose Übergänge & geteilte Versorgungsplanung'
       partners_list: 'Apotheken · Sanitätshäuser · Hausärzte · Fachärzte · Pflegestützpunkte · Krankenkassen · Sozialdienste · Rehabilitationseinrichtungen · Coaches · Trainer · Schulungspartner · Kommunen u.v.m.'
       cta_label: 'Netzwerk beitreten →'
-      cta_link: 'mailto:info@navicarenow.de'
+      cta_link: '/kontakt'
 
 ############################ Sektion 10 – DATENSCHUTZ & VERTRAUEN ##################################
 trust:
@@ -385,5 +385,5 @@ cta:
   subtitle: 'Wir sind noch am Anfang — und genau deshalb ist Ihr Einstieg jetzt so wertvoll. Lassen Sie uns sprechen.'
   primary_button:
     label: 'Gespräch vereinbaren →'
-    href: 'mailto:info@navicarenow.de'
+    href: '/kontakt'
 ---

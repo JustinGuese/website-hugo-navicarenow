@@ -53,19 +53,19 @@ url = "#"
 weight = 7
 
 [[main]]
-parent = "Legal"
+parent = "Rechtliches"
 name = "AGB"
 url = "legal/terms-conditions/"
 weight = 1
 
 [[main]]
-parent = "Legal"
+parent = "Rechtliches"
 name = "Datenschutzerklärung"
 url = "legal/privacy-policy/"
 weight = 2
 
 [[main]]
-parent = "Legal"
+parent = "Rechtliches"
 name = "Impressum"
 url = "legal/imprint/"
 weight = 3

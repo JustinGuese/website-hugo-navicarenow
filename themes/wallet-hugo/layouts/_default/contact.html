@@ -48,6 +48,7 @@
                 </div>
                 {{ end }}
 
+                {{ if site.Params.social_icons.contact }}
                 <div class="block">
                   <ul class="list-unstyled list-inline my-4 social-icons">
                     {{range site.Params.social }}
@@ -55,6 +56,7 @@
                     {{end}}
                   </ul>
                 </div>
+                {{ end }}
               </div>
             </div>
         
