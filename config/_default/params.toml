@@ -89,24 +89,29 @@ sidebar = ["categories", "tags", "recent-post", "social"]
 ############################# social site ########################
 # Toggle social icon display per location
 [social_icons]
-homepage = false  # social icons in top header bar (shown on homepage + all pages)
-footer = false    # social icons in footer
-contact = false   # social icons on the contact (Kontakt) page
+homepage = true  # social icons in top header bar (shown on homepage + all pages)
+footer = true    # social icons in footer
+contact = true   # social icons on the contact (Kontakt) page
 
 [[social]]
-title = "facebook"
-icon = "fab fa-facebook-f" # line-awesome : https://icons8.com/line-awesome
-link = "https://facebook.com/"
+title = "linkedin"
+icon = "fab fa-linkedin" # line-awesome : https://icons8.com/line-awesome
+link = "https://de.linkedin.com/company/navicare-now"
 
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # line-awesome : https://icons8.com/line-awesome
-link = "https://twitter.com/"
+#[[social]]
+#title = "facebook"
+#icon = "fab fa-facebook-f" # line-awesome : https://icons8.com/line-awesome
+#link = "https://facebook.com/"
 
-[[social]]
-title = "instagram"
-icon = "fab fa-instagram" # line-awesome : https://icons8.com/line-awesome
-link = "https://instagram.com/"
+#[[social]]
+#title = "twitter"
+#icon = "fab fa-twitter" # line-awesome : https://icons8.com/line-awesome
+#link = "https://twitter.com/"
+
+#[[social]]
+#title = "instagram"
+#icon = "fab fa-instagram" # line-awesome : https://icons8.com/line-awesome
+#link = "https://instagram.com/"
 
 ############################# Footer Widget ########################
 [[footer_widget]]

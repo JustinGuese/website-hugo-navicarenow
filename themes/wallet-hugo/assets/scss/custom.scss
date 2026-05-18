@@ -25,7 +25,7 @@ main .text-secondary {
 }
 
 footer .text-muted {
-  color: var(--muted-light) !important;
+  color: #4a6076 !important;
 }
 
 .bg-dark-custom { background-color: $dark !important; }
@@ -619,12 +619,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-  background: #0A0A0A;
+  background: linear-gradient(180deg, #eaf3fb 0%, #d9eaf7 100%);
+  color: #1a3550;
   padding: 60px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(22, 71, 126, 0.08);
   .footer-wordmark {
     font-family: $secondary-font;
     font-size: 24px;
     .now { color: $coral; }
   }
+  a { color: #1a3550; }
+  a:hover { color: $navy; }
+  .border-top { border-color: rgba(22, 71, 126, 0.1) !important; }
 }
