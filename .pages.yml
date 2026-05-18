@@ -1,4 +1,4 @@
-media: static/images
+media: assets/images
 content:
   - name: homepage
     label: Homepage
@@ -10,9 +10,13 @@ content:
         fields:
           - name: enable
             type: boolean
+          - name: badge
+            type: string
           - name: title
             type: string
           - name: subtitle
+            type: string
+          - name: tagline
             type: string
           - name: button
             type: object
@@ -21,9 +25,7 @@ content:
                 type: boolean
               - name: label
                 type: string
-              - name: icon
-                type: string
-              - name: button_modal_target
+              - name: link
                 type: string
           - name: button_secondary
             type: object
@@ -32,12 +34,8 @@ content:
                 type: boolean
               - name: label
                 type: string
-              - name: icon
+              - name: link
                 type: string
-              - name: button_modal_target
-                type: string
-          - name: trust_element
-            type: string
           - name: image
             type: image
 
@@ -46,19 +44,14 @@ content:
         fields:
           - name: enable
             type: boolean
+          - name: label
+            type: string
           - name: title
             type: string
-          - name: bridge
+          - name: subtitle
             type: string
-          - name: problems
-            type: list
-            field:
-              type: object
-              fields:
-                - name: title
-                  type: string
-                - name: icon
-                  type: string
+          - name: bridge
+            type: rich-text
 
       - name: how_it_works
         type: object
@@ -90,6 +83,31 @@ content:
               - name: href
                 type: string
 
+      - name: pillars
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: label
+            type: string
+          - name: title
+            type: string
+          - name: items
+            type: list
+            field:
+              type: object
+              fields:
+                - name: title
+                  type: string
+                - name: tag
+                  type: string
+                - name: color
+                  type: string
+                - name: description
+                  type: rich-text
+                - name: word
+                  type: string
+
       - name: features
         type: object
         fields:
@@ -112,6 +130,43 @@ content:
                   type: string
                 - name: description
                   type: rich-text
+
+      - name: netzwerk
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: label
+            type: string
+          - name: title
+            type: string
+          - name: description
+            type: rich-text
+          - name: spoc
+            type: object
+            fields:
+              - name: quote
+                type: string
+              - name: badge_highlight
+                type: string
+              - name: badge_text
+                type: rich-text
+              - name: badge_sub
+                type: string
+
+      - name: partner_cta
+        type: object
+        fields:
+          - name: enable
+            type: boolean
+          - name: title
+            type: string
+          - name: description
+            type: rich-text
+          - name: button_label
+            type: string
+          - name: button_link
+            type: string
 
       - name: social_proof
         type: object
@@ -147,7 +202,7 @@ content:
                   type: string
                 - name: label
                   type: string
-                - name: source
+                - name: color
                   type: string
 
       - name: calculator_teaser
@@ -245,6 +300,8 @@ content:
         fields:
           - name: enable
             type: boolean
+          - name: label
+            type: string
           - name: title
             type: string
           - name: items
@@ -254,15 +311,25 @@ content:
               fields:
                 - name: name
                   type: string
+                - name: tag
+                  type: string
+                - name: color
+                  type: string
+                - name: icon
+                  type: string
                 - name: situation
                   type: rich-text
                 - name: features
                   type: list
                   field:
                     type: string
+                - name: partners_list
+                  type: string
                 - name: quote
                   type: string
                 - name: cta_label
+                  type: string
+                - name: cta_link
                   type: string
 
       - name: trust
@@ -289,16 +356,38 @@ content:
         fields:
           - name: enable
             type: boolean
+          - name: label
+            type: string
           - name: title
             type: string
-          - name: mission
-            type: rich-text
-          - name: team_intro
-            type: rich-text
-          - name: quote
+          - name: team_members
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: role
+                  type: string
+                - name: color
+                  type: string
+                - name: description
+                  type: rich-text
+          - name: extended_team_title
             type: string
-          - name: funding
-            type: rich-text
+          - name: extended_team
+            type: list
+            field:
+              type: object
+              fields:
+                - name: name
+                  type: string
+                - name: role
+                  type: string
+                - name: color
+                  type: string
+                - name: description
+                  type: rich-text
 
       - name: faq
         type: object
@@ -333,17 +422,6 @@ content:
                 type: string
               - name: href
                 type: string
-          - name: secondary_button
-            type: object
-            fields:
-              - name: enable
-                type: boolean
-              - name: label
-                type: string
-              - name: href
-                type: string
-          - name: trust_line
-            type: string
 
   - name: about
     label: About Page
