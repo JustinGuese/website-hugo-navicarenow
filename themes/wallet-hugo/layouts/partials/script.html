@@ -139,3 +139,78 @@
 </style>
 {{ end }}
 {{ end }}
+
+<!-- Analytics Events -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Contact Form Submission
+    var contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function() {
+        gtag('event', 'generate_lead', {
+          'event_category': 'Contact',
+          'event_label': 'Contact Form'
+        });
+        fbq('track', 'Lead', {
+          content_name: 'Contact Form'
+        });
+      });
+    }
+
+    // Newsletter/Waitlist Submission
+    var newsletterForm = document.getElementById('newsletter-form');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function() {
+        gtag('event', 'sign_up', {
+          'event_category': 'Subscription',
+          'event_label': 'Newsletter Footer'
+        });
+        fbq('track', 'CompleteRegistration', {
+          content_name: 'Newsletter Footer'
+        });
+      });
+    }
+
+    // Demo Click
+    var demoButtons = document.querySelectorAll('.track-demo-click');
+    demoButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'select_content', {
+          'content_type': 'button',
+          'item_id': 'demo_request'
+        });
+        fbq('track', 'Schedule', {
+          content_name: 'Demo Request'
+        });
+      });
+    });
+
+    // Global Contact Click
+    var contactButtons = document.querySelectorAll('.track-contact-click');
+    contactButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'select_content', {
+          'content_type': 'button',
+          'item_id': 'contact_click'
+        });
+        fbq('track', 'Contact', {
+          content_name: 'Global Contact Button'
+        });
+      });
+    });
+
+    // App/Waitlist Click
+    var appButtons = document.querySelectorAll('.track-app-click');
+    appButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'select_content', {
+          'content_type': 'button',
+          'item_id': 'app_go'
+        });
+        fbq('track', 'FindLocation', {
+          content_name: 'App Redirect'
+        });
+      });
+    });
+  });
+</script>

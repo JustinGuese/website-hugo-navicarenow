@@ -26,6 +26,18 @@ This document serves as a repository of knowledge, errors, and gotchas specific 
 - **Config Directory:** Configuration is split across multiple files in `config/_default/` (e.g., `menus.de.toml`, `params.toml`) rather than a single root `config.toml`.
 - **Content:** The primary site content is stored in the `content/german/` directory.
 
+## 5. Analytics & Event Tracking
+**Implementation:**
+- **Base Scripts:** Google Analytics (G-QW0R21H2B7) and Meta Pixel (1367864471838582) are initialized in `themes/wallet-hugo/layouts/partials/head.html`.
+- **Event Listeners:** A custom script at the end of `themes/wallet-hugo/layouts/partials/script.html` handles event tracking.
+- **Tracked Events:**
+    - **Contact Form:** Tracks `generate_lead` (GA) and `Lead` (Meta) when the form with `id="contact-form"` is submitted.
+    - **Newsletter/Waitlist:** Tracks `sign_up` (GA) and `CompleteRegistration` (Meta) when the form with `id="newsletter-form"` is submitted.
+    - **Demo Requests:** Tracks `select_content` (GA) and `Schedule` (Meta) when buttons with class `.track-demo-click` are clicked.
+    - **Global Contact:** Tracks `select_content` (GA) and `Contact` (Meta) when buttons with class `.track-contact-click` are clicked.
+    - **App/Waitlist Redirect:** Tracks `select_content` (GA) and `FindLocation` (Meta) when buttons with class `.track-app-click` are clicked (e.g., header buttons).
+**Gotcha:** When adding new forms or CTA buttons, ensure they have the corresponding IDs or classes to maintain consistent tracking. Avoid changing these IDs/classes without updating the script in `script.html`.
+
 **SCSS Architecture & Pipeline:**
 - **Dynamic Variables:** The SCSS pipeline is initiated in `themes/wallet-hugo/layouts/partials/style.html`. The main entry point is `style.scss`, which uses Go templating to inject Hugo config parameters directly into SASS variables (e.g., `$primary-color: {{.primary_color}}`).
 - **Overriding Themes:** If you need to make changes to layouts, partials, or assets, prioritize creating the mirrored file path in the project root (e.g., `layouts/partials/...` or `assets/scss/...`) rather than modifying the `themes/wallet-hugo/` folder directly. However, be extremely careful not to create empty root files (like an empty `custom.scss`), as they will blindly override the theme files and break the site.
