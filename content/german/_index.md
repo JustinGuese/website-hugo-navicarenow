@@ -20,7 +20,7 @@ banner:
 ############################ Sektion 2 – PROBLEM ##################################
 problem:
   enable: true
-  label: 'WARUM NAVICARE NOW?'
+  label: 'WARUM NAVICARE NOW®?'
   title: 'Das Pflege- und Versorgungssystem ist fragmentiert. Wir verbinden.'
   subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
   bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — eine digitale Schaltzentrale, die alle Beteiligten verbindet und Pflegekoordination endlich sektorenübergreifend ermöglicht.'
@@ -41,7 +41,7 @@ how_it_works:
     - icon: 'fas fa-route'
       icon_label: 'Begleitung starten'
       title: 'Täglich informiert. Immer eine Antwort.'
-      description: 'NaviCare Now begleitet Sie im Alltag: mit dem Pflegetagebuch, Erinnerungen, verständlichen Erklärungen zu Leistungen und einem täglichen Impuls. Sie fühlen sich nicht mehr allein mit dieser Aufgabe.'
+      description: 'NaviCare Now® begleitet Sie im Alltag: mit dem Pflegetagebuch, Erinnerungen, verständlichen Erklärungen zu Leistungen und einem täglichen Impuls. Sie fühlen sich nicht mehr allein mit dieser Aufgabe.'
   cta:
     enable: true
     label: 'Direkt zur Pflegebedarfsermittlung'
@@ -52,32 +52,37 @@ pillars:
   enable: true
   label: 'UNSER FUNDAMENT'
   title: 'Vier Säulen. Eine Vision.'
+  subtitle: 'Weniger Unter-, Über- und Fehlversorgung. Entlastete Angehörige. Gestärkte Pflegefachpersonen. Nachhaltige Kosten. Mehr Lebensqualität.'
   items:
     - title: 'Menschliche Pflege und Versorgung'
       tag: 'CARE'
       color: 'coral'
-      description: 'Regionales Infrastrukturmonitoring, Care- und Case Management, APN/CHN-Struktur, Risikoanalysen und alle evidenzbasierten pflegefachlichen Inhalte der App.'
+      subtitle: 'Sie suchen Hilfe - und wissen nicht mal, wo Sie anfangen sollen.'
+      description: 'Pflegefachlich fundiert, menschlich nah - NaviCare Now® bringt strukturierte Risikoanalysen, Care und Case Management dorthin, wo Versorgung wirklich stattfindet.'
       word: 'JETZT'
     - title: 'Stärke & Kompetenz'
       tag: 'EMPOWERMENT'
       color: 'lila'
-      description: 'Fachschulungen für Angehörige und Pflegefachpersonen — Selbstwirksamkeit und Würde stärken.'
+      subtitle: 'Sie wissen nicht wie Sie helfen können? Pflegefachpersonen wissen was hilft. NaviCare Now® bringt sie zusammen.'
+      description: 'Wissen, das trägt. Von Menschen, die das System kennen - für Menschen, die mitten drin sind. Gemeinsam stärker.'
       word: 'ZIEL'
     - title: 'Digitale Innovation'
       tag: 'TECH'
       color: 'navy'
-      description: 'App-Entwicklung, KI-gestützte Risikoanalyse, DSGVO-konforme Infrastruktur für die Zukunft der Pflege und der Versorgung.'
+      subtitle: 'Technologie im Gesundheitswesen gibt es viele. Aber sie ist selten für die gemacht, die täglich damit arbeiten.'
+      description: 'Eine App, die Menschen verbindet - Angehörige, Fachpersonen, Dienste und Einrichtungen. Gemeinsam gestaltet. DSGVO-konform, KI-gestützt, für den Alltag.'
       word: 'RICHTUNG'
     - title: 'Struktur & Qualität'
       tag: 'PROCESS'
       color: 'teal'
-      description: 'Führungs- und Organisationsentwicklung, QMS, verlässliche Prozesse und Nachhaltigkeit.'
+      subtitle: 'Fachpersonen gehen nicht wegen dem Beruf und der Arbeit. Sie gehen wegen dem, was drumherum nicht funktioniert.'
+      description: 'NaviCare Now® begleitet Arbeitgebende bei der Entwicklung tragfähiger Strukturen, klarer Führung und nachhaltiger Organisation - damit gute Pflege und Versorgung auch gute Bedingungen hat.'
       word: 'WEG'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
 features:
   enable: true
-  title: 'Was NaviCare Now für Sie tut'
+  title: 'Was NaviCare Now® für Sie tut'
   subtitle: 'Kein Handbuch. Keine Hotline. Nur klare Antworten – genau dann, wenn Sie sie brauchen.'
   items:
     - icon: 'fas fa-clipboard-list'
@@ -99,11 +104,11 @@ features:
     - icon: 'fas fa-euro-sign'
       icon_label: 'Leistungen nutzen'
       title: 'Alle Pflegeleistungen auf einen Blick'
-      description: 'Pflegegeld, Entlastungsbetrag, Verhinderungspflege – NaviCare Now erklärt, was Ihnen zusteht, in echter Sprache. Kein Paragraph, keine Behördenformulare. Nur: was Sie bekommen können und wie.'
+      description: 'Pflegegeld, Entlastungsbetrag, Verhinderungspflege – NaviCare Now® erklärt, was Ihnen zusteht, in echter Sprache. Kein Paragraph, keine Behördenformulare. Nur: was Sie bekommen können und wie.'
     - icon: 'fas fa-heart'
       icon_label: 'Für Sie selbst'
       title: 'Entlastung für pflegende Angehörige'
-      description: 'NaviCare Now fragt auch, wie es Ihnen geht. Wer erschöpft ist, kann nicht gut pflegen. Deshalb zeigt die App, welche Unterstützung Sie selbst bekommen können und erinnert Sie daran, dass Ihre Kraft zählt.'
+      description: 'NaviCare Now® fragt auch, wie es Ihnen geht. Wer erschöpft ist, kann nicht gut pflegen. Deshalb zeigt die App, welche Unterstützung Sie selbst bekommen können und erinnert Sie daran, dass Ihre Kraft zählt.'
 
 ############################ Sektion 4.5 – NETZWERK ##################################
 netzwerk:
@@ -261,7 +266,7 @@ personas:
       tag: 'APP-TEST GESUCHT'
       color: 'coral'
       icon: '👨‍👩‍👧'
-      situation: 'Sie pflegen zu Hause und kennen die täglichen Herausforderungen aus erster Hand. Genau deshalb brauchen wir Sie — nicht als Nutzer, sondern als Mitgestalter.'
+      situation: 'Sie pflegen zu Hause und kennen die täglichen Herausforderungen aus erster Hand. Genau deshalb brauchen wir Sie — nicht als Nutzer, sondern als Mitgestaltende.'
       features:
         - 'App kostenlos testen und direkt Feedback geben'
         - 'Ihre Alltagserfahrungen fließen in die Entwicklung ein'
@@ -273,7 +278,7 @@ personas:
       tag: 'PILOT-PARTNER GESUCHT'
       color: 'navy'
       icon: '🏥'
-      situation: 'Werden Sie Teil der ersten Implementierungsphase. Als Pilot-Partner gestalten Sie mit uns die Lösung, die Ihren Alltag wirklich erleichtert.'
+      situation: 'Werden Sie Teil der ersten Implementierungsphase. Als Pilot-Partner gestalten Sie mit uns die Lösung, die Ihren (Arbeits-)Alltag wirklich erleichtert.'
       features:
         - 'Früher Zugang zur NCN-Plattform'
         - 'Direkte Einflussnahme auf Produktentwicklung'
@@ -290,7 +295,7 @@ personas:
         - 'Expertise einbringen & sichtbar machen'
         - 'Teil einer wachsenden Fachcommunity werden'
         - 'Mitgestalten statt nur ausführen'
-        - 'Netzwerk mit Pflegefachpersonen, CHN, APN, Sozialarbeitenden, Pädagogen u.v.m.'
+        - 'Netzwerk mit Pflegefachpersonen, Community Health Nurses, Advanced Practice Nurses, Sozialarbeitenden, Pädagogen u.v.m.'
         - 'Menschen, die wirklich etwas bewegen wollen'
       cta_label: 'Jetzt vernetzen →'
       cta_link: '/kontakt'
@@ -301,10 +306,9 @@ personas:
       situation: 'Werden Sie Teil eines wachsenden Netzwerks — weil Versorgung nur gemeinsam gelingt.'
       features:
         - 'Gemeinsame Datenbasis & weniger Schnittstellenverluste'
-        - 'Skalierbare Reichweite in den Pflegesektor'
+        - 'Skalierbare Reichweite in den Pflege- und Versorgungssektor'
         - 'Entlastete Koordination & klare Zuständigkeiten'
-        - 'Frühzeitige Risikoerkennung durch KI'
-        - 'Regionales Infrastrukturmonitoring'
+        - 'Teil des regionalen Infrastrukturmonitoring'
         - 'Nahtlose Übergänge & geteilte Versorgungsplanung'
       partners_list: 'Apotheken · Sanitätshäuser · Hausärzte · Fachärzte · Pflegestützpunkte · Krankenkassen · Sozialdienste · Rehabilitationseinrichtungen · Coaches · Trainer · Schulungspartner · Kommunen u.v.m.'
       cta_label: 'Netzwerk beitreten →'
@@ -332,7 +336,7 @@ about_us:
   title: 'Vier Säulen. Drei Gründende. Ein Ziel.'
   team_members:
     - name: 'Julia Camara'
-      role: 'CEO · COO'
+      role: 'Co-CEO · COO'
       color: 'lila'
       description: 'Markteintritt & Vertrieb, operative Umsetzung, Partnerschaften, Stakeholder-Management mit Krankenkassen, Einrichtungen und Pflegediensten.'
     - name: 'Justin Güse'
@@ -340,9 +344,9 @@ about_us:
       color: 'navy'
       description: 'Software-Architektur, KI-Entwicklung für Risikoanalyse, Datensicherheit/DSGVO, technische Skalierung.'
     - name: 'Nicole Blom'
-      role: 'CEO · CNO'
+      role: 'Co-CEO · CNO'
       color: 'teal'
-      description: 'Pflegewissenschaftliche Leitung, wissenschaftliche Begleitung & Uni-Kooperation, Fördermittelmanagement.'
+      description: 'Chief Nursing Officer, wissenschaftliche Begleitung & Uni-/ Hochschul-Kooperationen, Fördermittelmanagement.'
   extended_team_title: 'Unser erweitertes Team'
   extended_team:
     - name: 'Warlley de Lima Santos'
