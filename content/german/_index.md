@@ -67,13 +67,12 @@ pillars:
     - title: 'Digitale Innovation'
       tag: 'TECH'
       color: 'navy'
-      subtitle: 'Technologie im Gesundheitswesen gibt es viele. Aber sie ist selten für die gemacht, die täglich damit arbeiten.'
       description: 'Eine App, die Menschen verbindet - Angehörige, Fachpersonen, Dienste und Einrichtungen. Gemeinsam gestaltet. DSGVO-konform. KI-gestützt. Für den Alltag.'
       word: 'RICHTUNG'
     - title: 'Struktur & Qualität'
       tag: 'PROCESS'
       color: 'teal'
-      description: 'Fachpersonen gehen nicht wegen dem Beruf und der Arbeit. Sie gehen wegen dem, was drumherum nicht funktioniert. NaviCare Now® begleitet Arbeitgebende bei der Entwicklung tragfähiger Strukturen, klarer Führung und nachhaltiger Organisation - damit gute Pflege und Versorgung auch gute Bedingungen hat.'
+      description: 'Fachpersonen gehen nicht wegen dem Beruf. Sie gehen wegen dem, was drumherum nicht funktioniert. NaviCare Now® begleitet Arbeitgebende bei der Entwicklung tragfähiger Strukturen, klarer Führung und nachhaltiger Organisation - damit gute Pflege und Versorgung auch gute Bedingungen hat.'
       word: 'WEG'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
