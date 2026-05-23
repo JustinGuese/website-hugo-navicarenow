@@ -23,7 +23,7 @@ problem:
   label: 'WARUM NAVICARE NOW®?'
   title: 'Das Pflege- und Versorgungssystem ist fragmentiert. Wir verbinden.'
   subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
-  bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — eine digitale Schaltzentrale, die alle Beteiligten verbindet und Pflegekoordination endlich sektorenübergreifend ermöglicht.'
+  bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — eine digitale Schaltzentrale, die alle Beteiligten verbindet und bedarfsorientierte Koordination endlich sektorenübergreifend ermöglicht.'
 
 ############################ Sektion 3 – SO FUNKTIONIERT ES ##################################
 how_it_works:
