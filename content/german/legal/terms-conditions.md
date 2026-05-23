@@ -20,9 +20,9 @@ Benutzer müssen dieses Dokument sorgfältig lesen.
 
 Diese Anwendung wird bereitgestellt von:
 
-Navicare Now
+NaviCare Now®
 Julia Camara
-Schöllerstraße 12, 89438 Offingen
+Sankt-martin-Straße 2, 89415 Lauingen
 Deutschland
 
 **Kontakt-E-Mail des Anbieters:** info@navicarenow.de
