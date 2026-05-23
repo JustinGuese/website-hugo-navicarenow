@@ -57,22 +57,26 @@ pillars:
     - title: 'Menschliche Pflege und Versorgung'
       tag: 'CARE'
       color: 'coral'
-      description: 'Pflegefachlich fundiert, menschlich nah - NaviCare Now® bringt strukturierte Risikoanalysen, Care und Case Management dorthin, wo Versorgung wirklich stattfindet.'
+      description: 'Sie suchen Hilfe - und wissen nichtmal wo Sie anfangen sollen. 
+      Pflegefachlich fundiert, menschlich nah - NaviCare Now® bringt strukturierte Risikoanalysen, Care und Case Management dorthin, wo Versorgung wirklich stattfindet.'
       word: 'JETZT'
     - title: 'Stärke & Kompetenz'
       tag: 'EMPOWERMENT'
       color: 'lila'
-      description: 'Wissen, das trägt. Von Menschen, die das System kennen - für Menschen, die mitten drin sind. Gemeinsam stärker.'
+      description: 'Sie wissen nicht, wie Sie helfen können. Pflegefachpersonen wissen was hilft. NaviCare Now® bringt sie zusammen.
+      Wissen, das trägt. Von Menschen, die das System kennen - für Menschen, die mitten drin sind. Gemeinsam stärker.'
       word: 'ZIEL'
     - title: 'Digitale Innovation'
       tag: 'TECH'
       color: 'navy'
-      description: 'Eine App, die Menschen verbindet - Angehörige, Fachpersonen, Dienste und Einrichtungen. Gemeinsam gestaltet. DSGVO-konform. KI-gestützt. Für den Alltag.'
+      description: 'Technologie im Gesundheitswesen gibt es viele. Doch sie ist selten für die gemacht, die täglich damit arbeiten.
+      Eine App, die Menschen verbindet - Angehörige, Fachpersonen, Dienste und Einrichtungen. Gemeinsam gestaltet. DSGVO-konform. KI-gestützt. Für den Alltag.'
       word: 'RICHTUNG'
     - title: 'Struktur & Qualität'
       tag: 'PROCESS'
       color: 'teal'
-      description: 'Fachpersonen gehen nicht wegen dem Beruf. Sie gehen wegen dem, was drumherum nicht funktioniert. NaviCare Now® begleitet Arbeitgebende bei der Entwicklung tragfähiger Strukturen, klarer Führung und nachhaltiger Organisation - damit gute Pflege und Versorgung auch gute Bedingungen hat.'
+      description: 'Fachpersonen gehen nicht wegen dem Beruf. Sie gehen wegen dem, was drumherum nicht funktioniert. 
+      NaviCare Now® begleitet Arbeitgebende bei der Entwicklung tragfähiger Strukturen, klarer Führung und nachhaltiger Organisation - damit gute Pflege und Versorgung auch gute Bedingungen hat.'
       word: 'WEG'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
