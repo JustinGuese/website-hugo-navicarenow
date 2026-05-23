@@ -22,7 +22,7 @@ Diese Anwendung wird bereitgestellt von:
 
 NaviCare Now®
 Julia Camara
-Sankt-martin-Straße 2, 89415 Lauingen
+St.-Martin-Straße 2, 89415 Lauingen
 Deutschland
 
 **Kontakt-E-Mail des Anbieters:** info@navicarenow.de
