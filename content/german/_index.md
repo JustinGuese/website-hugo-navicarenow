@@ -58,7 +58,7 @@ pillars:
       tag: 'CARE'
       color: 'coral'
       description: 'Sie suchen Hilfe - und wissen nichtmal wo Sie anfangen sollen. 
-      Pflegefachlich fundiert, menschlich nah - NaviCare Now® bringt strukturierte Risikoanalysen, Care und Case Management dorthin, wo Versorgung wirklich stattfindet.'
+      NaviCare Now® bringt strukturierte Risikoanalysen, Care und Case Management dorthin, wo Versorgung wirklich stattfindet. Pflegefachlich fundiert, menschlich nah.'
       word: 'JETZT'
     - title: 'Stärke & Kompetenz'
       tag: 'EMPOWERMENT'
