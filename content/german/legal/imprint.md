@@ -4,7 +4,7 @@ description: 'this is meta description'
 draft: false
 ---
 
-Navicare Now
+NaviCare Now®
 
 Julia Camara
 
