@@ -52,7 +52,7 @@ pillars:
   enable: true
   label: 'UNSER FUNDAMENT'
   title: 'Vier Säulen. Eine Vision.'
-  subtitle: 'Weniger Unter-, Über- und Fehlversorgung. Entlastete Angehörige. Gestärkte Pflegefachpersonen. Nachhaltige Kosten. Mehr Lebensqualität.'
+    subtitle: 'Weniger Unter-, Über- und Fehlversorgung. Entlastete Angehörige. Gestärkte Pflegefachpersonen. Nachhaltige Kosten. Mehr Lebensqualität.'
   items:
     - title: 'Menschliche Pflege und Versorgung'
       tag: 'CARE'
