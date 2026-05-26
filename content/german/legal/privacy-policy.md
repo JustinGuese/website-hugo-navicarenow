@@ -54,7 +54,7 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 2. Name und Anschrift des Verantwortlichen
    Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO), sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist:
 
-NaviCare Now
+NaviCare Now®
 Julia Camara
 St.-Martin-Straße 2, 89415 Lauingen
 Deutschland
