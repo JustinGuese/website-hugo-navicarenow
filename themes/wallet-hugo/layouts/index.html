@@ -84,8 +84,11 @@
 {{ with .Params.pillars }}
 <section class="section bg-white" id="saeulen" data-aos="fade-up">
   <div class="container">
-    <p class="section-label text-teal">{{ .label }}</p>
-    <h2 class="text-navy mb-5 display-6">{{ .title | markdownify }}</h2>
+    <p class="section-label text-teal text-center">{{ .label }}</p>
+    <h2 class="text-navy mb-3 display-6 text-center">{{ .title | markdownify }}</h2>
+    {{ with .subtitle }}
+    <p class="lead text-muted mb-5" style="text-align: center;">{{ . | markdownify }}</p>
+    {{ end }}
 
     <div class="row g-4">
       {{ range .items }}

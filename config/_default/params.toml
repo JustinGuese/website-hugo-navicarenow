@@ -23,8 +23,12 @@ api_base_url = "https://navicarenow-backend.api.datafortress.cloud"
 [global_cta]
 enable = false
 
+# Orange promo strip at the very top of every page
+[announcement_banner]
+enable = false
+
 # top hedaer
-top_hedaer = false
+top_hedaer = false # toggle the top banner bar above the main nav
 # custom script on header
 custom_script= ""
 
@@ -35,12 +39,12 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation buttons
 [navigation_button_solid]
-enable = true
+enable = false
 label = "Zur Pflegebedarfsermittlung"
 link = "https://navicarenow.datafortress.cloud/"
 
 [navigation_button_bordered]
-enable = true
+enable = false
 label = "Login / Zur App"
 link = "https://navicarenow.datafortress.cloud/"
 

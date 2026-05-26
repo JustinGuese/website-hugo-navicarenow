@@ -36,12 +36,14 @@
   }
 </style>
 
+{{ if site.Params.announcement_banner.enable }}
 <div class="announcement-banner">
   <div class="container">
     🚀 Kostenlose Pflegebedarfsermittlung! Erfahren Sie Ihre Ansprüche in 15-25 Minuten.
     <a href="https://navicarenow.datafortress.cloud/">Jetzt berechnen</a>
   </div>
 </div>
+{{ end }}
 
 {{if site.Params.top_hedaer}}
 <div class="header-top bg-light">
