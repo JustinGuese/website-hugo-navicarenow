@@ -54,9 +54,9 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 2. Name und Anschrift des Verantwortlichen
    Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO), sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist:
 
-NavicareNow
+NaviCare Now
 Julia Camara
-Schöllerstraße 12, 89438 Offingen
+St.-Martin-Straße 2, 89415 Lauingen
 Deutschland
 
 E-Mail: info@navicarenow.de
