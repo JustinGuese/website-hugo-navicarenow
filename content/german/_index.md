@@ -334,6 +334,7 @@ about_us:
   enable: true
   label: 'DAS TEAM'
   title: 'Vier Säulen. Drei Gründende. Ein Ziel.'
+  subtitle: "Unser Team vereint technische Systemexpertise, pflegerische Fachlichkeit und die gelebte Erfahrung als pflegende Angehörige — <br> wir bringen zusammen, was selten zusammenkommt, und kennen das System von innen, von außen und aus dem eigenen Leben."
   team_members:
     - name: 'Julia Camara'
       role: 'Co-CEO · COO'
