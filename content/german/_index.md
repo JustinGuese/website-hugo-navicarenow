@@ -283,8 +283,6 @@ personas:
         - 'Früher Zugang zur NCN-Plattform'
         - 'Direkte Einflussnahme auf Produktentwicklung'
         - 'Evidenzbasiertes Wissen'
-        - 'Preventive CareScan'
-        - 'CareConsult'
         - 'Vorzugsbedingungen als Erstpartner'
       cta_label: 'Pilot-Partner werden →'
       cta_link: '/kontakt'
