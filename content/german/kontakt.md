@@ -6,8 +6,8 @@ draft : false
 
 contact:
   subtitle: "Kontaktieren Sie uns"
-  title: "Lassen Sie uns in Verbindung treten"
-  description: "Sie haben Fragen oder benötigen Unterstützung? Wir sind gerne für Sie da."
+  title: "Pflege und Versorgung neu navigieren. Gemeinsam."
+  description: "Was wir tun, entwickeln wir gemeinsam mit unseren ersten Partnern — evidenzbasiert, nurse-led, sektorenübergreifend. Interesse? Dann sprechen wir."
 
 contactInfo:
   # - title: "Direkt kontaktieren"
