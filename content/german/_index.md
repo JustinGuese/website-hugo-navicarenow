@@ -337,7 +337,7 @@ about_us:
   subtitle: "Unser Team vereint technische Systemexpertise, pflegerische Fachlichkeit und die gelebte Erfahrung als pflegende Angehörige — <br> wir bringen zusammen, was selten zusammenkommt, und kennen das System von innen, von außen und aus dem eigenen Leben."
   team_members:
     - name: 'Julia Camara'
-      role: 'Co-CEO · COO'
+      role: 'Co-CEO'
       color: 'lila'
       description: '+ 10 Jahre Erfahrung in der Altenpflege. Markteintritt & Vertrieb, operative Umsetzung, Partnerschaften, Stakeholder-Management mit Krankenkassen, Einrichtungen und Pflegediensten.'
     - name: 'Justin Güse'
@@ -345,9 +345,9 @@ about_us:
       color: 'navy'
       description: 'Software-Architektur, KI-Entwicklung für Risikoanalyse, Datensicherheit/DSGVO, technische Skalierung. B.Sc..'
     - name: 'Nicole Blom'
-      role: 'Co-CEO · CNO'
+      role: 'Co-CEO'
       color: 'teal'
-      description: '+ 20 Jahre Erfahrung in der Gesundheits- und Krankenpflege, Chief Nursing Officer, wissenschaftliche Begleitung & Uni-/ Hochschul-Kooperationen, Fördermittelmanagement, M.A..'
+      description: '+ 20 Jahre Erfahrung in der Gesundheits- und Krankenpflege, wissenschaftliche Begleitung & Uni-/ Hochschul-Kooperationen, Fördermittelmanagement, M.A..'
   extended_team_title: 'Unser erweitertes Team'
   extended_team:
     - name: 'Warlley de Lima Santos'
