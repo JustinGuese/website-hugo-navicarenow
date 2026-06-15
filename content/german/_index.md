@@ -12,7 +12,7 @@ banner:
     link: '/kontakt'
   button_secondary:
     enable: true
-    label: 'Kooperationspartner werden'
+    label: 'Netzwerkpartner werden'
     link: '/kontakt'
     # image: 'images/screenshots/phonemockups/calculator_resultscreen-left.png'
   image: 'images/screenshots/phone.png'
@@ -22,7 +22,7 @@ problem:
   enable: true
   label: 'WARUM NAVICARE NOW®?'
   title: 'Das Pflege- und Versorgungssystem ist fragmentiert. Wir verbinden.'
-  subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
+  subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen — durchschnittlich 49 Stunden pro Woche, oft ohne professionelle Unterstützung. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
   bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — und übersetzt die Situation jeder pflegenden Person in ein klares Pflegeportrait mit konkretem Maßnahmenplan. Eine digitale Schaltzentrale, die alle Beteiligten verbindet und bedarfsorientierte Koordination endlich sektorenübergreifend ermöglicht.'
 
 ############################ Sektion 3 – SO FUNKTIONIERT ES ##################################
