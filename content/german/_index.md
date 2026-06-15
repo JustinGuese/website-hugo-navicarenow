@@ -4,7 +4,7 @@ banner:
   enable: true
   badge: 'NURSE-LED · DIGITAL · SEKTORENÜBERGREIFEND'
   title: 'Pflege und Versorgung neu <em>navigieren.</em>'
-  subtitle: 'NaviCare Now® verbindet Menschen mit Unterstützungsbedarf, pflegende Angehörige, Pflegefachpersonen, Einrichtungen und Akteure — digital, verlässlich und menschlich. Wir sind kein weiterer Konzern. Wir bauen ein Netzwerk.'
+  subtitle: 'NaviCare Now® ist das Netzwerk, das pflegende Angehörige, Pflegefachpersonen, Einrichtungen und Versorger digital miteinander verbindet. Wir sind kein weiterer Konzern. Wir bauen ein Netzwerk.'
   tagline: 'Von Anfang an. Für alle.'
   button:
     enable: true
@@ -23,7 +23,7 @@ problem:
   label: 'WARUM NAVICARE NOW®?'
   title: 'Das Pflege- und Versorgungssystem ist fragmentiert. Wir verbinden.'
   subtitle: 'Pflegende Angehörige verlieren sich in einem Labyrinth aus Zuständigkeiten, Formularen und Sektorengrenzen. Pflegefachpersonen arbeiten ohne gemeinsame Datenbasis. Einrichtungen tragen die Last allein.'
-  bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — eine digitale Schaltzentrale, die alle Beteiligten verbindet und bedarfsorientierte Koordination endlich sektorenübergreifend ermöglicht.'
+  bridge: 'NaviCare Now® schafft den <strong>Single Point of Contact</strong> — und übersetzt die Situation jeder pflegenden Person in ein klares Pflegeportrait mit konkretem Maßnahmenplan. Eine digitale Schaltzentrale, die alle Beteiligten verbindet und bedarfsorientierte Koordination endlich sektorenübergreifend ermöglicht.'
 
 ############################ Sektion 3 – SO FUNKTIONIERT ES ##################################
 how_it_works:
@@ -57,26 +57,22 @@ pillars:
     - title: 'Menschliche Pflege und Versorgung'
       tag: 'CARE'
       color: 'coral'
-      description: 'Sie suchen Hilfe - und wissen nichtmal wo Sie anfangen sollen. 
-      NaviCare Now® bringt strukturierte Risikoanalysen, Care und Case Management dorthin, wo Versorgung wirklich stattfindet. Pflegefachlich fundiert, menschlich nah.'
+      description: 'Sie suchen Hilfe — und wissen oft nicht, wo Sie anfangen sollen. Schildern Sie uns Ihre Situation, und Sie erhalten Ihr individuelles Pflegeportrait: eine strukturierte Risikoanalyse (z. B. Sturz, Mangelernährung, Medikation) und einen konkreten Maßnahmenplan. Erstellt und begleitet von examinierten Pflegefachpersonen — pflegefachlich fundiert, menschlich nah.'
       word: 'JETZT'
     - title: 'Stärke & Kompetenz'
       tag: 'EMPOWERMENT'
       color: 'lila'
-      description: 'Sie wissen nicht, wie Sie helfen können. Pflegefachpersonen wissen was hilft. NaviCare Now® bringt sie zusammen.
-      Wissen, das trägt. Von Menschen, die das System kennen - für Menschen, die mitten drin sind. Gemeinsam stärker.'
+      description: 'Sie wissen nicht, wie Sie helfen können. Pflegefachpersonen wissen, was hilft. NaviCare Now® bringt Sie zusammen — über Schulungsmodule, persönliche Beratung und eine wachsende Community. Wissen, das trägt.'
       word: 'ZIEL'
     - title: 'Digitale Innovation'
       tag: 'TECH'
       color: 'navy'
-      description: 'Technologie im Gesundheitswesen gibt es viele. Doch sie ist selten für die gemacht, die täglich damit arbeiten.
-      Eine App, die Menschen verbindet - Angehörige, Fachpersonen, Dienste und Einrichtungen. Gemeinsam gestaltet. DSGVO-konform. KI-gestützt. Für den Alltag.'
+      description: 'Technologie im Gesundheitswesen gibt es viele. Doch sie ist selten für die gemacht, die täglich damit arbeiten. Die NaviCare Now® App verbindet Angehörige, Fachpersonen, Dienste und Einrichtungen in einer App — gemeinsam entwickelt, DSGVO-konform, KI-gestützt.'
       word: 'RICHTUNG'
     - title: 'Struktur & Qualität'
       tag: 'PROCESS'
       color: 'teal'
-      description: 'Fachpersonen gehen nicht wegen dem Beruf. Sie gehen wegen dem, was drumherum nicht funktioniert. 
-      NaviCare Now® begleitet Arbeitgebende bei der Entwicklung tragfähiger Strukturen, klarer Führung und nachhaltiger Organisation - damit gute Pflege und Versorgung auch gute Bedingungen hat.'
+      description: 'Fachpersonen gehen nicht wegen dem Beruf. Sie gehen wegen dem, was drumherum nicht funktioniert. NaviCare Now® begleitet Arbeitgebende beim Aufbau tragfähiger Strukturen und klarer Führung — damit gute Pflege auch gute Bedingungen hat.'
       word: 'WEG'
 
 ############################ Sektion 4 – KERNFEATURE-ÜBERSICHT ##################################
@@ -113,9 +109,9 @@ features:
 ############################ Sektion 4.5 – NETZWERK ##################################
 netzwerk:
   enable: true
-  label: 'KOOPERATIONSPARTNER'
-  title: 'Wir trennen nicht. Wir bauen ein Netzwerk.'
-  description: "NaviCare Now® ist kein Konkurrent und kein Ersatz. Wir sind der Knotenpunkt, der bestehende Strukturen miteinander verbindet — zum Wohl der Menschen.\n\nWir suchen innovationsfreudige Partner, die das Problem genauso sehen wie wir — und Vorreiter für die Zukunft der Versorgung sein wollen. Von der Basis aus. Gemeinsam."
+  label: 'KOOPERATIONS- UND NETZWERKPARTNER'
+  title: 'Unser Netzwerk wächst. Mit Ihnen.'
+  description: "NaviCare Now® ist kein Konkurrent bestehender Strukturen — wir sind der Knotenpunkt, der sie verbindet. Apotheken, Pflegestützpunkte, Hausarztpraxen, Pflegedienste, Krankenkassen, Sanitätshäuser, Kommunen und Hochschulen: Gemeinsam schaffen wir die Versorgung, die Menschen verdienen.\n\nWir vernetzen uns mit innovationsfreudigen Partnern, die das Problem genauso sehen wie wir — und Vorreiter für die Zukunft der Versorgung sein wollen. Von der Basis aus. Gemeinsam."
   spoc:
     quote: 'Gemeinsam navigieren statt allein kämpfen.'
     badge_highlight: 'Single-Point-of-Contact'
@@ -124,7 +120,7 @@ netzwerk:
 
 partner_cta:
   enable: true
-  title: 'Jetzt innovativer Kooperationspartner werden'
+  title: 'Jetzt innovativer Kooperation- und Netzwerkspartner werden'
   description: 'Ob Pflegedienst, Klinik, Kasse oder Hochschule — schreiben Sie uns an und lassen Sie uns gemeinsam die Zukunft gestalten.'
   button_label: 'Gespräch vereinbaren →'
   button_link: '/kontakt'
@@ -333,21 +329,21 @@ trust:
 about_us:
   enable: true
   label: 'DAS TEAM'
-  title: 'Vier Säulen. Drei Gründende. Ein Ziel.'
+  title: 'Vier Säulen. Ein Team. Ein Ziel.'
   subtitle: "Unser Team vereint technische Systemexpertise, pflegerische Fachlichkeit und die gelebte Erfahrung als pflegende Angehörige — <br> wir bringen zusammen, was selten zusammenkommt, und kennen das System von innen, von außen und aus dem eigenen Leben."
   team_members:
     - name: 'Julia Camara'
       role: 'Co-CEO'
       color: 'lila'
       description: '+ 10 Jahre Erfahrung in der Altenpflege. Markteintritt & Vertrieb, operative Umsetzung, Partnerschaften, Stakeholder-Management mit Krankenkassen, Einrichtungen und Pflegediensten.'
-    - name: 'Justin Güse'
-      role: 'CTO'
-      color: 'navy'
-      description: 'Software-Architektur, KI-Entwicklung für Risikoanalyse, Datensicherheit/DSGVO, technische Skalierung. B.Sc..'
-    - name: 'Nicole Blom'
+      - name: 'Nicole Blom'
       role: 'Co-CEO'
       color: 'teal'
       description: '+ 20 Jahre Erfahrung in der Gesundheits- und Krankenpflege, wissenschaftliche Begleitung & Uni-/ Hochschul-Kooperationen, Fördermittelmanagement, M.A..'
+    - name: 'Justin Güse'
+      role: 'CTO'
+      color: 'navy'
+      description: 'Strategischer Technologiepartner über DataFortress.cloud GmbH für App-Infrastruktur, KI-Architektur und DSGVO-Infrastruktur. Enterprise Solution Architect, Referenzen bei VW, BMW, Porsche.'
   extended_team_title: 'Unser erweitertes Team'
   extended_team:
     - name: 'Warlley de Lima Santos'
@@ -365,7 +361,7 @@ about_us:
     - name: 'Nele Templer'
       role: 'Inclusion & Family Relations'
       color: 'coral'
-      description: 'Schnittstelle zur Eingliederungshilfe. Fokus: pädagogische Inklusion'
+      description: 'Familienberatung. Fachliche Schwerpunkte Neurodivergenz und Inklusion.'
 
 ############################ Sektion 12 – FAQ ##################################
 faq:
