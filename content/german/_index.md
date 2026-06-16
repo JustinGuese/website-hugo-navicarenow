@@ -340,7 +340,7 @@ about_us:
       role: 'CTO'
       color: 'navy'
       description: 'Strategischer Technologiepartner über DataFortress.cloud GmbH für App-Infrastruktur, KI-Architektur und DSGVO-Infrastruktur. Enterprise Solution Architect, Referenzen bei VW, BMW, Porsche.'
-       - name: 'Nicole Blom'
+    - name: 'Nicole Blom'
       role: 'Co-CEO'
       color: 'teal'
       description: '+ 20 Jahre Erfahrung in der Gesundheits- und Krankenpflege, wissenschaftliche Begleitung & Uni-/ Hochschul-Kooperationen, Fördermittelmanagement, M.A..'
