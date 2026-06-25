@@ -120,8 +120,8 @@ netzwerk:
 
 partner_cta:
   enable: true
-  title: 'Jetzt innovativer Kooperation- und Netzwerkspartner werden'
-  description: 'Ob Pflegedienst, Klinik, Kasse oder Hochschule — schreiben Sie uns an und lassen Sie uns gemeinsam die Zukunft gestalten.'
+  title: 'Jetzt innovativer Kooperations- oder Netzwerkspartner werden'
+  description: 'Ob Pflegedienst, Klinik, Kasse, Hochschule oder Trainer — schreiben Sie uns an und lassen Sie uns gemeinsam die Zukunft gestalten.'
   button_label: 'Gespräch vereinbaren →'
   button_link: '/kontakt'
 
